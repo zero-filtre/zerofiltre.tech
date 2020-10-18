@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:400,600&display=swap");
+
+:root {
+    --primary-color: #00c2cb;
+    --primary-color-500: #15b2bc;
+    --secondary-color: #052b5d;
+    --accent-color: #fdbc5a;
+    --error-color: #f55f44;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+p,
+blockquote {
+    font-size: 0.9em;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 0.8em 1.2em;
+}
+
+.logo {
+    width: 130px;
+}
+
+.exit-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+section {
+    margin: 20% 0 20% 0;
+}
+
+.landing_illustration {
+    width: 100%;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.green-container {
+    color: white;
+    background-color: #057c86;
+    background-image: linear-gradient(155.64deg, #057c86 39.12%, var(--primary-color) 75.61%);
+}
+
+.green-container p {
+    text-align: inherit;
+}
+
+.white-yellow-container {
+    color: var(--secondary-color);
+    background-color: white;
+    background-image: linear-gradient(359.43deg, #ffbd59 -38.26%, rgba(255, 189, 89, 0) 26.6%);
+}
+
+.global-services,
+.services,
+.stats,
+.reviews {
+    margin-top: 10%;
+}
+
+.card {
+    background: #f9fafb;
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 0.9em;
+}
+
+.global-services .card {
+    width: 50%;
+}
+
+.global-services li {
+    margin: 0 0 3em;
+}
+.global-services p {
+    text-align: center;
+}
+
+.stats {
+    margin-top: 10%;
+}
+
+.stats span {
+    font-weight: bold;
+}
+
+.title {
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.green-title {
+    background: var(--primary-color);
+}
+
+.yellow-title {
+    background: var(--accent-color);
+}
+
+.red-title {
+    background: var(--error-color);
+}
+
+.blue-title {
+    background: var(--secondary-color);
+}
+
+.numbers-element {
+    color: white;
+    background: linear-gradient(90deg, var(--primary-color) 56.48%, var(--secondary-color) 178.74%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+}
+
+.numbers-element p {
+    margin: 0.8em;
+}
+
+.numbers-element img {
+    width: 50px;
+    height: 50px;
+}
+
+.services {
+    margin-top: 20%;
+}
+
+.services p:first-of-type,
+.reviews p:first-of-type {
+    text-align: inherit;
+}
+
+.services .card{
+    margin-bottom: 1em;
+}
+
+.green-text {
+    font-weight: bold;
+    color: var(--primary-color-500);
+}
+
+.yellow-text {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.rounded-button {
+    color: var(--primary-color);
+    border: 4px solid var(--primary-color);
+    border-radius: 50px;
+}
+
+.rounded-button img {
+    height: 20px;
+}
+
+.reviews .card {
+    color: white;
+    background: var(--primary-color);
+    border-radius: 8px;
+    filter: drop-shadow(12px 16px 50px rgba(0, 0, 0, 0.25));
+}
+
+.carousel .card {
+    text-align: start;
+}
+
+.unfold {
+    display: none;
+}
+
+.sponsor {
+    color: var(--secondary-color);
+    position: relative;
+    z-index: 3;
+}
+
+/*L carte sponsor doit être étroite et centrée*/
+.sponsor .card {
+    width: 60%;
+}
+
+.white-container {
+    height: 200px;
+}
+
+.separator {
+    border: 1px solid #374151;
+}
+
+.footer {
+    color: white;
+    background: var(--secondary-color);
+}
