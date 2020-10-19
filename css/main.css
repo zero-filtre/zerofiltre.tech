@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:300,600&display=swap");
 
 :root {
     --primary-color: #00c2cb;
@@ -33,23 +33,19 @@ ul {
 
 .container {
     text-align: center;
-    padding: 0.8em 1.2em;
+    padding: 1.2em;
 }
 
 .logo {
     width: 130px;
 }
 
-.exit-btn img {
-    width: 30px;
-    height: 30px;
-}
-
 section {
-    margin: 20% 0 20% 0;
+    margin: 20% 0 5%;
 }
 
-.landing_illustration {
+.landing_illustration,
+.about .team {
     width: 100%;
 }
 
@@ -60,12 +56,15 @@ section {
 header {
     display: flex;
     justify-content: space-between;
+    margin-top: 120px;
 }
 
 .green-container {
     color: white;
     background-color: #057c86;
     background-image: linear-gradient(155.64deg, #057c86 39.12%, var(--primary-color) 75.61%);
+    margin-top: -120px;
+    border-bottom-right-radius: 20px;
 }
 
 .green-container p {
@@ -74,14 +73,20 @@ header {
 
 .white-yellow-container {
     color: var(--secondary-color);
-    background-color: white;
     background-image: linear-gradient(359.43deg, #ffbd59 -38.26%, rgba(255, 189, 89, 0) 26.6%);
+    border-bottom-right-radius: 20px;
+    padding: 0 0 10%;
+}
+
+.spacer {
+    height: 3em;
 }
 
 .global-services,
 .services,
 .stats,
-.reviews {
+.reviews,
+.about {
     margin-top: 10%;
 }
 
@@ -93,18 +98,17 @@ header {
 }
 
 .global-services .card {
-    width: 50%;
+    margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .global-services li {
     margin: 0 0 3em;
 }
+
 .global-services p {
     text-align: center;
-}
-
-.stats {
-    margin-top: 10%;
 }
 
 .stats span {
@@ -134,13 +138,19 @@ header {
     background: var(--secondary-color);
 }
 
+.stats .green-title {
+    margin: 0 20%;
+}
+
 .numbers-element {
     color: white;
     background: linear-gradient(90deg, var(--primary-color) 56.48%, var(--secondary-color) 178.74%);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     margin-bottom: 1em;
+    height: 50px;
 }
 
 .numbers-element p {
@@ -152,16 +162,19 @@ header {
     height: 50px;
 }
 
-.services {
-    margin-top: 20%;
-}
-
-.services p:first-of-type,
-.reviews p:first-of-type {
+.services .yellow-text,
+.reviews .yellow-text,
+.about .yellow-text {
     text-align: inherit;
 }
 
-.services .card{
+.footer .yellow-text {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.services .card,
+.carousel .card {
     margin-bottom: 1em;
 }
 
@@ -170,15 +183,25 @@ header {
     color: var(--primary-color-500);
 }
 
+.doUnfold {
+    cursor: pointer;
+}
+
 .yellow-text {
     color: var(--accent-color);
     font-weight: bold;
 }
 
 .rounded-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     color: var(--primary-color);
     border: 4px solid var(--primary-color);
     border-radius: 50px;
+    height: 2em;
+    margin: 10% 20%;
 }
 
 .rounded-button img {
@@ -192,6 +215,10 @@ header {
     filter: drop-shadow(12px 16px 50px rgba(0, 0, 0, 0.25));
 }
 
+.reviews {
+    margin-top: 20%;
+}
+
 .carousel .card {
     text-align: start;
 }
@@ -201,25 +228,98 @@ header {
 }
 
 .sponsor {
-    color: var(--secondary-color);
     position: relative;
+    color: var(--secondary-color);
     z-index: 3;
-}
-
-/*L carte sponsor doit être étroite et centrée*/
-.sponsor .card {
-    width: 60%;
-}
-
-.white-container {
-    height: 200px;
-}
-
-.separator {
-    border: 1px solid #374151;
 }
 
 .footer {
     color: white;
     background: var(--secondary-color);
+    border-top-left-radius: 20px;
+}
+
+.footer .useful-links li,
+.footer .useful-links ul {
+    margin-bottom: 1em;
+    font-size: 0.85em;
+}
+
+.separator {
+    border: 1px solid #374151;
+    margin-top: 10%;
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    margin-left: 0.5em;
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    color: white;
+    background: var(--primary-color);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: var(--primary-color-500);
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color);
+}
+
+.exit-btn img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -2.5em;
+    text-align: right;
+    padding: 0 0.5em;
+}
+
+@media only screen and (min-width: 650px) {
+
+    h1 {
+        font-size: 2.8em;
+        margin: 0;
+    }
+
+    .subhead {
+        font-size: 1.1em;
+        margin-bottom: 12%;
+    }
+    
+    .rounded-button {
+        margin: 10% 33%;
+    }
+    
+    .rounded-button img {
+        height: 20px;
+    }
+
+    .landing_illustration,
+    .about .team {
+        width: 70%;
+    }
 }

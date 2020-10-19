@@ -25,11 +25,9 @@
                         <li class="exit-btn hide-desktop" id="exit">
                             <img src="images/exit.svg" alt="exit">
                         </li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="#">A propos</a></li>
+                        <li><a href="#">Services <img src="images/chevron-down.svg" alt="chevron-down"></a></li>
                         <li><a href="#">Blog</a></li>
-                        <li>
-                            <img src="images/phone.svg" alt="Our github repositories">
-                        </li>
                         <li>
                             <a href="https://github.com/zero-filtre"><img src="images/github.svg"
                                     alt="Nos repo github"></a>
@@ -37,6 +35,12 @@
                         <li>
                             <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img
                                     src="images/linkedIn.svg" alt="Notre page LinkedIn"></a>
+                        </li>
+                        <li>
+                            <a href="https://web.whatsapp.com"><img src="images/whatsapp.svg"
+                                    alt="N° whatsapp 0753428623">
+                                +33 7 53 42 86 23
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -144,8 +148,8 @@
                     </div>
                     <div class="card numbers-element">
                         <img src="images/stat_customer_satisfied.svg" alt="Customer satisfaction">
-                        <p>054</p>
-                        <p>CLIENTS SATISFAITS</p>
+                        <p>05</p>
+                        <p>PROJETS ACHEVES</p>
                     </div>
                     <div class="card numbers-element">
                         <img src="images/stat_engaged_engineers.svg" alt="Engaged engineers">
@@ -221,7 +225,7 @@
                     </p>
                 </div>
                 <div class="rounded-button">
-                    En savoir plus
+                    <span>En savoir plus </span>
                     <img src="images/arrow.svg" alt="know more">
                 </div>
 
@@ -273,8 +277,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
         <div class="about">
             <div class="container">
@@ -292,6 +294,10 @@
                         personnes passionnées, de compétences variées avec qui le groupe
                         a vu son nombre de clients grimper assez rapidement du fait de
                         la qualité du travail délivré.
+                        <span class="doUnfold" id="doUnfold">
+                            <span class="green-text">Dérouler</span>
+                            <img src="images/chevron-down-green.svg" alt="chevron-down">
+                        </span>
                     </p>
                     <p class="unfold" id="unfold">
                         Zerofiltre est une communauté qui dispose d'une
@@ -314,15 +320,12 @@
                         améliorer votre croissance devient notre responsabilité
                         une fois que vous nous demandez de l'aide !
                     </p>
-                    <a href="#" id="unfold">
-                        <img src="images/unfold_about.svg" alt="Dérouler">
-                    </a>
-                    <img src="images/about_zerofiltre_team.svg" alt="L'équipe zerofiltre">
+
+                    <img class="team" src="images/about_zerofiltre_team.svg" alt="L'équipe zerofiltre">
                 </div>
             </div>
 
         </div>
-    </div>
     </div>
     <div class="sponsor">
         <div class="container">
@@ -353,46 +356,47 @@
             </div>
         </div>
     </div>
-    <div class="white-container"></div>
     <div class="footer">
         <div class="container">
-            <div class="services-link">
-                <p class="yellow-text">NOS SERVICES</p>
-                <ul>
-                    <li><a href="#">Développement d’application JAVA</a></li>
-                    <li><a href="#">Développement d’applications pour navigateurs Web</a></li>
-                    <li><a href="#">Développement d’applications mobiles</a></li>
-                    <li><a href="#">Maintenance d’applications et support</a></li>
-                    <li><a href="#">Développement d’APIs Web</a></li>
-                    <li><a href="#">Conception UI</a></li>
-                </ul>
+            <div class="useful-links">
+                <div class="services-link">
+                    <p class="yellow-text">NOS SERVICES</p>
+                    <ul>
+                        <li><a href="#">Développement d’application JAVA</a></li>
+                        <li><a href="#">Développement d’applications pour navigateurs Web</a></li>
+                        <li><a href="#">Développement d’applications mobiles</a></li>
+                        <li><a href="#">Maintenance d’applications et support</a></li>
+                        <li><a href="#">Développement d’APIs Web</a></li>
+                        <li><a href="#">Conception UI</a></li>
+                    </ul>
 
-            </div>
-            <div class="achievments">
-                <p class="yellow-text">NOS REALISATIONS</p>
-                <ul>
-                    <li><a href="#">Moteur de signature de document</a></li>
-                    <li><a href="#">Portail de suivi de demandes administratives</a></li>
-                    <li><a href="#">Partage nous les photos</a></li>
-                    <li><a href="#">Maintenance d’applications et support</a></li>
-                    <li><a href="#">Reprise intelligente de parcours utilisateurb</a></li>
-                    <li><a href="#">Moteur d'agrégation de moyens de paiement mobiles</a></li>
-                </ul>
+                </div>
+                <div class="achievments">
+                    <p class="yellow-text">NOS REALISATIONS</p>
+                    <ul>
+                        <li><a href="#">Moteur de signature de document</a></li>
+                        <li><a href="#">Portail de suivi de demandes administratives</a></li>
+                        <li><a href="#">Partage nous les photos</a></li>
+                        <li><a href="#">Maintenance d’applications et support</a></li>
+                        <li><a href="#">Reprise intelligente de parcours utilisateurb</a></li>
+                        <li><a href="#">Moteur d'agrégation de moyens de paiement mobiles</a></li>
+                    </ul>
 
-            </div>
-            <div class="articles">
-                <p class="yellow-text">DERNIERS ARTICLES</p>
-                <ul>
-                    <li><a href="#">GraphQL: de la théorie à la pratique avec Spring-boot</a></li>
-                    <li><a href="#">Maîtriser la gestion d’erreurs GraphQL dans une application Spring-boot</a></li>
-                    <li>
-                        <a href="#">Sécuriser ses APIs GraphQL avec Spring-AOP dans une application Spring-boot </a>
-                    </li>
-                    <li>
-                        <a href="#">Tester ses APIs GraphQL dans une application Spring-boot </a>
-                    </li>
+                </div>
+                <div class="articles">
+                    <p class="yellow-text">DERNIERS ARTICLES</p>
+                    <ul>
+                        <li><a href="#">GraphQL: de la théorie à la pratique avec Spring-boot</a></li>
+                        <li><a href="#">Maîtriser la gestion d’erreurs GraphQL dans une application Spring-boot</a></li>
+                        <li>
+                            <a href="#">Sécuriser ses APIs GraphQL avec Spring-AOP dans une application Spring-boot </a>
+                        </li>
+                        <li>
+                            <a href="#">Tester ses APIs GraphQL dans une application Spring-boot </a>
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
             <div class="contact">
                 <p class="yellow-text">Nous contacter</p>
@@ -410,21 +414,17 @@
             </div>
             <div class="separator"></div>
             <div class="end">
-                <ul>
-                    <li>
-                        <p>
-                            &copy; 2020
-                            <span class="green-text">Zerofiltre.</span> Tous droits reservés.
-                        </p>
-                    </li>
-                    <li>
-                        <a href="https://github.com/zero-filtre"><img src="images/github.svg" alt="Nos repo github"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/linkedIn.svg"
-                                alt="Notre page LinkedIn"></a>
-                    </li>
-                </ul>
+                <p>
+                    &copy; 2020
+                    <span class="green-text">Zerofiltre.</span> Tous droits reservés.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/zero-filtre"><img src="images/github.svg" alt="Nos repo github"></a>
+
+                    <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/linkedIn.svg"
+                            alt="Notre page LinkedIn">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
