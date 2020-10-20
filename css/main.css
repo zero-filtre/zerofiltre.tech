@@ -33,7 +33,7 @@ ul {
 
 .container {
     text-align: center;
-    padding: 1.2em;
+    padding: 5%;
 }
 
 .logo {
@@ -95,16 +95,33 @@ header {
     box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     padding: 0.9em;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 3px 16px 40px rgba(0, 0, 0, 0.25);
+    transform: scale(1.003);
+  
 }
 
 .global-services .card {
-    margin: 0 20%;
+    margin: 0 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.global-services p {
+   font-size: .7em;
+}
+
+.global-services img {
+    width: 100%;
+}
+
 .global-services li {
-    margin: 0 0 3em;
+    margin: 0 0 10%;
+   
 }
 
 .global-services p {
@@ -115,12 +132,19 @@ header {
     font-weight: bold;
 }
 
+.stats .card {
+    pointer-events: none;
+}
+
+
 .title {
     font-weight: bold;
     color: white;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
+    font-size: 1.2em;
+
 }
 .green-title {
     background: var(--primary-color);
@@ -139,7 +163,11 @@ header {
 }
 
 .stats .green-title {
-    margin: 0 20%;
+    margin: 0 20% 5%;
+}
+
+.card .title {
+    font-size: 0.9em;
 }
 
 .numbers-element {
@@ -147,7 +175,7 @@ header {
     background: linear-gradient(90deg, var(--primary-color) 56.48%, var(--secondary-color) 178.74%);
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: start;
     align-items: center;
     margin-bottom: 1em;
     height: 50px;
@@ -200,12 +228,16 @@ header {
     color: var(--primary-color);
     border: 4px solid var(--primary-color);
     border-radius: 50px;
-    height: 2em;
+    height: 2.5em;
     margin: 10% 20%;
+    font-size: .8em;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .rounded-button img {
     height: 20px;
+    width: 40px;
 }
 
 .reviews .card {
@@ -231,7 +263,9 @@ header {
     position: relative;
     color: var(--secondary-color);
     z-index: 3;
+    pointer-events: none;
 }
+
 
 .footer {
     color: white;
@@ -269,16 +303,19 @@ nav ul {
     text-align: left;
     color: white;
     background: var(--primary-color);
-    height: 100%;
+    height: 80%;
     z-index: 7;
     padding-top: 3em;
+    background-image: linear-gradient(to bottom, #057c86 39.12%, var(--primary-color) 75.61%);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 nav ul li a {
     display: block;
     width: 100%;
     padding: 1em 2em;
-    background-color: var(--primary-color-500);
 }
 
 nav ul li a:hover {
@@ -298,8 +335,11 @@ nav ul li a:hover {
     padding: 0 0.5em;
 }
 
-@media only screen and (min-width: 650px) {
 
+
+
+
+@media only screen and (min-width: 650px) {
     h1 {
         font-size: 2.8em;
         margin: 0;
@@ -309,11 +349,11 @@ nav ul li a:hover {
         font-size: 1.1em;
         margin-bottom: 12%;
     }
-    
+
     .rounded-button {
         margin: 10% 33%;
     }
-    
+
     .rounded-button img {
         height: 20px;
     }
@@ -322,4 +362,74 @@ nav ul li a:hover {
     .about .team {
         width: 70%;
     }
+
+    .global-services .card {
+        margin: 0 25%;
+    }
+
+    .global-services ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .global-services p {
+        font-size: .9em;
+     }
+
+    nav ul {
+      width: 50%;
+    }
+   
+}
+
+
+
+
+
+@media only screen and (min-width: 750px) {    
+
+    .rounded-button {
+        margin: 25px 0 0 calc(100% - 220px);
+        width: 200px;
+    }
+
+    .rounded-button img {
+        height: 20px;
+    }
+
+    .landing_illustration,
+    .about .team {
+        width: 70%;
+    }
+
+    .global-services .card {
+        margin: 0 20%;
+    }
+
+    .global-services ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .global-services li {
+        margin: 0 2em 2em;
+    }
+
+    .stats{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .stats .green-title {
+        margin: 0 50% 5% 0;
+    }
+
+    .stats p:nth-child(2) {
+        margin: 0 30% 5% 0;
+    }
+
+    nav ul {
+      width: 50%;
+    }
+   
 }
