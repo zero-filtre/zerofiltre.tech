@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:300,600&display=swap");
-
 :root {
+    /*Colors */
     --primary-color: #00c2cb;
     --primary-color-500: #15b2bc;
     --secondary-color: #052b5d;
     --accent-color: #fdbc5a;
     --error-color: #f55f44;
+
+    /*Font sizes*/
+    --regular-size: 0.9em;
+    --small-size: 0.7em;
 }
 
 body {
@@ -13,11 +16,16 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+h1 {
+    font-weight: bolder;
+}
+
 p,
 blockquote {
-    font-size: 0.9em;
+    font-size: var(--regular-size);
     line-height: 1.6em;
     text-align: justify;
+    font-weight: lighter;
 }
 
 a {
@@ -94,14 +102,13 @@ header {
     background: #f9fafb;
     box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    padding: 0.9em;
+    padding: var(--regular-size);
     transition: 0.3s;
 }
 
 .card:hover {
     box-shadow: 3px 16px 40px rgba(0, 0, 0, 0.25);
     transform: scale(1.003);
-  
 }
 
 .global-services .card {
@@ -112,7 +119,7 @@ header {
 }
 
 .global-services p {
-   font-size: .7em;
+    font-size: var(--regular-size);
 }
 
 .global-services img {
@@ -121,7 +128,6 @@ header {
 
 .global-services li {
     margin: 0 0 10%;
-   
 }
 
 .global-services p {
@@ -136,15 +142,13 @@ header {
     pointer-events: none;
 }
 
-
 .title {
     font-weight: bold;
     color: white;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0.2em 0.1em;
     text-align: center;
     font-size: 1.2em;
-
 }
 .green-title {
     background: var(--primary-color);
@@ -167,27 +171,40 @@ header {
 }
 
 .card .title {
-    font-size: 0.9em;
+    font-size: var(--regular-size);
 }
 
 .numbers-element {
     color: white;
     background: linear-gradient(90deg, var(--primary-color) 56.48%, var(--secondary-color) 178.74%);
     display: flex;
-    flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin-bottom: 1em;
+    margin-top: 1em;
     height: 50px;
-}
-
-.numbers-element p {
-    margin: 0.8em;
 }
 
 .numbers-element img {
-    width: 50px;
-    height: 50px;
+    margin: 0 10px 0 0;
+    height: 80%;
+}
+
+.numbers-element:first-of-type img {
+    height: 50%;
+}
+
+.numbers-element p {
+    margin: 0 10px 0 0;
+}
+
+.numbers-element p:nth-of-type(1) {
+    font-size: 1.5em;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.numbers-element p:nth-of-type(2) {
+    font-size: var(--small-size);
 }
 
 .services .yellow-text,
@@ -202,7 +219,7 @@ header {
 }
 
 .services .card,
-.carousel .card {
+.reviews-carousel .card {
     margin-bottom: 1em;
 }
 
@@ -230,7 +247,7 @@ header {
     border-radius: 50px;
     height: 2.5em;
     margin: 10% 20%;
-    font-size: .8em;
+    font-size: 0.85em;
     padding: 5px;
     cursor: pointer;
 }
@@ -247,12 +264,33 @@ header {
     filter: drop-shadow(12px 16px 50px rgba(0, 0, 0, 0.25));
 }
 
+.invisible {
+    display: none;
+}
+
 .reviews {
     margin-top: 20%;
 }
 
-.carousel .card {
+.reviews-carousel .card {
     text-align: start;
+    animation: fade 1s;
+}
+
+.invisible {
+    display: none;
+    -webkit-transition: opacity 700ms;
+    transition: opacity 700ms;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .unfold {
@@ -265,7 +303,6 @@ header {
     z-index: 3;
     pointer-events: none;
 }
-
 
 .footer {
     color: white;
@@ -335,10 +372,6 @@ nav ul li a:hover {
     padding: 0 0.5em;
 }
 
-
-
-
-
 @media only screen and (min-width: 650px) {
     h1 {
         font-size: 2.8em;
@@ -348,6 +381,15 @@ nav ul li a:hover {
     .subhead {
         font-size: 1.1em;
         margin-bottom: 12%;
+    }
+
+    .services-cards-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .services-cards-block .card {
+        width: 43.5%;
     }
 
     .rounded-button {
@@ -373,20 +415,22 @@ nav ul li a:hover {
     }
 
     .global-services p {
-        font-size: .9em;
-     }
+        font-size: var(--regular-size);
+    }
+
+    .reviews {
+        margin-top: 10%;
+    }
 
     nav ul {
-      width: 50%;
+        width: 50%;
     }
-   
 }
 
-
-
-
-
-@media only screen and (min-width: 750px) {    
+@media only screen and (min-width: 750px) {
+    .title {
+        font-size: 1.3em;
+    }
 
     .rounded-button {
         margin: 25px 0 0 calc(100% - 220px);
@@ -411,25 +455,54 @@ nav ul li a:hover {
         justify-content: space-between;
     }
 
+    .global-services .card {
+        width: 43.5%;
+    }
+
     .global-services li {
         margin: 0 2em 2em;
     }
 
-    .stats{
+    .stats {
         display: flex;
         justify-content: space-between;
     }
 
     .stats .green-title {
-        margin: 0 50% 5% 0;
+        margin: 0 40% 40px 0;
     }
 
-    .stats p:nth-child(2) {
-        margin: 0 30% 5% 0;
+    .description {
+        width: 50%;
+    }
+
+    .description p:nth-of-type(2) {
+        margin: 0 10% 0 0;
+    }
+
+    .numbers {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .numbers-element img {
+        margin: 0 30px 0 0;
+        flex-shrink: 0;
+        height: 100%;
+    }
+
+    .numbers-element:first-of-type img {
+        height: 80%;
+        width: 15%;
+    }
+
+    .numbers-element p {
+        margin: 0 30px 0 0;
+        flex-shrink: 0;
     }
 
     nav ul {
-      width: 50%;
+        width: 50%;
     }
-   
 }
