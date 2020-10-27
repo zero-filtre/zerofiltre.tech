@@ -64,14 +64,12 @@ section {
 header {
     display: flex;
     justify-content: space-between;
-    margin-top: 120px;
 }
 
 .green-container {
     color: white;
     background-color: #057c86;
     background-image: linear-gradient(155.64deg, #057c86 39.12%, var(--primary-color) 75.61%);
-    margin-top: -120px;
     border-bottom-right-radius: 20px;
 }
 
@@ -93,8 +91,7 @@ header {
 .global-services,
 .services,
 .stats,
-.reviews,
-.about {
+.reviews {
     margin-top: 10%;
 }
 
@@ -279,8 +276,8 @@ header {
 
 .invisible {
     display: none;
-    -webkit-transition: opacity 700ms;
-    transition: opacity 700ms;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 }
 
 @keyframes fade {
@@ -297,11 +294,17 @@ header {
     display: none;
 }
 
+.up {
+    transform: rotate(180deg);
+}
+
 .sponsor {
-    position: relative;
     color: var(--secondary-color);
-    z-index: 3;
     pointer-events: none;
+}
+
+.sponsor img {
+    width: 30%;
 }
 
 .footer {
@@ -422,6 +425,15 @@ nav ul li a:hover {
         margin-top: 10%;
     }
 
+    .sponsor img {
+        width: 80%;
+    }
+
+    .sponsor ul {
+        display: flex;
+        justify-content: center;
+    }
+
     nav ul {
         width: 50%;
     }
@@ -504,5 +516,198 @@ nav ul li a:hover {
 
     nav ul {
         width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        margin: 0 auto;
+        padding-top: 2%;
+        padding-bottom: 6.5%;
+    }
+
+    .show-desktop {
+        display: inline;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 1em 0 0 2em;
+        font-size: var(--small-size);
+        width: 200%;
+    }
+
+    nav ul {
+        position: relative;
+        width: auto;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav ul:nth-of-type(2) li a {
+        padding: 1em 0.5em;
+    }
+
+    nav ul:first-of-type li:nth-of-type(3) a {
+        margin-top: -2px;
+    }
+
+    nav ul li a img {
+        margin: 0 0.5em;
+    }
+
+    nav ul li a:hover {
+        background-color: inherit;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    .landing_illustration {
+        width: 110%;
+        margin-top: -25px;
+    }
+
+    .scroll-indicator {
+        text-align: center;
+        width: 50px;
+        animation: move 1s infinite alternate;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0px);
+        }
+        100% {
+            transform: translateY(20px);
+        }
+    }
+
+    .global-services,
+    .services,
+    .stats,
+    .reviews {
+        margin-top: 10%;
+    }
+
+    .global-services {
+        display: flex;
+    }
+
+    .numbers {
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .numbers .numbers-element {
+        height: 70px;
+        margin-top: 1em;
+    }
+
+    .numbers .numbers-element:first-of-type {
+        margin-top: 0;
+    }
+
+    .description {
+        width: 40%;
+    }
+
+    .services .yellow-text {
+        text-align: left;
+    }
+
+    .title {
+        text-align: left;
+        padding: 0.2em 0.5em;
+    }
+
+    .services .green-title {
+        text-align: left;
+    }
+
+    .services-cards-block .card {
+        width: 46%;
+    }
+    .reviews {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .reviews-carousel {
+        order: -1;
+        width: 47%;
+    }
+    .reviews-right-block {
+        text-align: left;
+        width: 47%;
+    }
+
+    .reviews-right-block .yellow-text {
+        margin: 0;
+    }
+
+    .about {
+        text-align: left;
+    }
+
+    .about .yellow-text {
+        text-align: left;
+    }
+
+    .about h3 {
+        text-align: left;
+    }
+
+    .about .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about .about-description {
+        order: -1;
+        width: 47%;
+    }
+
+    .about .team {
+        width: 47%;
     }
 }

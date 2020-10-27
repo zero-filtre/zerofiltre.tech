@@ -1,5 +1,9 @@
 let index = 0;
 let list = document.querySelectorAll('.reviews-carousel .card');
+let hiddenAboutText = document.querySelector('.about-description span:first-of-type');
+let unFoldButton = document.querySelector('.doUnfold span:first-of-type');
+let foldButton = document.querySelector('.doUnfold span:nth-of-type(2)');
+let unfoldChevron = document.querySelector('.doUnfold img');
 let count = list.length;
 let stop = false;
 
@@ -12,6 +16,17 @@ function push(slideList) {
           index = 0;
       } */
 }
+
+
+
+var folder = document.getElementById('doUnfold');
+folder.addEventListener('click',e => {
+    hiddenAboutText.classList.toggle('unfold');
+    foldButton.classList.toggle('unfold');
+    unFoldButton.classList.toggle('unfold');
+    unfoldChevron.classList.toggle('up');
+
+});
 
 var slide = setInterval(() => {
     if (!stop) {
@@ -35,7 +50,7 @@ list.forEach(el => {
         setTimeout(() => {
             console.log("Restart");
             stop = false;
-        }, 20000);
+        }, 15000);
 
 
     });

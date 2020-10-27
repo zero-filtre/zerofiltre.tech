@@ -28,6 +28,14 @@
                         <li><a href="#">A propos</a></li>
                         <li><a href="#">Services <img src="images/chevron-down.svg" alt="chevron-down"></a></li>
                         <li><a href="#">Blog</a></li>
+                    </ul>
+                    <ul class="show-desktop hide-mobile" id="nav2">
+                        <li>
+                            <a href="https://web.whatsapp.com">
+                                <img src="images/whatsapp.svg" alt="N° whatsapp 0753428623">
+                                +33 7 53 42 86 23
+                            </a>
+                        </li>
                         <li>
                             <a href="https://github.com/zero-filtre"><img src="images/github.svg"
                                     alt="Nos repo github"></a>
@@ -36,32 +44,28 @@
                             <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img
                                     src="images/linkedIn.svg" alt="Notre page LinkedIn"></a>
                         </li>
-                        <li>
-                            <a href="https://web.whatsapp.com"><img src="images/whatsapp.svg"
-                                    alt="N° whatsapp 0753428623">
-                                +33 7 53 42 86 23
-                            </a>
-                        </li>
+
                     </ul>
                 </nav>
             </header>
             <section>
-                <h1>
-                    Nous fournissons des services à
-                    <span class="green-text"> valeur ajoutée </span>
-                    avec une approche taillée pour chaque
-                    <span class="yellow-text"> enterprise </span> .
-                </h1>
-                <p class="subhead">
-                    Notre équipe d’experts en développement
-                    d’applications d’entreprises,
-                    web et mobiles vous délivrent le service adéquat
-                    comme vous l’imaginez et quand vous le voulez.
-                </p>
+                <div>
+                    <h1>
+                        Nous fournissons des services à
+                        <span class="green-text"> valeur ajoutée </span>
+                        avec une approche taillée pour chaque
+                        <span class="yellow-text"> enterprise </span> .
+                    </h1>
+                    <p class="subhead">
+                        Notre équipe d’experts en développement
+                        d’applications d’entreprises,
+                        web et mobiles vous délivrent le service adéquat
+                        comme vous l’imaginez et quand vous le voulez.
+                    </p>
+                </div>
                 <img src="images/landing_illustration.svg" alt="landing illustration" class="landing_illustration">
-                <img src="images/scroll_indicator.svg" alt="scroll down"
-                    class="scroll-indicator show-desktop hide-mobile">
             </section>
+            <img src="images/scroll_indicator.svg" alt="scroll down" class="scroll-indicator show-desktop hide-mobile">
         </div>
     </div>
     <div class="white-yellow-container">
@@ -239,51 +243,53 @@
 
             </div>
             <div class="reviews">
-                <p class="yellow-text">TEMOIGNAGES CLIENTS</p>
-                <h3>
-                    La qualité est un aboutissement
-                    de l’amélioration continue.
-                </h3>
-                <p>
-                    Notre leitmotiv est l’amélioration continue,
-                    afin de servir toujours au mieux le client,
-                    et ce à moindre coût.
-                </p>
+                <div class="reviews-right-block">
+                    <p class="yellow-text">TEMOIGNAGES CLIENTS</p>
+                    <h3>
+                        La qualité est un aboutissement
+                        de l’amélioration continue.
+                    </h3>
+                    <p>
+                        Notre leitmotiv est l’amélioration continue,
+                        afin de servir toujours au mieux le client,
+                        et ce à moindre coût.
+                    </p>
+                </div>
 
-                    <div class="reviews-carousel">
+                <div class="reviews-carousel">
 
-                        <div class="card ">
-                            <img src="images/quote_icon.svg" alt="quote icon">
+                    <div class="card ">
+                        <img src="images/quote_icon.svg" alt="quote icon">
 
-                            <blockquote>
-                                J’appréhendais vu le coût relativement
-                                bas de leurs services mais j’ai été subjugué
-                                par la qualité des designs fournis.
-                                C’est désormais un partenaire à long terme.
-                            </blockquote>
+                        <blockquote>
+                            J’appréhendais vu le coût relativement
+                            bas de leurs services mais j’ai été subjugué
+                            par la qualité des designs fournis.
+                            C’est désormais un partenaire à long terme.
+                        </blockquote>
 
-                        </div>
-                        <div class="card invisible">
-                            <img src="images/quote_icon.svg" alt="quote icon">
-
-                            <blockquote>
-                                J’ai été marqué par la sociabilité et la réactivité des équipes,
-                                quelque soit l’heure du soucis technique en production,
-                                ils se montrent présents et compréhensifs.
-                            </blockquote>
-                        </div>
-
-                        <div class="card invisible">
-                            <img src="images/quote_icon.svg" alt="quote icon">
-
-                            <blockquote>
-                                Nous avons travaillé avec zerofiltre pendant
-                                3 ans sur une application JAVA en partant de zéro,
-                                et nous continuons car pas moyen de trouver
-                                un meilleur rapport qualité/prix.
-                            </blockquote>
-                        </div>
                     </div>
+                    <div class="card invisible">
+                        <img src="images/quote_icon.svg" alt="quote icon">
+
+                        <blockquote>
+                            J’ai été marqué par la sociabilité et la réactivité des équipes,
+                            quelque soit l’heure du soucis technique en production,
+                            ils se montrent présents et compréhensifs.
+                        </blockquote>
+                    </div>
+
+                    <div class="card invisible">
+                        <img src="images/quote_icon.svg" alt="quote icon">
+
+                        <blockquote>
+                            Nous avons travaillé avec zerofiltre pendant
+                            3 ans sur une application JAVA en partant de zéro,
+                            et nous continuons car pas moyen de trouver
+                            un meilleur rapport qualité/prix.
+                        </blockquote>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -291,46 +297,41 @@
             <div class="container">
                 <p class="yellow-text"> Mieux connaître</p>
                 <h3>ZEROFILTRE</h3>
-                <div class="about-description" id="about-description">
-                    <p class="fold" id="fold">
-                        Zerofiltre est une communauté qui dispose d'une
-                        équipe passionnée et qui fournit divers services
-                        de développement de logiciels dans le monde entier. <br>
-                        Créée en 2015, Zerofiltre voit le jour à l’initiative de Philippe SIMO,
-                        un ingénieur entrepreneur, et architecte logiciel spécialisé en JAVA. <br>
-                        Persuadé que prioriser à l’absolu la valeur ajoutée apportée au client
-                        est une politique gagnante. Il a su s’entourer d’une équipe de
-                        personnes passionnées, de compétences variées avec qui le groupe
-                        a vu son nombre de clients grimper assez rapidement du fait de
-                        la qualité du travail délivré.
-                        <span class="doUnfold" id="doUnfold">
-                            <span class="green-text">Dérouler</span>
-                            <img src="images/chevron-down-green.svg" alt="chevron-down">
-                        </span>
-                    </p>
-                    <p class="unfold" id="unfold">
-                        Zerofiltre est une communauté qui dispose d'une
-                        équipe passionnée et qui fournit divers services
-                        de développement de logiciels dans le monde entier. <br>
-                        Créée en 2015, Zerofiltre voit le jour à l’initiative de Philippe SIMO,
-                        un ingénieur entrepreneur, et architecte logiciel spécialisé en JAVA. <br>
-                        Persuadé que prioriser à l’absolu la valeur ajoutée apportée au client
-                        est une politique gagnante. Il a su s’entourer d’une équipe de
-                        personnes passionnées, de compétences variées avec qui le groupe
-                        a vu son nombre de clients grimper assez rapidement du fait de
-                        la qualité du travail délivré. <br>
-                        Notre seul objectif est la satisfaction du client,
-                        c'est pourquoi nous concevons et fournissons des services personnalisés
-                        en fonction des exigences du client. Nous fournissons une gamme de services
-                        adaptée aux particuliers, petites, moyennes et grandes entreprises
-                        à un prix abordable <br>
-                        (ce ne sont pas des mots en l’air … ) . <br>
-                        Comprendre les besoins business des clients et
-                        améliorer votre croissance devient notre responsabilité
-                        une fois que vous nous demandez de l'aide !
-                    </p>
-
+                <div class="content">
                     <img class="team" src="images/about_zerofiltre_team.svg" alt="L'équipe zerofiltre">
+    
+                    <div class="about-description" id="about-description">
+                        <p class="fold" id="fold">
+                            Zerofiltre est une communauté qui dispose d'une
+                            équipe passionnée et qui fournit divers services
+                            de développement de logiciels dans le monde entier. <br>
+                            Créée en 2015, Zerofiltre voit le jour à l’initiative de Philippe SIMO,
+                            un ingénieur entrepreneur, et architecte logiciel spécialisé en JAVA. <br><br>
+                            Persuadé que prioriser à l’absolu la valeur ajoutée apportée au client
+                            est une politique gagnante. Il a su s’entourer d’une équipe de
+                            personnes passionnées, de compétences variées avec qui le groupe
+                            a vu son nombre de clients grimper assez rapidement du fait de
+                            la qualité du travail délivré.
+                            <span class="unfold">
+                                <br><br>
+                                Notre principal objectif est la satisfaction du client,
+                                c'est pourquoi nous concevons et fournissons des services personnalisés
+                                en fonction des exigences du client. Nous fournissons une gamme de services
+                                adaptée aux particuliers, petites, moyennes et grandes entreprises
+                                à un prix abordable <br>
+                                (ce ne sont pas des mots en l’air … ) . <br>
+                                Comprendre les besoins business des clients et
+                                améliorer votre croissance devient notre responsabilité
+                                une fois que vous nous demandez de l'aide !
+                            </span>
+                            <br>
+                            <span class="doUnfold" id="doUnfold">
+                                <span class="green-text">Dérouler</span>
+                                <span class="green-text unfold">Rabattre</span>
+                                <img src="images/chevron-down-green.svg" alt="chevron-down">
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
 
