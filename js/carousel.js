@@ -20,7 +20,7 @@ function push(slideList) {
 
 
 var folder = document.getElementById('doUnfold');
-folder.addEventListener('click',e => {
+folder.addEventListener('click', e => {
     hiddenAboutText.classList.toggle('unfold');
     foldButton.classList.toggle('unfold');
     unFoldButton.classList.toggle('unfold');
@@ -46,7 +46,7 @@ list.forEach(el => {
     el.addEventListener('mouseover', function (e) {
         console.log("Stop");
         stop = true;
-        
+
         setTimeout(() => {
             console.log("Restart");
             stop = false;
@@ -106,3 +106,36 @@ const observer = new IntersectionObserver(handleIntersect, {
 })
 
 observer.observe(list[0]); */
+
+backToTopBtn = document.getElementById("back-to-top");
+window.onscroll = () => {
+    scrollFunction();
+}
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+
+// When the user clicks on the button, scroll to the top of the document
+function backToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+nav = document.getElementById("nav");
+//nav2 = document.getElementById("nav2");
+
+document.getElementById("menu").addEventListener('click', () => {
+    nav.classList.toggle("hide-mobile");
+    //nav2.classList.toggle("hide-mobile");
+});
+
+document.getElementById("exit").addEventListener('click', () => {
+    nav.classList.toggle("hide-mobile");
+    //nav2.classList.toggle("hide-mobile");
+});
