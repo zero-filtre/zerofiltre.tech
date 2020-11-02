@@ -128,14 +128,11 @@ function backToTop() {
 }
 
 nav = document.getElementById("nav");
-//nav2 = document.getElementById("nav2");
 
 document.getElementById("menu").addEventListener('click', () => {
     nav.classList.toggle("hide-mobile");
-    //nav2.classList.toggle("hide-mobile");
 });
 
 document.getElementById("exit").addEventListener('click', () => {
     nav.classList.toggle("hide-mobile");
-    //nav2.classList.toggle("hide-mobile");
 });

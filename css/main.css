@@ -366,6 +366,30 @@ nav ul li a:hover {
     background-color: var(--primary-color);
 }
 
+nav ul li:nth-child(5) a:hover,
+nav ul li:nth-child(6) a:hover,
+nav ul li:nth-child(7) a:hover {
+    background-color: #057c86;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li:nth-of-type(3) {
+    margin-top: -2px;
+}
+
+nav ul li:nth-of-type(3) a img {
+    margin-left: 0.5em;
+}
+
+nav ul li:nth-of-type(5) a img {
+    margin-right: 0.5em;
+}
+
 .exit-btn img {
     width: 15px;
     height: 15px;
@@ -539,10 +563,6 @@ nav ul li a:hover {
         margin: 0 30px 0 0;
         flex-shrink: 0;
     }
-
-    nav ul {
-        width: 50%;
-    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -560,16 +580,8 @@ nav ul li a:hover {
         display: none;
     }
 
-    header {
-        justify-content: flex-start;
-    }
-
     nav {
-        display: flex;
-        justify-content: space-between;
-        margin: 1em 0 0 2em;
-        font-size: var(--small-size);
-        width: 200%;
+        font-size: 0.8em;
     }
 
     nav ul {
@@ -584,25 +596,17 @@ nav ul li a:hover {
         float: left;
     }
 
-    nav ul li a {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    nav ul:nth-of-type(2) li a {
-        padding: 1em 0.5em;
-    }
-
-    nav ul:first-of-type li:nth-of-type(3) a {
-        margin-top: -2px;
-    }
-
-    nav ul li a img {
-        margin: 0 0.5em;
+    nav ul li:last-child a {
+        padding: 1em 0;
     }
 
     nav ul li a:hover {
+        background-color: inherit;
+    }
+
+    nav ul li:nth-child(5) a:hover,
+    nav ul li:nth-child(6) a:hover,
+    nav ul li:nth-child(7) a:hover {
         background-color: inherit;
     }
 
