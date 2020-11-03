@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: zerofiltretech-prod
+  name: zerofiltretech-prod
+spec:
+  minReadySeconds: 30
+  progressDeadlineSeconds: 120
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zerofiltretech-prod
+  template:
+    metadata:
+      labels:
+        app: zerofiltretech-prod
+    spec:
+      containers:
+        - name: zerofiltretech-prod
+          image: imzerofiltre/zerofiltretech:0.0.1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: zerofiltretech-prod
+  name: zerofiltretech-prod
+spec:
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  selector:
+    app: zerofiltretech-prod
