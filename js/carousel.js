@@ -17,18 +17,18 @@ function push(slideList) {
       } */
 }
 
+/************************************************************ */
 
-
-var folder = document.getElementById('doUnfold');
+/* var folder = document.getElementById('doUnfold');
 folder.addEventListener('click', e => {
     hiddenAboutText.classList.toggle('unfold');
     foldButton.classList.toggle('unfold');
     unFoldButton.classList.toggle('unfold');
     unfoldChevron.classList.toggle('up');
 
-});
+}); */
 
-var slide = setInterval(() => {
+/* var slide = setInterval(() => {
     if (!stop) {
         console.log("Start");
         list[index].classList.toggle('invisible');
@@ -54,7 +54,9 @@ list.forEach(el => {
 
 
     });
-});
+}); */
+
+/************************************************************************** */
 
 /* let slide = visible => {
     if (visible){
