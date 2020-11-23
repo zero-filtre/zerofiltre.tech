@@ -1,3 +1,44 @@
+:root {
+  /*Colors */
+  --primary-color: #00c2cb;
+  --primary-color-500: #15b2bc;
+  --secondary-color: #052b5d;
+  --accent-color: #fdbc5a;
+  --error-color: #f55f44;
+
+  /*Font sizes*/
+  --regular-size: 0.9em;
+  --small-size: 0.7em;
+  --title-size: 1.3em
+}
+
+
 .subhead {
-  font-size: 1.2em;
+  font-size: var(--title-size);
+}
+
+.services h1,
+.branding h1 {
+  font-size: var(--title-size);
+}
+
+.services section {
+  padding: 1em;
+  margin: 0;
+}
+
+.app {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-top-left-radius: 20px;
+}
+
+.api {
+  background-color: var(--accent-color);
+}
+
+.ui {
+  background-color: var(--primary-color-500);
+  color: #fff;
+  border-bottom-right-radius: 20px;
 }
