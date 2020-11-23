@@ -23,8 +23,39 @@
 }
 
 .services section {
-  padding: 1em;
   margin: 0;
+}
+
+.services .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section div {
+  font-size: var(--small-size);
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.service::before {
+  content: 'hello';
+  background-color: aqua;
+  height: 100%;
+  margin-right: 10%;
+  display: inline-block;
+}
+
+.api .service {
+  border-color: var(--secondary-color);
 }
 
 .app {
@@ -35,6 +66,7 @@
 
 .api {
   background-color: var(--accent-color);
+  color: #052b5d;
 }
 
 .ui {
