@@ -59,6 +59,7 @@ main > .container {
   padding: 1em;
   margin: 1em 0;
   font-size: var(--regular-size);
+  font-weight: bolder;
   box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
 }
 

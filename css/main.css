@@ -347,7 +347,6 @@ nav ul {
     text-align: left;
     color: white;
     background: var(--primary-color);
-    height: 50%;
     z-index: 7;
     padding-top: 3em;
     background-image: linear-gradient(to bottom, #057c86 39.12%, var(--primary-color) 75.61%);
