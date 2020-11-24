@@ -56,16 +56,40 @@ main > .container {
   text-align: left;
   border: 2px solid #fff;
   border-radius: 4px;
-  padding: 1em;
+  padding: 0.4em 0.8em;
   margin: 1em 0;
   font-size: var(--regular-size);
   font-weight: bolder;
   box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
-.service::before {
-  content: url(//unsplash.it/50/50);
-  height: 100%;
+.app-java::before {
+  content: url(/images/app-java.svg);
+  margin-right: 10%;
+}
+
+.app-web::before {
+  content: url(/images/app-web.svg);
+  margin-right: 10%;
+}
+
+.app-mobile::before {
+  content: url(/images/app-mob.svg);
+  margin-right: 10%;
+}
+
+.app-maintenance::before {
+  content: url(/images/app-maintenance.svg);
+  margin-right: 10%;
+}
+
+.api-web::before {
+  content: url(/images/api-web.svg);
+  margin-right: 10%;
+}
+
+.ui-prototye::before {
+  content: url(/images/ui-dev.svg);
   margin-right: 10%;
 }
 
