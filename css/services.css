@@ -12,7 +12,6 @@
   --title-size: 1.3em
 }
 
-
 .subhead {
   font-size: var(--title-size);
 }
@@ -112,4 +111,26 @@ main > .container {
   background-color: var(--primary-color-500);
   color: #fff;
   border-bottom-right-radius: 20px;
+}
+
+@media only screen and (min-width: 750px) {
+  .subhead {
+    margin: 2em 0 !important;
+  }
+
+  .services section {
+    padding: 2%;
+  }
+
+   .services section h1 {
+    margin-bottom: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1400px) {
+  
 }
