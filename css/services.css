@@ -180,7 +180,7 @@ main .services {
   .banner-content .services-hero-img {
     align-self: flex-end;
     margin-right: 5.5vw;
-    width: 50%;
+    width: 52%;
     animation: move 3s infinite alternate;
   }
 
@@ -246,13 +246,13 @@ main .services {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1350px) {
   .subhead {
     font-size: 2em !important;
-    width: 70%;
+    width: 90%;
   }
 
   .banner-content .services-hero-img {
-    width: 70%;
+    width: 60%;
   }
 }
