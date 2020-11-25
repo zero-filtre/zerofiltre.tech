@@ -128,7 +128,41 @@ main > .container {
 }
 
 @media only screen and (min-width: 1024px) {
+  .banner-content {
+    margin-top: 10%;
+    height: 315px;
+  }
 
+  .green-container {
+    border-bottom-right-radius: 0 !important;
+  }
+
+  .container {
+    padding-bottom: 4% !important;
+  }
+
+  .big-title {
+  }
+
+  .subhead {
+    margin: 1em 0 !important;
+  }
+
+  .services-hero-img {
+    align-self: flex-end;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .services {
+    margin-top: 0 !important;
+  }
+
+  .app {
+    border-top-left-radius: 0;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
