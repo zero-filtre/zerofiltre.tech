@@ -181,6 +181,16 @@ main .services {
   .services-hero-img {
     align-self: flex-end;
     margin-right: 10em;
+    animation: move 3s infinite alternate;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(50px);
+    }
   }
 
   main {
