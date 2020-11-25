@@ -112,18 +112,17 @@ main .services {
 
 .app {
   position: relative;
-  /* background: center / cover no-repeat url(/images/app-bg.svg) rgba(5, 43, 93, 87); */
   background: rgba(5, 43, 93, 87);
   color: #fff;
 }
 
 .api {
-  background-color: var(--accent-color);
+  background: rgba(255, 189, 89, 0.91);
   color: #052b5d;
 }
 
 .ui {
-  background-color: var(--primary-color-500);
+  background: rgba(0, 194, 203, 0.95);
   color: #fff;
   border-bottom-right-radius: 20px;
 }
