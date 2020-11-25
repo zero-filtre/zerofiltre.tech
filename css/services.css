@@ -18,6 +18,7 @@
 
 .subhead {
   font-size: var(--title-size);
+  line-height: 1.5em;
 }
 
 main > .container {
@@ -127,13 +128,13 @@ main .services {
   border-bottom-right-radius: 20px;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 480px) {
   .banner-content .services-hero-img {
     width: 75%;
   }
 
   .service {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -178,7 +179,7 @@ main .services {
 
   .banner-content .services-hero-img {
     align-self: flex-end;
-    margin-right: 4vw;
+    margin-right: 3vw;
     width: 52%;
     animation: move 3s infinite alternate;
   }
