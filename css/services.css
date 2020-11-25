@@ -122,7 +122,7 @@ main > .container {
     padding: 2%;
   }
 
-   .services section h1 {
+  .services section h1 {
     margin-bottom: 1.5em;
   }
 }
@@ -137,8 +137,16 @@ main > .container {
     border-bottom-right-radius: 0 !important;
   }
 
+  .services section {
+    padding: 2% 2% 5% 2%;
+  }
+
   .container {
     padding-bottom: 4% !important;
+  }
+
+  .services section h1 {
+    margin-top: 1.5em;
   }
 
   .big-title {
@@ -157,11 +165,41 @@ main > .container {
   }
 
   .services {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     margin-top: 0 !important;
   }
 
+  .services .container {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .service {
+    width: initial;
+  }
+
   .app {
+    grid-column: 1/7;
     border-top-left-radius: 0;
+  }
+  
+  .api {
+    grid-column: 7/13;
+  }
+  
+  .ui {
+    grid-column: 1/13;
+  }
+
+  .branding {
+    margin: 0;
+  }
+
+  main > .container {
+    margin-top: 0;
+    padding-top: 4%;
   }
 }
 
