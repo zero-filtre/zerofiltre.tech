@@ -179,7 +179,7 @@ main .services {
 
   .banner-content .services-hero-img {
     align-self: flex-end;
-    margin-right: 5.5vw;
+    margin-right: 4vw;
     width: 52%;
     animation: move 3s infinite alternate;
   }
@@ -254,5 +254,6 @@ main .services {
 
   .banner-content .services-hero-img {
     width: 60%;
+    margin-right: 5.5vw;
   }
 }
