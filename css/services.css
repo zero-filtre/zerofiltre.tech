@@ -12,12 +12,20 @@
   --title-size: 1.3em
 }
 
+.green-container {
+  border-bottom-right-radius: 0 !important;
+}
+
 .subhead {
   font-size: var(--title-size);
 }
 
 main > .container {
   margin-top: 5%;
+}
+
+main .services {
+  margin-top: 0;
 }
 
 .services h1,
@@ -55,42 +63,45 @@ main > .container {
   text-align: left;
   border: 2px solid #fff;
   border-radius: 4px;
-  padding: 0.4em 0.8em;
+  padding: 0.5em 4em 0.5em 0.8em;
   margin: 1em 0;
   font-size: var(--regular-size);
   font-weight: bolder;
   box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  min-height: 4em;
+}
+
+.service::before {
+  margin-right: 10%;
+  width: 25%;
 }
 
 .app-java::before {
   content: url(/images/app-java.svg);
-  margin-right: 10%;
 }
 
 .app-web::before {
   content: url(/images/app-web.svg);
-  margin-right: 10%;
+  width: 30%;
 }
 
 .app-mobile::before {
   content: url(/images/app-mob.svg);
-  margin-right: 10%;
 }
 
 .app-maintenance::before {
   content: url(/images/app-maintenance.svg);
-  margin-right: 10%;
 }
 
 .api-web::before {
-  content: url(/images/api-web.svg);
-  margin-right: 10%;
+  content: url(/images/app-api.svg);
+  width: 20%;
 }
 
 .ui-prototye::before {
   content: url(/images/ui-dev.svg);
-  margin-right: 10%;
+  width: 32%;
 }
 
 .api .service {
@@ -100,7 +111,6 @@ main > .container {
 .app {
   background-color: var(--secondary-color);
   color: #fff;
-  border-top-left-radius: 20px;
 }
 
 .api {
@@ -134,8 +144,8 @@ main > .container {
     height: 315px;
   }
 
-  .green-container {
-    border-bottom-right-radius: 0 !important;
+  .subhead {
+    font-size: 2em !important;
   }
 
   .services section {
@@ -198,6 +208,10 @@ main > .container {
   
   .ui {
     grid-column: 1/13;
+  }
+
+  .ui-prototye  {
+    width: 50%;
   }
 
   .branding {
