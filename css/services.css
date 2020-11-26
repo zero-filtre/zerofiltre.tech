@@ -124,7 +124,7 @@ main .services {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-size: cover;
+  background-size: 80%;
   background-position: center center;
   background-repeat: no-repeat;
   opacity: .1;
@@ -136,6 +136,7 @@ main .services {
 
 .api .bg-image {
   background-image: url(/images/api-bg.svg);
+  background-position: bottom;
 }
 
 .ui .bg-image {
