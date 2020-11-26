@@ -59,8 +59,6 @@ main .services {
 }
 
 .service {
-  position: relative;
-  z-index: 1;
   display: flex;
   align-items: center;
   text-align: left;
@@ -282,7 +280,6 @@ main .services {
 
 @media only screen and (min-width: 1350px) {
   .subhead {
-    font-size: 2em !important;
     width: 90%;
   }
 
