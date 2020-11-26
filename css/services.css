@@ -42,7 +42,8 @@ main .services {
   margin-bottom: 5%;
 }
 
-.branding h1, p {
+.branding h1, 
+.branding p {
   color: var(--secondary-color);
   text-align: justify;
 }
