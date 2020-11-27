@@ -116,29 +116,31 @@ main .services {
   z-index: 5;
 }
 
-.bg-image {
+.app::before,
+.api::before,
+.ui::before {
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  width: 100%;
   background-size: 80%;
   background-position: center center;
   background-repeat: no-repeat;
   opacity: .1;
 }
 
-.app .bg-image {
+.app::before {
   background-image: url(/images/app-bg.svg);
 }
 
-.api .bg-image {
+.api::before {
   background-image: url(/images/api-bg.svg);
   background-position: bottom;
 }
 
-.ui .bg-image {
+.ui::before {
   background-image: url(/images/ui-bg.svg);
 }
 
