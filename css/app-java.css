@@ -19,9 +19,15 @@
 
 .main-title {
   padding-left: 10%;
+  padding-bottom: initial;
+  padding-top: 3em;
   font-size: large;
   color: #fff;
   text-align: left;
+}
+
+.main-title h1 {
+  text-transform: capitalize;
 }
 
 .main-title div {
@@ -34,25 +40,39 @@ section {
   padding: 4em 0;
 }
 
+section:nth-of-type(2) {
+  background-color: #eee;
+}
+
 section div {
   width: initial;
+}
+
+section h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.6em;
 }
 
 section h2 {
   font-weight: bold;
   text-transform: uppercase;
+  font-size: var(--title-size);
   line-height: 1.6em;
 }
 
 section h3 {
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--error-color);
+  color: var(--accent-color);
   font-size: var(--small-size);
+  line-height: 1.6em;
 }
 
-.pourquoi-nous h3 {
-  color: var(--accent-color);
+section h5 {
+  font-size: 1.17em;
+  line-height: 1.5em;
+  margin: 1em 0;
 }
 
 .img-fluid {
@@ -67,6 +87,7 @@ section h3 {
 
 .our-service__img {
   order: 1;
+  margin: 1em 0;
 }
 
 .our-service__text {
@@ -95,6 +116,14 @@ section h3 {
 
 .technos div::before {
   content: url(//unsplash.it/80/80);
+}
+
+.card {
+  margin: 1em 0;
+}
+
+.service-card {
+  margin: 1em 0;
 }
 
 @media only screen and (min-width: 480px) {
