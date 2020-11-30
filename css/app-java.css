@@ -18,6 +18,15 @@
   border: 2px solid green;
 }
 
+.main-title {
+  padding-left: 10%;
+  font-size: large;
+}
+
+.main-title div {
+  width: 88%;
+}
+
 section div {
   width: initial;
 }
