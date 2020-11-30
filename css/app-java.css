@@ -21,10 +21,15 @@
 .main-title {
   padding-left: 10%;
   font-size: large;
+  color: #fff;
 }
 
 .main-title div {
   width: 88%;
+}
+
+section {
+  color: var(--secondary-color);
 }
 
 section div {
