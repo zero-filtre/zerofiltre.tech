@@ -37,11 +37,11 @@
 section {
   color: var(--secondary-color);
   margin: 0;
-  padding: 4em 0;
+  padding: 2em 0;
 }
 
-section:nth-of-type(2) {
-  background-color: #eee;
+section:nth-of-type(9) {
+  background-image: linear-gradient(359.43deg, #ffbd59 -38.26%, rgba(255, 189, 89, 0) 26.6%);
 }
 
 section div {
@@ -52,6 +52,7 @@ section h1 {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.6em;
+  font-size: 1.55em;
 }
 
 section h2 {
@@ -73,6 +74,16 @@ section h5 {
   font-size: 1.17em;
   line-height: 1.5em;
   margin: 1em 0;
+  color: #fff;
+  border-radius: 5px;
+}
+
+section h5:nth-of-type(2n) {
+  background-color: var(--accent-color);
+}
+
+section h5:nth-of-type(2n+1) {
+  background-color: var(--primary-color);
 }
 
 .img-fluid {
@@ -80,17 +91,20 @@ section h5 {
   height: auto;
 }
 
-.our-service {
+.our-service,
+.notre-equipe {
   display: flex;
   flex-direction: column;
 }
 
-.our-service__img {
+.our-service__img,
+.notre-equipe__img {
   order: 1;
   margin: 1em 0;
 }
 
-.our-service__text {
+.our-service__text,
+.notre-equipe__text {
   order: 2;
 }
 
@@ -111,7 +125,6 @@ section h5 {
 
 .tech-item::before {
   margin-right: 10%;
-  /* width: 25%; */
 }
 
 .technos div::before {
