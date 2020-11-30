@@ -44,10 +44,10 @@ section div {
 
 .tech-item::before {
   margin-right: 10%;
-  width: 25%;
+  /* width: 25%; */
 }
 
-.code div:first-of-type::before {
+.technos div::before {
   content: url(//unsplash.it/80/80);
 }
 
