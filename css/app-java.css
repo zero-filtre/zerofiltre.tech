@@ -14,7 +14,6 @@
 
 .container {
   max-width: 1200px;
-  text-align: initial;
   border: 2px solid green;
 }
 
@@ -22,6 +21,7 @@
   padding-left: 10%;
   font-size: large;
   color: #fff;
+  text-align: left;
 }
 
 .main-title div {
@@ -30,15 +30,47 @@
 
 section {
   color: var(--secondary-color);
+  margin: 0;
+  padding: 4em 0;
 }
 
 section div {
   width: initial;
 }
 
+section h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.6em;
+}
+
+section h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--error-color);
+  font-size: var(--small-size);
+}
+
+.pourquoi-nous h3 {
+  color: var(--accent-color);
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.our-service {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-service__img {
+  order: 1;
+}
+
+.our-service__text {
+  order: 2;
 }
 
 .tech-item {
