@@ -14,7 +14,6 @@
 
 .container {
   max-width: 1200px;
-  border: 2px solid green;
 }
 
 .main-title {
@@ -135,9 +134,16 @@ section h5:nth-of-type(2n+1) {
   margin: 1em 0;
 }
 
-.service-card {
-  margin: 1em 0;
+section .metiers .card {
+  width: 70%;
+  margin: 1em auto;
 }
+
+.metiers {
+  margin-top: 2em;
+}
+
+
 
 @media only screen and (min-width: 480px) {
 
