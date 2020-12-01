@@ -17,12 +17,11 @@
 }
 
 .main-title {
-  padding-left: 10%;
-  padding-bottom: initial;
+  padding-left: 5%;
+  /* padding-bottom: initial; */
   padding-top: 3em;
   font-size: large;
   color: #fff;
-  text-align: left;
 }
 
 .main-title h1 {
@@ -41,6 +40,13 @@ section {
 
 section:nth-of-type(9) {
   background-image: linear-gradient(359.43deg, #ffbd59 -38.26%, rgba(255, 189, 89, 0) 26.6%);
+}
+
+section:nth-of-type(2),
+section:nth-of-type(4),
+section:nth-of-type(6),
+section:nth-of-type(8) {
+  background-color: #eee;
 }
 
 section div {
@@ -141,6 +147,20 @@ section .metiers .card {
 
 .metiers {
   margin-top: 2em;
+}
+
+.techs__titles {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.techs__titles h4 {
+  margin: .6em;
+}
+
+.footer {
+  border-top-left-radius: 0;
 }
 
 
