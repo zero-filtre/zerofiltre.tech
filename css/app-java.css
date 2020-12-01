@@ -26,10 +26,9 @@ p {
 
 .main-title {
   padding-left: 5%;
-  /* padding-bottom: initial; */
   padding-top: 3em;
   font-size: large;
-  color: #fff;
+  color: white;
 }
 
 .main-title h1 {
@@ -87,17 +86,15 @@ section h5 {
   font-size: 1.17em;
   line-height: 1.5em;
   margin: 1em 0;
-  color: #fff;
-  border-radius: 5px;
 }
 
-section h5:nth-of-type(2n) {
+/* section h5:nth-of-type(2n) {
   background-color: var(--accent-color);
 }
 
 section h5:nth-of-type(2n+1) {
   background-color: var(--primary-color);
-}
+} */
 
 .img-fluid {
   max-width: 100%;
@@ -125,7 +122,7 @@ section h5:nth-of-type(2n+1) {
   display: flex;
   align-items: center;
   text-align: left;
-  border: 2px solid #fff;
+  border: 2px solid white;
   border-radius: 5px;
   padding: 0.5em 4em 0.5em 0.8em;
   margin: 1em auto;
@@ -171,6 +168,29 @@ section .metiers .card {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+.realistions .card {
+  padding: 1.5em;
+  width: 70%;
+  margin: 1em auto;
+  color: white;
+}
+
+.realistions .card:nth-child(1) {
+  background-color: var(--accent-color);
+}
+
+.realistions .card:nth-child(2) {
+  background-color: var(--secondary-color)
+}
+
+.realistions .card:nth-child(3) {
+  background-color: var(--primary-color);
+}
+
+/* .realistions .card:nth-child(2n+1) {
+  background-color: var(--accent-color);
+} */
 
 .footer {
   border-top-left-radius: 0;
