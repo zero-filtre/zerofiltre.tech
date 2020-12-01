@@ -93,14 +93,6 @@ section h5 {
   margin: 1em 0;
 }
 
-/* section h5:nth-of-type(2n) {
-  background-color: var(--accent-color);
-}
-
-section h5:nth-of-type(2n+1) {
-  background-color: var(--primary-color);
-} */
-
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -158,6 +150,43 @@ section h5:nth-of-type(2n+1) {
 
 .nos-techs {
   margin-top: 3em;
+}
+
+.our-approach {
+  font-weight: 900;
+}
+
+.our-approach .card {
+  padding: 2em;
+  margin: 1.5em;
+}
+
+.our-approach .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  height: 5em;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 100%;
+}
+
+.our-approach .etape1 .number {
+  background-color: var(--primary-color);
+}
+
+.our-approach .etape2 .number {
+  background-color: var(--secondary-color);
+}
+
+.our-approach .etape3 .number {
+  background-color: var(--accent-color);
+}
+
+.our-approach .number h1 {
+  color: white;
+  font-weight: 900;
 }
 
 .metiers {
