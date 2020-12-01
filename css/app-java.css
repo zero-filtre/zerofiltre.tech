@@ -152,6 +152,75 @@ section h5 {
   margin-top: 3em;
 }
 
+.pourquoi-nous {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pourquoi-nous .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin: .5em;
+}
+
+
+/**************/
+.pourquoi-nous .card {
+  transition: all ease-out 500ms;
+  min-height: 15em;
+}
+
+.pourquoi-nous .card__img {
+  max-width: 100%;
+  display: block;
+  -webkit-transition: opacity ease-out 250ms;
+  transition: opacity ease-out 250ms;
+}
+
+.pourquoi-nous .card:hover {
+  background-color: var(--primary-color);
+}
+
+.pourquoi-nous .card:hover .card__img {
+  opacity: 0;
+}
+
+.pourquoi-nous .card:hover .card__body {
+  opacity: 1;
+  display: block;
+}
+
+.pourquoi-nous .card:hover .card__text {
+  top: 35%;
+  margin-top: 2em;
+}
+
+.pourquoi-nous .card__text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity ease-out 250ms;
+  transition: all ease-out 500ms;
+}
+
+.pourquoi-nous .card__body {
+  opacity: 0;
+  font-size: .6em;
+  display: none;
+}
+
+.pourquoi-nous .card__title {
+  margin-bottom: 0;
+  opacity: 1;
+  font-size: var(--regular-size);
+}
+/**************/
+
 .our-approach {
   font-weight: 900;
 }
