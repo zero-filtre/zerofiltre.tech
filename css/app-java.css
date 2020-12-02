@@ -126,12 +126,34 @@ section h5 {
 /*******END*******/
 
 
+/****MISSIONS*******/
+
+.missions {
+
+}
+
+.mission__card {
+  /* background: #fff; */
+  /* margin: 10px; */
+  /* padding: 30px;
+  margin-bottom: 0; */
+  /* height: 450px; */
+  height: 20em;
+  box-shadow: #ddd 0 0 11px;
+  overflow-y: auto;
+}
+
+/********END***********/
+
+
 /*****NOS-TECHS*****/
 
 .techs__titles {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
+  justify-content: center;
+  letter-spacing: -.07em;
 }
 
 .techs__titles li {
@@ -165,7 +187,7 @@ section h5 {
 }
 
 .active {
-  color: var(--accent-color);
+  color: var(--primary-color-500);
   list-style-type: initial;
   list-style-position: inside;
 }
