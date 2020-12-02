@@ -157,27 +157,22 @@ section h5 {
   flex-wrap: wrap;
 }
 
+/**************/
 .pourquoi-nous .card {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
   margin: .5em;
-}
-
-
-/**************/
-.pourquoi-nous .card {
-  transition: all ease-out 500ms;
+  transition: all ease-out 300ms;
   min-height: 15em;
+  flex-basis: 36%;
 }
 
 .pourquoi-nous .card__img {
   max-width: 100%;
   display: block;
-  -webkit-transition: opacity ease-out 250ms;
-  transition: opacity ease-out 250ms;
+  transition: opacity ease-out 300ms;
 }
 
 .pourquoi-nous .card:hover {
@@ -188,15 +183,20 @@ section h5 {
   opacity: 0;
 }
 
-.pourquoi-nous .card:hover .card__body {
-  opacity: 1;
-  display: block;
-}
-
 .pourquoi-nous .card:hover .card__text {
   top: 35%;
   margin-top: 2em;
+  color: white;
+  width: fit-content;
 }
+
+.pourquoi-nous .card:hover .card__body {
+  opacity: 1;
+  display: block;
+  overflow: hidden;
+  margin-top: .5em;
+}
+
 
 .pourquoi-nous .card__text {
   position: absolute;
@@ -204,14 +204,7 @@ section h5 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: opacity ease-out 250ms;
-  transition: all ease-out 500ms;
-}
-
-.pourquoi-nous .card__body {
-  opacity: 0;
-  font-size: .6em;
-  display: none;
+  transition: all ease-out 300ms;
 }
 
 .pourquoi-nous .card__title {
@@ -219,6 +212,15 @@ section h5 {
   opacity: 1;
   font-size: var(--regular-size);
 }
+
+.pourquoi-nous .card__body {
+  opacity: 0;
+  font-size: .75em;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+}
+
 /**************/
 
 .our-approach {
