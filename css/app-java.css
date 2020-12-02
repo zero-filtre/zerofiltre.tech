@@ -12,6 +12,9 @@
   --title-size: 1.3em
 }
 
+
+/*****GENERAL RULES*****/
+
 .container {
   max-width: 1200px;
 }
@@ -98,6 +101,11 @@ section h5 {
   height: auto;
 }
 
+/*****END*****/
+
+
+/******OUR-SERVICES*******/
+
 .our-service,
 .notre-equipe {
   display: flex;
@@ -114,6 +122,11 @@ section h5 {
 .notre-equipe__text {
   order: 2;
 }
+
+/*******END*******/
+
+
+/*****NOS-TECHS*****/
 
 .tech-item {
   display: flex;
@@ -152,12 +165,16 @@ section h5 {
   margin-top: 3em;
 }
 
+/*******END*******/
+
+
+/******POURQUOI-NOUS********/
+
 .pourquoi-nous {
   display: flex;
   flex-wrap: wrap;
 }
 
-/**************/
 .pourquoi-nous .card {
   position: relative;
   display: flex;
@@ -166,13 +183,7 @@ section h5 {
   margin: .5em;
   transition: all ease-out 300ms;
   min-height: 15em;
-  flex-basis: 36%;
-}
-
-.pourquoi-nous .card__img {
-  max-width: 100%;
-  display: block;
-  transition: opacity ease-out 300ms;
+  flex-basis: calc(50% - 2.8em);
 }
 
 .pourquoi-nous .card:hover {
@@ -197,6 +208,12 @@ section h5 {
   margin-top: .5em;
 }
 
+.pourquoi-nous .card__img {
+  max-width: 100%;
+  display: block;
+  margin-top: 2em;
+  transition: opacity ease-out 300ms;
+}
 
 .pourquoi-nous .card__text {
   position: absolute;
@@ -205,6 +222,7 @@ section h5 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   transition: all ease-out 300ms;
+  padding: 0 .4em;
 }
 
 .pourquoi-nous .card__title {
@@ -221,7 +239,10 @@ section h5 {
   width: 100%;
 }
 
-/**************/
+/******END********/
+
+
+/******OUR APPROACH*******/
 
 .our-approach {
   font-weight: 900;
@@ -260,6 +281,11 @@ section h5 {
   font-weight: 900;
 }
 
+/*********END*******/
+
+
+/*******METIERS*******/
+
 .metiers {
   margin-top: 2em;
 }
@@ -276,13 +302,17 @@ section .metiers .card {
   border-right: 10px solid #ccc;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  pointer-events: none;
 }
 
 section .metiers .card p {
   text-align: left;
   margin-left: 10%;
 }
+
+/*******END******/
+
+
+/******REALISATIONS******/
 
 .realistions .card {
   padding: 1.5em;
@@ -307,9 +337,8 @@ section .metiers .card p {
   background-color: var(--primary-color);
 }
 
-/* .realistions .card:nth-child(2n+1) {
-  background-color: var(--accent-color);
-} */
+/********END*******/
+
 
 .footer {
   border-top-left-radius: 0;
