@@ -128,41 +128,46 @@ section h5 {
 
 /*****NOS-TECHS*****/
 
-.tech-item {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 0.5em 4em 0.5em 0.8em;
-  margin: 1em auto;
-  font-size: var(--regular-size);
-  font-weight: bolder;
-  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  min-height: 4em;
-}
-
-.tech-item::before {
-  margin-right: 10%;
-}
-
-.technos div::before {
-  content: url(//unsplash.it/80/80);
-}
-
 .techs__titles {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
 }
 
-.techs__titles h4 {
+.techs__titles li {
   margin: .6em;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .nos-techs {
   margin-top: 3em;
+}
+
+.tech-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 70%;
+  height: 2em;
+  margin: 1em auto;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-left: 10px solid #ccc;
+}
+
+.tech-item img {
+  margin-right: 10%;
+}
+
+.d-none {
+  display: none;
+}
+
+.active {
+  color: var(--accent-color);
+  list-style-type: initial;
+  list-style-position: inside;
 }
 
 /*******END*******/
@@ -300,8 +305,6 @@ section .metiers .card {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-right: 10px solid #ccc;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 section .metiers .card p {
