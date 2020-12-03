@@ -18,14 +18,14 @@ function push(slideList) {
 }
 
 
- var folder = document.getElementById('doUnfold');
-    folder.addEventListener('click', e => {
-    hiddenAboutText.classList.toggle('unfold');
-    foldButton.classList.toggle('unfold');
-    unFoldButton.classList.toggle('unfold');
-    unfoldChevron.classList.toggle('up');
+var folder = document.getElementById('doUnfold');
 
-}); 
+    folder.addEventListener('click', e => {
+        hiddenAboutText.classList.toggle('unfold');
+        foldButton.classList.toggle('unfold');
+        unFoldButton.classList.toggle('unfold');
+        unfoldChevron.classList.toggle('up');
+    }); 
 
 /* var slide = setInterval(() => {
     if (!stop) {

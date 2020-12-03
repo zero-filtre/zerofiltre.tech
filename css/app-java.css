@@ -33,6 +33,8 @@ p {
   padding-top: 3em;
   font-size: large;
   color: white;
+  background-image: inherit !important;
+  background-color: inherit !important;
 }
 
 .main-title h1 {
@@ -50,20 +52,38 @@ section {
   padding: 2em 0;
 }
 
-section:nth-of-type(2),
+section:nth-child(odd) {
+  background: rgb(255, 189, 89);
+  background-image: linear-gradient(
+    326deg,
+    rgba(255, 189, 89, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+section:nth-child(even) {
+  background: rgb(255, 189, 89);
+  background-image: linear-gradient(
+    326deg,
+    rgba(255, 189, 89, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+/* section:nth-of-type(2),
 section:nth-of-type(4),
 section:nth-of-type(6),
 section:nth-of-type(8) {
   background-color: #ffbd5927;
-}
+} */
 
-section:nth-of-type(9) {
+/* section:nth-of-type(9) {
   background-image: linear-gradient(
     359.43deg,
     #ffbd59 -38.26%,
     rgba(255, 189, 89, 0) 26.6%
   );
-}
+} */
 
 section div {
   width: initial;
@@ -127,7 +147,6 @@ section h5 {
 
 /*******END*******/
 
-
 /****MISSIONS*******/
 
 .missions .card {
@@ -163,7 +182,7 @@ section h5 {
 .owl-dot span {
   height: 1em;
   width: 1em;
-  margin: 0 .5em;
+  margin: 0 0.5em;
   border-radius: 100%;
   border: 1px solid var(--secondary-color);
   display: block;
@@ -173,10 +192,9 @@ section h5 {
   outline: none;
 }
 
-.owl-dot.active span{
+.owl-dot.active span {
   background-color: var(--secondary-color);
 }
-
 
 /********END***********/
 
