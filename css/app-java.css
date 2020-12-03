@@ -132,7 +132,7 @@ section h5 {
 
 }
 
-.mission__card {
+.missions .card {
   /* background: #fff; */
   /* margin: 10px; */
   /* padding: 30px;
@@ -141,6 +141,10 @@ section h5 {
   height: 20em;
   box-shadow: #ddd 0 0 11px;
   overflow-y: auto;
+}
+
+.missions .card__img {
+  margin-top: 1em;
 }
 
 /********END***********/
