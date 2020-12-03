@@ -152,10 +152,9 @@ section h5 {
 .missions .card {
   margin: auto;
   height: 24em;
-  width: 85%;
+  width: 90%;
   box-shadow: #ddd 0 0 11px;
   overflow-y: auto;
-  border-radius: 4px;
 }
 
 .missions .card__img {
@@ -184,7 +183,7 @@ section h5 {
   width: 1em;
   margin: 0 0.5em;
   border-radius: 100%;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--primary-color-500);
   display: block;
 }
 
@@ -193,7 +192,7 @@ section h5 {
 }
 
 .owl-dot.active span {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color-500);
 }
 
 /********END***********/
