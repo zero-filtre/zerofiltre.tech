@@ -9,9 +9,8 @@
   /*Font sizes*/
   --regular-size: 0.9em;
   --small-size: 0.7em;
-  --title-size: 1.3em
+  --title-size: 1.3em;
 }
-
 
 /*****GENERAL RULES*****/
 
@@ -59,7 +58,11 @@ section:nth-of-type(8) {
 }
 
 section:nth-of-type(9) {
-  background-image: linear-gradient(359.43deg, #ffbd59 -38.26%, rgba(255, 189, 89, 0) 26.6%);
+  background-image: linear-gradient(
+    359.43deg,
+    #ffbd59 -38.26%,
+    rgba(255, 189, 89, 0) 26.6%
+  );
 }
 
 section div {
@@ -103,7 +106,6 @@ section h5 {
 
 /*****END*****/
 
-
 /******OUR-SERVICES*******/
 
 .our-service,
@@ -128,27 +130,55 @@ section h5 {
 
 /****MISSIONS*******/
 
-.missions {
-
-}
-
 .missions .card {
-  /* background: #fff; */
-  /* margin: 10px; */
-  /* padding: 30px;
-  margin-bottom: 0; */
-  /* height: 450px; */
-  height: 20em;
+  margin: auto;
+  height: 24em;
+  width: 85%;
   box-shadow: #ddd 0 0 11px;
   overflow-y: auto;
+  border-radius: 4px;
 }
 
 .missions .card__img {
   margin-top: 1em;
 }
 
-/********END***********/
+.owl-carousel .owl-item img {
+  width: auto;
+  display: initial;
+}
 
+.owl-nav {
+  visibility: hidden;
+}
+
+.owl-dots {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-dot span {
+  height: 1em;
+  width: 1em;
+  margin: 0 .5em;
+  border-radius: 100%;
+  border: 1px solid var(--secondary-color);
+  display: block;
+}
+
+.owl-dot:focus {
+  outline: none;
+}
+
+.owl-dot.active span{
+  background-color: var(--secondary-color);
+}
+
+
+/********END***********/
 
 /*****NOS-TECHS*****/
 
@@ -157,11 +187,11 @@ section h5 {
   flex-wrap: wrap;
   text-align: left;
   justify-content: center;
-  letter-spacing: -.07em;
+  letter-spacing: -0.07em;
 }
 
 .techs__titles li {
-  margin: .6em;
+  margin: 0.6em;
   font-weight: bold;
   cursor: pointer;
 }
@@ -198,7 +228,6 @@ section h5 {
 
 /*******END*******/
 
-
 /******POURQUOI-NOUS********/
 
 .pourquoi-nous {
@@ -211,7 +240,7 @@ section h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: .5em;
+  margin: 0.5em;
   transition: all ease-out 300ms;
   min-height: 15em;
   flex-basis: calc(50% - 2.8em);
@@ -236,7 +265,7 @@ section h5 {
   opacity: 1;
   display: block;
   overflow: hidden;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .pourquoi-nous .card__img {
@@ -251,9 +280,9 @@ section h5 {
   top: 70%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   transition: all ease-out 300ms;
-  padding: 0 .4em;
+  padding: 0 0.4em;
 }
 
 .pourquoi-nous .card__title {
@@ -264,14 +293,13 @@ section h5 {
 
 .pourquoi-nous .card__body {
   opacity: 0;
-  font-size: .75em;
+  font-size: 0.75em;
   display: none;
   overflow: hidden;
   width: 100%;
 }
 
 /******END********/
-
 
 /******OUR APPROACH*******/
 
@@ -314,7 +342,6 @@ section h5 {
 
 /*********END*******/
 
-
 /*******METIERS*******/
 
 .metiers {
@@ -339,7 +366,6 @@ section .metiers .card p {
 }
 
 /*******END******/
-
 
 /******REALISATIONS******/
 
@@ -368,25 +394,18 @@ section .metiers .card p {
 
 /********END*******/
 
-
 .footer {
   border-top-left-radius: 0;
 }
 
-
-
 @media only screen and (min-width: 480px) {
-
 }
 
 @media only screen and (min-width: 750px) {
-
 }
 
 @media only screen and (min-width: 1024px) {
-
 }
 
 @media only screen and (min-width: 1350px) {
-  
 }
