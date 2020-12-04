@@ -161,7 +161,7 @@ $('.owl-carousel').owlCarousel({
   autoplay: true,
   autoplayTimeout: 10000,
   autoplayHoverPause: true,
-  margin: 10,
+  margin: 15,
   nav: true,
   smartSpeed: 500,
   responsive: {
@@ -179,11 +179,8 @@ $('.owl-carousel').owlCarousel({
 
 
 const readMoreBtn = document.querySelector('.voir-plus')
-const hidedText = document.querySelector('.unfold')
-
+const hidedText = document.querySelectorAll('.unfold')
 
 readMoreBtn.addEventListener('click', function() {
-  console.log('clicked');
-  console.log(hidedText);
-  hidedText.classList.remove('.unfold')
+  hidedText.forEach(p => p.classList.toggle('unfold'))
 })
