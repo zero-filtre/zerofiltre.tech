@@ -234,6 +234,19 @@ section h5 {
   margin: 0.6em;
   font-weight: bold;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.techs__titles li::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 100%;
+  background-color: var(--primary-color-500);
+  margin-right: 0.5em;
 }
 
 .nos-techs {
@@ -260,10 +273,15 @@ section h5 {
   display: none;
 }
 
+.tablink.active li::before {
+  background-color: var(--primary-color-500);
+  visibility: visible;
+}
+
 .active {
   color: var(--primary-color-500);
-  list-style-type: initial;
-  list-style-position: inside;
+  /* list-style-type: initial;
+  list-style-position: inside; */
 }
 
 /*******END*******/
@@ -487,7 +505,7 @@ section h5 {
   .tech-item,
   .metiers .card {
     width: 20%;
-    margin: 1em;
+    margin: 1.5em;
   }
 
   .pourquoi-nous .card {
@@ -503,6 +521,19 @@ section h5 {
 @media only screen and (min-width: 1024px) {
   p {
     width: initial;
+  }
+
+  .techs__titles-wrapper {
+    width: calc(100vw - 7em);
+  }
+
+  .our-approach {
+    display: flex;
+  }
+
+  .our-approach .card {
+    flex: 1;
+    margin: 1em;
   }
 }
 
