@@ -50,8 +50,7 @@ main .services {
 
 .services section {
   margin: 0;
-  /* padding: 8% 0; */
-  padding: 20% 0;
+  padding: 15% 0;
 }
 
 .services .container {
@@ -114,12 +113,12 @@ main .services {
 .app >.container,
 .api >.container,
 .ui >.container  {
-  z-index: 5;
+  z-index: 1000;
 }
 
-.app::before,
-.api::before,
-.ui::before {
+.app::after,
+.api::after,
+.ui::after {
   content: '';
   position: absolute;
   top: 0;
@@ -130,19 +129,19 @@ main .services {
   background-position: center center;
   background-repeat: no-repeat;
   opacity: .1;
-  z-index: -1;
+  z-index: 5;
 }
 
-.app::before {
+.app::after {
   background-image: url(/images/app-bg.svg);
 }
 
-.api::before {
+.api::after {
   background-image: url(/images/api-bg.svg);
   background-position: bottom;
 }
 
-.ui::before {
+.ui::after {
   background-image: url(/images/ui-bg.svg);
 }
 
@@ -150,12 +149,14 @@ main .services {
   position: relative;
   color: #fff;
   background-color: rgba(5, 43, 93, 87);
+  z-index: -2;
 }
 
 .api {
   position: relative;
   background: rgba(255, 189, 89, 0.91);
   color: #052b5d;
+  z-index: -2;
 }
 
 .ui {
@@ -163,6 +164,7 @@ main .services {
   background: rgba(0, 194, 203, 0.95);
   color: #fff;
   border-bottom-right-radius: 20px;
+  z-index: -2;
 }
 
 @media only screen and (min-width: 480px) {
@@ -182,8 +184,7 @@ main .services {
   }
 
   .services section {
-    /* padding: 2%; */
-    padding: 20% 2%;
+    padding: 2%;
   }
 
   .services section h1 {
@@ -208,8 +209,7 @@ main .services {
   }
 
   .services section {
-    /* padding: 2% 2% 5% 2%; */
-    padding: 20% 2% 20% 2%;
+    padding: 2% 2% 5% 2%;
   }
 
   .container {

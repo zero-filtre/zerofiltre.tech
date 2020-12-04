@@ -71,21 +71,6 @@ section:nth-child(even) {
   );
 }
 
-/* section:nth-of-type(2),
-section:nth-of-type(4),
-section:nth-of-type(6),
-section:nth-of-type(8) {
-  background-color: #ffbd5927;
-} */
-
-/* section:nth-of-type(9) {
-  background-image: linear-gradient(
-    359.43deg,
-    #ffbd59 -38.26%,
-    rgba(255, 189, 89, 0) 26.6%
-  );
-} */
-
 section div {
   width: initial;
 }
@@ -144,9 +129,6 @@ section h5 {
 .our-service__text,
 .notre-equipe__text {
   order: 2;
-  /* height: fit-content;
-  max-height: 100vh; 
-  overflow: hidden;*/
 }
 
 .our-service__description {
@@ -154,9 +136,9 @@ section h5 {
 }
 
 .voir-plus {
-  margin: .5em auto;
+  margin: 0.5em auto;
   border: 1px solid var(--secondary-color);
-  padding: .5em;
+  padding: 0.5em;
   cursor: pointer;
   border-radius: 5px;
   display: block;
@@ -179,7 +161,7 @@ section h5 {
 .missions .card__title {
   width: 80%;
   margin: 1em auto;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 .missions .card__title::after {
@@ -469,7 +451,7 @@ section h5 {
   .tech-item,
   .metiers .card {
     width: 35%;
-    margin: .5em;
+    margin: 0.5em;
   }
 }
 
@@ -489,7 +471,6 @@ section h5 {
   .notre-equipe div {
     flex: 1;
   }
-
 
   .techs__titles {
     justify-content: left;
@@ -520,6 +501,9 @@ section h5 {
 }
 
 @media only screen and (min-width: 1024px) {
+  p {
+    width: initial;
+  }
 }
 
 @media only screen and (min-width: 1350px) {
