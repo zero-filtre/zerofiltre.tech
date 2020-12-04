@@ -7,25 +7,29 @@ let unfoldChevron = document.querySelector('.doUnfold img');
 let count = list.length;
 let stop = false;
 
+/*
 function push(slideList) {
-    /*   slideList[index].classList.remove('visible');
-      slideList[index].classList.add('invisible');
-      slideList[index++].classList.add('visible');
-      slideList[index].classList.remove('invisible');
-      if (index >= count){
-          index = 0;
-      } */
+     slideList[index].classList.remove('visible');
+    slideList[index].classList.add('invisible');
+    slideList[index++].classList.add('visible');
+    slideList[index].classList.remove('invisible');
+    if (index >= count){
+        index = 0;
+    }
 }
+*/
 
-
+/*
 var folder = document.getElementById('doUnfold');
 
-    folder.addEventListener('click', e => {
-        hiddenAboutText.classList.toggle('unfold');
-        foldButton.classList.toggle('unfold');
-        unFoldButton.classList.toggle('unfold');
-        unfoldChevron.classList.toggle('up');
-    }); 
+folder.addEventListener('click', e => {
+    hiddenAboutText.classList.toggle('unfold');
+    foldButton.classList.toggle('unfold');
+    unFoldButton.classList.toggle('unfold');
+    unfoldChevron.classList.toggle('up');
+}); 
+
+*/
 
 /* var slide = setInterval(() => {
     if (!stop) {
@@ -50,10 +54,9 @@ list.forEach(el => {
             console.log("Restart");
             stop = false;
         }, 15000);
-
-
     });
 });
+*/
 
 
 /* let slide = visible => {

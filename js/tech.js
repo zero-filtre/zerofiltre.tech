@@ -154,18 +154,6 @@ lifeCycleLink.addEventListener('click', () => {
 
 
 
-// $('.loop').owlCarousel({
-//   center: true,
-//   items: 2,
-//   loop: true,
-//   margin: 10,
-//   responsive: {
-//     600: {
-//       items: 4
-//     }
-//   }
-// });
-
 $('.owl-carousel').owlCarousel({
   loop: true,
   center: true,
@@ -189,11 +177,13 @@ $('.owl-carousel').owlCarousel({
   }
 })
 
-owl.on('mousewheel', '.owl-stage', function (e) {
-  if (e.deltaY > 0) {
-    owl.trigger('next.owl');
-  } else {
-    owl.trigger('prev.owl');
-  }
-  e.preventDefault();
-});
+
+const readMoreBtn = document.querySelector('.voir-plus')
+const hidedText = document.querySelector('.unfold')
+
+
+readMoreBtn.addEventListener('click', function() {
+  console.log('clicked');
+  console.log(hidedText);
+  hidedText.classList.remove('.unfold')
+})
