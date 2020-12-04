@@ -154,8 +154,8 @@ section h5 {
   height: 25em;
   width: 90%;
   box-shadow: #ddd 0 0 11px;
-  overflow-y: auto;
-  padding: 1em 0;
+  /* overflow-y: auto; */
+  padding: 1em;
 }
 
 .missions .card__title {
