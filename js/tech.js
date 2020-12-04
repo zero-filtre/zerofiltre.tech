@@ -168,17 +168,32 @@ lifeCycleLink.addEventListener('click', () => {
 
 $('.owl-carousel').owlCarousel({
   loop: true,
+  center: true,
+  // autoHeight: true,
+  autoplay: true,
+  autoplayTimeout: 10000,
+  autoplayHoverPause: true,
   margin: 10,
   nav: true,
+  smartSpeed: 500,
   responsive: {
     0: {
       items: 1
     },
     600: {
-      items: 3
+      items: 2
     },
     1000: {
-      items: 5
+      items: 3
     }
   }
 })
+
+owl.on('mousewheel', '.owl-stage', function (e) {
+  if (e.deltaY > 0) {
+    owl.trigger('next.owl');
+  } else {
+    owl.trigger('prev.owl');
+  }
+  e.preventDefault();
+});

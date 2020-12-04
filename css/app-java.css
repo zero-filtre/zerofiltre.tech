@@ -16,6 +16,7 @@
 
 .container {
   max-width: 1200px;
+  overflow: hidden;
 }
 
 p {
@@ -92,7 +93,7 @@ section div {
 section h1 {
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.6em;
+  line-height: 1.5em;
   font-size: 1.55em;
   color: var(--primary-color-500);
 }
@@ -101,7 +102,7 @@ section h2 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: var(--title-size);
-  line-height: 1.6em;
+  line-height: 1.5em;
   color: var(--primary-color-500);
 }
 
@@ -110,7 +111,7 @@ section h3 {
   text-transform: uppercase;
   color: var(--accent-color);
   font-size: var(--small-size);
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 
 section h5 {
@@ -151,10 +152,33 @@ section h5 {
 
 .missions .card {
   margin: auto;
-  height: 24em;
+  height: 25em;
   width: 90%;
   box-shadow: #ddd 0 0 11px;
   overflow-y: auto;
+  padding: 1em 0;
+}
+
+.missions .card__title {
+  width: 80%;
+  margin: 1em auto;
+  padding: .5em 0;
+}
+
+.missions .card__title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  display: block;
+  position: relative;
+  left: 42%;
+  top: 10px;
+  background: var(--primary-color);
+  border-radius: 100px;
+}
+
+.missions .card__body {
+  color: var(--secondary-color);
 }
 
 .missions .card__img {
@@ -172,7 +196,7 @@ section h5 {
 
 .owl-dots {
   width: fit-content;
-  margin: auto;
+  margin: 1em auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,7 +246,7 @@ section h5 {
   justify-content: start;
   align-items: center;
   width: 70%;
-  height: 2em;
+  height: 3em;
   margin: 1em auto;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -250,6 +274,7 @@ section h5 {
 .pourquoi-nous {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pourquoi-nous .card {
@@ -365,19 +390,19 @@ section h5 {
   margin-top: 2em;
 }
 
-section .metiers .card {
+.metiers .card {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70%;
-  height: 2em;
+  height: 3em;
   margin: 1em auto;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-right: 10px solid #ccc;
 }
 
-section .metiers .card p {
+.metiers .card p {
   text-align: left;
   margin-left: 10%;
 }
@@ -389,6 +414,7 @@ section .metiers .card p {
 .realistions .card {
   padding: 1.5em;
   width: 70%;
+  height: 10em;
   margin: 1em auto;
   color: white;
 }
@@ -416,9 +442,64 @@ section .metiers .card p {
 }
 
 @media only screen and (min-width: 480px) {
+  .technos,
+  .metiers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tech-item,
+  .metiers .card {
+    width: 35%;
+    margin: .5em;
+  }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 640px) {
+  section h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .our-service,
+  .notre-equipe {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .our-service div,
+  .notre-equipe div {
+    flex: 1;
+  }
+
+
+  .techs__titles {
+    justify-content: left;
+    letter-spacing: initial;
+  }
+
+  .technos,
+  .metiers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .tech-item,
+  .metiers .card {
+    width: 20%;
+    margin: 1em;
+  }
+
+  .pourquoi-nous .card {
+    flex-basis: calc(28% - 1em);
+  }
+
+  .our-approach .card {
+    width: 50%;
+    margin: 1em auto;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
