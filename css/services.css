@@ -50,7 +50,8 @@ main .services {
 
 .services section {
   margin: 0;
-  padding: 8% 0;
+  /* padding: 8% 0; */
+  padding: 20% 0;
 }
 
 .services .container {
@@ -181,7 +182,8 @@ main .services {
   }
 
   .services section {
-    padding: 2%;
+    /* padding: 2%; */
+    padding: 20% 2%;
   }
 
   .services section h1 {
@@ -206,7 +208,8 @@ main .services {
   }
 
   .services section {
-    padding: 2% 2% 5% 2%;
+    /* padding: 2% 2% 5% 2%; */
+    padding: 20% 2% 20% 2%;
   }
 
   .container {

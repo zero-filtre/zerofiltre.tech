@@ -144,6 +144,23 @@ section h5 {
 .our-service__text,
 .notre-equipe__text {
   order: 2;
+  /* height: fit-content;
+  max-height: 100vh; 
+  overflow: hidden;*/
+}
+
+.our-service__description {
+  margin: 1em auto;
+}
+
+.voir-plus {
+  margin: .5em auto;
+  border: 1px solid var(--secondary-color);
+  padding: .5em;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  width: 6em;
 }
 
 /*******END*******/
@@ -414,7 +431,7 @@ section h5 {
 .realistions .card {
   padding: 1.5em;
   width: 70%;
-  height: 10em;
+  min-height: 10em;
   margin: 1em auto;
   color: white;
 }
