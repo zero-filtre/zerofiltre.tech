@@ -182,5 +182,8 @@ const readMoreBtn = document.querySelector('.voir-plus')
 const hidedText = document.querySelectorAll('.unfold')
 
 readMoreBtn.addEventListener('click', function() {
-  hidedText.forEach(p => p.classList.toggle('unfold'))
+  hidedText.forEach(p => {
+    p.classList.toggle('unfold')
+    readMoreBtn.innerText = p.classList.contains('unfold') ? 'Voir plus' : 'Voir moins'
+  })
 })

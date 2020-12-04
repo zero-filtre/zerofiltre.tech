@@ -275,7 +275,7 @@ section h5 {
 
 .tablink.active li::before {
   background-color: var(--primary-color-500);
-  visibility: visible;
+  /* visibility: visible; */
 }
 
 .active {
