@@ -160,7 +160,7 @@ $('.owl-carousel').owlCarousel({
   autoplay: true,
   autoplayTimeout: 10000,
   autoplayHoverPause: true,
-  margin: 15,
+  margin: 5,
   nav: true,
   smartSpeed: 500,
   responsive: {
@@ -171,7 +171,7 @@ $('.owl-carousel').owlCarousel({
       items: 2
     },
     1000: {
-      items: 3
+      items: 4
     }
   }
 })
