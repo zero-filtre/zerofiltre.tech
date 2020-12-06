@@ -157,7 +157,6 @@ lifeCycleLink.addEventListener('click', () => {
 $('.owl-carousel').owlCarousel({
   loop: true,
   center: true,
-  // autoHeight: true,
   autoplay: true,
   autoplayTimeout: 10000,
   autoplayHoverPause: true,
