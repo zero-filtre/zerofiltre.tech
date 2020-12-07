@@ -54,6 +54,7 @@ main .services {
 }
 
 .services .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -112,8 +113,8 @@ main .services {
 
 .app .container,
 .api .container,
-.ui .container  {
-  z-index: 1;
+.ui .container {
+  z-index: 1000;
 }
 
 .app::after,
