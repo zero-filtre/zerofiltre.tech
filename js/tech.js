@@ -26,78 +26,178 @@ lifecycleContent.classList.add('lifeCycle')
 
 initialContent.innerHTML = `
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              <div>Java</div>
+               <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Java</h4>
+              </div>
             </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Spring
+              <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Spring</h4>
+              </div>
             </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Spring-boot
+               <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Spring-boot</h4>
+              </div>
             </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Spring-data
+               <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Spring-data</h4>
+              </div>
             </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Hibernate
+              <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Hibernate</h4>
+              </div>
             </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Spring-cloud
+              <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Spring-Cloud</h4>
+              </div>
             </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Kafka
+               <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Kafka</h4>
+              </div>
             </div>`
 
 dbContent.innerHTML = `
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              MongoDB
+               <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>MongoDB</h4>
+              </div>
             </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              MySQL
+               <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>MySQL</h4>
+              </div>
             </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              PostgreSQL
+               <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>PostgreSQL</h4>
+              </div>
             </div>`
 
 toolsContent.innerHTML = `
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Maven</div>
+               <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Maven</h4>
+              </div>
+            </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Sonar</div>
+              <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Sonar</h4>
+              </div>
+            </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Docker</div>
+               <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Docker</h4>
+              </div>
+            </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Kubernetes</div>
+               <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Kubernetes</h4>
+              </div>
+            </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Jenkins</div>
+              <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Jenins</h4>
+              </div>
+            </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Gitlab-ci</div>`
+               <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Gitlab-ci</h4>
+              </div>
+            </div>`
 
 lifecycleContent.innerHTML = `
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Git</div>
+              <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Git</h4>
+              </div>
+            </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Github</div>
+             <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Github</h4>
+              </div>
+            </div>
+
             <div class="card tech-item">
-              <img src="//unsplash.it/50/50" class="img-fluid" alt="">
-              Gitlab</div>`
+              <div>
+                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Gitlab</h4>
+              </div>
+            </div>`
 
 
 
@@ -180,7 +280,7 @@ $('.owl-carousel').owlCarousel({
 const readMoreBtn = document.querySelector('.voir-plus')
 const hidedText = document.querySelectorAll('.unfold')
 
-readMoreBtn.addEventListener('click', function() {
+readMoreBtn.addEventListener('click', function () {
   hidedText.forEach(p => {
     p.classList.toggle('unfold')
     readMoreBtn.innerText = p.classList.contains('unfold') ? 'Voir plus' : 'Voir moins'
