@@ -110,10 +110,10 @@ main .services {
   border-color: var(--secondary-color);
 }
 
-.app >.container,
-.api >.container,
-.ui >.container  {
-  z-index: 1000;
+.app .container,
+.api .container,
+.ui .container  {
+  z-index: 1;
 }
 
 .app::after,
@@ -128,12 +128,11 @@ main .services {
   background-size: 80%;
   background-repeat: no-repeat;
   opacity: .1;
-  z-index: 5;
 }
 
 .app::after {
   background-image: url(/images/app-bg.svg);
-  background-position: -100% 20%;
+  background-position: -120% 10%;
 }
 
 .api::after {
@@ -150,14 +149,12 @@ main .services {
   position: relative;
   color: #fff;
   background-color: rgba(5, 43, 93, 87);
-  z-index: -2;
 }
 
 .api {
   position: relative;
   background: rgba(255, 189, 89, 0.91);
   color: #052b5d;
-  z-index: -2;
 }
 
 .ui {
@@ -165,7 +162,6 @@ main .services {
   background: rgba(0, 194, 203, 0.95);
   color: #fff;
   border-bottom-right-radius: 20px;
-  z-index: -2;
 }
 
 @media only screen and (min-width: 480px) {
