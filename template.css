@@ -1,18 +1,16 @@
-:root {
-  /*Colors */
+/* :root {
   --primary-color: #00c2cb;
   --primary-color-500: #15b2bc;
   --secondary-color: #052b5d;
   --accent-color: #fdbc5a;
   --error-color: #f55f44;
 
-  /*Font sizes*/
   --regular-size: 0.9em;
   --small-size: 0.7em;
   --title-size: 1.3em
-}
+} */
 
-@media only screen and (min-width: 480px) {
+/* @media only screen and (min-width: 480px) {
 
 }
 
@@ -26,4 +24,4 @@
 
 @media only screen and (min-width: 1350px) {
   
-}
+} */
