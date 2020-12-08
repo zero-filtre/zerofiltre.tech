@@ -279,10 +279,39 @@ $('.owl-carousel').owlCarousel({
 
 const readMoreBtn = document.querySelector('.voir-plus')
 const hidedText = document.querySelectorAll('.unfold')
+const serviceText = document.querySelector('.text-fold')
+
+const text = document.createElement('div')
+text.className = 'wrap_text'
+
+text.innerHTML = ` <p class="our-service__description">Zerofiltre a pour objectif de vous accompagner,
+              particuliers, moyennes
+              et petites entreprises dans ce processus, en vous
+              fournissant des applications en JAVA, compatibles pour toutes plateformes, qui pourront évoluer avec la
+              taille de votre
+              entreprise, avec un rapport qualité/prix toujours meilleur.</p>
+            <p class="our-service__description">Nous nous améliorons en continu afin de fournir aux clients
+              mieux qu'ils
+              ne le souhaitent. Cependant, Le langage JAVA
+              utilise une méthodologie assez bien élaborée qui nécessite des années d’expériences et c’est exactement ce
+              dont nous
+              disposons.
+            </p>`
+            
 
 readMoreBtn.addEventListener('click', function () {
-  hidedText.forEach(p => {
-    p.classList.toggle('unfold')
-    readMoreBtn.innerText = p.classList.contains('unfold') ? 'Voir plus' : 'Voir moins'
-  })
+
+  if (text.classList.contains('wrap_text')) {
+    text.classList.remove('wrap_text')
+    text.classList.add('expand_text')
+    serviceText.appendChild(text)
+    readMoreBtn.innerText = 'Voir moins'
+  }
+  else {
+    text.classList.remove('expand_text')
+    text.classList.add('wrap_text')
+    serviceText.removeChild(text)
+    readMoreBtn.innerText = 'Voir plus'
+  }
+
 })
