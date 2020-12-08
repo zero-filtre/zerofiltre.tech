@@ -284,7 +284,7 @@ const serviceText = document.querySelector('.text-fold')
 const text = document.createElement('div')
 text.className = 'wrap_text'
 
-text.innerHTML = ` <p class="our-service__description">Zerofiltre a pour objectif de vous accompagner,
+text.innerHTML = `<p class="our-service__description">Zerofiltre a pour objectif de vous accompagner,
               particuliers, moyennes
               et petites entreprises dans ce processus, en vous
               fournissant des applications en JAVA, compatibles pour toutes plateformes, qui pourront évoluer avec la
