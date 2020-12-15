@@ -15,6 +15,11 @@
 
 /*GENERAL RULES*/
 
+*, *::after, *::before {
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,7 +37,6 @@ p,
 blockquote {
     font-size: var(--regular-size);
     line-height: 1.6em;
-    text-align: justify;
     font-weight: lighter;
 }
 
@@ -108,8 +112,8 @@ footer .container {
     width: 130px;
 }
 
-section {
-    margin: 20% 0 5%;
+.page-title {
+    margin: 5% 0;
 }
 
 header {
@@ -222,11 +226,6 @@ nav ul li:nth-of-type(5) a img {
         margin: 0;
     }
 
-    .subhead {
-        font-size: 1.1em;
-        margin-bottom: 12%;
-    }
-
     .rounded-button {
         margin: 10% 33%;
     }
@@ -258,6 +257,12 @@ nav ul li:nth-of-type(5) a img {
         margin: 0 auto;
         padding-top: 2%;
         padding-bottom: 6.5%;
+    }
+
+    .green-container .container {
+        margin: 0 auto;
+        padding-top: 2%;
+        padding-bottom: 4%;
     }
 
     .show-desktop {
@@ -323,6 +328,10 @@ nav ul li:nth-of-type(5) a img {
 
     .useful-links div {
         width: 30%;
+    }
+
+    .contact {
+        text-align: left;
     }
 
     .footer .yellow-text {

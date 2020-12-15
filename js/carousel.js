@@ -16,7 +16,9 @@ if (folder) {
 
 backToTopBtn = document.getElementById("back-to-top");
 window.onscroll = () => {
-    scrollFunction();
+    if (backToTopBtn) {
+        scrollFunction();
+    }
 }
 
 function scrollFunction() {
