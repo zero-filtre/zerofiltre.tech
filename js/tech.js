@@ -1,4 +1,4 @@
-const techsBlock = document.querySelector('.nos-techs')
+const techsBlock = document.querySelector('.our-techs')
 const tabLinks = document.querySelectorAll('.tablink');
 
 
@@ -277,7 +277,7 @@ $('.owl-carousel').owlCarousel({
 })
 
 
-const readMoreBtn = document.querySelector('.voir-plus')
+/*const readMoreBtn = document.querySelector('.voir-plus')
 const hidedText = document.querySelectorAll('.unfold')
 const serviceText = document.querySelector('.text-fold')
 
@@ -315,3 +315,4 @@ readMoreBtn.addEventListener('click', function () {
   }
 
 })
+*/
