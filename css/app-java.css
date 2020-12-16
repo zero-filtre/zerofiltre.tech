@@ -10,3 +10,146 @@
     --regular-size: 0.9em;
     --small-size: 0.7em;
 }
+
+/**GENERAL RULES**/
+section {
+    border: 3px solid purple;
+    margin: 1em auto;
+}
+
+.container {
+    padding: 5%;
+    border: 2px solid green;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    margin: .5em;
+    padding: 2%;
+    overflow: hidden;
+}
+/**END**/
+
+/**HEADER**/
+.green-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: 70%;
+    background-image: url(/images/app-bg.svg);
+    background-position: 100% 42%;
+    background-repeat: no-repeat;
+    opacity: .15;
+}
+/**END**/
+
+/**OUR SERVICES**/
+.our-service__box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5%;
+    border: 2px solid black;
+}
+
+.our-service__text,
+.our-service__img {
+    flex: 1;
+    border: 2px solid blue;
+}
+
+.our-service__title {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    color: var(--primary-color);
+}
+/**END**/
+
+/**OUR MISSION**/
+#our-mission {
+    background-color: #FFFAF4;
+}
+
+.missions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.our-mission__title {
+    text-align: center;
+}
+
+.mission {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 20em;
+    text-align: center;
+    transition: all ease-out 500ms;
+}
+
+.mission:hover {
+    background-color: var(--secondary-color);
+}
+
+.mission:hover .card__img {
+    opacity: 0;
+  }
+  
+.mission:hover .card__text {
+    top: 35%;
+    margin-top: 2em;
+    color: white;
+    width: fit-content;
+    padding: 0 0.4em;
+  }
+  
+.mission:hover .card__body {
+    opacity: 1;
+    display: block;
+    margin-top: 0.5em;
+}
+
+.mission:hover .card__title {
+    opacity: 0;
+}
+
+.missions .card__img {
+    max-width: 100%;
+    display: block;
+    margin-top: 2em;
+    transition: opacity ease-out 300ms;
+  }
+  
+.missions .card__text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all ease-out 500ms;
+}
+  
+  .missions .card__title {
+    margin-bottom: 0;
+    opacity: 1;
+    font-size: var(--regular-size);
+  }
+  
+  .missions .card__body {
+    opacity: 0;
+    font-size: 0.75em;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+  }
+
+/**END**/
+
