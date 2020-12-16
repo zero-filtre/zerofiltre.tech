@@ -27,6 +27,7 @@ html {
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
+    color: var(--secondary-color);
 }
 
 h1 {
@@ -93,19 +94,18 @@ ul {
 /***HEADER***/
 .green-container .container,
 footer .container {
+    position: relative;
     text-align: center;
     padding: 5%;
+    z-index: 1000;
 }
 
 .green-container {
+    position: relative;
     color: white;
-    background-color: #057c86;
-    background-image: linear-gradient(155.64deg, #057c86 39.12%, var(--primary-color) 75.61%);
     border-radius: 20px;
-}
-
-.green-container p {
-    text-align: inherit;
+    background: rgb(5,124,134);
+    background: linear-gradient(159deg, rgba(5,124,134,1) 0%, rgba(5,125,135,0.7442942415730337) 1%, rgba(5,125,135,1) 51%);
 }
 
 .logo {
@@ -113,7 +113,6 @@ footer .container {
 }
 
 header {
-    /* background-color: #ccc; */
     border-bottom: .5em solid white;
     box-shadow: 0px 10px 10px -5px rgba(226,226,226,1);
     -webkit-box-shadow: 0px 10px 10px -5px rgba(226,226,226,1);
@@ -126,6 +125,7 @@ header .container {
     align-items: center;
     padding: .5% 2% 0 2%;
 }
+
 nav ul {
     position: fixed;
     width: 60%;
