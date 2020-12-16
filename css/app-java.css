@@ -13,13 +13,13 @@
 
 /**GENERAL RULES**/
 section {
-    border: 3px solid purple;
-    margin: 1em auto;
+    /* border: 3px solid purple;
+    margin: 1em auto; */
 }
 
 .container {
-    padding: 5%;
-    border: 2px solid green;
+    padding: 5% 8%;
+    /* border: 2px solid green; */
 }
 
 .card {
@@ -53,13 +53,13 @@ section {
     justify-content: center;
     align-items: flex-end;
     gap: 5%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .our-service__text,
 .our-service__img {
     flex: 1;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .our-service__title {
