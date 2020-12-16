@@ -97,7 +97,7 @@ footer .container {
     position: relative;
     text-align: center;
     padding: 5%;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
 .green-container {
@@ -123,7 +123,8 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 2% .5% 2%;
+    padding: 4%;
+    background: linear-gradient(159deg, rgba(5,124,134,1) 0%, rgba(5,125,135,0.7442942415730337) 1%, rgba(5,125,135,1) 51%);
 }
 
 nav ul {
@@ -249,6 +250,20 @@ header nav li {
     }
 
     /**HEADER**/
+    header {
+        border-bottom: .5em solid white;
+        box-shadow: 0px 10px 10px -5px rgba(226,226,226,1);
+        -webkit-box-shadow: 0px 10px 10px -5px rgba(226,226,226,1);
+        -moz-box-shadow: 0px 10px 10px -5px rgba(226,226,226,1);
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 2% .5% 2%;
+    }
+
     nav ul {
         width: 50%;
     }
