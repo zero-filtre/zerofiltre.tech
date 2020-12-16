@@ -123,7 +123,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5% 2% 0 2%;
+    padding: 1% 2% .5% 2%;
 }
 
 nav ul {

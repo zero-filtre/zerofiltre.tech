@@ -22,8 +22,13 @@ section {
     /* border: 2px solid green; */
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 .card {
-    background-color: white;
+    background-color: #fff;
     border-radius: 10px;
     margin: .5em;
     padding: 2%;
@@ -39,8 +44,8 @@ section {
     right: 0;
     left: 0;
     bottom: 0;
-    background-size: 70%;
-    background-image: url(/images/app-bg.svg);
+    background-size: cover;
+    background-image: url(/images/java-landing-illustration.svg);
     background-position: 100% 42%;
     background-repeat: no-repeat;
     opacity: .15;
@@ -51,15 +56,13 @@ section {
 .our-service__box {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     gap: 5%;
-    /* border: 2px solid black; */
 }
 
 .our-service__text,
 .our-service__img {
     flex: 1;
-    /* border: 2px solid blue; */
 }
 
 .our-service__title {
@@ -71,7 +74,7 @@ section {
 
 /**OUR MISSION**/
 #our-mission {
-    background-color: #FFFAF4;
+    background-color: #FFF9F2;
 }
 
 .missions {
