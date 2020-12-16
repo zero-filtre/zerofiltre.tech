@@ -13,13 +13,11 @@
 
 /**GENERAL RULES**/
 section {
-    /* border: 3px solid purple;
-    margin: 1em auto; */
+    
 }
 
 .container {
     padding: 5% 8%;
-    /* border: 2px solid green; */
 }
 
 .img-fluid {
@@ -52,6 +50,11 @@ section {
 }
 /**END**/
 
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 640px) {
 /**OUR SERVICES**/
 .our-service__box {
     display: flex;
@@ -104,15 +107,15 @@ section {
 
 .mission:hover .card__img {
     opacity: 0;
-  }
+}
   
 .mission:hover .card__text {
-    top: 35%;
-    margin-top: 2em;
+    top: 40%;
+    /* margin-top: 2em; */
     color: white;
     width: fit-content;
     padding: 0 0.4em;
-  }
+}
   
 .mission:hover .card__body {
     opacity: 1;
@@ -155,4 +158,13 @@ section {
   }
 
 /**END**/
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1350px) {
+  
+}
 
