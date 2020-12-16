@@ -91,12 +91,12 @@ ul {
 /***END***/
 
 /***HEADER***/
-.green-container {
+/* .green-container {
     color: white;
     background-color: #057c86;
     background-image: linear-gradient(155.64deg, #057c86 39.12%, var(--primary-color) 75.61%);
     border-bottom-right-radius: 20px;
-}
+} */
 
 .green-container .container,
 footer .container {
@@ -112,14 +112,14 @@ footer .container {
     width: 130px;
 }
 
-.page-title {
+/* .page-title {
     margin: 5% 0;
-}
+} */
 
-header {
+/* header {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 nav ul {
     position: fixed;
@@ -259,11 +259,11 @@ nav ul li:nth-of-type(5) a img {
         padding-bottom: 6.5%;
     }
 
-    .green-container .container {
+    /* .green-container .container {
         margin: 0 auto;
         padding-top: 2%;
         padding-bottom: 4%;
-    }
+    } */
 
     .show-desktop {
         display: inline;
