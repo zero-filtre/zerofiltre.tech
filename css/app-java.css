@@ -31,6 +31,8 @@ section {
     margin: .5em;
     padding: 2%;
     overflow: hidden;
+    box-shadow: #ddd 0 0 11px;
+
 }
 /**END**/
 
@@ -49,6 +51,93 @@ section {
     opacity: .15;
 }
 /**END**/
+
+/**OUR MISSION**/
+#our-mission {
+    background-color: #FFF9F2;
+}
+
+#our-mission .container {
+    padding: 5% .5%;
+}
+
+.missions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.our-mission__title {
+    text-align: center;
+}
+
+.mission {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 20em;
+    text-align: center;
+    transition: all ease-out 500ms;
+}
+
+.mission:hover {
+    background-color: var(--secondary-color);
+}
+
+.mission:hover .card__img {
+    opacity: 0;
+}
+  
+.mission:hover .card__text {
+    top: 40%;
+    /* margin-top: 2em; */
+    color: white;
+    width: fit-content;
+    padding: 0 0.4em;
+}
+  
+.mission:hover .card__body {
+    opacity: 1;
+    display: block;
+    margin-top: 0.5em;
+}
+
+.mission:hover .card__title {
+    opacity: 0;
+}
+
+.missions .card__img {
+    max-width: 100%;
+    display: block;
+    margin-top: 2em;
+    transition: opacity ease-out 300ms;
+  }
+  
+.missions .card__text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all ease-out 500ms;
+}
+  
+  .missions .card__title {
+    margin-bottom: 0;
+    opacity: 1;
+    font-size: var(--regular-size);
+  }
+  
+  .missions .card__body {
+    opacity: 0;
+    font-size: 0.75em;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+  }
+  /**END**/
 
 @media only screen and (min-width: 480px) {
 
@@ -78,6 +167,10 @@ section {
 /**OUR MISSION**/
 #our-mission {
     background-color: #FFF9F2;
+}
+
+#our-mission .container {
+    padding: 5% 8%;
 }
 
 .missions {
