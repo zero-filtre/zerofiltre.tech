@@ -48,6 +48,7 @@ section {
     background-image: url(/images/java-landing-illustration.svg);
     background-position: 100% 42%;
     background-repeat: no-repeat;
+    border-radius: 20px;
     opacity: .15;
 }
 /**END**/
