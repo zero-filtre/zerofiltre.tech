@@ -92,6 +92,15 @@ ul {
 /***END***/
 
 /***HEADER***/
+.hero {
+    margin: 1.5% 1.5% 0 1.5%;
+}
+
+.hero p {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
 .green-container .container,
 footer .container {
     position: relative;
@@ -105,7 +114,7 @@ footer .container {
     color: white;
     border-radius: 20px;
     background: rgb(5,124,134);
-    background: linear-gradient(159deg, rgba(5,124,134,1) 0%, rgba(5,125,135,0.7442942415730337) 1%, rgba(5,125,135,1) 51%);
+    background: linear-gradient(107deg, #14A6AF 0%, #198B93CC 1%, #116D74 51%);
 }
 
 .logo {
@@ -113,10 +122,9 @@ footer .container {
 }
 
 header {
-    border-bottom: .5em solid white;
-    box-shadow: 0px 10px 10px -5px rgba(226,226,226,1);
-    -webkit-box-shadow: 0px 10px 10px -5px rgba(226,226,226,1);
-    -moz-box-shadow: 0px 10px 10px -5px rgba(226,226,226,1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header .container {
@@ -124,7 +132,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
     padding: 4%;
-    background: linear-gradient(159deg, rgba(5,124,134,1) 0%, rgba(5,125,135,0.7442942415730337) 1%, rgba(5,125,135,1) 51%);
+    /* background: linear-gradient(159deg, rgba(5,124,134,1) 0%, rgba(5,125,135,0.7442942415730337) 1%, rgba(5,125,135,1) 51%); */
 }
 
 nav ul {
@@ -190,15 +198,6 @@ header nav li {
     color: var(--secondary-color);
     font-weight: 600;
 }
-
-.page-title {
-    margin: 1.5%;
-}
-
-.page-title p {
-    margin-top: 3em;
-}
-
 /***END***/
 
 /***FOOTER***/
@@ -273,7 +272,7 @@ header nav li {
 
 @media only screen and (min-width: 750px) {
     .green-container .container {
-        padding: 15%;
+        padding: 5%;
     }
 
     .rounded-button {
@@ -287,6 +286,10 @@ header nav li {
 }
 
 @media only screen and (min-width: 1024px) {
+    .green-container .container {
+        z-index: 1000;
+    }
+    
     .footer .container {
         margin: 0 auto;
         padding-top: 2%;
