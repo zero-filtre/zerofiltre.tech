@@ -32,6 +32,7 @@ body {
 
 h1 {
     font-weight: bolder;
+    font-size: var(--regular-size);
 }
 
 p,
@@ -92,37 +93,12 @@ ul {
 /***END***/
 
 /***HEADER***/
-.hero {
-    margin: 1.5% 1.5% 0 1.5%;
-}
-
-.hero p {
-    margin-top: 2em;
-    margin-bottom: 0;
-}
-
-.green-container .container,
-footer .container {
-    position: relative;
-    text-align: center;
-    padding: 5%;
-    /* z-index: 1000; */
-}
-
-.green-container {
-    position: relative;
-    color: white;
-    border-radius: 20px;
-    background: rgb(5,124,134);
-    background: linear-gradient(107deg, #14A6AF 0%, #198B93CC 1%, #116D74 51%);
-}
-
 .logo {
     width: 130px;
 }
 
 header {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 10;
 }
@@ -198,6 +174,31 @@ header nav li {
     color: var(--secondary-color);
     font-weight: 600;
 }
+
+.hero {
+    margin: 0 4%;
+}
+
+.hero p {
+    margin: 0;
+    font-size: var(--small-size);
+}
+
+.green-container .container,
+footer .container {
+    position: relative;
+    text-align: center;
+    padding: 8% 5%;
+    /* z-index: 1000; */
+}
+
+.green-container {
+    position: relative;
+    color: white;
+    border-radius: 15px;
+    background: rgb(5,124,134);
+    background: linear-gradient(107deg, #14A6AF 0%, #198B93CC 1%, #116D74 51%);
+}
 /***END***/
 
 /***FOOTER***/
@@ -249,13 +250,6 @@ header nav li {
     }
 
     /**HEADER**/
-    header {
-        border-bottom: .5em solid white;
-        box-shadow: 0px 10px 10px -5px rgba(226,226,226,1);
-        -webkit-box-shadow: 0px 10px 10px -5px rgba(226,226,226,1);
-        -moz-box-shadow: 0px 10px 10px -5px rgba(226,226,226,1);
-    }
-    
     header .container {
         display: flex;
         justify-content: space-between;
@@ -286,6 +280,10 @@ header nav li {
 }
 
 @media only screen and (min-width: 1024px) {
+    .hero {
+        margin: 1.5% 1.5% 0 1.5%;
+    }
+
     .green-container .container {
         z-index: 1000;
     }
