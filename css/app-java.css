@@ -194,6 +194,41 @@ section {
   }
   /**END**/
 
+  /**OUR TECH**/
+  #technologies {
+      text-align: center;
+  }
+
+  #technologies p {
+      font-size: var(--small-size);
+  }
+
+  .techs__titles-box {
+    margin: 2em 0;
+  }
+
+  .techs__titles {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .tablink {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 0.6em .8em;
+      margin: .5em;
+      color: var(--primary-color);
+      box-shadow: #ddd 0 0 11px;
+      cursor: pointer;
+  }
+
+  .tablink.active {
+      background-color: var(--primary-color);
+      color: #fff;
+  }
+  
+  /**END**/
+
 @media only screen and (min-width: 480px) {
 
 }
