@@ -13,7 +13,8 @@ podTemplate(label: label, containers: [
         }
 
         withEnv(["api_image_tag=imzerofiltre/zerofiltretech:${env.BUILD_NUMBER}",
-                 "env_name=${env.BRANCH_NAME == 'main' ? 'dev' : 'dev'}"
+                 "env_name=${getEnvName(env.BRANCH_NAME)}"
+
         ]) {
             stage('Build and push API to docker registry') {
                 withCredentials([usernamePassword(credentialsId: 'DockerHubCredentials', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
@@ -27,6 +28,13 @@ podTemplate(label: label, containers: [
         }
     }
         }
+
+String getEnvName(String branchName) {
+    if ( branchName == 'main' ) {
+        return 'prod'
+    }
+    return (branchName == 'develop') ? 'uat' : 'dev'
+}
 
 def buildAndPush(dockerUser, dockerPassword) {
     container('docker') {
