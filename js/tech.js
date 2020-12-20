@@ -25,105 +25,63 @@ lifecycleContent.className = 'technos'
 lifecycleContent.classList.add('lifeCycle')
 
 initialContent.innerHTML = `
-<<<<<<< HEAD
             <div class="tech-item">
                <div>
                 <img src="./images/java-icon.svg" class="img-fluid" alt="">
-=======
-            <div class="card tech-item">
-               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
               </div>
               <div>
                 <h4>Java</h4>
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
               <div>
                 <img src="./images/spring-icon.svg" class="img-fluid" alt="">
-=======
-            <div class="card tech-item">
-              <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
               </div>
               <div>
                 <h4>Spring</h4>
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
                <div>
                 <img src="./images/spring-boot-icon.svg" class="img-fluid" alt="">
-=======
-            <div class="card tech-item">
-               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
               </div>
               <div>
                 <h4>Spring-boot</h4>
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
                <div>
                 <img src="./images/spring-data-icon.svg" class="img-fluid" alt="">
-=======
-            <div class="card tech-item">
-               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
               </div>
               <div>
                 <h4>Spring-data</h4>
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
-              <div>
+               <div>
                 <img src="./images/hibernate-icon.svg" class="img-fluid" alt="">
-=======
-            <div class="card tech-item">
-              <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
               </div>
               <div>
                 <h4>Hibernate</h4>
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
               <div>
                 <img src="./images/spring-cloud-icon.svg" class="img-fluid" alt="">
-=======
-            <div class="card tech-item">
-              <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
               </div>
               <div>
                 <h4>Spring-Cloud</h4>
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
               <div>
                 <img src="./images/kafka-icon.svg" class="img-fluid" alt="">
-=======
-            <div class="card tech-item">
-               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
               </div>
               <div>
                 <h4>Kafka</h4>
@@ -131,11 +89,7 @@ initialContent.innerHTML = `
             </div>`
 
 dbContent.innerHTML = `
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -144,11 +98,7 @@ dbContent.innerHTML = `
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -157,11 +107,7 @@ dbContent.innerHTML = `
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -171,11 +117,7 @@ dbContent.innerHTML = `
             </div>`
 
 toolsContent.innerHTML = `
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -184,11 +126,7 @@ toolsContent.innerHTML = `
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
               <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -197,11 +135,7 @@ toolsContent.innerHTML = `
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -210,11 +144,7 @@ toolsContent.innerHTML = `
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -223,11 +153,7 @@ toolsContent.innerHTML = `
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
               <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -236,11 +162,7 @@ toolsContent.innerHTML = `
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -250,11 +172,7 @@ toolsContent.innerHTML = `
             </div>`
 
 lifecycleContent.innerHTML = `
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
               <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -263,11 +181,7 @@ lifecycleContent.innerHTML = `
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
              <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -276,11 +190,7 @@ lifecycleContent.innerHTML = `
               </div>
             </div>
 
-<<<<<<< HEAD
             <div class="tech-item">
-=======
-            <div class="card tech-item">
->>>>>>> 15f967fdb74cb1a52d799d3edf5b0e82c4096c6f
               <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
