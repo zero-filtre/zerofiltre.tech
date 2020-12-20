@@ -125,6 +125,7 @@ section {
   text-align: center;
 }
 
+.why-us,
 .mission {
   display: flex;
   position: relative;
@@ -135,14 +136,17 @@ section {
   transition: all ease-out 500ms;
 }
 
+.why-us:hover,
 .mission:hover {
   background-color: var(--secondary-color);
 }
 
+.why-us:hover .card__img,
 .mission:hover .card__img {
   opacity: 0;
 }
 
+.why-us:hover .card__text,
 .mission:hover .card__text {
   top: 50%;
   color: white;
@@ -150,16 +154,19 @@ section {
   padding: 0 0.4em;
 }
 
+.why-us:hover .card__body,
 .mission:hover .card__body {
   opacity: 1;
   display: block;
   margin-top: 0.5em;
 }
 
+.why-us:hover .card__title,
 .mission:hover .card__title {
   opacity: 1;
 }
 
+.why-us .card__img,
 .missions .card__img {
   max-width: 100%;
   display: block;
@@ -167,6 +174,7 @@ section {
   transition: opacity ease-out 300ms;
 }
 
+.why-us .card__text,
 .missions .card__text {
   position: absolute;
   top: 70%;
@@ -176,6 +184,15 @@ section {
   transition: all ease-out 500ms;
 }
 
+.why-us .card__img {
+  margin-top: 3.5em;
+}
+
+.why-us .card__text {
+  top: 55%;
+}
+
+.why-us .card__title,
 .missions .card__title {
   margin-bottom: 0;
   opacity: 1;
@@ -183,6 +200,7 @@ section {
   line-height: 1.8em;
 }
 
+.why-us .card__body,
 .missions .card__body {
   opacity: 0;
   font-size: 0.75em;
@@ -254,7 +272,51 @@ section {
   font-weight: 600;
   text-align: center;
 }
+/**END**/
 
+/**OUR TEAM**/
+#our-team {
+  position: relative;
+  text-align: center;
+}
+
+#our-team::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 20px;
+  background-color: #EEF1F4;
+  z-index: -1;
+  border-radius: 0% 100% 0% 100% / 95% 0% 100% 10%;
+  transform-origin: center;
+}
+
+.our-team__img {
+  width: 70%;
+  margin: 1em auto;
+}
+/**END**/
+
+/**WHY US**/
+#why-us {
+  text-align: center;
+  background-image: url(/images/blue-bg.svg);
+  background-size: cover;
+}
+
+.why-us__box {
+  margin: 2em 0;
+}
+
+.why-us {
+  box-shadow: none;
+}
+
+#why-us h1 {
+  color: white;
+}
 /**END**/
 
 @media only screen and (min-width: 480px) {
@@ -340,6 +402,43 @@ section {
 
   .tech-item {
     flex-basis: auto;
+  }
+  /**END**/
+
+  /**OUR TEAM**/
+  #our-team::after {
+    border-radius: 0% 100% 0% 100% / 71% 0% 100% 29% ;
+  }
+
+  .our-team__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: initial;
+    gap: 5%;
+  }
+
+  .our-team__text,
+  .our-team__img {
+    flex: 1;
+  }
+
+  #our-team h1 {
+    font-size: 1.6em;
+  }
+  
+  .our-team__img {
+    width: 100%;
+    order: 2;
+  }
+  /**END**/
+  
+  /**WHY US**/
+  #why-us h1 {
+    text-align: center;
+    font-size: 1.6em;
+    width: 70%;
+    margin: auto;
   }
   /**END**/
 }
