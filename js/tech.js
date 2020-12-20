@@ -25,63 +25,63 @@ lifecycleContent.className = 'technos'
 lifecycleContent.classList.add('lifeCycle')
 
 initialContent.innerHTML = `
-            <div class="card tech-item">
+            <div class="tech-item">
                <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/java-icon.svg" class="img-fluid" alt="">
               </div>
               <div>
                 <h4>Java</h4>
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/spring-icon.svg" class="img-fluid" alt="">
               </div>
               <div>
                 <h4>Spring</h4>
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
                <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/spring-boot-icon.svg" class="img-fluid" alt="">
               </div>
               <div>
                 <h4>Spring-boot</h4>
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
                <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/spring-data-icon.svg" class="img-fluid" alt="">
               </div>
               <div>
                 <h4>Spring-data</h4>
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/hibernate-icon.svg" class="img-fluid" alt="">
               </div>
               <div>
                 <h4>Hibernate</h4>
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/spring-cloud-icon.svg" class="img-fluid" alt="">
               </div>
               <div>
                 <h4>Spring-Cloud</h4>
               </div>
             </div>
 
-            <div class="card tech-item">
-               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+            <div class="tech-item">
+              <div>
+                <img src="./images/kafka-icon.svg" class="img-fluid" alt="">
               </div>
               <div>
                 <h4>Kafka</h4>
@@ -89,7 +89,7 @@ initialContent.innerHTML = `
             </div>`
 
 dbContent.innerHTML = `
-            <div class="card tech-item">
+            <div class="tech-item">
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -98,7 +98,7 @@ dbContent.innerHTML = `
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -107,7 +107,7 @@ dbContent.innerHTML = `
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -117,7 +117,7 @@ dbContent.innerHTML = `
             </div>`
 
 toolsContent.innerHTML = `
-            <div class="card tech-item">
+            <div class="tech-item">
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -126,7 +126,7 @@ toolsContent.innerHTML = `
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
               <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -135,7 +135,7 @@ toolsContent.innerHTML = `
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -144,7 +144,7 @@ toolsContent.innerHTML = `
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -153,7 +153,7 @@ toolsContent.innerHTML = `
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
               <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -162,7 +162,7 @@ toolsContent.innerHTML = `
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
                <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -172,7 +172,7 @@ toolsContent.innerHTML = `
             </div>`
 
 lifecycleContent.innerHTML = `
-            <div class="card tech-item">
+            <div class="tech-item">
               <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -181,7 +181,7 @@ lifecycleContent.innerHTML = `
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
              <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
@@ -190,7 +190,7 @@ lifecycleContent.innerHTML = `
               </div>
             </div>
 
-            <div class="card tech-item">
+            <div class="tech-item">
               <div>
                 <img src="//unsplash.it/50/50" class="img-fluid" alt="">
               </div>
