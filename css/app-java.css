@@ -12,7 +12,9 @@
 }
 
 /**GENERAL RULES**/
+
 section {
+  overflow: hidden;
 }
 
 .container {
@@ -369,6 +371,32 @@ section {
 }
 /**END**/
 
+/**TRADES**/
+#trades {
+  text-align: center;
+}
+
+#trades .container {
+  padding: 5% 0;
+}
+
+.trades__desc {
+  padding: .5em;
+}
+
+.trades__box {
+  background-color: #F2FEFF;
+}
+
+.trades__img {
+  background-color: #E8E8E8;
+}
+
+.trades-items {
+  padding: 2em 0;
+}
+/**END**/
+
 @media only screen and (min-width: 480px) {
 }
 
@@ -540,6 +568,15 @@ section {
   .approach .number {
     margin-right: 10px;
     width: 15%;
+  }
+  /**END**/
+
+  /**TRADES**/
+  #trades {
+    text-align: initial;
+  }
+
+  .trades__box {
   }
   /**END**/
 }
