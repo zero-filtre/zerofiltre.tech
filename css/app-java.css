@@ -319,18 +319,60 @@ section {
 }
 /**END**/
 
+/**OUR APPROACH**/
+#our-approach {
+  text-align: center;
+  background-image: url(/images/our-approach-bg.svg);
+  background-size: cover;
+  background-position: 12%;
+}
+
+.our-approach__box {
+  position: relative;
+}
+
+.approach {
+  text-align: initial;
+  display: flex;
+  align-items: center;
+  margin: 2em 0;
+  font-weight: 600;
+}
+
+.approach-1 {
+  position: relative;
+  top: -4px;
+  left: 20px;
+}
+
+.approach-2 {
+  position: relative;
+  top: 0;
+  left: 40px;
+}
+
+.approach-3 {
+  position: relative;
+  top: 0;
+  left: 15px;
+}
+
+.approach .number {
+  margin-right: 10px;
+  width: 20%;
+}
+
+.approach img,
+.our-approach__img img {
+  width: 100%;
+  height: auto;
+}
+/**END**/
+
 @media only screen and (min-width: 480px) {
 }
 
 @media only screen and (min-width: 640px) {
-  .show-desktop {
-    display: block;
-  }
-
-  .hide-desktop {
-    display: none;
-  }
-
   .container {
     padding: 5% 8%;
   }
@@ -441,9 +483,75 @@ section {
     margin: auto;
   }
   /**END**/
+
+  /**OUR APPROACH**/
+  #our-approach {
+    text-align: center;
+    background-image: url(/images/our-approach-bg.svg);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: -5px ;
+  }
+
+  #our-approach h1 {
+    font-size: 1.6em;
+  }
+  
+  .our-approach__box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 5em 0;
+  }
+
+  .our-approach__steps,
+  .our-approach__img {
+    flex-basis: 50%;
+  }
+  
+  .approach {
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+    font-weight: 600;
+  }
+  
+  .approach-1 {
+    position: relative;
+    top: 0;
+    left: 2.5vw;
+  }
+  
+  .approach-2 {
+    position: relative;
+    top: 0;
+    left: 5vw;
+  }
+  
+  .approach-3 {
+    position: relative;
+    top: 0;
+    left: 2vw;
+  }
+  
+  .approach .number {
+    margin-right: 10px;
+    width: 15%;
+  }
+  /**END**/
 }
 
 @media only screen and (min-width: 1024px) {
+  .show-desktop {
+    display: block;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
   
 }
 
