@@ -98,17 +98,17 @@ ul {
 }
 
 header {
-    /* position: sticky; */
+    position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 10000;
+    background-color: #fff;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4%;
-    /* background: linear-gradient(159deg, rgba(5,124,134,1) 0%, rgba(5,125,135,0.7442942415730337) 1%, rgba(5,125,135,1) 51%); */
+    padding: 5%;
 }
 
 nav ul {
@@ -251,12 +251,15 @@ footer .container {
     }
 
     /**HEADER**/
+    header {
+        box-shadow: #ddd 0 0 11px;
+    }
+
     header .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1% 2% .5% 2%;
-        background: #fff;
+        padding: 1% 5%;
     }
 
     nav ul {

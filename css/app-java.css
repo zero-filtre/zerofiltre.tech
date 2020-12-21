@@ -30,6 +30,10 @@ section {
   display: none;
 }
 
+.hide-mobile-text {
+  display: none;
+}
+
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -112,6 +116,17 @@ section {
   margin: 1.5em 0;
   color: var(--primary-color);
 }
+
+.voir-plus {
+  color: white;
+  background-color: #00c2cb;
+  width: fit-content;
+  padding: .5em 1em;
+  margin: 1em auto;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+}
 /**END**/
 
 /**OUR MISSION**/
@@ -176,6 +191,10 @@ section {
   transition: opacity ease-out 300ms;
 }
 
+.missions .card__img {
+  width: 90px;
+}
+
 .why-us .card__text,
 .missions .card__text {
   position: absolute;
@@ -233,8 +252,8 @@ section {
 
 .tablink {
   background-color: #fff;
-  border-radius: 10px;
-  padding: 0.6em 0.8em;
+  border-radius: 20px;
+  padding: 0.6em 1em;
   margin: 0.5em;
   color: var(--primary-color);
   box-shadow: #ddd 0 0 11px;
@@ -249,7 +268,7 @@ section {
 .technos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
 }
 
 .tech-item {
@@ -326,7 +345,7 @@ section {
   text-align: center;
   background-image: url(/images/our-approach-bg.svg);
   background-size: cover;
-  background-position: 12%;
+  background-position: 12% 75%;
 }
 
 .our-approach__box {
@@ -390,10 +409,30 @@ section {
 
 .trades__img {
   background-color: #E8E8E8;
+  padding: 2em 0;
 }
 
 .trades-items {
-  padding: 2em 0;
+  padding: 2em 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: .5em;
+}
+
+.trade-item {
+  display: flex;
+  border: 1px solid #17A6AF;
+  align-items: center;
+  gap: .1em;
+  padding: .6em;
+  height: 2.5em;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.trade-item img {
+  width: 70%;
 }
 /**END**/
 
@@ -401,8 +440,16 @@ section {
 }
 
 @media only screen and (min-width: 640px) {
-  .container {
+  /* .container {
     padding: 5% 8%;
+  } */
+
+  .container {
+    padding: 5%;
+  }
+
+  .hide-mobile-text {
+    display: block;
   }
 
   /**HEADER**/
@@ -441,8 +488,12 @@ section {
     background-color: #fff9f2;
   }
 
-  #our-mission .container {
+  /* #our-mission .container {
     padding: 5% 8%;
+  } */
+
+  #our-mission .container {
+    padding: 5%;
   }
 
   .our-mission__title {
@@ -519,6 +570,7 @@ section {
     background-size: 95%;
     background-repeat: no-repeat;
     background-position: -5px ;
+    border: 2px solid green;
   }
 
   #our-approach h1 {
@@ -550,19 +602,19 @@ section {
   .approach-1 {
     position: relative;
     top: 0;
-    left: 2.5vw;
+    left: 5.5vw;
   }
   
   .approach-2 {
     position: relative;
     top: 0;
-    left: 5vw;
+    left: 8vw;
   }
   
   .approach-3 {
     position: relative;
     top: 0;
-    left: 2vw;
+    left: 5vw;
   }
   
   .approach .number {
@@ -574,9 +626,14 @@ section {
   /**TRADES**/
   #trades {
     text-align: initial;
+    border: 2px solid black;
   }
 
   .trades__box {
+  }
+
+  #trades .container {
+    padding: 5%;
   }
   /**END**/
 }

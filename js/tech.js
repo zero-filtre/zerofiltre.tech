@@ -277,10 +277,11 @@ $('.owl-carousel').owlCarousel({
 })
 
 
-/*const readMoreBtn = document.querySelector('.voir-plus')
-const hidedText = document.querySelectorAll('.unfold')
-const serviceText = document.querySelector('.text-fold')
+const readMoreBtn = document.querySelector('.voir-plus')
+const moreText = document.querySelector('.moreText')
+const textBox = document.querySelector('.text-box')
 
+/*
 const text = document.createElement('div')
 text.className = 'wrap_text'
 
@@ -298,21 +299,21 @@ text.innerHTML = `<p class="our-service__description">Zerofiltre a pour objectif
               disposons.
             </p>`
             
+*/
 
 readMoreBtn.addEventListener('click', function () {
 
-  if (text.classList.contains('wrap_text')) {
-    text.classList.remove('wrap_text')
-    text.classList.add('expand_text')
-    serviceText.appendChild(text)
+  if (textBox.classList.contains('wrap-text')) {
+    textBox.classList.remove('wrap-text')
+    moreText.classList.remove('hide-mobile-text')
+    // textBox.appendChild(moreText)
     readMoreBtn.innerText = 'Voir moins'
   }
   else {
-    text.classList.remove('expand_text')
-    text.classList.add('wrap_text')
-    serviceText.removeChild(text)
+    textBox.classList.add('wrap-text')
+    moreText.classList.add('hide-mobile-text')
+    // textBox.removeChild(moreText)
     readMoreBtn.innerText = 'Voir plus'
   }
 
 })
-*/
