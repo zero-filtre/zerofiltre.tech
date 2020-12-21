@@ -436,14 +436,81 @@ section {
 }
 /**END**/
 
+/**OUR RESULTS**/
+#our-results {
+  text-align: center;
+}
+
+#our-results .container {
+  padding: 5% 2%;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20em;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  padding: 5%;
+  box-shadow: var(--accent-color) 0 0 11px;
+}
+
+.result p {
+  color: var(--primary-color);
+  margin: 0;
+}
+/**END**/
+
+/**CALL TO ACTION**/
+#call-to-action {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(107deg, #14A6AF 0%, #198B93CC 1%, #17A6AF 51%);
+  background-size: cover;
+  z-index: 10;
+  padding: 5em 0;
+}
+
+#call-to-action::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-image: url(/images/cta-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.rounded-button {
+  color: white;
+  background-color: var(--accent-color);
+  padding: 2em;
+  width: fit-content;
+  margin: 2em auto;
+}
+
+.rounded-button span {
+  margin-right: 1em;
+}
+/**END**/
+
+.footer {
+  border-top-left-radius: 0;
+}
+
 @media only screen and (min-width: 480px) {
 }
 
 @media only screen and (min-width: 640px) {
-  /* .container {
-    padding: 5% 8%;
-  } */
-
   .container {
     padding: 5%;
   }
