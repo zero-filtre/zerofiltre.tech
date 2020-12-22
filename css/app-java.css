@@ -295,6 +295,10 @@ section {
   justify-content: center;
 }
 
+.tech-item img {
+  width: 50%;
+}
+
 .tech-item h4 {
   font-weight: 600;
   text-align: center;
@@ -316,7 +320,6 @@ section {
   bottom: 1.1em;
   background-color: #EEF1F4;
   z-index: -1;
-  /* border-radius: 0% 100% 0% 100% / 95% 0% 100% 10%; */
   border-radius: 0% 100% 0% 100% / 93% 0% 100% 7%;
   transform-origin: center;
 }
@@ -345,7 +348,7 @@ section {
   left: 0;
   bottom: 0;
   background-size: .8em;
-  background-image:  url(/images/blue-bg-white-dot.svg);
+  background-image:  url(/images/blue-bg-white-dot-1.svg);
   background-position: center;
   background-repeat: repeat;
   opacity: .1;
