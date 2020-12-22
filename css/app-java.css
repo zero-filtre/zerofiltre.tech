@@ -35,12 +35,18 @@ section {
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 10px;
+  background: #f9fafb;
+  height: 20em;
   margin: 0.5em;
-  padding: 2%;
-  overflow: hidden;
-  box-shadow: #ddd 0 0 11px;
+  border-radius: 10px;
+  padding: var(--regular-size);
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
+  transition: .3s;
+}
+
+.card:hover {
+  box-shadow: 3px 16px 40px rgba(0, 0, 0, 0.25);
+  transform: scale(1.003);
 }
 
 /*carousel*/
@@ -55,7 +61,7 @@ section {
 
 .owl-dots {
   width: fit-content;
-  margin: 1em auto;
+  margin: 3em auto 0 auto;
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -117,15 +123,16 @@ section {
   color: var(--primary-color);
 }
 
-.voir-plus {
-  color: white;
-  background-color: #00c2cb;
-  width: fit-content;
-  padding: .5em 1em;
-  margin: 1em auto;
+.view-more {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin: auto;
   cursor: pointer;
-  border-radius: 20px;
   text-align: center;
+}
+
+.view-more small {
+  margin-right: .5em;
 }
 /**END**/
 
@@ -148,7 +155,6 @@ section {
   position: relative;
   flex-direction: column;
   align-items: center;
-  height: 20em;
   text-align: center;
   transition: all ease-out 500ms;
 }
@@ -307,10 +313,11 @@ section {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 20px;
+  bottom: 1.1em;
   background-color: #EEF1F4;
   z-index: -1;
-  border-radius: 0% 100% 0% 100% / 95% 0% 100% 10%;
+  /* border-radius: 0% 100% 0% 100% / 95% 0% 100% 10%; */
+  border-radius: 0% 100% 0% 100% / 93% 0% 100% 7%;
   transform-origin: center;
 }
 
@@ -322,9 +329,27 @@ section {
 
 /**WHY US**/
 #why-us {
+  position: relative;
   text-align: center;
-  background-image: url(/images/blue-bg.svg);
+  background-color: #052b5d;
   background-size: cover;
+  z-index: 10;
+  padding: 3em 0 0 0;
+}
+
+#why-us::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: .8em;
+  background-image:  url(/images/blue-bg-white-dot.svg);
+  background-position: center;
+  background-repeat: repeat;
+  opacity: .1;
+  z-index: -1;
 }
 
 .why-us__box {
@@ -338,6 +363,17 @@ section {
 #why-us h1 {
   color: white;
 }
+
+#why-us .owl-dot span {
+  border-color: #fff;
+  background-color: #fff;
+}
+
+#why-us .owl-dot.active span {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
 /**END**/
 
 /**OUR APPROACH**/
@@ -358,6 +394,7 @@ section {
   align-items: center;
   margin: 2em 0;
   font-weight: 600;
+  font-size: var(--regular-size);
 }
 
 .approach-1 {
@@ -412,6 +449,10 @@ section {
   padding: 2em 0;
 }
 
+.trades__img img {
+  width: 80%;
+}
+
 .trades-items {
   padding: 2em 1em;
   display: flex;
@@ -424,15 +465,14 @@ section {
   display: flex;
   border: 1px solid #17A6AF;
   align-items: center;
-  gap: .1em;
-  padding: .6em;
-  height: 2.5em;
+  padding: .5em .5em .5em 0;
+  height: 2em;
   border-radius: 5px;
   background-color: #fff;
 }
 
 .trade-item img {
-  width: 70%;
+  width: 50%;
 }
 /**END**/
 
@@ -445,21 +485,27 @@ section {
   padding: 5% 2%;
 }
 
+.our-results__box {
+  margin: 2em 0;
+}
+
 .result {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 20em;
-  overflow: hidden;
+  justify-content: space-around;
   width: 80%;
-  margin: auto;
+  margin: 2em auto;
   padding: 5%;
-  box-shadow: var(--accent-color) 0 0 11px;
 }
 
 .result p {
   color: var(--primary-color);
+}
+
+.result p, 
+.result h4, 
+.result img {
   margin: 0;
 }
 /**END**/
@@ -472,7 +518,7 @@ section {
   background-image: linear-gradient(107deg, #14A6AF 0%, #198B93CC 1%, #17A6AF 51%);
   background-size: cover;
   z-index: 10;
-  padding: 5em 0;
+  padding: 3em 0;
 }
 
 #call-to-action::after {
@@ -484,18 +530,19 @@ section {
   bottom: 0;
   background-size: cover;
   background-image: url(/images/cta-bg.svg);
-  background-position: center;
+  background-position: center left;
   background-repeat: no-repeat;
-  opacity: 0.2;
+  opacity: 0.4;
   z-index: -1;
 }
 
 .rounded-button {
   color: white;
-  background-color: var(--accent-color);
+  font-weight: bold;
   padding: 2em;
   width: fit-content;
-  margin: 2em auto;
+  margin: 1em auto 0 auto;
+  border-color: #fff;
 }
 
 .rounded-button span {
@@ -637,11 +684,20 @@ section {
     background-size: 95%;
     background-repeat: no-repeat;
     background-position: -5px ;
-    border: 2px solid green;
+    padding: 4em 0;
+    position: relative;
+  }
+
+  #our-approach .container {
+    padding-bottom: 0;
   }
 
   #our-approach h1 {
     font-size: 1.6em;
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%, 50%);
   }
   
   .our-approach__box {
@@ -650,7 +706,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 5%;
-    padding: 5em 0;
+    margin-bottom: 4em;
   }
 
   .our-approach__steps,
@@ -669,7 +725,7 @@ section {
   .approach-1 {
     position: relative;
     top: 0;
-    left: 5.5vw;
+    left: 5vw;
   }
   
   .approach-2 {
@@ -692,15 +748,86 @@ section {
 
   /**TRADES**/
   #trades {
-    text-align: initial;
-    border: 2px solid black;
-  }
-
-  .trades__box {
+    background-color: #F2FEFF;
+    padding: 2em 0;
+    overflow: visible;
   }
 
   #trades .container {
+    padding: 0;
+    max-width: 1200px;
+  }
+
+  .trades__intro {
+    text-align: left;
+  }
+
+  #trades h1,
+  #our-results h1 {
+    font-size: 1.6em;
+  }
+
+  .trades__box {
+    position: relative;
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trades__img {
+    position: relative;
+    bottom: 3.75em;
+    flex-basis: 40%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .trades__texts {
+    flex-basis: 60%;
+  }
+
+  .trades-items {
+    padding: 0;
+  }
+  /**END**/
+
+  /**OUR RESULTS**/
+  #our-results .wrap-p {
+    width: 70%;
+    margin: 2em auto;
+  }
+  
+  #our-results .container {
     padding: 5%;
+  }
+  /**END**/
+
+  /**CALL TO ACTION**/
+  #call-to-action::after {
+    background-size: cover;
+    background-image: url(/images/cta-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+  }
+
+  #call-to-action h1 {
+    font-size: 1.6em;
+  }
+
+  #call-to-action .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+  }
+
+  #call-to-action .wrap-p {
+    width: 70%;
+    margin: 2em auto;
+    font-weight: 400;
   }
   /**END**/
 }

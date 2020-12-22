@@ -1,28 +1,26 @@
-const techsBlock = document.querySelector('.our-techs')
-const tabLinks = document.querySelectorAll('.tablink');
+const techsBlock = document.querySelector(".our-techs");
+const tabLinks = document.querySelectorAll(".tablink");
 
+const codelink = document.querySelector(".codeLink");
+const dblink = document.querySelector(".dbLink");
+const toolsLink = document.querySelector(".toolsLink");
+const lifeCycleLink = document.querySelector(".lifeCycleLink");
 
-const codelink = document.querySelector('.codeLink')
-const dblink = document.querySelector('.dbLink')
-const toolsLink = document.querySelector('.toolsLink')
-const lifeCycleLink = document.querySelector('.lifeCycleLink')
+const initialContent = document.createElement("div");
+initialContent.className = "technos";
+initialContent.classList.add("code");
 
+const dbContent = document.createElement("div");
+dbContent.className = "technos";
+dbContent.classList.add("databases");
 
-const initialContent = document.createElement('div')
-initialContent.className = 'technos'
-initialContent.classList.add('code')
+const toolsContent = document.createElement("div");
+toolsContent.className = "technos";
+toolsContent.classList.add("tools");
 
-const dbContent = document.createElement('div')
-dbContent.className = 'technos'
-dbContent.classList.add('databases')
-
-const toolsContent = document.createElement('div')
-toolsContent.className = 'technos'
-toolsContent.classList.add('tools')
-
-const lifecycleContent = document.createElement('div')
-lifecycleContent.className = 'technos'
-lifecycleContent.classList.add('lifeCycle')
+const lifecycleContent = document.createElement("div");
+lifecycleContent.className = "technos";
+lifecycleContent.classList.add("lifeCycle");
 
 initialContent.innerHTML = `
             <div class="tech-item">
@@ -86,7 +84,7 @@ initialContent.innerHTML = `
               <div>
                 <h4>Kafka</h4>
               </div>
-            </div>`
+            </div>`;
 
 dbContent.innerHTML = `
             <div class="tech-item">
@@ -114,7 +112,7 @@ dbContent.innerHTML = `
               <div>
                 <h4>PostgreSQL</h4>
               </div>
-            </div>`
+            </div>`;
 
 toolsContent.innerHTML = `
             <div class="tech-item">
@@ -169,7 +167,7 @@ toolsContent.innerHTML = `
               <div>
                 <h4>Gitlab-ci</h4>
               </div>
-            </div>`
+            </div>`;
 
 lifecycleContent.innerHTML = `
             <div class="tech-item">
@@ -197,9 +195,7 @@ lifecycleContent.innerHTML = `
               <div>
                 <h4>Gitlab</h4>
               </div>
-            </div>`
-
-
+            </div>`;
 
 function addElementToPage(parent, element) {
   parent.appendChild(element);
@@ -210,17 +206,17 @@ function removeElementFromPage(parent, element) {
 }
 
 function clearContent() {
-  const currentTab = document.querySelector('.technos');
+  const currentTab = document.querySelector(".technos");
   if (currentTab) {
     removeElementFromPage(techsBlock, currentTab);
   }
 }
 
 function setActiveTabClass(currentLink) {
-  tabLinks.forEach(link => {
-    if (link.classList.contains('active')) {
-      link.classList.remove('active');
-      currentLink.classList.add('active');
+  tabLinks.forEach((link) => {
+    if (link.classList.contains("active")) {
+      link.classList.remove("active");
+      currentLink.classList.add("active");
     }
   });
 }
@@ -233,30 +229,27 @@ function handleTabClick(link, content, parent) {
 
 (function loadPage() {
   addElementToPage(techsBlock, initialContent);
-}());
+})();
 
-
-codelink.addEventListener('click', () => {
+codelink.addEventListener("click", () => {
   handleTabClick(codelink, initialContent, techsBlock);
 });
 
-dblink.addEventListener('click', () => {
+dblink.addEventListener("click", () => {
   handleTabClick(dblink, dbContent, techsBlock);
 });
 
-toolsLink.addEventListener('click', () => {
+toolsLink.addEventListener("click", () => {
   handleTabClick(toolsLink, toolsContent, techsBlock);
 });
 
-lifeCycleLink.addEventListener('click', () => {
+lifeCycleLink.addEventListener("click", () => {
   handleTabClick(lifeCycleLink, lifecycleContent, techsBlock);
 });
 
-
-
-$('.owl-carousel').owlCarousel({
+$(".owl-carousel").owlCarousel({
   loop: true,
-  center: true,
+  // center: true,
   autoplay: true,
   autoplayTimeout: 10000,
   autoplayHoverPause: true,
@@ -265,55 +258,32 @@ $('.owl-carousel').owlCarousel({
   smartSpeed: 500,
   responsive: {
     0: {
-      items: 1
+      items: 1,
     },
     600: {
-      items: 2
+      items: 2,
     },
     1000: {
-      items: 4
-    }
+      items: 3 || 4,
+    },
+  },
+});
+
+
+const readMoreBtn = document.querySelector(".view-more");
+const moreText = document.querySelector(".moreText");
+const textBox = document.querySelector(".text-box");
+const chevron = document.getElementById("toggleChevron");
+
+readMoreBtn.addEventListener("click", function () {
+  if (textBox.classList.contains("wrap-text")) {
+    textBox.classList.remove("wrap-text");
+    moreText.classList.remove("hide-mobile-text");
+    readMoreBtn.innerHTML = `<small>Voir moins</small><img src="/images/dropup-icon.svg" alt="chevron" id="toggleChevron">`;
+  } else {
+    textBox.classList.add("wrap-text");
+    moreText.classList.add("hide-mobile-text");
+    readMoreBtn.innerHTML = `<small>Voir plus</small><img src="/images/dropdown-icon.svg" alt="chevron" id="toggleChevron">`;
+    chevron.src = "/images/dropdown-icon.svg";
   }
-})
-
-
-const readMoreBtn = document.querySelector('.voir-plus')
-const moreText = document.querySelector('.moreText')
-const textBox = document.querySelector('.text-box')
-
-/*
-const text = document.createElement('div')
-text.className = 'wrap_text'
-
-text.innerHTML = `<p class="our-service__description">Zerofiltre a pour objectif de vous accompagner,
-              particuliers, moyennes
-              et petites entreprises dans ce processus, en vous
-              fournissant des applications en JAVA, compatibles pour toutes plateformes, qui pourront évoluer avec la
-              taille de votre
-              entreprise, avec un rapport qualité/prix toujours meilleur.</p>
-            <p class="our-service__description">Nous nous améliorons en continu afin de fournir aux clients
-              mieux qu'ils
-              ne le souhaitent. Cependant, Le langage JAVA
-              utilise une méthodologie assez bien élaborée qui nécessite des années d’expériences et c’est exactement ce
-              dont nous
-              disposons.
-            </p>`
-            
-*/
-
-readMoreBtn.addEventListener('click', function () {
-
-  if (textBox.classList.contains('wrap-text')) {
-    textBox.classList.remove('wrap-text')
-    moreText.classList.remove('hide-mobile-text')
-    // textBox.appendChild(moreText)
-    readMoreBtn.innerText = 'Voir moins'
-  }
-  else {
-    textBox.classList.add('wrap-text')
-    moreText.classList.add('hide-mobile-text')
-    // textBox.removeChild(moreText)
-    readMoreBtn.innerText = 'Voir plus'
-  }
-
-})
+});
