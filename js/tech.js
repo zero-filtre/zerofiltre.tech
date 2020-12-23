@@ -61,7 +61,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/hibernate-icon.svg" class="img-fluid" alt="">
+                <img src="./images/hibernate-icon.svg" class="img-fluid hibernate" alt="">
               </div>
               <div>
                 <h4>Hibernate</h4>

@@ -96,7 +96,6 @@ section {
   padding: 10px;
   border-radius: 50%;
   transform: rotate(180deg);
-  width: 20px;
 }
 
 .back-to-top img:hover {
@@ -277,12 +276,18 @@ section {
 
 .tablink {
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 0.6em 1em;
   margin: 0.5em;
   color: var(--primary-color);
   box-shadow: #ddd 0 0 11px;
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  flex: 1;
 }
 
 .tablink.active {
@@ -328,6 +333,7 @@ section {
 #our-team {
   position: relative;
   text-align: center;
+  padding-bottom: 2em;
 }
 
 #our-team::after {
@@ -339,7 +345,7 @@ section {
   bottom: 1.1em;
   background-color: #EEF1F4;
   z-index: -1;
-  border-radius: 0% 100% 0% 100% / 93% 0% 100% 7%;
+  border-radius: 0% 100% 0% 100% / 93% 0% 100% 10%;
   transform-origin: center;
 }
 
@@ -400,10 +406,19 @@ section {
 
 /**OUR APPROACH**/
 #our-approach {
+  position: relative;
   text-align: center;
   background-image: url(/images/our-approach-bg.svg);
   background-size: cover;
   background-position: 12% 75%;
+  padding: 5.5em 0 4em 0;
+}
+
+#our-approach h1 {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 
 .our-approach__box {
@@ -421,20 +436,20 @@ section {
 
 .approach-1 {
   position: relative;
-  top: -4px;
-  left: 20px;
+  top: 0;
+  left: 40px;
 }
 
 .approach-2 {
   position: relative;
   top: 0;
-  left: 40px;
+  left: 60px;
 }
 
 .approach-3 {
   position: relative;
   top: 0;
-  left: 15px;
+  left: 35px;
 }
 
 .approach .number {
@@ -455,7 +470,7 @@ section {
 }
 
 #trades .container {
-  padding: 5% 0;
+  padding: 0 0 5% 0;
 }
 
 .trades__desc {
@@ -517,8 +532,12 @@ section {
   align-items: center;
   justify-content: space-around;
   width: 80%;
-  margin: 2em auto;
+  margin: 1em auto;
   padding: 5%;
+}
+
+.result img {
+  width: 90px !important;
 }
 
 .result p {
@@ -624,10 +643,6 @@ section {
     background-color: #fff9f2;
   }
 
-  /* #our-mission .container {
-    padding: 5% 8%;
-  } */
-
   #our-mission .container {
     padding: 5%;
   }
@@ -657,12 +672,25 @@ section {
     justify-content: center;
   }
 
+  .tablink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    flex: initial;
+  }
+
   .tech-item {
     flex-basis: auto;
   }
   /**END**/
 
   /**OUR TEAM**/
+  #our-team {
+    padding-bottom: 0;
+  }
+
   #our-team::after {
     border-radius: 0% 100% 0% 100% / 71% 0% 100% 29% ;
   }
