@@ -40,7 +40,7 @@ section {
   margin: 0.5em;
   border-radius: 10px;
   padding: var(--regular-size);
-  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 5px 15px rgba(65, 45, 45, 0.15);
   transition: .3s;
 }
 
@@ -385,7 +385,7 @@ section {
 }
 
 .why-us {
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 
 #why-us h1 {
@@ -601,6 +601,10 @@ section {
 @media only screen and (min-width: 640px) {
   .container {
     padding: 5%;
+  }
+
+  .card {
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
   }
 
   .hide-mobile-text {
