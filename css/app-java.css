@@ -282,12 +282,12 @@ section {
   color: var(--primary-color);
   box-shadow: #ddd 0 0 11px;
   cursor: pointer;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  flex: 1;
+  height: 60px;
+  flex-basis: calc(50% - 1em);
+  font-size: 3vw;
 }
 
 .tablink.active {
@@ -595,10 +595,25 @@ section {
   border-top-left-radius: 0;
 }
 
-@media only screen and (min-width: 480px) {
+/**END MOBILE**/
+
+@media only screen and (min-width: 650px) {
+
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 750px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .show-desktop {
+    display: block;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
   .container {
     padding: 5%;
   }
@@ -887,16 +902,7 @@ section {
   /**END**/
 }
 
-@media only screen and (min-width: 1024px) {
-  .show-desktop {
-    display: block;
-  }
+@media only screen and (min-width: 1400px) {
 
-  .hide-desktop {
-    display: none;
-  }
-  
 }
 
-@media only screen and (min-width: 1350px) {
-}

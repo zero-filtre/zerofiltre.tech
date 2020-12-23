@@ -10,7 +10,11 @@
   --title-size: 1.3em
 } */
 
-/* @media only screen and (min-width: 480px) {
+
+
+/* Services page media queries
+
+ @media only screen and (min-width: 480px) {
 
 }
 
@@ -25,3 +29,22 @@
 @media only screen and (min-width: 1350px) {
   
 } */
+
+
+/* main page media queries
+
+@media only screen and (min-width: 650px) {
+
+}
+
+@media only screen and (min-width: 750px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1400px) {
+  
+}*/

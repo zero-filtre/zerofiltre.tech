@@ -32,7 +32,8 @@ body {
 
 h1 {
     font-weight: bolder;
-    font-size: var(--regular-size);
+    /* font-size: var(--regular-size); */
+    font-size: 1.17em;
 }
 
 p,
@@ -187,11 +188,16 @@ header nav li {
     font-size: var(--small-size);
 }
 
-.green-container .container,
-footer .container {
+.green-container .container {
     position: relative;
     text-align: center;
     padding: 15% 5%;
+    /* z-index: 1000; */
+}
+
+footer .container {
+    position: relative;
+    text-align: center;
     /* z-index: 1000; */
 }
 
@@ -240,7 +246,7 @@ footer .container {
 
 @media only screen and (min-width: 650px) {
     h1 {
-        font-size: 2.8em;
+        font-size: 1.8em;
         margin: 0;
     }
 
