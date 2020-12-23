@@ -89,7 +89,7 @@ initialContent.innerHTML = `
 dbContent.innerHTML = `
             <div class="tech-item">
                <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/mongodb-icon.svg" class="img-fluid" alt="mongodb">
               </div>
               <div>
                 <h4>MongoDB</h4>
@@ -98,7 +98,7 @@ dbContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/mysql-icon.svg" class="img-fluid" alt="mysql">
               </div>
               <div>
                 <h4>MySQL</h4>
@@ -107,7 +107,7 @@ dbContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/postgresql-icon.svg" class="img-fluid" alt="postgresql">
               </div>
               <div>
                 <h4>PostgreSQL</h4>
@@ -117,7 +117,7 @@ dbContent.innerHTML = `
 toolsContent.innerHTML = `
             <div class="tech-item">
                <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/maven-icon.svg" class="img-fluid" alt="maven">
               </div>
               <div>
                 <h4>Maven</h4>
@@ -126,7 +126,7 @@ toolsContent.innerHTML = `
 
             <div class="tech-item">
               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/sonar-icon.svg" class="img-fluid" alt="sonar">
               </div>
               <div>
                 <h4>Sonar</h4>
@@ -135,7 +135,7 @@ toolsContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/docker-icon.svg" class="img-fluid" alt="docker">
               </div>
               <div>
                 <h4>Docker</h4>
@@ -144,7 +144,7 @@ toolsContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/kubernetees-icon.svg" class="img-fluid" alt="kubernetees">
               </div>
               <div>
                 <h4>Kubernetes</h4>
@@ -153,7 +153,7 @@ toolsContent.innerHTML = `
 
             <div class="tech-item">
               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/jenkins-icon.svg" class="img-fluid" alt="jenkins">
               </div>
               <div>
                 <h4>Jenins</h4>
@@ -162,7 +162,7 @@ toolsContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/gitlab-ci-icon.svg" class="img-fluid" alt="gitlab-ci">
               </div>
               <div>
                 <h4>Gitlab-ci</h4>
@@ -172,7 +172,7 @@ toolsContent.innerHTML = `
 lifecycleContent.innerHTML = `
             <div class="tech-item">
               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="./images/git-icon.svg" class="img-fluid" alt="git">
               </div>
               <div>
                 <h4>Git</h4>
@@ -181,7 +181,7 @@ lifecycleContent.innerHTML = `
 
             <div class="tech-item">
              <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="/images/github-icon.svg" class="img-fluid" alt="github">
               </div>
               <div>
                 <h4>Github</h4>
@@ -190,7 +190,7 @@ lifecycleContent.innerHTML = `
 
             <div class="tech-item">
               <div>
-                <img src="//unsplash.it/50/50" class="img-fluid" alt="">
+                <img src="/images/gitlab-icon.svg" class="img-fluid" alt="gitlab">
               </div>
               <div>
                 <h4>Gitlab</h4>

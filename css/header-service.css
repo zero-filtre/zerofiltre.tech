@@ -120,10 +120,10 @@ nav ul {
     right: 0;
     text-align: left;
     color: white;
-    background: var(--primary-color);
+    background: #f9fafb;
+    /* background: #fff; */
     z-index: 7;
     padding-top: 3em;
-    background-image: linear-gradient(to bottom, #057c86 39.12%, var(--primary-color) 75.61%);
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
@@ -134,7 +134,7 @@ nav ul li a {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    padding: 1em 2em;
+    padding: 1em 1.5em;
 }
 
 nav ul li a:hover {

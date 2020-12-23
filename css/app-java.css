@@ -410,7 +410,7 @@ section {
   text-align: center;
   background-image: url(/images/our-approach-bg.svg);
   background-size: cover;
-  background-position: 12% 75%;
+  background-position: 15% 75%;
   padding: 5.5em 0 4em 0;
 }
 
@@ -437,19 +437,19 @@ section {
 .approach-1 {
   position: relative;
   top: 0;
-  left: 40px;
+  left: .625em;
 }
 
 .approach-2 {
   position: relative;
   top: 0;
-  left: 60px;
+  left: 2.1875em;
 }
 
 .approach-3 {
   position: relative;
   top: 0;
-  left: 35px;
+  left: .5em;
 }
 
 .approach .number {
@@ -687,6 +687,7 @@ section {
 
   .tech-item {
     flex-basis: auto;
+    margin-right: .5em;
   }
   /**END**/
 
