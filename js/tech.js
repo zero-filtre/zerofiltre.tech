@@ -181,7 +181,7 @@ lifecycleContent.innerHTML = `
 
             <div class="tech-item">
              <div>
-                <img src="/images/github-icon.svg" class="img-fluid" alt="github">
+                <img src="/images/github-icon.svg" class="img-fluid github" alt="github">
               </div>
               <div>
                 <h4>Github</h4>

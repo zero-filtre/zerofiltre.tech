@@ -692,17 +692,18 @@ section {
   }
 
   .tablink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
     width: 200px;
     flex: initial;
+    font-size: initial;
   }
 
   .tech-item {
     flex-basis: auto;
     margin-right: .5em;
+  }
+
+  .github {
+    width: 40px !important;
   }
   /**END**/
 
