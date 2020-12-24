@@ -504,6 +504,10 @@ section {
   background-color: #fff;
 }
 
+.trade-item h4 {
+  margin: 0;
+}
+
 .trade-item img {
   width: 50%;
 }
@@ -605,25 +609,199 @@ section {
   }
 }
 
-@media only screen and (min-width: 650px) {
-
-}
-
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 640px) {
   header .container {
-    padding: 1.5% 5%;
+    padding: 3% 5%;
   }
 
   .hero {
     margin-top: 4em;
   }
+}
 
-  .hero .container {
-    padding: 8% 5%;
+@media only screen and (min-width: 750px) {
+  .show-tablet {
+    display: block;
+  }
+
+  .hide-tablet{
+    display: none;
+  }
+
+  header .container {
+    padding: 1.5% 5%;
   }
 
   .hero p {
     margin-top: 2em;
+  }
+
+  /****/
+  .our-service__box {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: initial;
+    gap: 5%;
+  }
+
+  .our-service__text,
+  .our-service__img {
+    flex: 1;
+  }
+
+  .our-service__text {
+    order: 1;
+  }
+  .our-service__img {
+    order: 2;
+  }
+
+  /*****/
+  .techs__titles {
+    justify-content: center;
+  }
+
+  .tablink {
+    width: 200px;
+    flex: initial;
+    font-size: initial;
+  }
+
+  .tech-item {
+    flex-basis: auto;
+    margin-right: .5em;
+  }
+
+  .github {
+    width: 40px !important;
+  }
+
+  /****/
+  #our-team {
+    padding-bottom: 2em;
+    padding-top: 2em;
+  }
+
+  #our-team::after {
+    border-radius: 0% 100% 0% 100% / 71% 0% 100% 18% ;
+  }
+
+  .our-team__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: initial;
+    gap: 5%;
+  }
+
+  .our-team__text,
+  .our-team__img {
+    flex: 1;
+  }
+  
+  .our-team__img {
+    width: 100%;
+    order: 2;
+  }
+
+  /****/
+  #our-approach {
+    text-align: center;
+    background-image: url(/images/our-approach-bg.svg);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: -5px ;
+    padding: 4em 0;
+    position: relative;
+  }
+
+  #our-approach .container {
+    padding-bottom: 0;
+  }
+  
+  .our-approach__box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 2.3em;
+  }
+
+  .our-approach__steps,
+  .our-approach__img {
+    flex-basis: 50%;
+  }
+  
+  .approach-1 {
+    position: relative;
+    top: 0;
+    left: 5vw;
+  }
+  
+  .approach-2 {
+    position: relative;
+    top: 0;
+    left: 8vw;
+  }
+  
+  .approach-3 {
+    position: relative;
+    top: 0;
+    left: 5vw;
+  }
+  
+  .approach .number {
+    margin-right: 10px;
+    width: 15%;
+  }
+
+  /****/
+  #trades {
+    background-color: #F2FEFF;
+    padding: 2em 0;
+    overflow: visible;
+  }
+
+  #trades .container {
+    padding: 0;
+  }
+
+  .trades__intro {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .trades__box {
+    position: relative;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trades__img {
+    position: relative;
+    bottom: 0;
+    /* flex-basis: 40%; */
+    flex: 1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .trades__texts {
+    /* flex-basis: 60%; */
+    flex: 2;
+  }
+
+  .trades__img img {
+    width: initial;
+  }
+
+  .trades-items {
+    padding: 0;
   }
 }
 
@@ -654,7 +832,7 @@ section {
   }
 
   /**OUR SERVICES**/
-  .our-service__box {
+  /* .our-service__box {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -672,7 +850,7 @@ section {
   }
   .our-service__img {
     order: 2;
-  }
+  } */
 
   .our-service__title {
     font-size: 1em;
@@ -709,7 +887,8 @@ section {
   /**END**/
 
   /**OUR TECH**/
-  .techs__titles {
+
+  /* .techs__titles {
     justify-content: center;
   }
 
@@ -726,19 +905,19 @@ section {
 
   .github {
     width: 40px !important;
-  }
+  } */
   /**END**/
 
   /**OUR TEAM**/
   #our-team {
-    padding-bottom: 0;
+    padding-bottom: 2em;
   }
 
   #our-team::after {
     border-radius: 0% 100% 0% 100% / 71% 0% 100% 29% ;
   }
 
-  .our-team__box {
+  /* .our-team__box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -758,7 +937,8 @@ section {
   .our-team__img {
     width: 100%;
     order: 2;
-  }
+  } */
+
   /**END**/
   
   /**WHY US**/
@@ -852,6 +1032,7 @@ section {
 
   .trades__intro {
     text-align: left;
+    padding: 0;
   }
 
   #trades h1,
@@ -869,7 +1050,7 @@ section {
 
   .trades__img {
     position: relative;
-    bottom: 6vh;
+    bottom: 5.5vh;
     flex-basis: 40%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -924,7 +1105,9 @@ section {
   /**END**/
 }
 
-@media only screen and (min-width: 1400px) {
-
+@media only screen and (min-width: 1350px) {
+  .trades__img {
+    bottom: 10vh;
+  }
 }
 
