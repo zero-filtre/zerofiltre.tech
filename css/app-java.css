@@ -271,7 +271,7 @@ section {
 .techs__titles {
   display: flex;
   flex-wrap: wrap;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .tablink {
@@ -287,7 +287,7 @@ section {
   justify-content: center;
   height: 60px;
   flex-basis: calc(50% - 1em);
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .tablink.active {
@@ -616,6 +616,10 @@ section {
 
   .hero {
     margin-top: 4em;
+  }
+
+  .tablink {
+    font-size: 2vw;
   }
 }
 
