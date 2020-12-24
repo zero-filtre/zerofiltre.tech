@@ -376,16 +376,12 @@ section {
   background-image:  url(/images/blue-bg-white-dot-1.svg);
   background-position: center;
   background-repeat: repeat;
-  opacity: .1;
+  opacity: .05;
   z-index: -1;
 }
 
 .why-us__box {
   margin: 2em 0;
-}
-
-.why-us {
-  /* box-shadow: none; */
 }
 
 #why-us h1 {
@@ -558,7 +554,7 @@ section {
   color: white;
   background-image: linear-gradient(107deg, #14A6AF 0%, #198B93CC 1%, #17A6AF 51%);
   background-size: cover;
-  z-index: 10;
+  z-index: 1;
   padding: 3em 0;
 }
 
@@ -597,12 +593,38 @@ section {
 
 /**END MOBILE**/
 
+@media only screen and (min-width: 480px) {
+  .hero {
+      margin-top: 15%;
+  }
+
+  .our-service__img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media only screen and (min-width: 650px) {
 
 }
 
 @media only screen and (min-width: 750px) {
+  header .container {
+    padding: 1.5% 5%;
+  }
 
+  .hero {
+    margin-top: 4em;
+  }
+
+  .hero .container {
+    padding: 8% 5%;
+  }
+
+  .hero p {
+    margin-top: 2em;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -826,7 +848,6 @@ section {
 
   #trades .container {
     padding: 0;
-    max-width: 1200px;
   }
 
   .trades__intro {
@@ -841,14 +862,14 @@ section {
   .trades__box {
     position: relative;
     display: flex;
-    gap: 3em;
+    gap: 2em;
     justify-content: center;
     align-items: center;
   }
 
   .trades__img {
     position: relative;
-    bottom: 3.75em;
+    bottom: 6vh;
     flex-basis: 40%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
