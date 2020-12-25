@@ -1110,6 +1110,10 @@ section {
 }
 
 @media only screen and (min-width: 1350px) {
+  #our-team {
+    padding-top: 0;
+  }
+
   .trades__img {
     bottom: 10vh;
   }
