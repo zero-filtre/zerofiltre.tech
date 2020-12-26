@@ -50,13 +50,17 @@ section {
 }
 
 /*carousel*/
+.owl-carousel .owl-stage {
+  padding-bottom: 2em;
+}
+
 .owl-carousel .owl-item img {
   width: auto;
   display: initial;
 }
 
 .owl-nav {
-  visibility: hidden;
+  display: none;
 }
 
 .owl-dots {
@@ -291,6 +295,11 @@ section {
   font-size: 2.5vw;
 }
 
+.tablink:focus {
+  border-radius: 15px;
+  outline: none;
+}
+
 .tablink.active {
   background-color: var(--primary-color);
   color: #fff;
@@ -385,12 +394,12 @@ section {
 }
 
 #why-us .owl-dot span {
-  border-color: #fff;
-  background-color: #fff;
+  border-color: var(--accent-color);
+  background-color: white;
 }
 
 #why-us .owl-dot.active span {
-  border-color: var(--accent-color);
+  border-color: white;
   background-color: var(--accent-color);
 }
 
@@ -788,7 +797,7 @@ section {
 
   .trades__texts {
     flex: 2;
-    margin-left: 2em;
+    margin-left: 1.5em;
   }
 
   .trades__img img {
@@ -867,10 +876,14 @@ section {
   }
 
   #our-team::after {
-    border-radius: 0% 100% 0% 100% / 71% 0% 100% 29% ;
+    border-radius: 0% 100% 0% 100% / 71% 0% 100% 20% ;
   }
   
   /**WHY US**/
+  #why-us .container {
+    padding: 2% 5%;
+  }
+
   #why-us h1 {
     text-align: center;
     font-size: 1.6em;
@@ -878,6 +891,12 @@ section {
     margin: 1em auto;
   }
   /**END**/
+
+  /**TRADES**/
+  .trades__img {
+    bottom: 8vh;
+  }
+  /**EN**/
 
   /**OUR RESULTS**/
   #our-results .wrap-p {
