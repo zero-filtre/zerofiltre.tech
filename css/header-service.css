@@ -184,11 +184,11 @@ header nav li {
 
 .hero h1 {
     margin: 0;
+    font-size: 1em;
 }
 
 .hero p {
-    margin: 2em 0 0 0;
-    line-height: 2em;
+    margin: .8em 0 0 0;
     font-size: var(--small-size);
 }
 
@@ -215,30 +215,30 @@ footer .container {
 }
 
 .triangle-1 {
-   top: 1em;
-   right: 3em;
-   width: 30px;
+   top: .5em;
+   right: 1em;
+   width: 15px;
    transform: rotate(60deg);
 }
 
 .triangle-2 {
-   top: 2em;
+   top: 1em;
    right: 45%;
-   width: 20px;
+   width: 10px;
    transform: rotate(65deg);
 }
 
 .triangle-3 {
-    bottom: 2em;
+    bottom: 1.5em;
     right: 5em;
-    width: 20px;
+    width: 15px;
     transform: rotate(65deg);
 }
 
 .triangle-4 {
-   bottom: 1.5em;
-   left: 40%;
-   width: 20px;
+   bottom: 1em;
+   left: 30%;
+   width: 10px;
    transform: rotate(5deg);
 }
 /***END***/
@@ -287,7 +287,7 @@ footer .container {
     }
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 640px) {
     h1 {
         font-size: 1.3em;
     }
@@ -315,6 +315,30 @@ footer .container {
     nav ul {
         width: 50%;
     }
+
+    .triangle-1 {
+        top: 1em;
+        right: 3em;
+        width: 30px;
+     }
+     
+     .triangle-2 {
+        top: 2em;
+        right: 45%;
+        width: 20px;
+     }
+     
+     .triangle-3 {
+         bottom: 2em;
+         right: 5em;
+         width: 22px;
+     }
+     
+     .triangle-4 {
+        bottom: 1.5em;
+        left: 40%;
+        width: 20px;
+     }
     /**END**/
 }
 
@@ -340,6 +364,10 @@ footer .container {
 @media only screen and (min-width: 1024px) {
     .hero {
         margin: 9% 1.5% 0 1.5% !important;
+    }
+
+    .hero h1 {
+        font-size: 2em;
     }
 
     .hero .container {
