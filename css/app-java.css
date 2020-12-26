@@ -61,7 +61,7 @@ section {
 
 .owl-dots {
   width: fit-content;
-  margin: 3em auto 0 auto;
+  margin: 0 auto 1em auto;
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -104,7 +104,7 @@ section {
 /**END**/
 
 /**HEADER**/
-.green-container::after {
+.hero::after {
   content: "";
   position: absolute;
   top: 0;
@@ -117,6 +117,7 @@ section {
   background-repeat: no-repeat;
   border-radius: 20px;
   opacity: 0.15;
+  z-index: -1;
 }
 /**END**/
 
@@ -361,8 +362,7 @@ section {
   text-align: center;
   background-color: #052b5d;
   background-size: cover;
-  z-index: 10;
-  padding: 3em 0 0 0;
+  z-index: 1;
 }
 
 #why-us::after {
@@ -378,10 +378,6 @@ section {
   background-repeat: repeat;
   opacity: .05;
   z-index: -1;
-}
-
-.why-us__box {
-  margin: 2em 0;
 }
 
 #why-us h1 {
@@ -466,7 +462,7 @@ section {
 }
 
 #trades .container {
-  padding: 0 0 5% 0;
+  padding: 0;
 }
 
 .trades__desc {
@@ -491,7 +487,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  gap: .5em;
 }
 
 .trade-item {
@@ -500,6 +495,7 @@ section {
   align-items: center;
   padding: .5em .5em .5em 0;
   height: 2em;
+  margin: .5em .5em 0 0;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -520,10 +516,6 @@ section {
 
 #our-results .container {
   padding: 5% 2%;
-}
-
-.our-results__box {
-  margin: 2em 0;
 }
 
 .result {
@@ -598,14 +590,14 @@ section {
 /**END MOBILE**/
 
 @media only screen and (min-width: 480px) {
-  .hero {
-      margin-top: 15%;
-  }
-
   .our-service__img {
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .trades__img img {
+    width: 70%;
   }
 }
 
@@ -620,6 +612,10 @@ section {
 
   .tablink {
     font-size: 2vw;
+  }
+
+  .trades-items {
+    padding: 3%;
   }
 }
 
@@ -646,7 +642,6 @@ section {
     justify-content: center;
     align-items: center;
     text-align: initial;
-    gap: 5%;
   }
 
   .our-service__text,
@@ -656,6 +651,7 @@ section {
 
   .our-service__text {
     order: 1;
+    margin-right: 5%;
   }
   .our-service__img {
     order: 2;
@@ -684,7 +680,6 @@ section {
   /****/
   #our-team {
     padding-bottom: 2em;
-    padding-top: 2em;
   }
 
   #our-team::after {
@@ -696,7 +691,6 @@ section {
     justify-content: center;
     align-items: center;
     text-align: initial;
-    gap: 5%;
   }
 
   .our-team__text,
@@ -706,7 +700,7 @@ section {
   
   .our-team__img {
     width: 100%;
-    order: 2;
+    margin-right: 5%;
   }
 
   /****/
@@ -729,8 +723,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
     margin-bottom: 2.3em;
+  }
+
+  .our-approach__steps {
+    margin-right: 5%;
   }
 
   .our-approach__steps,
@@ -768,10 +765,6 @@ section {
     overflow: visible;
   }
 
-  #trades .container {
-    padding: 0;
-  }
-
   .trades__intro {
     text-align: center;
     padding-left: 5%;
@@ -781,7 +774,6 @@ section {
   .trades__box {
     position: relative;
     display: flex;
-    gap: 2em;
     justify-content: center;
     align-items: center;
   }
@@ -789,15 +781,14 @@ section {
   .trades__img {
     position: relative;
     bottom: 0;
-    /* flex-basis: 40%; */
     flex: 1;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
   }
 
   .trades__texts {
-    /* flex-basis: 60%; */
     flex: 2;
+    margin-left: 2em;
   }
 
   .trades__img img {
@@ -805,7 +796,7 @@ section {
   }
 
   .trades-items {
-    padding: 0;
+    padding: .5em;
   }
 }
 
@@ -826,7 +817,7 @@ section {
     box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
   }
 
-  .hide-mobile-text {
+  .show-desktop-text {
     display: block;
   }
 
@@ -836,26 +827,6 @@ section {
   }
 
   /**OUR SERVICES**/
-  /* .our-service__box {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: initial;
-    gap: 5%;
-  }
-
-  .our-service__text,
-  .our-service__img {
-    flex: 1;
-  }
-
-  .our-service__text {
-    order: 1;
-  }
-  .our-service__img {
-    order: 2;
-  } */
-
   .our-service__title {
     font-size: 1em;
   }
@@ -890,182 +861,21 @@ section {
 
   /**END**/
 
-  /**OUR TECH**/
-
-  /* .techs__titles {
-    justify-content: center;
-  }
-
-  .tablink {
-    width: 200px;
-    flex: initial;
-    font-size: initial;
-  }
-
-  .tech-item {
-    flex-basis: auto;
-    margin-right: .5em;
-  }
-
-  .github {
-    width: 40px !important;
-  } */
-  /**END**/
-
   /**OUR TEAM**/
-  #our-team {
-    padding-bottom: 2em;
+  #our-team .container {
+    padding-top: 0;
   }
 
   #our-team::after {
     border-radius: 0% 100% 0% 100% / 71% 0% 100% 29% ;
   }
-
-  /* .our-team__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: initial;
-    gap: 5%;
-  }
-
-  .our-team__text,
-  .our-team__img {
-    flex: 1;
-  }
-
-  #our-team h1 {
-    font-size: 1.6em;
-  }
-  
-  .our-team__img {
-    width: 100%;
-    order: 2;
-  } */
-
-  /**END**/
   
   /**WHY US**/
   #why-us h1 {
     text-align: center;
     font-size: 1.6em;
     width: 70%;
-    margin: auto;
-  }
-  /**END**/
-
-  /**OUR APPROACH**/
-  #our-approach {
-    text-align: center;
-    background-image: url(/images/our-approach-bg.svg);
-    background-size: 95%;
-    background-repeat: no-repeat;
-    background-position: -5px ;
-    padding: 4em 0;
-    position: relative;
-  }
-
-  #our-approach .container {
-    padding-bottom: 0;
-  }
-
-  #our-approach h1 {
-    font-size: 1.6em;
-    position: absolute;
-    top: 1em;
-    left: 50%;
-    transform: translate(-50%, 50%);
-  }
-  
-  .our-approach__box {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    margin-bottom: 4em;
-  }
-
-  .our-approach__steps,
-  .our-approach__img {
-    flex-basis: 50%;
-  }
-  
-  .approach {
-    text-align: initial;
-    display: flex;
-    align-items: center;
-    margin: 2em 0;
-    font-weight: 600;
-  }
-  
-  .approach-1 {
-    position: relative;
-    top: 0;
-    left: 5vw;
-  }
-  
-  .approach-2 {
-    position: relative;
-    top: 0;
-    left: 8vw;
-  }
-  
-  .approach-3 {
-    position: relative;
-    top: 0;
-    left: 5vw;
-  }
-  
-  .approach .number {
-    margin-right: 10px;
-    width: 15%;
-  }
-  /**END**/
-
-  /**TRADES**/
-  #trades {
-    background-color: #F2FEFF;
-    padding: 2em 0;
-    overflow: visible;
-  }
-
-  #trades .container {
-    padding: 0;
-  }
-
-  .trades__intro {
-    text-align: left;
-    padding: 0;
-  }
-
-  #trades h1,
-  #our-results h1 {
-    font-size: 1.6em;
-  }
-
-  .trades__box {
-    position: relative;
-    display: flex;
-    gap: 2em;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .trades__img {
-    position: relative;
-    bottom: 5.5vh;
-    flex-basis: 40%;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-
-  .trades__texts {
-    flex-basis: 60%;
-  }
-
-  .trades-items {
-    padding: 0;
+    margin: 1em auto;
   }
   /**END**/
 
@@ -1110,10 +920,6 @@ section {
 }
 
 @media only screen and (min-width: 1350px) {
-  #our-team {
-    padding-top: 0;
-  }
-
   .trades__img {
     bottom: 10vh;
   }

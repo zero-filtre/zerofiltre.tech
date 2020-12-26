@@ -32,7 +32,6 @@ body {
 
 h1 {
     font-weight: bolder;
-    /* font-size: var(--regular-size); */
     font-size: 1.17em;
 }
 
@@ -122,7 +121,6 @@ nav ul {
     text-align: left;
     color: white;
     background: #f9fafb;
-    /* background: #fff; */
     z-index: 7;
     padding-top: 3em;
     border-bottom-right-radius: 5px;
@@ -135,7 +133,7 @@ nav ul li a {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    padding: 1em 1.5em;
+    padding: 1em 2em ;
 }
 
 nav ul li a:hover {
@@ -175,34 +173,37 @@ nav ul li:nth-of-type(5) a img {
 
 header nav li {
     color: var(--secondary-color);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .hero {
+    position: relative;
     margin: 17.5% 4% 2% 4%;
+    z-index: 1;
+}
+
+.hero h1 {
+    margin: 0;
 }
 
 .hero p {
-    margin: 0;
+    margin: 2em 0 0 0;
     line-height: 2em;
     font-size: var(--small-size);
 }
 
-.green-container .container {
+.hero .container {
     position: relative;
     text-align: center;
-    padding: 15% 5%;
-    /* z-index: 1000; */
+    padding: 10% 5%;
 }
 
 footer .container {
     position: relative;
     text-align: center;
-    /* z-index: 1000; */
 }
 
 .green-container {
-    position: relative;
     color: white;
     border-radius: 15px;
     background: rgb(5,124,134);
@@ -248,12 +249,15 @@ footer .container {
     .hero {
         margin-top: 15%;
     }
+
+    .hero p {
+        margin-top: 1em;
+    }
 }
 
 @media only screen and (min-width: 650px) {
     h1 {
         font-size: 1.3em;
-        margin: 0;
     }
 
     .rounded-button {
@@ -266,7 +270,7 @@ footer .container {
 
     /**HEADER**/
     header {
-        box-shadow: #ddd 0 0 11px;
+        box-shadow: #ddd 0 0 8px;
     }
 
     header .container {
