@@ -301,10 +301,6 @@ footer .container {
     }
 
     /**HEADER**/
-    header {
-        box-shadow: #ddd 0 0 8px;
-    }
-
     header .container {
         display: flex;
         justify-content: space-between;
@@ -342,7 +338,11 @@ footer .container {
     /**END**/
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 720px) {
+    header {
+        box-shadow: #ddd 0 0 8px;
+    }
+
     .hero {
         margin-top: 4em;
     }

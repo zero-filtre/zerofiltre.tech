@@ -134,6 +134,8 @@ section {
 
 .our-service__img {
   order: 1;
+  width: 70%;
+  margin: auto;
 }
 
 .our-service__text {

@@ -162,7 +162,7 @@ toolsContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/gitlab-ci-icon.svg" class="img-fluid" alt="gitlab-ci">
+                <img src="./images/gitlab-icon.svg" class="img-fluid" alt="gitlab-ci">
               </div>
               <div>
                 <h4>Gitlab-ci</h4>
