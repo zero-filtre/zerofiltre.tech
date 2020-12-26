@@ -284,6 +284,5 @@ readMoreBtn.addEventListener("click", function () {
     textBox.classList.add("wrap-text");
     moreText.classList.add("hide-mobile-text");
     readMoreBtn.innerHTML = `<small>Voir plus</small><img src="/images/dropdown-icon.svg" alt="chevron" id="toggleChevron">`;
-    chevron.src = "/images/dropdown-icon.svg";
   }
 });

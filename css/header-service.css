@@ -209,6 +209,38 @@ footer .container {
     background: rgb(5,124,134);
     background: linear-gradient(107deg, #14A6AF 0%, #198B93CC 1%, #116D74 51%);
 }
+
+.triangle {
+    position: absolute;
+}
+
+.triangle-1 {
+   top: 1em;
+   right: 3em;
+   width: 30px;
+   transform: rotate(60deg);
+}
+
+.triangle-2 {
+   top: 2em;
+   right: 45%;
+   width: 20px;
+   transform: rotate(65deg);
+}
+
+.triangle-3 {
+    bottom: 2em;
+    right: 5em;
+    width: 20px;
+    transform: rotate(65deg);
+}
+
+.triangle-4 {
+   bottom: 1.5em;
+   left: 40%;
+   width: 20px;
+   transform: rotate(5deg);
+}
 /***END***/
 
 /***FOOTER***/

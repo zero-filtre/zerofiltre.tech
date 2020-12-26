@@ -11,7 +11,7 @@ if (folder) {
         foldButton.classList.toggle('unfold');
         unFoldButton.classList.toggle('unfold');
         unfoldChevron.classList.toggle('up');
-    }); 
+    });
 }
 
 backToTopBtn = document.getElementById("back-to-top");
