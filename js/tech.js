@@ -43,7 +43,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/spring-boot-icon.svg" class="img-fluid" alt="">
+                <img src="./images/spring-boot-icon.svg" class="img-fluid spring-boot-icon" alt="">
               </div>
               <div>
                 <h4>Spring-boot</h4>
@@ -52,7 +52,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/spring-data-icon.svg" class="img-fluid" alt="">
+                <img src="./images/spring-data-icon.svg" class="img-fluid spring-data-icon" alt="">
               </div>
               <div>
                 <h4>Spring-data</h4>
@@ -107,7 +107,7 @@ dbContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/postgresql-icon.svg" class="img-fluid" alt="postgresql">
+                <img src="./images/postgresql-icon.svg" class="img-fluid postgres-icon" alt="postgresql">
               </div>
               <div>
                 <h4>PostgreSQL</h4>
@@ -144,7 +144,7 @@ toolsContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/kubernetees-icon.svg" class="img-fluid" alt="kubernetees">
+                <img src="./images/kubernetees-icon.svg" class="img-fluid kubernetes-icon" alt="kubernetees">
               </div>
               <div>
                 <h4>Kubernetes</h4>
@@ -172,7 +172,7 @@ toolsContent.innerHTML = `
 lifecycleContent.innerHTML = `
             <div class="tech-item">
               <div>
-                <img src="./images/git-icon.svg" class="img-fluid" alt="git">
+                <img src="./images/git-icon.svg" class="img-fluid git-icon" alt="git">
               </div>
               <div>
                 <h4>Git</h4>
@@ -181,7 +181,7 @@ lifecycleContent.innerHTML = `
 
             <div class="tech-item">
              <div>
-                <img src="/images/github-icon.svg" class="img-fluid github" alt="github">
+                <img src="/images/github-icon.svg" class="img-fluid github-icon" alt="github">
               </div>
               <div>
                 <h4>Github</h4>
