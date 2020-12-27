@@ -156,7 +156,7 @@ toolsContent.innerHTML = `
                 <img src="./images/jenkins-icon.svg" class="img-fluid" alt="jenkins">
               </div>
               <div>
-                <h4>Jenins</h4>
+                <h4>Jenkins</h4>
               </div>
             </div>
 
