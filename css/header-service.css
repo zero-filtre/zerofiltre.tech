@@ -173,7 +173,7 @@ nav ul li:nth-of-type(5) a img {
 
 header nav li {
     color: var(--secondary-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .hero {
@@ -285,7 +285,7 @@ footer .container {
 
 @media only screen and (min-width: 480px) {
     .hero {
-        margin-top: 15%;
+        margin: 15% 2% 0 2%;
     }
 
     .hero p {
@@ -356,7 +356,7 @@ footer .container {
     }
 
     .hero {
-        margin-top: 4em;
+        margin: 3em 1.5% 0 1.5% !important;
     }
 
     .hero .container {
@@ -375,7 +375,7 @@ footer .container {
 
 @media only screen and (min-width: 1024px) {
     .hero {
-        margin: 9% 1.5% 0 1.5% !important;
+        margin: 8% 1.5% 0 1.5% !important;
     }
 
     .hero h1 {
@@ -470,6 +470,6 @@ footer .container {
 
 @media only screen and (min-width: 1350px) {
     .hero {
-        margin: 8% 1.5% 0 1.5% !important;
+        margin: 7% 1.5% 0 1.5% !important;
     }
 }

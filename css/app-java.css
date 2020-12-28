@@ -366,7 +366,6 @@ section {
   background-color: #EEF1F4;
   z-index: -1;
   border-radius: 0% 100% 0% 100% / 93% 0% 100% 10%;
-  transform-origin: center;
 }
 
 .our-team__img {
@@ -648,7 +647,7 @@ section {
   }
 
   header .container {
-    padding: 1.5% 5%;
+    padding: 1% 5%;
   }
 
   .hero p {
