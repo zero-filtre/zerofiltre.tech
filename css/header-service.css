@@ -222,7 +222,7 @@ footer .container {
 }
 
 .triangle-2 {
-   top: 1em;
+   top: .5em;
    right: 45%;
    width: 10px;
    transform: rotate(65deg);
@@ -241,6 +241,12 @@ footer .container {
    width: 10px;
    transform: rotate(5deg);
 }
+
+.triangle-5 {
+    top: 1em;
+    left: 1em;
+    width: 15px;
+ }
 /***END***/
 
 /***FOOTER***/
@@ -332,8 +338,14 @@ footer .container {
      
      .triangle-4 {
         bottom: 1.5em;
-        left: 40%;
+        left: 35%;
         width: 20px;
+     }
+
+     .triangle-5 {
+        top: 3em;
+        left: 5em;
+        width: 22px;
      }
     /**END**/
 }
