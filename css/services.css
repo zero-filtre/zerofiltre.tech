@@ -50,7 +50,7 @@ main .services {
 
 .services section {
   margin: 0;
-  padding: 15% 0;
+  padding: 10% 0;
 }
 
 .services .container {
@@ -168,6 +168,10 @@ main .services {
 @media only screen and (min-width: 480px) {
   .banner-content .services-hero-img {
     width: 75%;
+  }
+
+  .services section {
+    padding: 2% 0;
   }
 
   .service {
