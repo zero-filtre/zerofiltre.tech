@@ -50,10 +50,11 @@ main .services {
 
 .services section {
   margin: 0;
-  padding: 8% 0;
+  padding: 15% 0;
 }
 
 .services .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -110,15 +111,15 @@ main .services {
   border-color: var(--secondary-color);
 }
 
-.app >.container,
-.api >.container,
-.ui >.container  {
-  z-index: 5;
+.app .container,
+.api .container,
+.ui .container {
+  z-index: 1000;
 }
 
-.app::before,
-.api::before,
-.ui::before {
+.app::after,
+.api::after,
+.ui::after {
   content: '';
   position: absolute;
   top: 0;
@@ -126,22 +127,23 @@ main .services {
   left: 0;
   bottom: 0;
   background-size: 80%;
-  background-position: center center;
   background-repeat: no-repeat;
   opacity: .1;
 }
 
-.app::before {
+.app::after {
   background-image: url(/images/app-bg.svg);
+  background-position: -120% 10%;
 }
 
-.api::before {
+.api::after {
   background-image: url(/images/api-bg.svg);
-  background-position: bottom;
+  background-position: 100% 90%;
 }
 
-.ui::before {
+.ui::after {
   background-image: url(/images/ui-bg.svg);
+  background-position: center center;
 }
 
 .app {
