@@ -1,26 +1,4 @@
-const techsBlock = document.querySelector(".our-techs");
-const tabLinks = document.querySelectorAll(".tablink");
-
-const codelink = document.querySelector(".codeLink");
-const dblink = document.querySelector(".dbLink");
-const toolsLink = document.querySelector(".toolsLink");
-const lifeCycleLink = document.querySelector(".lifeCycleLink");
-
-const initialContent = document.createElement("div");
-initialContent.className = "technos";
-initialContent.classList.add("code");
-
-const dbContent = document.createElement("div");
-dbContent.className = "technos";
-dbContent.classList.add("databases");
-
-const toolsContent = document.createElement("div");
-toolsContent.className = "technos";
-toolsContent.classList.add("tools");
-
-const lifecycleContent = document.createElement("div");
-lifecycleContent.className = "technos";
-lifecycleContent.classList.add("lifeCycle");
+import { initialContent, dbContent, toolsContent, lifecycleContent } from './tech.js'
 
 initialContent.innerHTML = `
             <div class="tech-item">
@@ -34,10 +12,10 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
               <div>
-                <img src="./images/spring-icon.svg" class="img-fluid" alt="">
+                <img src="./images/graphql-java-icon.svg" class="img-fluid" alt="graphql-icon">
               </div>
               <div>
-                <h4>Spring</h4>
+                <h4>Graphql-java</h4>
               </div>
             </div>
 
@@ -52,37 +30,28 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/spring-data-icon.svg" class="img-fluid spring-data-icon" alt="">
+                <img src="./images/spring-web-icon.svg" class="img-fluid spring-web-icon" alt="spring-mvc">
               </div>
               <div>
-                <h4>Spring-data</h4>
+                <h4>Spring Web MVC</h4>
               </div>
             </div>
 
             <div class="tech-item">
                <div>
-                <img src="./images/hibernate-icon.svg" class="img-fluid hibernate" alt="">
+                <img src="./images/spring-security-icon.svg" class="img-fluid spring-security-icon" alt="spring-security">
               </div>
               <div>
-                <h4>Hibernate</h4>
-              </div>
-            </div>
-
-            <div class="tech-item">
-              <div>
-                <img src="./images/spring-cloud-icon.svg" class="img-fluid" alt="">
-              </div>
-              <div>
-                <h4>Spring-Cloud</h4>
+                <h4>Spring Security</h4>
               </div>
             </div>
 
             <div class="tech-item">
               <div>
-                <img src="./images/kafka-icon.svg" class="img-fluid" alt="">
+                <img src="./images/spring-aop-icon.svg" class="img-fluid" alt="spring-aop">
               </div>
               <div>
-                <h4>Kafka</h4>
+                <h4>Spring AOP</h4>
               </div>
             </div>`;
 
@@ -167,6 +136,15 @@ toolsContent.innerHTML = `
               <div>
                 <h4>Gitlab-ci</h4>
               </div>
+            </div>
+            
+            <div class="card tech-item">
+              <div>
+                <img src="./images/space-cloud-icon" class="img-fluid" alt="">
+              </div>
+              <div>
+                <h4>Space Cloud de SpaceUp Tech</h4>
+              </div>
             </div>`;
 
 lifecycleContent.innerHTML = `
@@ -197,99 +175,24 @@ lifecycleContent.innerHTML = `
               </div>
             </div>`;
 
-function addElementToPage(parent, element) {
-  parent.appendChild(element);
-}
-
-function removeElementFromPage(parent, element) {
-  parent.removeChild(element);
-}
-
-function clearContent() {
-  const currentTab = document.querySelector(".technos");
-  if (currentTab) {
-    removeElementFromPage(techsBlock, currentTab);
-  }
-}
-
-function setActiveTabClass(currentLink) {
-  tabLinks.forEach((link) => {
-    if (link.classList.contains("active")) {
-      link.classList.remove("active");
-      currentLink.classList.add("active");
-    }
-  });
-}
-
-function handleTabClick(link, content, parent) {
-  clearContent();
-  setActiveTabClass(link);
-  addElementToPage(parent, content);
-}
-
-(function loadPage() {
-  addElementToPage(techsBlock, initialContent);
-})();
-
-codelink.addEventListener("click", () => {
-  handleTabClick(codelink, initialContent, techsBlock);
-});
-
-dblink.addEventListener("click", () => {
-  handleTabClick(dblink, dbContent, techsBlock);
-});
-
-toolsLink.addEventListener("click", () => {
-  handleTabClick(toolsLink, toolsContent, techsBlock);
-});
-
-lifeCycleLink.addEventListener("click", () => {
-  handleTabClick(lifeCycleLink, lifecycleContent, techsBlock);
-});
 
 $(".owl-carousel").owlCarousel({
-  loop: true,
-  autoplay: true,
-  autoplayTimeout: 10000,
-  autoplayHoverPause: true,
-  margin: 5,
-  nav: true,
-  smartSpeed: 500,
-  responsive: {
-    0: {
-      items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 10000,
+    autoplayHoverPause: true,
+    margin: 5,
+    nav: true,
+    smartSpeed: 500,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        1000: {
+            items: 3 || 4,
+        },
     },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 3 || 4,
-    },
-  },
 });
-
-
-const readMoreBtn = document.querySelector(".view-more");
-const moreText = document.querySelector(".moreText");
-const textBox = document.querySelector(".text-box");
-
-const toggleText = () => {
-  if (textBox.classList.contains("wrap-text")) {
-    textBox.classList.remove("wrap-text");
-    moreText.classList.remove("hide-mobile-text");
-    readMoreBtn.innerHTML = `<small>Voir moins</small><img src="/images/dropup-icon.svg" alt="chevron" id="toggleChevron">`;
-  } else {
-    textBox.classList.add("wrap-text");
-    moreText.classList.add("hide-mobile-text");
-    readMoreBtn.innerHTML = `<small>Voir plus</small><img src="/images/dropdown-icon.svg" alt="chevron" id="toggleChevron">`;
-  }
-}
-
-readMoreBtn.addEventListener("click", toggleText);
-
-export {
-  initialContent,
-  toolsContent,
-  dbContent,
-  lifecycleContent,
-}

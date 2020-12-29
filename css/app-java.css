@@ -899,7 +899,7 @@ section {
 
   /**TRADES**/
   .trades__img {
-    bottom: 8vh;
+    bottom: 5.5rem;
   }
   /**EN**/
 
@@ -945,7 +945,7 @@ section {
 
 @media only screen and (min-width: 1350px) {
   .trades__img {
-    bottom: 10vh;
+    bottom: 5rem;
   }
 }
 
