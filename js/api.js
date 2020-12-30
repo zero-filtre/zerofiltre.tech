@@ -138,9 +138,9 @@ toolsContent.innerHTML = `
               </div>
             </div>
             
-            <div class="card tech-item">
+            <div class="tech-item">
               <div>
-                <img src="./images/space-cloud-icon" class="img-fluid" alt="">
+                <img src="./images/space-cloud-icon" class="img-fluid" alt="space-cloud">
               </div>
               <div>
                 <h4>Space Cloud de SpaceUp Tech</h4>
