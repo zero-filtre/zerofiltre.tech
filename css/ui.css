@@ -1,0 +1,950 @@
+:root {
+    /*Colors */
+    --primary-color: #00c2cb;
+    --primary-color-500: #15b2bc;
+    --secondary-color: #052b5d;
+    --accent-color: #fdbc5a;
+    --error-color: #f55f44;
+  
+    /*Font sizes*/
+    --regular-size: 0.9em;
+    --small-size: 0.7em;
+  }
+  
+  /**GENERAL RULES**/
+  
+  section {
+    overflow: hidden;
+  }
+  
+  .container {
+    padding: 5%;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hide-mobile {
+    display: none;
+  }
+  
+  .hide-mobile-text {
+    display: none;
+  }
+  
+  .card {
+    background: #f9fafb;
+    height: 20em;
+    margin: 0.5em;
+    border-radius: 10px;
+    padding: var(--regular-size);
+    box-shadow: 2px 5px 15px rgba(65, 45, 45, 0.15);
+    transition: .3s;
+  }
+  
+  .card:hover {
+    box-shadow: 3px 16px 40px rgba(0, 0, 0, 0.25);
+    transform: scale(1.003);
+  }
+  
+  /*carousel*/
+  .owl-carousel .owl-stage {
+    padding-bottom: 2em;
+  }
+  
+  .owl-carousel .owl-item img {
+    width: auto;
+    display: initial;
+  }
+  
+  .owl-nav {
+    display: none;
+  }
+  
+  .owl-dots {
+    width: fit-content;
+    margin: 0 auto 1em auto;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .owl-dot span {
+    height: 1em;
+    width: 1em;
+    margin: 0 0.5em;
+    border-radius: 100%;
+    border: 1px solid var(--secondary-color);
+    display: block;
+  }
+  
+  .owl-dot:focus {
+    outline: none;
+  }
+  
+  .owl-dot.active span {
+    background-color: var(--secondary-color);
+  }
+  
+  /**back to top btn**/
+  .back-to-top img {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 99;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transform: rotate(180deg);
+  }
+  
+  .back-to-top img:hover {
+    background-color: var(--accent-color);
+  }
+  /**END**/
+  
+  /**HEADER**/
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+    background-image: url(/images/java-landing-illustration.svg);
+    background-position: 100% 42%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    opacity: 0.15;
+    z-index: -1;
+  }
+  /**END**/
+  
+  /**OUR SERVICE**/
+  .our-service__box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .our-service__img {
+    order: 1;
+    width: 70%;
+    margin: auto;
+  }
+  
+  .our-service__text {
+    order: 2;
+  }
+  
+  .our-service__title {
+    font-size: var(--regular-size);
+    margin: 1.5em 0;
+    color: var(--primary-color);
+  }
+  
+  .view-more {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .view-more small {
+    margin-right: .5em;
+  }
+  /**END**/
+  
+  /**OUR MISSION**/
+  #our-mission {
+    background-color: #fff9f2;
+  }
+  
+  .our-mission__title p {
+    font-size: var(--small-size);
+  }
+  
+  .our-mission__title {
+    text-align: center;
+  }
+  
+  .why-us,
+  .mission {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all ease-out 500ms;
+  }
+  
+  .why-us:hover,
+  .mission:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .why-us:hover .card__img,
+  .mission:hover .card__img {
+    opacity: 0;
+  }
+  
+  .why-us:hover .card__text,
+  .mission:hover .card__text {
+    top: 50%;
+    color: white;
+    width: fit-content;
+    padding: 0 0.4em;
+  }
+  
+  .why-us:hover .card__body,
+  .mission:hover .card__body {
+    opacity: 1;
+    display: block;
+    margin-top: 0.5em;
+  }
+  
+  .why-us:hover .card__title,
+  .mission:hover .card__title {
+    opacity: 1;
+  }
+  
+  .why-us .card__img,
+  .missions .card__img {
+    max-width: 100%;
+    width: 100px !important;
+    display: block;
+    margin-top: 2.5em;
+    transition: opacity ease-out 300ms;
+  }
+  
+  .why-us .card__text,
+  .missions .card__text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all ease-out 500ms;
+  }
+  
+  .why-us .card__text {
+    top: 60%;
+  }
+  
+  .why-us .card__title,
+  .missions .card__title {
+    margin-bottom: 0;
+    opacity: 1;
+    font-size: var(--regular-size);
+    line-height: 1.8em;
+  }
+  
+  .why-us .card__body,
+  .missions .card__body {
+    opacity: 0;
+    font-size: 0.75em;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+  }
+  /**END**/
+  
+  /**OUR TECH**/
+  #technologies {
+    text-align: center;
+  }
+  
+  #technologies p {
+    font-size: var(--small-size);
+  }
+  
+  .techs__titles-box {
+    margin: 2em 0;
+  }
+  
+  .techs__titles {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+  }
+  
+  .techs__titles .tablink {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0.6em 1em;
+    margin: 0.5em;
+    color: var(--primary-color);
+    box-shadow: #ddd 0 0 11px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    flex-basis: calc(50% - 1em);
+    font-size: 3vw;
+  }
+  
+  .tablink:focus {
+    border-radius: 15px;
+    outline: none;
+  }
+  
+  .tablink.active {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .technos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    flex-basis: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .tech-item div {
+    flex: 1;
+  }
+  
+  .tech-item div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tech-item img {
+    max-width: 80%;
+    max-height: 70px;
+  }
+  
+  .postgres-icon,
+  .github-icon,
+  .git-icon,
+  .kubernetes-icon,
+  .spring-data-icon {
+    width: 50px;
+  }
+  
+  .spring-boot-icon {
+    width: 100px;
+  }
+  
+  .tech-item h4 {
+    font-weight: 600;
+    text-align: center;
+  }
+  /**END**/
+  
+  /**OUR TEAM**/
+  #our-team {
+    position: relative;
+    text-align: center;
+    padding-bottom: 2em;
+  }
+  
+  #our-team::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 1.1em;
+    background-color: #EEF1F4;
+    z-index: -1;
+    border-radius: 0% 100% 0% 100% / 93% 0% 100% 10%;
+  }
+  
+  .our-team__img {
+    width: 70%;
+    margin: 1em auto;
+  }
+  /**END**/
+  
+  /**WHY US**/
+  #why-us {
+    position: relative;
+    text-align: center;
+    background-color: #052b5d;
+    background-size: cover;
+    z-index: 1;
+  }
+  
+  #why-us::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: .8em;
+    background-image:  url(/images/blue-bg-white-dot-1.svg);
+    background-position: center;
+    background-repeat: repeat;
+    opacity: .05;
+    z-index: -1;
+  }
+  
+  #why-us h1 {
+    color: white;
+  }
+  
+  #why-us .owl-dot span {
+    border-color: var(--accent-color);
+    background-color: white;
+  }
+  
+  #why-us .owl-dot.active span {
+    border-color: white;
+    background-color: var(--accent-color);
+  }
+  
+  /**END**/
+  
+  /**OUR APPROACH**/
+  #our-approach {
+    position: relative;
+    text-align: center;
+    background-image: url(/images/our-approach-bg.svg);
+    background-size: cover;
+    background-position: 15% 75%;
+    padding: 5.5em 0 4em 0;
+  }
+  
+  #our-approach h1 {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  
+  .our-approach__box {
+    position: relative;
+  }
+  
+  .approach {
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+    font-weight: 600;
+    font-size: var(--regular-size);
+  }
+  
+  .approach-1 {
+    position: relative;
+    top: 0;
+    left: .625em;
+  }
+  
+  .approach-2 {
+    position: relative;
+    top: 0;
+    left: 2.1875em;
+  }
+  
+  .approach-3 {
+    position: relative;
+    top: 0;
+    left: .5em;
+  }
+  
+  .approach .number {
+    margin-right: 10px;
+    width: 20%;
+  }
+  
+  .approach img,
+  .our-approach__img img {
+    width: 100%;
+    height: auto;
+  }
+  /**END**/
+  
+  /**TRADES**/
+  #trades {
+    text-align: center;
+  }
+  
+  #trades .container {
+    padding: 0;
+  }
+  
+  .trades__desc {
+    padding: .5em;
+  }
+  
+  .trades__box {
+    background-color: #F2FEFF;
+  }
+  
+  .trades__img {
+    background-color: #E8E8E8;
+    padding: 2em 0;
+  }
+  
+  .trades__img img {
+    width: 80%;
+  }
+  
+  .trades-items {
+    padding: 2em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  
+  .trade-item {
+    display: flex;
+    border: 1px solid #17A6AF;
+    align-items: center;
+    padding: .5em .5em .5em 0;
+    height: 2em;
+    margin: .5em .5em 0 0;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .trade-item h4 {
+    margin: 0;
+  }
+  
+  .trade-item img {
+    width: 50%;
+  }
+  /**END**/
+  
+  /**OUR RESULTS**/
+  #our-results {
+    text-align: center;
+  }
+  
+  #our-results .container {
+    padding: 5% 2%;
+  }
+  
+  .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 1em auto;
+    padding: 5%;
+  }
+  
+  .result img {
+    width: 100px !important;
+  }
+  
+  .result p {
+    color: var(--primary-color);
+  }
+  
+  .result p, 
+  .result h4, 
+  .result img {
+    margin: 0;
+  }
+  /**END**/
+  
+  /**CALL TO ACTION**/
+  #call-to-action {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(107deg, #14A6AF 0%, #198B93CC 1%, #17A6AF 51%);
+    background-size: cover;
+    z-index: 1;
+    padding: 3em 0;
+  }
+  
+  #call-to-action::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+    background-image: url(/images/cta-bg.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  
+  .rounded-button {
+    color: white;
+    font-weight: bold;
+    padding: 2em;
+    width: fit-content;
+    margin: 1em auto 0 auto;
+    border-color: #fff;
+  }
+  
+  .rounded-button span {
+    margin-right: 1em;
+  }
+  /**END**/
+  
+  .footer {
+    border-top-left-radius: 0;
+  }
+  
+  /**END MOBILE**/
+  
+  @media only screen and (min-width: 480px) {
+    .our-service__img {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .trades__img img {
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (min-width: 640px) {
+    header .container {
+      padding: 3% 5%;
+    }
+  
+    .hero {
+      margin-top: 4em;
+    }
+  
+    .techs__titles .tablink {
+      font-size: 2vw;
+    }
+  
+    .trades-items {
+      padding: 3%;
+    }
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .show-tablet {
+      display: block;
+    }
+  
+    .hide-tablet{
+      display: none;
+    }
+  
+    header .container {
+      padding: 1% 5%;
+    }
+  
+    .hero p {
+      margin-top: 2em;
+    }
+  
+    /****/
+    .our-service__box {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: initial;
+    }
+  
+    .our-service__text,
+    .our-service__img {
+      flex: 1;
+    }
+  
+    .our-service__text {
+      order: 1;
+      margin-right: 5%;
+    }
+    .our-service__img {
+      order: 2;
+    }
+  
+    /*****/
+    .techs__titles {
+      justify-content: center;
+    }
+  
+    .techs__titles .tablink {
+      width: 200px;
+      flex: initial;
+      font-size: initial;
+    }
+  
+    .tech-item {
+      flex-basis: auto;
+      margin-right: .5em;
+    }
+  
+    /****/
+    #our-team {
+      padding-bottom: 2em;
+    }
+  
+    #our-team::after {
+      border-radius: 0% 100% 0% 100% / 71% 0% 100% 18% ;
+    }
+  
+    .our-team__box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: initial;
+    }
+  
+    .our-team__text,
+    .our-team__img {
+      flex: 1;
+    }
+    
+    .our-team__img {
+      width: 100%;
+      margin-right: 5%;
+    }
+  
+    /****/
+    #our-approach {
+      text-align: center;
+      background-image: url(/images/our-approach-bg.svg);
+      background-size: 95%;
+      background-repeat: no-repeat;
+      background-position: -5px ;
+      padding: 4em 0;
+      position: relative;
+    }
+  
+    #our-approach .container {
+      padding-bottom: 0;
+    }
+    
+    .our-approach__box {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2.3em;
+    }
+  
+    .our-approach__steps {
+      margin-right: 5%;
+    }
+  
+    .our-approach__steps,
+    .our-approach__img {
+      flex-basis: 50%;
+    }
+    
+    .approach-1 {
+      position: relative;
+      top: 0;
+      left: 5vw;
+    }
+    
+    .approach-2 {
+      position: relative;
+      top: 0;
+      left: 8vw;
+    }
+    
+    .approach-3 {
+      position: relative;
+      top: 0;
+      left: 5vw;
+    }
+    
+    .approach .number {
+      margin-right: 10px;
+      width: 15%;
+    }
+  
+    /****/
+    #trades {
+      background-color: #F2FEFF;
+      padding: 2em 0;
+      overflow: visible;
+    }
+  
+    .trades__intro {
+      text-align: center;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .trades__box {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .trades__img {
+      position: relative;
+      bottom: 0;
+      flex: 1;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  
+    .trades__texts {
+      flex: 2;
+      margin-left: 1.5em;
+    }
+  
+    .trades__img img {
+      width: initial;
+    }
+  
+    .trades-items {
+      padding: .5em;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .show-desktop {
+      display: block;
+    }
+  
+    .hide-desktop {
+      display: none;
+    }
+  
+    .container {
+      padding: 5%;
+    }
+  
+    .card {
+      box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
+    }
+  
+    .show-desktop-text {
+      display: block;
+    }
+  
+    /**HEADER**/
+    .hero p {
+      margin-top: 2em;
+    }
+  
+    /**OUR SERVICES**/
+    .our-service__title {
+      font-size: 1em;
+    }
+    /**END**/
+  
+    /**OUR MISSION**/
+    #our-mission {
+      background-color: #fff9f2;
+    }
+  
+    #our-mission .container {
+      padding: 5%;
+    }
+  
+    .our-mission__title {
+      text-align: center;
+    }
+  
+    .missions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .mission {
+      width: 30%;
+    }
+  
+    .mission:hover .card__body {
+      margin-top: 1.5em;
+    }
+  
+    /**END**/
+  
+    /**OUR TEAM**/
+    #our-team .container {
+      padding-top: 0;
+    }
+  
+    #our-team::after {
+      border-radius: 0% 100% 0% 100% / 71% 0% 100% 20% ;
+    }
+    
+    /**WHY US**/
+    #why-us .container {
+      padding: 2% 5%;
+    }
+  
+    #why-us h1 {
+      text-align: center;
+      font-size: 1.6em;
+      width: 70%;
+      margin: 1em auto;
+    }
+    /**END**/
+  
+    /**TRADES**/
+    .trades__img {
+      bottom: 5.5rem;
+    }
+    /**EN**/
+  
+    /**OUR RESULTS**/
+    #our-results .wrap-p {
+      width: 70%;
+      margin: 2em auto;
+    }
+    
+    #our-results .container {
+      padding: 5%;
+    }
+    /**END**/
+  
+    /**CALL TO ACTION**/
+    #call-to-action::after {
+      background-size: cover;
+      background-image: url(/images/cta-bg.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.4;
+    }
+  
+    #call-to-action h1 {
+      font-size: 1.6em;
+    }
+  
+    #call-to-action .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 5%;
+    }
+  
+    #call-to-action .wrap-p {
+      width: 70%;
+      margin: 2em auto;
+      font-weight: 400;
+    }
+    /**END**/
+  }
+  
+  @media only screen and (min-width: 1350px) {
+    .trades__img {
+      bottom: 5rem;
+    }
+  }
