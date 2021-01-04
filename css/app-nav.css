@@ -123,10 +123,6 @@
     opacity: 0.15;
     z-index: -1;
   }
-
-  .sub-title {
-    line-height: 1.2rem;
-  }
   /**END**/
   
   /**OUR SERVICE**/
@@ -642,10 +638,6 @@
   }
   
   @media only screen and (min-width: 720px) {
-    .sub-title {
-      line-height: 1.5rem;
-    }
-
     .show-tablet {
       display: block;
     }

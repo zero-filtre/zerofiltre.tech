@@ -281,6 +281,10 @@ footer .container {
 .social-links a {
     margin-left: 0.5em;
 }
+
+.sub-title {
+    line-height: 1.2rem;
+}
 /***END***/
 
 @media only screen and (min-width: 480px) {
@@ -304,6 +308,11 @@ footer .container {
 
     .rounded-button img {
         height: 20px;
+    }
+
+    .sub-title {
+        line-height: 1.5rem;
+        /* font-size: .8rem !important; */
     }
 
     /**HEADER**/
