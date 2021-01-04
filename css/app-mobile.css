@@ -748,6 +748,11 @@
     .our-approach__img {
       flex-basis: 50%;
     }
+
+    .our-approach__img img {
+      width: 70%;
+      margin-right: 25%;
+    }
     
     .approach-1 {
       position: relative;
@@ -807,6 +812,7 @@
   
     .trades__img img {
       width: initial;
+      max-width: 50%;
     }
   
     .trades-items {
