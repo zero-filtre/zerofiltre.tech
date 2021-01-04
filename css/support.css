@@ -116,8 +116,8 @@
     left: 0;
     bottom: 0;
     background-size: cover;
-    background-image: url(/images/java-landing-illustration.svg);
-    background-position: 100% 42%;
+    background-image: url(/images/app-support-hero-img.jpg);
+    background-position: 100% 15%;
     background-repeat: no-repeat;
     border-radius: 20px;
     opacity: 0.15;
@@ -580,7 +580,7 @@
     left: 0;
     bottom: 0;
     background-size: cover;
-    background-image: url(/images/cta-bg.svg);
+    background-image: url(/images/app-support-cta-bg-img.jpg);
     background-position: center left;
     background-repeat: no-repeat;
     opacity: 0.4;
@@ -917,8 +917,7 @@
     /**CALL TO ACTION**/
     #call-to-action::after {
       background-size: cover;
-      background-image: url(/images/cta-bg.svg);
-      background-position: center;
+      background-position: 100% 25%;
       background-repeat: no-repeat;
       opacity: 0.4;
     }
