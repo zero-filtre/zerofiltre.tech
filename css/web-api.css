@@ -806,6 +806,7 @@
   
     .trades__img img {
       width: initial;
+      max-width: 50%;
     }
   
     .trades-items {

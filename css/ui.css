@@ -748,6 +748,10 @@
     .our-approach__img {
       flex-basis: 50%;
     }
+
+    .our-approach__img img {
+      width: 70%;
+    }
     
     .approach-1 {
       position: relative;
