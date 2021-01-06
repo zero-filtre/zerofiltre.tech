@@ -3,7 +3,7 @@ import { initialContent, dbContent, toolsContent, lifecycleContent } from './tec
 initialContent.innerHTML = `
             <div class="tech-item">
                <div>
-                <img src="./images/java-icon.svg" class="img-fluid" alt="">
+                <img src="./images/dart-icon.svg" class="img-fluid" alt="dart">
               </div>
               <div>
                 <h4>Dart</h4>
@@ -12,7 +12,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
               <div>
-                <img src="./images/graphql-java-icon.svg" class="img-fluid" alt="graphql-icon">
+                <img src="./images/flutter-icon.svg" class="img-fluid" alt="flutter">
               </div>
               <div>
                 <h4>Flutter</h4>
