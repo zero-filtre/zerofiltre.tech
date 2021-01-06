@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -10,8 +10,8 @@
           Zerofiltre s’appui sur un panel d’ingénieurs expérimentés et passionnés qui priorisent la résolution de problèmes et valeur ajoutée au métier
           Créée en 2015, Zerofiltre voit le jour à l’initiative de Philippe SIMO , un ingénieur entrepreneur, et architecte logiciel spécialisé en JAVA">
   <title>page title</title>
+  <link rel="stylesheet" href="css/header-service.css">
   <link rel="stylesheet" href="css/name.css">
-  <link rel="stylesheet" href="css/main.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -19,62 +19,96 @@
 </head>
 
 <body>
-  <div class="green-container">
-    <div class="container">
-      <header>
-        <a class="logo-link" href="#">
-          <img class="logo" src="images/logo.svg" alt="Zerofiltre.tech">
+  <div class="header-wrapper">
+    <header>
+      <div class="container">
+        <a class="logo-link" href="/">
+          <img class="logo" src="images/logoblue.svg" alt="Zerofiltre.tech">
         </a>
 
         <nav>
           <a class="hide-desktop" href="#">
-            <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+            <img src="images/blue-ham.svg" alt="toggle menu" class="menu" id="menu">
           </a>
           <ul class="show-desktop hide-mobile" id="nav">
             <li class="exit-btn hide-desktop" id="exit">
-              <img src="images/exit.svg" alt="exit">
+              <img src="images/blue-exit-1.svg" alt="exit">
             </li>
             <li><a href="#">A propos</a></li>
-            <li><a href="#">Services <img src="images/chevron-down.svg" alt="chevron-down"></a></li>
+
+            <li class="dropdown">
+              <a href="services.html" class="dropbtn">Services<img src="images/blue-chevron-down.svg"
+                  alt="chevron-down"></a>
+              <div class="dropdown-content">
+                <div class="apps group">
+                  <h1>Développement d’application</h1>
+                  <a href="/app-java.html">Développement d’application Java</a>
+                  <a href="/app-nav.html">Développement d’applications pour navigateurs Web</a>
+                  <a href="/app-mobile.html">Développement d’applications mobiles</a>
+                  <a href="/support.html">Maintenance d’applications et support</a>
+                </div>
+
+                <div class="api group">
+                  <h1>Développement d’APIs</h1>
+                  <a href="/web-api.html">Développement d’APIs WEB</a>
+                </div>
+
+                <div class="ui group">
+                  <h1>Conception d’interfaces graphiques</h1>
+                  <a href="/ui.html">Conception de prototypes d’interfaces graphiques</a>
+                </div>
+              </div>
+            </li>
+
             <li><a href="#">Blog</a></li>
 
             <li>
               <a href="https://web.whatsapp.com">
-                <img src="images/whatsapp.svg" alt="N° whatsapp 0753428623">
+                <img src="images/blue-whatsapp.svg" alt="N° whatsapp 0753428623">
                 +33 7 53 42 86 23
               </a>
             </li>
             <li>
-              <a href="https://github.com/zero-filtre"><img src="images/github.svg" alt="Nos repo github"></a>
+              <a href="https://github.com/zero-filtre"><img src="images/blue-github.svg" alt="Nos repo github"></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/linkedIn.svg"
+              <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/blue-linkdin.svg"
                   alt="Notre page LinkedIn"></a>
             </li>
           </ul>
         </nav>
-      </header>
-      <section>
-        <div>
-          <h1>
-            Nous fournissons des services à
-            <span class="green-text"> valeur ajoutée </span>
-            avec une approche taillée pour chaque
-            <span class="yellow-text"> enterprise </span> .
-          </h1>
-          <br><br>
-          <p class="subhead">
-            Notre équipe d’experts en développement
-            d’applications d’entreprises,
-            web et mobiles vous délivrent le service adéquat
-            comme vous l’imaginez et quand vous le voulez.
-          </p>
-        </div>
-        <img src="images/landing_illustration.svg" alt="landing illustration" class="landing_illustration">
-      </section>
-      <img src="images/scroll_indicator.svg" alt="scroll down" class="scroll-indicator show-desktop hide-mobile">
-    </div>
+      </div>
+    </header>
+
+    <section class="green-container hero">
+      <div class="container">
+        <h1>Conception de prototypes d’interfaces graphiques</h1>
+        <p class="sub-title">Captiver l’attention de vos utilisateurs avec des interfaces graphiques
+          confortables <br>
+          <span>Conception d’interfaces graphiques douces et captivantes</span>
+        </p>
+      </div>
+
+      <div class="triangle triangle-1">
+        <img src="/images/triangle-blue.svg" class="img-fluid" alt="">
+      </div>
+      <div class="triangle triangle-2">
+        <img src="/images/triangle-yellow.svg" class="img-fluid" alt="">
+      </div>
+      <div class="triangle triangle-3">
+        <img src="/images/triangle-outline.svg" class="img-fluid" alt="">
+      </div>
+      <div class="triangle triangle-4">
+        <img src="/images/triangle-yellow.svg" class="img-fluid" alt="">
+      </div>
+      <div class="triangle triangle-5">
+        <img src="/images/triangle-outline.svg" class="img-fluid" alt="">
+      </div>
+    </section>
   </div>
+
+  <div>222</div>
+  <div>222</div>
 
   <footer class="footer">
     <div class="container">
@@ -148,11 +182,7 @@
       </div>
     </div>
   </footer>
-  <div onclick="backToTop()" class="back-to-top" id="back-to-top">
-    <img src="images/chevron-down.svg" alt="Back to top">
-  </div>
   <script src="js/carousel.js"></script>
 </body>
 
 </html>
- -->
