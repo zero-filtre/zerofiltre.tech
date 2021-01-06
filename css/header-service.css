@@ -96,6 +96,7 @@ ul {
     width: 40px;
 }
 
+/***tech icons***/
 .tech-item h4 {
     display: none;
 }
@@ -104,14 +105,6 @@ ul {
     min-width: 100px;
     max-height: 70px;
 }
-  
-  /* .postgres-icon,
-  .github-icon,
-  .git-icon,
-  .kubernetes-icon,
-  .spring-data-icon {
-    width: 50px;
-  } */
 
 .spring-data-icon {
     height: 50px !important;
@@ -119,6 +112,12 @@ ul {
 
 .spring-boot-icon {
     width: 100px;
+}
+
+.postgresql-icon,
+.mongodb-icon,
+.mysql-icon {
+    width: 200px;
 }
 
 .kubernetes-icon,
@@ -478,22 +477,21 @@ footer .container {
     }
 
     .dropdown h1 {
-        font-size: .95rem;
+        font-size: 1rem;
         font-weight: bold;
-        color: var(--primary-color);
+        color: var(--accent-color);
         padding: 12px;
     }
 
     .dropdown-content {
         display: none;
         position: absolute;
-
         left: -300px;
-        width: 800px;
+        max-width: 800px;
+        width: 60vw;
         padding: 20%;
         background-color: white;
-        box-shadow: #ddd 0 0 2px;
-
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.10);
         z-index: 1;
     }
 
@@ -506,18 +504,18 @@ footer .container {
     }
 
     .dropdown-content a:hover {
-        background: #f9fafb;
-        color: var(--primary-color);
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.10);
+        border-radius: 10px;
     }
-
+    
     .dropdown:hover .dropdown-content {
         display: flex;
         flex-wrap: wrap;
+        border-radius: 10px;
     }
 
     .dropdown:hover .dropbtn {
-        color: var(--primary-color);
+        color: var(--accent-color);
     }
 
     nav {
