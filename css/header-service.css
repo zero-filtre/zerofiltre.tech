@@ -95,6 +95,37 @@ ul {
     height: 20px;
     width: 40px;
 }
+
+.tech-item h4 {
+    display: none;
+}
+
+.tech-item img {
+    min-width: 100px;
+    max-height: 70px;
+}
+  
+  /* .postgres-icon,
+  .github-icon,
+  .git-icon,
+  .kubernetes-icon,
+  .spring-data-icon {
+    width: 50px;
+  } */
+
+.spring-data-icon {
+    height: 50px !important;
+}
+
+.spring-boot-icon {
+    width: 100px;
+}
+
+.kubernetes-icon,
+.sonarcube-icon {
+    width: 200px;
+}
+  
 /***END***/
 
 /***HEADER***/
@@ -385,6 +416,10 @@ footer .container {
 
     .rounded-button img {
         height: 20px;
+    }
+
+    .tech-item {
+        margin-right: 1em !important;
     }
 }
 

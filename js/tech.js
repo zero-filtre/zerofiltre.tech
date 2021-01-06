@@ -89,7 +89,7 @@ initialContent.innerHTML = `
 dbContent.innerHTML = `
             <div class="tech-item">
                <div>
-                <img src="./images/mongodb-icon.svg" class="img-fluid" alt="mongodb">
+                <img src="./images/mongodb-icon.svg" class="img-fluid mongodb-icon" alt="mongodb">
               </div>
               <div>
                 <h4>MongoDB</h4>
@@ -98,7 +98,7 @@ dbContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/mysql-icon.svg" class="img-fluid" alt="mysql">
+                <img src="./images/mysql-icon.svg" class="img-fluid mysql-icon" alt="mysql">
               </div>
               <div>
                 <h4>MySQL</h4>
@@ -107,7 +107,7 @@ dbContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/postgresql-icon.svg" class="img-fluid postgres-icon" alt="postgresql">
+                <img src="./images/postgresql-icon.svg" class="img-fluid postgresql-icon" alt="postgresql">
               </div>
               <div>
                 <h4>PostgreSQL</h4>
@@ -126,7 +126,7 @@ toolsContent.innerHTML = `
 
             <div class="tech-item">
               <div>
-                <img src="./images/sonar-icon.svg" class="img-fluid" alt="sonar">
+                <img src="./images/sonar-icon.svg" class="img-fluid sonarcube-icon" alt="sonar">
               </div>
               <div>
                 <h4>Sonar</h4>
@@ -144,7 +144,7 @@ toolsContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/kubernetees-icon.svg" class="img-fluid kubernetes-icon" alt="kubernetees">
+                <img src="./images/kubernetes-icon.svg" class="img-fluid kubernetes-icon" alt="kubernetees">
               </div>
               <div>
                 <h4>Kubernetes</h4>

@@ -31,7 +31,7 @@ toolsContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/kubernetees-icon.svg" class="img-fluid kubernetes-icon" alt="kubernetees">
+                <img src="./images/kubernetes-icon.svg" class="img-fluid kubernetes-icon" alt="kubernetees">
               </div>
               <div>
                 <h4>Kubernetes</h4>

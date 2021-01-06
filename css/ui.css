@@ -326,23 +326,6 @@
     align-items: center;
   }
   
-  .tech-item img {
-    max-width: 80%;
-    max-height: 70px;
-  }
-  
-  .postgres-icon,
-  .github-icon,
-  .git-icon,
-  .kubernetes-icon,
-  .spring-data-icon {
-    width: 50px;
-  }
-  
-  .spring-boot-icon {
-    width: 100px;
-  }
-  
   .tech-item h4 {
     font-weight: 600;
     text-align: center;
