@@ -86,11 +86,13 @@ ul {
   border-radius: 50px;
   width: fit-content;
   color: white;
+  background-color: transparent;
   font-size: 0.85em;
   font-weight: bold;
-  margin: 1em auto .5em auto;
+  margin: .5em auto;
   padding: 1em 2em;
   cursor: pointer;
+  transition: .3s;
 }
 
 .rounded-button span {
@@ -102,25 +104,44 @@ ul {
   width: 40px;
 }
 
+.rounded-button:hover {
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+
+.wrap-p {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
 /***tech icons***/
 .tech-item h4 {
   display: none;
 }
 
 .tech-item img {
-  min-width: 100px;
-  max-height: 70px;
+  width: 150px;
 }
 
-.spring-data-icon {
-  height: 50px !important;
+.spring-cloud-icon,
+.spring-boot-icon {
+  width: 80px !important;
 }
 
 .spring-boot-icon {
-  width: 100px;
+  width: 110px !important;
 }
 
-.postgresql-icon,
+.springio-icon,
+.spring-data-icon {
+  width: 50px !important;
+}
+
+.adobe-xd-icon {
+  width: 55px !important;
+}
+
+/* .postgresql-icon,
 .mongodb-icon,
 .mysql-icon {
   width: 200px;
@@ -129,7 +150,7 @@ ul {
 .kubernetes-icon,
 .sonarcube-icon {
   width: 200px;
-}
+} */
 
 /***END***/
 
@@ -473,6 +494,22 @@ footer .container {
     margin-right: 4%;
   }
 
+  .group a {
+    display: flex !important;
+    align-items: center;
+    justify-content: stretch;
+  }
+
+  .group img {
+    width: 25x;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  .group span {
+    display: inline-block;
+  }
+
   .dropdown h1 {
     font-size: 1rem;
     font-weight: bold;
@@ -493,7 +530,7 @@ footer .container {
   }
 
   .dropdown-content a {
-    padding: 12px;
+    padding: 10px 5px;
     text-decoration: none;
     display: block;
     line-height: 1.6em;

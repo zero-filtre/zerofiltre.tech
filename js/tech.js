@@ -70,7 +70,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
               <div>
-                <img src="./images/spring-cloud-icon.svg" class="img-fluid" alt="">
+                <img src="./images/spring-cloud-icon.svg" class="img-fluid spring-cloud-icon" alt="">
               </div>
               <div>
                 <h4>Spring-Cloud</h4>

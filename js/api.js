@@ -30,7 +30,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/spring-web-icon.svg" class="img-fluid spring-web-icon" alt="spring-mvc">
+                <img src="./images/springio-icon.svg" class="img-fluid springio-icon" alt="spring-mvc">
               </div>
               <div>
                 <h4>Spring Web MVC</h4>
@@ -39,7 +39,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/spring-security-icon.svg" class="img-fluid spring-security-icon" alt="spring-security">
+                <img src="./images/springio-icon.svg" class="img-fluid springio-icon" alt="spring-security">
               </div>
               <div>
                 <h4>Spring Security</h4>
@@ -48,7 +48,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
               <div>
-                <img src="./images/spring-aop-icon.svg" class="img-fluid" alt="spring-aop">
+                <img src="./images/springio-icon.svg" class="img-fluid springio-icon" alt="springio-icon">
               </div>
               <div>
                 <h4>Spring AOP</h4>
