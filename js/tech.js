@@ -22,68 +22,230 @@ const lifecycleContent = document.createElement("div");
 lifecycleContent.className = "technos";
 lifecycleContent.classList.add("lifeCycle");
 
+// initialContent.innerHTML = `
+//             <div class="tech-item">
+//                <div>
+//                 <img src="./images/java-icon.svg" class="img-fluid" alt="">
+//               </div>
+//               <div>
+//                 <h4>Java</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//               <div>
+//                 <img src="./images/spring-icon.svg" class="img-fluid" alt="">
+//               </div>
+//               <div>
+//                 <h4>Spring</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//                <div>
+//                 <img src="./images/spring-boot-icon.svg" class="img-fluid spring-boot-icon" alt="">
+//               </div>
+//               <div>
+//                 <h4>Spring-boot</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//                <div>
+//                 <img src="./images/spring-data-icon.svg" class="img-fluid spring-data-icon" alt="">
+//               </div>
+//               <div>
+//                 <h4>Spring-data</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//                <div>
+//                 <img src="./images/hibernate-icon.svg" class="img-fluid hibernate" alt="">
+//               </div>
+//               <div>
+//                 <h4>Hibernate</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//               <div>
+//                 <img src="./images/spring-cloud-icon.svg" class="img-fluid spring-cloud-icon" alt="">
+//               </div>
+//               <div>
+//                 <h4>Spring-Cloud</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//               <div>
+//                 <img src="./images/kafka-icon.svg" class="img-fluid" alt="">
+//               </div>
+//               <div>
+//                 <h4>Kafka</h4>
+//               </div>
+//             </div>`;
+
+// dbContent.innerHTML = `
+//             <div class="tech-item">
+//                <div>
+//                 <img src="./images/mongodb-icon.svg" class="img-fluid mongodb-icon" alt="mongodb">
+//               </div>
+//               <div>
+//                 <h4>MongoDB</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//                <div>
+//                 <img src="./images/mysql-icon.svg" class="img-fluid mysql-icon" alt="mysql">
+//               </div>
+//               <div>
+//                 <h4>MySQL</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//                <div>
+//                 <img src="./images/postgresql-icon.svg" class="img-fluid postgresql-icon" alt="postgresql">
+//               </div>
+//               <div>
+//                 <h4>PostgreSQL</h4>
+//               </div>
+//             </div>`;
+
+// toolsContent.innerHTML = `
+//             <div class="tech-item">
+//                <div>
+//                 <img src="./images/maven-icon.svg" class="img-fluid" alt="maven">
+//               </div>
+//               <div>
+//                 <h4>Maven</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//               <div>
+//                 <img src="./images/sonar-icon.svg" class="img-fluid sonarcube-icon" alt="sonar">
+//               </div>
+//               <div>
+//                 <h4>Sonar</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//                <div>
+//                 <img src="./images/docker-icon.svg" class="img-fluid" alt="docker">
+//               </div>
+//               <div>
+//                 <h4>Docker</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//                <div>
+//                 <img src="./images/kubernetes-icon.svg" class="img-fluid kubernetes-icon" alt="kubernetees">
+//               </div>
+//               <div>
+//                 <h4>Kubernetes</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//               <div>
+//                 <img src="./images/jenkins-icon.svg" class="img-fluid" alt="jenkins">
+//               </div>
+//               <div>
+//                 <h4>Jenkins</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//                <div>
+//                 <img src="./images/gitlab-icon.svg" class="img-fluid" alt="gitlab-ci">
+//               </div>
+//               <div>
+//                 <h4>Gitlab-ci</h4>
+//               </div>
+//             </div>`;
+
+// lifecycleContent.innerHTML = `
+//             <div class="tech-item">
+//               <div>
+//                 <img src="./images/git-icon.svg" class="img-fluid git-icon" alt="git">
+//               </div>
+//               <div>
+//                 <h4>Git</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//              <div>
+//                 <img src="/images/github-icon.svg" class="img-fluid github-icon" alt="github">
+//               </div>
+//               <div>
+//                 <h4>Github</h4>
+//               </div>
+//             </div>
+
+//             <div class="tech-item">
+//               <div>
+//                 <img src="/images/gitlab-icon.svg" class="img-fluid" alt="gitlab">
+//               </div>
+//               <div>
+//                 <h4>Gitlab</h4>
+//               </div>
+//             </div>`;
+
+
 initialContent.innerHTML = `
             <div class="tech-item">
                <div>
                 <img src="./images/java-icon.svg" class="img-fluid" alt="">
               </div>
-              <div>
-                <h4>Java</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
               <div>
                 <img src="./images/spring-icon.svg" class="img-fluid" alt="">
               </div>
-              <div>
-                <h4>Spring</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
                <div>
                 <img src="./images/spring-boot-icon.svg" class="img-fluid spring-boot-icon" alt="">
               </div>
-              <div>
-                <h4>Spring-boot</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
                <div>
                 <img src="./images/spring-data-icon.svg" class="img-fluid spring-data-icon" alt="">
               </div>
-              <div>
-                <h4>Spring-data</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
                <div>
                 <img src="./images/hibernate-icon.svg" class="img-fluid hibernate" alt="">
               </div>
-              <div>
-                <h4>Hibernate</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
               <div>
                 <img src="./images/spring-cloud-icon.svg" class="img-fluid spring-cloud-icon" alt="">
               </div>
-              <div>
-                <h4>Spring-Cloud</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
               <div>
                 <img src="./images/kafka-icon.svg" class="img-fluid" alt="">
               </div>
-              <div>
-                <h4>Kafka</h4>
-              </div>
+              
             </div>`;
 
 dbContent.innerHTML = `
@@ -91,27 +253,21 @@ dbContent.innerHTML = `
                <div>
                 <img src="./images/mongodb-icon.svg" class="img-fluid mongodb-icon" alt="mongodb">
               </div>
-              <div>
-                <h4>MongoDB</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
                <div>
                 <img src="./images/mysql-icon.svg" class="img-fluid mysql-icon" alt="mysql">
               </div>
-              <div>
-                <h4>MySQL</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
                <div>
                 <img src="./images/postgresql-icon.svg" class="img-fluid postgresql-icon" alt="postgresql">
               </div>
-              <div>
-                <h4>PostgreSQL</h4>
-              </div>
+              
             </div>`;
 
 toolsContent.innerHTML = `
@@ -119,54 +275,42 @@ toolsContent.innerHTML = `
                <div>
                 <img src="./images/maven-icon.svg" class="img-fluid" alt="maven">
               </div>
-              <div>
-                <h4>Maven</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
               <div>
                 <img src="./images/sonar-icon.svg" class="img-fluid sonarcube-icon" alt="sonar">
               </div>
-              <div>
-                <h4>Sonar</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
                <div>
                 <img src="./images/docker-icon.svg" class="img-fluid" alt="docker">
               </div>
-              <div>
-                <h4>Docker</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
                <div>
                 <img src="./images/kubernetes-icon.svg" class="img-fluid kubernetes-icon" alt="kubernetees">
               </div>
-              <div>
-                <h4>Kubernetes</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
               <div>
                 <img src="./images/jenkins-icon.svg" class="img-fluid" alt="jenkins">
               </div>
-              <div>
-                <h4>Jenkins</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
                <div>
                 <img src="./images/gitlab-icon.svg" class="img-fluid" alt="gitlab-ci">
               </div>
-              <div>
-                <h4>Gitlab-ci</h4>
-              </div>
+              
             </div>`;
 
 lifecycleContent.innerHTML = `
@@ -174,27 +318,21 @@ lifecycleContent.innerHTML = `
               <div>
                 <img src="./images/git-icon.svg" class="img-fluid git-icon" alt="git">
               </div>
-              <div>
-                <h4>Git</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
              <div>
                 <img src="/images/github-icon.svg" class="img-fluid github-icon" alt="github">
               </div>
-              <div>
-                <h4>Github</h4>
-              </div>
+              
             </div>
 
             <div class="tech-item">
               <div>
                 <img src="/images/gitlab-icon.svg" class="img-fluid" alt="gitlab">
               </div>
-              <div>
-                <h4>Gitlab</h4>
-              </div>
+              
             </div>`;
 
 function addElementToPage(parent, element) {

@@ -115,6 +115,10 @@ ul {
 }
 
 /***tech icons***/
+.tech-item {
+  height: auto !important;
+}
+
 .tech-item h4 {
   display: none;
 }
