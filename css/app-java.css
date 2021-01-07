@@ -41,7 +41,7 @@ section {
   border-radius: 10px;
   padding: var(--regular-size);
   box-shadow: 2px 5px 15px rgba(65, 45, 45, 0.15);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .card:hover {
@@ -157,7 +157,7 @@ section {
 }
 
 .view-more small {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 /**END**/
 
@@ -340,13 +340,13 @@ section {
 }
 
 #our-team::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 1.1em;
-  background-color: #EEF1F4;
+  background-color: #eef1f4;
   z-index: -1;
   border-radius: 0% 100% 0% 100% / 93% 0% 100% 10%;
 }
@@ -373,11 +373,11 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background-size: .8em;
-  background-image:  url(/images/blue-bg-white-dot-1.svg);
+  background-size: 0.8em;
+  background-image: url(/images/blue-bg-white-dot-1.svg);
   background-position: center;
   background-repeat: repeat;
-  opacity: .05;
+  opacity: 0.05;
   z-index: -1;
 }
 
@@ -430,7 +430,7 @@ section {
 .approach-1 {
   position: relative;
   top: 0;
-  left: .625em;
+  left: 0.625em;
 }
 
 .approach-2 {
@@ -442,7 +442,7 @@ section {
 .approach-3 {
   position: relative;
   top: 0;
-  left: .5em;
+  left: 0.5em;
 }
 
 .approach .number {
@@ -467,15 +467,15 @@ section {
 }
 
 .trades__desc {
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .trades__box {
-  background-color: #F2FEFF;
+  background-color: #f2feff;
 }
 
 .trades__img {
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
   padding: 2em 0;
 }
 
@@ -492,11 +492,11 @@ section {
 
 .trade-item {
   display: flex;
-  border: 1px solid #17A6AF;
+  border: 1px solid #17a6af;
   align-items: center;
-  padding: .5em .5em .5em 0;
+  padding: 0.5em 0.5em 0.5em 0;
   height: 2em;
-  margin: .5em .5em 0 0;
+  margin: 0.5em 0.5em 0 0;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -537,8 +537,8 @@ section {
   color: var(--primary-color);
 }
 
-.result p, 
-.result h4, 
+.result p,
+.result h4,
 .result img {
   margin: 0;
 }
@@ -549,7 +549,12 @@ section {
   position: relative;
   text-align: center;
   color: white;
-  background-image: linear-gradient(107deg, #14A6AF 0%, #198B93CC 1%, #17A6AF 51%);
+  background-image: linear-gradient(
+    107deg,
+    #14a6af 0%,
+    #198b93cc 1%,
+    #17a6af 51%
+  );
   background-size: cover;
   z-index: 1;
   padding: 3em 0;
@@ -570,18 +575,6 @@ section {
   z-index: -1;
 }
 
-.rounded-button {
-  color: white;
-  font-weight: bold;
-  padding: 2em;
-  width: fit-content;
-  margin: 1em auto 0 auto;
-  border-color: #fff;
-}
-
-.rounded-button span {
-  margin-right: 1em;
-}
 /**END**/
 
 .footer {
@@ -625,7 +618,7 @@ section {
     display: block;
   }
 
-  .hide-tablet{
+  .hide-tablet {
     display: none;
   }
 
@@ -638,6 +631,10 @@ section {
   }
 
   /****/
+  #our-service .container {
+    padding-top: 2%;
+  }
+
   .our-service__box {
     flex-direction: row;
     justify-content: center;
@@ -671,7 +668,7 @@ section {
 
   .tech-item {
     flex-basis: auto;
-    margin-right: .5em;
+    margin-right: 0.5em;
   }
 
   /****/
@@ -680,7 +677,7 @@ section {
   }
 
   #our-team::after {
-    border-radius: 0% 100% 0% 100% / 71% 0% 100% 18% ;
+    border-radius: 0% 100% 0% 100% / 71% 0% 100% 18%;
   }
 
   .our-team__box {
@@ -694,7 +691,7 @@ section {
   .our-team__img {
     flex: 1;
   }
-  
+
   .our-team__img {
     width: 100%;
     margin-right: 5%;
@@ -706,7 +703,7 @@ section {
     background-image: url(/images/our-approach-bg.svg);
     background-size: 95%;
     background-repeat: no-repeat;
-    background-position: -5px ;
+    background-position: -5px;
     padding: 4em 0;
     position: relative;
   }
@@ -714,7 +711,7 @@ section {
   #our-approach .container {
     padding-bottom: 0;
   }
-  
+
   .our-approach__box {
     position: relative;
     display: flex;
@@ -731,25 +728,25 @@ section {
   .our-approach__img {
     flex-basis: 50%;
   }
-  
+
   .approach-1 {
     position: relative;
     top: 0;
     left: 5vw;
   }
-  
+
   .approach-2 {
     position: relative;
     top: 0;
     left: 8vw;
   }
-  
+
   .approach-3 {
     position: relative;
     top: 0;
     left: 5vw;
   }
-  
+
   .approach .number {
     margin-right: 10px;
     width: 15%;
@@ -757,7 +754,7 @@ section {
 
   /****/
   #trades {
-    background-color: #F2FEFF;
+    background-color: #f2feff;
     padding: 2em 0;
     overflow: visible;
   }
@@ -793,7 +790,7 @@ section {
   }
 
   .trades-items {
-    padding: .5em;
+    padding: 0.5em;
   }
 }
 
@@ -864,9 +861,9 @@ section {
   }
 
   #our-team::after {
-    border-radius: 0% 100% 0% 100% / 71% 0% 100% 20% ;
+    border-radius: 0% 100% 0% 100% / 71% 0% 100% 20%;
   }
-  
+
   /**WHY US**/
   #why-us .container {
     padding: 2% 5%;
@@ -891,7 +888,7 @@ section {
     width: 70%;
     margin: 2em auto;
   }
-  
+
   #our-results .container {
     padding: 5%;
   }
@@ -931,4 +928,3 @@ section {
     bottom: 5rem;
   }
 }
-
