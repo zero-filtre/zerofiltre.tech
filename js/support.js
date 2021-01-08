@@ -21,7 +21,7 @@ import { initialContent, toolsContent, lifecycleContent } from './tech.js'
 
 //             <div class="tech-item">
 //                <div>
-//                 <img src="./images/spring-boot-icon.svg" class="img-fluid spring-boot-icon" alt="">
+//                 <img src="./images/springio-icon.svg" class="img-fluid springio-icon" alt="spring-boot">
 //               </div>
 //               <div>
 //                 <h4>Spring-boot</h4>
@@ -164,7 +164,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/spring-boot-icon.svg" class="img-fluid spring-boot-icon" alt="">
+                <img src="./images/springio-icon.svg" class="img-fluid springio-icon" alt="spring-boot">
               </div>
         
             </div>
