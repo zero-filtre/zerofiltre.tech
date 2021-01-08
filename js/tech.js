@@ -208,7 +208,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
               <div>
-                <img src="./images/spring-icon.svg" class="img-fluid" alt="">
+                <img src="./images/springio-icon.svg" class="img-fluid" alt="">
               </div>
               
             </div>

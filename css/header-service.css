@@ -119,42 +119,10 @@ ul {
   height: auto !important;
 }
 
-.tech-item h4 {
-  display: none;
-}
-
 .tech-item img {
   width: 150px;
 }
 
-.spring-cloud-icon,
-.spring-boot-icon {
-  width: 80px !important;
-}
-
-.spring-boot-icon {
-  width: 110px !important;
-}
-
-.springio-icon,
-.spring-data-icon {
-  width: 50px !important;
-}
-
-.adobe-xd-icon {
-  width: 55px !important;
-}
-
-/* .postgresql-icon,
-.mongodb-icon,
-.mysql-icon {
-  width: 200px;
-}
-
-.kubernetes-icon,
-.sonarcube-icon {
-  width: 200px;
-} */
 
 /***END***/
 
@@ -508,6 +476,10 @@ footer .container {
     width: 25x;
     height: 25px;
     margin-right: 10px;
+  }
+
+  .apps a:last-child img {
+    width: 22px;
   }
 
   .group span {
