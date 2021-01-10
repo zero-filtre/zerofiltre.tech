@@ -116,11 +116,28 @@ ul {
 
 /***tech icons***/
 .tech-item {
-  height: auto !important;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  margin: 2% 2% 2% 0;
+  flex-basis: calc(50% - 4vw);
 }
 
-.tech-item img {
-  width: 150px;
+.tech-item div {
+  width: 50%;
+}
+
+.tech-item div:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-item h4 {
+  font-size: .9rem;
+  font-weight: 600;
+  text-align: center;
+  margin-left: .9em;
 }
 
 
@@ -408,7 +425,11 @@ footer .container {
   }
 
   .tech-item {
-    margin-right: 1em !important;
+    flex-basis: auto;
+  }
+
+  .tech-item div {
+    width: auto;
   }
 }
 

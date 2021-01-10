@@ -306,30 +306,6 @@ section {
   justify-content: center;
 }
 
-.tech-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
-  flex-basis: 50%;
-  width: 150px;
-  height: 150px;
-}
-
-.tech-item div {
-  flex: 1;
-}
-
-.tech-item div:first-of-type {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tech-item h4 {
-  font-weight: 600;
-  text-align: center;
-}
 /**END**/
 
 /**OUR TEAM**/
@@ -664,11 +640,6 @@ section {
     width: 200px;
     flex: initial;
     font-size: initial;
-  }
-
-  .tech-item {
-    flex-basis: auto;
-    margin-right: 0.5em;
   }
 
   /****/
