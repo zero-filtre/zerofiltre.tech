@@ -180,7 +180,7 @@ nav ul li a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: max-content;
   padding: 1em 2em;
 }
 
