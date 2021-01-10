@@ -545,7 +545,6 @@ footer .container {
   }
 
   .dropdown:hover .dropbtn {
-    /* color: var(--accent-color); */
     color: var(--primary-color);
   }
 
@@ -564,13 +563,18 @@ footer .container {
   nav ul li {
     float: left;
   }
-
+  
   nav ul li:last-child a {
     padding: 1em 0;
   }
 
+  nav ul li a {
+    width: initial;
+  }
+
   nav ul li a:hover {
     background-color: inherit;
+    color: var(--primary-color);
   }
 
   nav ul li:nth-child(5) a:hover,
