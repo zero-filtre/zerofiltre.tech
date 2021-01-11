@@ -758,6 +758,7 @@ section {
 
   .trades__img img {
     width: initial;
+    height: 15rem;
   }
 
   .trades-items {
