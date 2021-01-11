@@ -164,6 +164,7 @@ header .container {
 nav ul {
   position: fixed;
   width: 60%;
+  max-width: 400px;
   top: 0;
   right: 0;
   text-align: left;
@@ -295,6 +296,57 @@ footer .container {
   top: 1em;
   left: 1em;
   width: 15px;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  width: 0;
+  max-width: 400px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
+  background: #f9fafb;
+}
+
+.sidebar img {
+  width: 25px;
+  margin-right: .5em;
+}
+
+/* The sidebar links */
+.sidebar a {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  font-weight: 600;
+  font-size: .8rem;
+  line-height: 1.5em;
+  padding: .6em 1.7em;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: var(--primary-color);
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1em 1.2em .5em 1em;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+}
+
+.openbtn:hover {
 }
 /***END***/
 

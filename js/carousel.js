@@ -44,3 +44,12 @@ document.getElementById("menu").addEventListener('click', () => {
 document.getElementById("exit").addEventListener('click', () => {
     nav.classList.toggle("hide-mobile");
 });
+
+
+function openNav() {
+    document.getElementById("mySidebar").style.width = "80%";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+}
