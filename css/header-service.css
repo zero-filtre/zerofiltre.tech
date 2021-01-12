@@ -319,7 +319,7 @@ footer .container {
 }
 
 /* The sidebar links */
-.sidebar a {
+.sidebar a:not(.closebtn-x) {
   display: flex;
   justify-content: stretch;
   align-items: center;
@@ -337,17 +337,18 @@ footer .container {
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 1em 1.2em .5em 1em;
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+  /* padding: 1em 1.2em .5em 1em !important; */
 }
 
-/* The button used to open the sidebar */
-.openbtn {
+.sidebar .closebtn-x {
+  position: absolute;
+  bottom: 0;
+  left: 1.7rem;
+  font-size: 36px;
 }
 
-.openbtn:hover {
-}
 /***END***/
 
 /***FOOTER***/
