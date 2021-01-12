@@ -422,6 +422,7 @@ footer .container {
 
   nav ul {
     width: 50%;
+    max-width: initial;
   }
 
   .triangle-1 {
@@ -609,7 +610,7 @@ footer .container {
     width: auto;
     background: none;
     padding: 0;
-    box-shadow: none;
+    max-width: initial;
   }
 
   nav ul li {
