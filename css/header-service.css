@@ -339,13 +339,13 @@ footer .container {
 .sidebar .closebtn {
   font-size: 1.5em !important;
   font-weight: bold !important;
-  /* padding: 1em 1.2em .5em 1em !important; */
+  padding: 3em 1.2em .5em 1em !important;
 }
 
 .sidebar .closebtn-x {
   position: absolute;
-  bottom: 0;
-  left: 1.7rem;
+  top: .5em;
+  right: 1.7rem;
   font-size: 36px;
 }
 
@@ -562,7 +562,6 @@ footer .container {
   .dropdown h1 {
     font-size: 1rem;
     font-weight: bold;
-    /* color: var(--accent-color); */
     color: var(--primary-color);
     padding: 12px;
   }
