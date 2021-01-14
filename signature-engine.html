@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description"
+        content="Zerofiltre est une initiative qui dispose d'une équipe passionnée qui fournit divers services de développement de logiciels dans le monde entier. 
+          Nous fournissons des services à valeur ajoutée avec une approche taillée pour chaque entreprise. 
+          Zerofiltre s’appui sur un panel d’ingénieurs expérimentés et passionnés qui priorisent la résolution de problèmes et valeur ajoutée au métier
+          Créée en 2015, Zerofiltre voit le jour à l’initiative de Philippe SIMO , un ingénieur entrepreneur, et architecte logiciel spécialisé en JAVA">
+    <title>Moteur de signature</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="green-container">
+        <div class="container">
+            <header>
+                <a class="logo-link" href="/">
+                    <img class="logo" src="images/logo.svg" alt="Zerofiltre.tech">
+                </a>
+
+                <nav>
+                    <a class="hide-desktop" href="#">
+                        <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                    </a>
+                    <ul class="show-desktop hide-mobile" id="nav">
+                        <li class="exit-btn hide-desktop" id="exit">
+                            <img src="images/exit.svg" alt="exit">
+                        </li>
+                        <li><a href="#">A propos</a></li>
+
+                        <li class="dropdown">
+                            <!-- <a href="services.html" class="dropbtn">Services<img src="images/blue-chevron-down.svg"
+                                    alt="chevron-down"></a> -->
+
+                            <a href="#" class="openbtn hide-destop" onclick="openNav()">Services<img
+                                    src="images/chevron-down.svg" alt="chevron-down"></a>
+
+                            <div class="dropdown-content hide-mobile show-destop">
+                                <div class="apps group">
+                                    <h1>Développement d’application</h1>
+                                    <a href="/app-java.html">
+                                        <img src="/images/app-java-blue.svg" alt="">
+                                        <span>Développement d’application Java</span>
+                                    </a>
+                                    <a href="/app-nav.html">
+                                        <img src="/images/app-web.svg" alt="">
+                                        <span>Développement d’applications pour navigateurs Web</span>
+                                    </a>
+                                    <a href="/app-mobile.html">
+                                        <img src="/images/app-mob.svg" alt="">
+                                        <span>Développement d’applications mobiles</span>
+                                    </a>
+                                    <a href="/support.html">
+                                        <img src="/images/app-maintenance.svg" alt="">
+                                        <span>Maintenance d’applications et support</span>
+                                    </a>
+                                </div>
+
+                                <div class="api group">
+                                    <h1>Développement d’APIs</h1>
+                                    <a href="/web-api.html">
+                                        <img src="/images/app-api.svg" alt="">
+                                        <span>Développement d’APIs WEB</span>
+                                    </a>
+                                </div>
+
+                                <div class="ui group">
+                                    <h1>Conception d’interfaces graphiques</h1>
+                                    <a href="/ui.html">
+                                        <img src="/images/ui-dev.svg" alt="">
+                                        <span>Conception de prototypes d’interfaces graphiques</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><a href="#">Blog</a></li>
+
+                        <li>
+                            <a href="https://web.whatsapp.com">
+                                <img src="images/whatsapp.svg" alt="N° whatsapp 0753428623">
+                                +33 7 53 42 86 23
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/zero-filtre"><img src="images/github.svg"
+                                    alt="Nos repo github"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img
+                                    src="images/linkedin.svg" alt="Notre page LinkedIn"></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div id="mySidebar" class="sidebar hide-desktop">
+                    <a href="javascript:void(0)" class="closebtn-x" onclick="closeNav()">&times;</a>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Services</a>
+                    <a href="/app-java.html">
+                        <img src="/images/app-java-blue.svg" alt="">
+                        <span>Développement d’application Java</span>
+                    </a>
+                    <a href="/app-nav.html">
+                        <img src="/images/app-web.svg" alt="">
+                        <span>Développement d’applications pour navigateurs Web</span>
+                    </a>
+                    <a href="/app-mobile.html">
+                        <img src="/images/app-mob.svg" alt="">
+                        <span>Développement d’applications mobiles</span>
+                    </a>
+                    <a href="/support.html">
+                        <img src="/images/app-maintenance.svg" alt="">
+                        <span>Maintenance d’applications et support</span>
+                    </a>
+                    <a href="/web-api.html">
+                        <img src="/images/app-api.svg" alt="">
+                        <span>Développement d’APIs WEB</span>
+                    </a>
+                    <a href="/ui.html">
+                        <img src="/images/ui-dev.svg" alt="">
+                        <span>Conception de prototypes d’interfaces graphiques</span>
+                    </a>
+
+                </div>
+            </header>
+
+            <section id="hero-title">
+                <div>
+                    <h1>Moteur de signature de document</h1>
+                    <!-- <br><br> -->
+                    <p class="subhead">
+                        Développement de la base dorsale JAVA du moteur de signature de document d’une plateforme de
+                        travail collaboratif
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <main>
+        <section id="overviews">
+            <div class="container">
+                <div class="overviews__text">
+                    <h1>Généralités</h1>
+                    <p>Le client est une StartUP qui mettait en place une plateforme de travail collaboratif à plusieurs
+                        modules dont les plus
+                        importants étaient ceux de la gestion de documents et de l’acheminement, paraphe et signature de
+                        documents. Il était
+                        question pour nos équipe d’implémenter un processus métier qui devait automatiser le processus
+                        de
+                        transfert de documents
+                        entre plusieurs entités, gérer les droits d’accès, permettre la paraphe de documents, la
+                        signature
+                        de ces derniers,
+                        ainsi que leur archivage.</p>
+                </div>
+
+                <div class="overviews__img">
+                    <img src="/images/overview-illustration.svg" class="img-fluid" alt="overview-illustration">
+                </div>
+            </div>
+        </section>
+
+        <section id="business-needs">
+            <div class="container">
+                <h1>Besoins métiers</h1>
+                <p>applicataion JAVA evolutives alignées aux derniers standards</p>
+                <div class="needs-box">
+                    <ul class="needs">
+                        <li>Instancier des documents dématérialisés dans le système</li>
+                        <li>Transférer les documents entre entités</li>
+                        <li>Consulter les documents</li>
+                        <li>Annoter et parapher des documents</li>
+                        <li>Signer numériquement des documents</li>
+                        <li>Archiver et restaurer des documents</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="challenges">
+            <div class="container">
+                <h1>Defis</h1>
+                <p>Nous avons fait face à plusieurs challenges lors de la réalisation de ce projet tel que</p>
+                <div class="challenges-box">
+                    <ul class="challenges">
+                        <li>Indexer et stocker les entités (personnes physiques, morales ) et la hiérarchie de documents
+                            afin de les retrouver facilement sans avoir à maintenir une modèle de données gigantesque et
+                            complexe.</li>
+                        <li>Automatiser le processus métier de transfert de documents entre entités sans avoir à le
+                            coder de zéro.</li>
+                        <li>Éditer des documents sans avoir à quitter la plateforme</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="solutions">
+            <div class="container">
+                <h1>Solutions</h1>
+                <p>Nous avons fait face à plusieurs challenges lors de la réalisation de ce projet tel que</p>
+                <div class="solutions-box">
+                    <ul class="solutions">
+                        <li>Nous avons analysé différents solutions technique pour :
+                            <ul>
+                                <li>le stockage des entités</li>
+                                <li>la gestion de la hiérarchie documentaire</li>
+                                <li>La gestion de pipeline automatisé du business</li>
+                                <li>La gestion des droits d’accès aux documents par les entités</li>
+                            </ul>
+                        </li>
+                        <li>Une fois les solution adéquates identifiées, nous avons dressé un schéma d’architecture
+                            mettant en scène l’indexation distribuée de documents entre entités ainsi que la définition
+                            de leurs droits d’accès respectifs</li>
+                        <li>Nous avons développé des briques logicielles personnalisées afin d’orchestrer :
+                            <ul>
+                                <li>La consultation de documents par les entités</li>
+                                <li>La synchronisation des droits d’accès entre registre d’utilisateurs d’entreprise et
+                                    entités</li>
+                                <li>L’interaction avec les processus business</li>
+                            </ul>
+                        </li>
+                        <li>Enfin nous avons délivré la solution et un accompagnement pour la prise en main et la
+                            maintenance de l’outil</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="technologies">
+            <div class="container">
+                <h1>Nos technologies</h1>
+                <p>applicataion JAVA evolutives alignées aux derniers standards</p>
+
+                <div class="techs__titles-wrapper">
+                    <ul class="techs__titles">
+                        <li class="tablink codeLink active">Code</li>
+                        <li class="tablink dbLink">Base de données</li>
+                        <li class="tablink toolsLink">Outils</li>
+                        <li class="tablink lifeCycleLink">Gestion de cycle de vie du logiciel</li>
+                    </ul>
+                </div>
+
+                <div class="our-techs"></div>
+            </div>
+        </section>
+
+        <section id="implementation">
+            <div class="container">
+                <h1>Implémentation</h1>
+                <p>Nous avons scindé la solution en plusieurs livrables, puis nous avons suivi une approche itérative
+                    par étapes, car nous avons été confrontés à des défis et à des changements d'exigences au cours du
+                    développement. Ces étapes comprenaient les phases suivantes :</p>
+
+                <ul>
+                    <li>Analyse des besoins métier</li>
+                    <li>Conception de l’architecture</li>
+                    <li>Mise en place d’un “Proof of Concept” (POC) dont le but est de tester si la solution est en
+                        adéquation avec les besoins.</li>
+                    <li>Mise à l’échelle du POC</li>
+                    <li>Implémentation de la base dorsale et tests de performances</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="roadmap">
+            <div class="container">
+                <h1>Roadmap</h1>
+                <ul class="steps">
+                    <li>Analyse des besoins métiers
+                        <ul>
+                            <li>Brainstorming</li>
+                            <li>Apports recherche et innovations</li>
+                            <li>Planification des ressources</li>
+                        </ul>
+                    </li>
+                    <li>Mise en place de l’architecture cible
+                        <ul>
+                            <li>Conception de l’architecture</li>
+                            <li>Prototypage du système</li>
+                            <li>Documentation</li>
+                        </ul>
+                    </li>
+                    <li>Développement
+                        <ul>
+                            <li>Développement des composants JAVA</li>
+                        </ul>
+                    </li>
+                    <li>Test de qualité et performance
+                        <ul>
+                            <li>Test d’acceptance utilisateurs</li>
+                            <li>Tests de performance</li>
+                        </ul>
+                    </li>
+                    <li>Déploiement
+                        <ul>
+                            <li>Déploiement</li>
+                            <li>Évaluation et feedback</li>
+                            <li>Améliorations</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="plus-value-métier">
+            <div class="container">
+                <h1>Plus value métier</h1>
+                <p>Nous avons apporté une solution sophistiquée de gestion documentaire et au client qui lui a permis de
+                    simplifier les démarches de validation/paraphe et signature de documents. De plus, le client a pu
+                    alléger considérablement les processus métiers y afférent en les automatisant au maximum permettant
+                    ainsi de diminuer de moitié les temps de traitements. Notre solution a d’ailleurs été intégrée par
+                    la suite à la plateforme de travail collaboratif propriétaire de l’entreprise.</p>
+            </div>
+        </section>
+
+        <section id="call-to-action">
+            <div class="container">
+                <h1>CTA</h1>
+                <p>Que vous vouliez ce service ou un de beaucoup plus personnalisé, contactez-nous et laissez nous vous
+                    aider à faire monter à l’échelle votre business.</p>
+            </div>
+        </section>
+
+        <section id="same-results">
+            <div class="container">
+                <h1>Réalisations semblables</h1>
+                <div class="results">
+                    <div class="card">
+                        <img src="/images/same-results.svg" class="card__img" alt="same-results">
+                        <div class="card__text">
+                            <h5 class="card__title">Partage nous les photos</h5>
+                            <p class="card__body">Développement de l’application android</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/images/engine.svg" class="card__img" alt="">
+                        <div class="card__text">
+                            <h5 class="card__title">Moteur d'agrégation de moyens de paiement mobiles</h5>
+                            <p class="card__body">Développement de la base dorsale en JAVA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <div class="container">
+                <h1>Nous contacter</h1>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="useful-links">
+                <div class="services-link">
+                    <p class="yellow-text">NOS SERVICES</p>
+                    <ul>
+                        <li><a href="#">Développement d’application JAVA</a></li>
+                        <li><a href="#">Développement d’applications pour navigateurs Web</a></li>
+                        <li><a href="#">Développement d’applications mobiles</a></li>
+                        <li><a href="#">Maintenance d’applications et support</a></li>
+                        <li><a href="#">Développement d’APIs Web</a></li>
+                        <li><a href="#">Conception UI</a></li>
+                    </ul>
+
+                </div>
+                <div class="achievments">
+                    <p class="yellow-text">NOS REALISATIONS</p>
+                    <ul>
+                        <li><a href="#">Moteur de signature de document</a></li>
+                        <li><a href="#">Portail de suivi de demandes administratives</a></li>
+                        <li><a href="#">Partage nous les photos</a></li>
+                        <li><a href="#">Maintenance d’applications et support</a></li>
+                        <li><a href="#">Reprise intelligente de parcours utilisateurb</a></li>
+                        <li><a href="#">Moteur d'agrégation de moyens de paiement mobiles</a></li>
+                    </ul>
+
+                </div>
+                <div class="articles">
+                    <p class="yellow-text">DERNIERS ARTICLES</p>
+                    <ul>
+                        <li><a href="#">GraphQL: de la théorie à la pratique avec Spring-boot</a></li>
+                        <li><a href="#">Maîtriser la gestion d’erreurs GraphQL dans une application Spring-boot</a></li>
+                        <li>
+                            <a href="#">Sécuriser ses APIs GraphQL avec Spring-AOP dans une application Spring-boot </a>
+                        </li>
+                        <li>
+                            <a href="#">Tester ses APIs GraphQL dans une application Spring-boot </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <p class="yellow-text">Nous contacter</p>
+                <ul>
+                    <li>
+                        Tél: <span class="yellow-text">+33 7 53 42 86 23</span>
+                    </li>
+                    <li>
+                        Email:
+                        <a href="mailto:info@zerofiltre.tech">
+                            <span class="yellow-text">info@zerofiltre.tech</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="separator"></div>
+            <div class="end">
+                <p>
+                    &copy; 2020
+                    <span class="green-text">Zerofiltre.</span> Tous droits reservés.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/zero-filtre"><img src="images/github.svg" alt="Nos repo github"></a>
+
+                    <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/linkedIn.svg"
+                            alt="Notre page LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div onclick="backToTop()" class="back-to-top" id="back-to-top">
+        <img src="images/chevron-down.svg" alt="Back to top">
+    </div>
+    <script src="js/carousel.js"></script>
+</body>
+
+</html>
