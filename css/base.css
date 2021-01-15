@@ -389,6 +389,7 @@ nav ul li:nth-of-type(5) a img {
 
   nav ul li a:hover {
     background-color: inherit;
+    color: var(--primary-color);
   }
 
   nav ul li:nth-child(5) a:hover,
@@ -436,7 +437,7 @@ nav ul li:nth-of-type(5) a img {
   .dropdown h1 {
     font-size: 1rem;
     font-weight: bold;
-    color: var(--accent-color);
+    color: var(--primary-color);
     padding: 12px;
   }
 
