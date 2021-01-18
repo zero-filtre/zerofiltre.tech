@@ -32,6 +32,10 @@ body {
   color: var(--secondary-color);
 }
 
+.d-flex {
+  display: flex;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
