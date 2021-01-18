@@ -26,14 +26,60 @@
 
         <nav>
           <a class="hide-desktop" href="#">
-            <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+            <img src="images/ham-menu.svg" alt="toggle menu" class="menu" id="menu">
           </a>
           <ul class="show-desktop hide-mobile" id="nav">
             <li class="exit-btn hide-desktop" id="exit">
               <img src="images/exit.svg" alt="exit">
             </li>
             <li><a href="#">A propos</a></li>
-            <li><a href="services.html">Services <img src="images/chevron-down.svg" alt="chevron-down"></a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropbtn show-desktop hide-mobile d-flex">Services<img src="images/chevron-down.svg"
+                  alt="chevron-down"></a>
+
+              <a href="#" class="openbtn hide-desktop" onclick="openNav()">Services<img src="images/chevron-down.svg"
+                  alt="chevron-down"></a>
+
+              <div class="dropdown-content hide-mobile show-destop">
+                <div class="apps group">
+                  <h1>Développement d’application</h1>
+                  <a href="/app-java.html">
+                    <img src="/images/app-java-blue.svg" alt="">
+                    <span>Développement d’application Java</span>
+                  </a>
+                  <a href="/app-nav.html">
+                    <img src="/images/app-web.svg" alt="">
+                    <span>Développement d’applications pour navigateurs Web</span>
+                  </a>
+                  <a href="/app-mobile.html">
+                    <img src="/images/app-mob.svg" alt="">
+                    <span>Développement d’applications mobiles</span>
+                  </a>
+                  <a href="/support.html">
+                    <img src="/images/app-maintenance.svg" alt="">
+                    <span>Maintenance d’applications et support</span>
+                  </a>
+                </div>
+
+                <div class="apis group">
+                  <h1>Développement d’APIs</h1>
+                  <a href="/web-api.html">
+                    <img src="/images/app-api.svg" alt="">
+                    <span>Développement d’APIs WEB</span>
+                  </a>
+                </div>
+
+                <div class="uis group">
+                  <h1>Conception d’interfaces graphiques</h1>
+                  <a href="/ui.html">
+                    <img src="/images/ui-dev.svg" alt="">
+                    <span>Conception de prototypes d’interfaces graphiques</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
             <li><a href="#">Blog</a></li>
 
             <li>
@@ -51,7 +97,39 @@
             </li>
           </ul>
         </nav>
+
+        <div id="mySidebar" class="sidebar hide-desktop">
+          <a href="javascript:void(0)" class="closebtn-x" onclick="closeNav()">&larr;</a>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Services</a>
+          <a href="/app-java.html">
+            <img src="/images/app-java-blue.svg" alt="">
+            <span>Développement d’application Java</span>
+          </a>
+          <a href="/app-nav.html">
+            <img src="/images/app-web.svg" alt="">
+            <span>Développement d’applications pour navigateurs Web</span>
+          </a>
+          <a href="/app-mobile.html">
+            <img src="/images/app-mob.svg" alt="">
+            <span>Développement d’applications mobiles</span>
+          </a>
+          <a href="/support.html">
+            <img src="/images/app-maintenance.svg" alt="">
+            <span>Maintenance d’applications et support</span>
+          </a>
+          <a href="/web-api.html">
+            <img src="/images/app-api.svg" alt="">
+            <span>Développement d’APIs WEB</span>
+          </a>
+          <a href="/ui.html">
+            <img src="/images/ui-dev.svg" alt="">
+            <span>Conception de prototypes d’interfaces graphiques</span>
+          </a>
+
+        </div>
+
       </header>
+
       <section class="banner-content">
         <div class="big-title">
           <h1 class="yellow-text">
@@ -63,7 +141,8 @@
           </h2>
           <br>
         </div>
-        <img src="images/services-hero-img.svg" alt="landing illustration" class="landing_illustration services-hero-img">
+        <img src="images/services-hero-img.svg" alt="landing illustration"
+          class="landing_illustration services-hero-img">
       </section>
     </div>
   </div>
@@ -74,24 +153,25 @@
       <section class="app">
         <div class="container">
           <h1>Développement d’application</h1>
-          <a href="/app-java.html"><div class="app-java service">Développement d’applications JAVA</div></a>
-          <a href="#"><div class="app-web service">Développement d’applications pour navigateurs Web
-          </div></a>
-          <a href="#"><div class="app-mobile service">Développement d’applications mobiles
-          </div></a>
-          <a href="#"><div class="app-maintenance service">Maintenance d’applications et support</div>
-          </div></a>
+          <div class="app-java service"><a href="/app-java.html">Développement d’applications JAVA</a></div>
+          <div class="app-web service"><a href="/app-nav.html">Développement d’applications pour navigateurs Web</a>
+          </div>
+          <div class="app-mobile service"><a href="/app-mobile.html">Développement d’applications mobiles</a></div>
+          <div class="app-maintenance service"><a href="/support.html">Maintenance d’applications et support</a></div>
+        </div>
       </section>
+
       <section class="api">
         <div class="container">
           <h1>Développement d’APIs</h1>
-          <a href="#"><div class="api-web service">Développement d’APIs WEB</div></a>
+          <div class="api-web service"><a href="/web-api.html">Développement d’APIs WEB</a></div>
         </div>
       </section>
+
       <section class="ui">
         <div class="container">
           <h1>Conception d’interfaces graphiques</h1>
-          <a href="#"><div class="ui-prototye service">Conception de prototypes d’interfaces graphiques</div></a>
+          <div class="ui-prototye service"><a href="/ui.html">Conception de prototypes d’interfaces graphiques</a></div>
         </div>
       </section>
     </div>
@@ -112,12 +192,12 @@
         <div class="services-link">
           <p class="yellow-text">NOS SERVICES</p>
           <ul>
-            <li><a href="app-java.html">Développement d’application JAVA</a></li>
-            <li><a href="#">Développement d’applications pour navigateurs Web</a></li>
-            <li><a href="#">Développement d’applications mobiles</a></li>
-            <li><a href="#">Maintenance d’applications et support</a></li>
-            <li><a href="#">Développement d’APIs Web</a></li>
-            <li><a href="#">Conception UI</a></li>
+            <li><a href="/app-java.html">Développement d’application JAVA</a></li>
+            <li><a href="/app-nav.html">Développement d’applications pour navigateurs Web</a></li>
+            <li><a href="/app-mobile.html">Développement d’applications mobiles</a></li>
+            <li><a href="/support.html">Maintenance d’applications et support</a></li>
+            <li><a href="/web-api.html">Développement d’APIs Web</a></li>
+            <li><a href="/ui.html">Conception UI</a></li>
           </ul>
 
         </div>

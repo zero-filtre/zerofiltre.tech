@@ -34,7 +34,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
               <div>
-                <img src="./images/spring-icon.svg" class="img-fluid" alt="">
+                <img src="./images/springio-icon.svg" class="img-fluid" alt="">
               </div>
               <div>
                 <h4>Spring</h4>
@@ -43,7 +43,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/spring-boot-icon.svg" class="img-fluid spring-boot-icon" alt="">
+                <img src="./images/springio-icon.svg" class="img-fluid springio-icon" alt="spring-boot">
               </div>
               <div>
                 <h4>Spring-boot</h4>
@@ -70,7 +70,7 @@ initialContent.innerHTML = `
 
             <div class="tech-item">
               <div>
-                <img src="./images/spring-cloud-icon.svg" class="img-fluid" alt="">
+                <img src="./images/spring-cloud-icon.svg" class="img-fluid spring-cloud-icon" alt="">
               </div>
               <div>
                 <h4>Spring-Cloud</h4>
@@ -89,7 +89,7 @@ initialContent.innerHTML = `
 dbContent.innerHTML = `
             <div class="tech-item">
                <div>
-                <img src="./images/mongodb-icon.svg" class="img-fluid" alt="mongodb">
+                <img src="./images/mongodb-icon.svg" class="img-fluid mongodb-icon" alt="mongodb">
               </div>
               <div>
                 <h4>MongoDB</h4>
@@ -98,7 +98,7 @@ dbContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/mysql-icon.svg" class="img-fluid" alt="mysql">
+                <img src="./images/mysql-icon.svg" class="img-fluid mysql-icon" alt="mysql">
               </div>
               <div>
                 <h4>MySQL</h4>
@@ -107,7 +107,7 @@ dbContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/postgresql-icon.svg" class="img-fluid postgres-icon" alt="postgresql">
+                <img src="./images/postgresql-icon.svg" class="img-fluid postgresql-icon" alt="postgresql">
               </div>
               <div>
                 <h4>PostgreSQL</h4>
@@ -144,7 +144,7 @@ toolsContent.innerHTML = `
 
             <div class="tech-item">
                <div>
-                <img src="./images/kubernetees-icon.svg" class="img-fluid kubernetes-icon" alt="kubernetees">
+                <img src="./images/kubernetes-icon.svg" class="img-fluid kubernetes-icon" alt="kubernetees">
               </div>
               <div>
                 <h4>Kubernetes</h4>
@@ -249,7 +249,6 @@ lifeCycleLink.addEventListener("click", () => {
 
 $(".owl-carousel").owlCarousel({
   loop: true,
-  // center: true,
   autoplay: true,
   autoplayTimeout: 10000,
   autoplayHoverPause: true,
@@ -273,9 +272,8 @@ $(".owl-carousel").owlCarousel({
 const readMoreBtn = document.querySelector(".view-more");
 const moreText = document.querySelector(".moreText");
 const textBox = document.querySelector(".text-box");
-const chevron = document.getElementById("toggleChevron");
 
-readMoreBtn.addEventListener("click", function () {
+const toggleText = () => {
   if (textBox.classList.contains("wrap-text")) {
     textBox.classList.remove("wrap-text");
     moreText.classList.remove("hide-mobile-text");
@@ -285,4 +283,13 @@ readMoreBtn.addEventListener("click", function () {
     moreText.classList.add("hide-mobile-text");
     readMoreBtn.innerHTML = `<small>Voir plus</small><img src="/images/dropdown-icon.svg" alt="chevron" id="toggleChevron">`;
   }
-});
+}
+
+readMoreBtn.addEventListener("click", toggleText);
+
+export {
+  initialContent,
+  toolsContent,
+  dbContent,
+  lifecycleContent,
+}

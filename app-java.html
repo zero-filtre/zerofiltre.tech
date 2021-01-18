@@ -29,15 +29,60 @@
 
         <nav>
           <a class="hide-desktop" href="#">
-            <img src="images/blue-ham.svg" alt="toggle menu" class="menu" id="menu">
+            <img src="images/blue-ham-menu.svg" alt="toggle menu" class="menu" id="menu">
           </a>
           <ul class="show-desktop hide-mobile" id="nav">
             <li class="exit-btn hide-desktop" id="exit">
               <img src="images/blue-exit-1.svg" alt="exit">
             </li>
             <li><a href="#">A propos</a></li>
-            <li><a href="services.html">Services <img src="images/blue-chevron-down.svg" alt="chevron-down"
-                  class="img-fluid"></a></li>
+
+            <li class="dropdown">
+              <a href="services.html" class="dropbtn show-desktop hide-mobile d-flex">Services<img src="images/blue-chevron-down.svg"
+                alt="chevron-down"></a>
+
+              <a href="#" class="openbtn hide-desktop" onclick="openNav()">Services<img
+                  src="images/blue-chevron-down.svg" alt="chevron-down"></a>
+
+              <div class="dropdown-content hide-mobile show-destop">
+                <div class="apps group">
+                  <h1>Développement d’application</h1>
+                  <a href="/app-java.html">
+                    <img src="/images/app-java-blue.svg" alt="">
+                    <span>Développement d’application Java</span>
+                  </a>
+                  <a href="/app-nav.html">
+                    <img src="/images/app-web.svg" alt="">
+                    <span>Développement d’applications pour navigateurs Web</span>
+                  </a>
+                  <a href="/app-mobile.html">
+                    <img src="/images/app-mob.svg" alt="">
+                    <span>Développement d’applications mobiles</span>
+                  </a>
+                  <a href="/support.html">
+                    <img src="/images/app-maintenance.svg" alt="">
+                    <span>Maintenance d’applications et support</span>
+                  </a>
+                </div>
+
+                <div class="api group">
+                  <h1>Développement d’APIs</h1>
+                  <a href="/web-api.html">
+                    <img src="/images/app-api.svg" alt="">
+                    <span>Développement d’APIs WEB</span>
+                  </a>
+                </div>
+
+                <div class="ui group">
+                  <h1>Conception d’interfaces graphiques</h1>
+                  <a href="/ui.html">
+                    <img src="/images/ui-dev.svg" alt="">
+                    <span>Conception de prototypes d’interfaces graphiques</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
             <li><a href="#">Blog</a></li>
 
             <li>
@@ -56,6 +101,37 @@
             </li>
           </ul>
         </nav>
+
+        <div id="mySidebar" class="sidebar hide-desktop">
+          <a href="javascript:void(0)" class="closebtn-x" onclick="closeNav()">&larr;</a>
+          <a href="/services.html" class="closebtn" onclick="">Services</a>
+          <a href="/app-java.html">
+            <img src="/images/app-java-blue.svg" alt="">
+            <span>Développement d’application Java</span>
+          </a>
+          <a href="/app-nav.html">
+            <img src="/images/app-web.svg" alt="">
+            <span>Développement d’applications pour navigateurs Web</span>
+          </a>
+          <a href="/app-mobile.html">
+            <img src="/images/app-mob.svg" alt="">
+            <span>Développement d’applications mobiles</span>
+          </a>
+          <a href="/support.html">
+            <img src="/images/app-maintenance.svg" alt="">
+            <span>Maintenance d’applications et support</span>
+          </a>
+          <a href="/web-api.html">
+            <img src="/images/app-api.svg" alt="">
+            <span>Développement d’APIs WEB</span>
+          </a>
+          <a href="/ui.html">
+            <img src="/images/ui-dev.svg" alt="">
+            <span>Conception de prototypes d’interfaces graphiques</span>
+          </a>
+
+        </div>
+
       </div>
     </header>
 
@@ -63,10 +139,10 @@
       <div class="container">
         <div>
           <h1>Développement d’Application JAVA</h1>
-          <p class="">Des applications très évolutives alignées aux derniers standards.</p>
+          <p class="sub-title">Des applications très évolutives alignées aux derniers standards.</p>
         </div>
       </div>
-      
+
       <div class="triangle triangle-1">
         <img src="/images/triangle-blue.svg" class="img-fluid" alt="">
       </div>
@@ -103,7 +179,8 @@
                 business,
                 fluidifier le
                 processus métier, répondre mieux au besoin du client afin d’accélérer sa croissance.</p>
-              <p class="our-service__description moreText hide-mobile-text show-desktop-text">Zerofiltre a pour objectif de vous
+              <p class="our-service__description moreText hide-mobile-text show-desktop-text">Zerofiltre a pour objectif
+                de vous
                 accompagner,
                 particuliers, moyennes
                 et petites entreprises dans ce processus, en vous
@@ -119,10 +196,10 @@
                 disposons.
               </p>
             </div>
-            <div class="view-more show-mobile hide-desktop">
+            <span class="view-more show-mobile hide-desktop">
               <small>Voir plus</small>
               <img src="/images/dropdown-icon.svg" alt="chevron" id="toggleChevron">
-            </div>
+            </span>
           </div>
 
           <div class="our-service__img">
@@ -516,7 +593,7 @@
                   <h4>Marketing digital</h4>
                 </div>
               </div>
-              
+
               <div class="trade-item">
                 <div>
                   <img src="/images/accountant-icon.svg" class="img-fluid" alt="">
@@ -534,7 +611,7 @@
                   <h4>Transports</h4>
                 </div>
               </div>
-              
+
               <div class="trade-item">
                 <div>
                   <img src="/images/energy-icon.svg" class="img-fluid" alt="">
@@ -543,7 +620,7 @@
                   <h4>Energie</h4>
                 </div>
               </div>
-              
+
               <div class="trade-item">
                 <div>
                   <img src="/images/tourism-icon.svg" class="img-fluid" alt="">
@@ -552,7 +629,7 @@
                   <h4>Tourisme</h4>
                 </div>
               </div>
-              
+
               <div class="trade-item">
                 <div>
                   <img src="/images/automobile-icon.svg" class="img-fluid" alt="">
@@ -561,8 +638,8 @@
                   <h4>Industrie automobile</h4>
                 </div>
               </div>
-              
-              
+
+
               <div class="trade-item">
                 <div>
                   <img src="/images/law-icon.svg" class="img-fluid" alt="">
@@ -571,7 +648,7 @@
                   <h4>Droit</h4>
                 </div>
               </div>
-              
+
               <div class="trade-item">
                 <div>
                   <img src="/images/entertainment-icon.svg" class="img-fluid" alt="">
@@ -580,7 +657,7 @@
                   <h4>Entertainment</h4>
                 </div>
               </div>
-              
+
               <div class="trade-item">
                 <div>
                   <img src="/images/ecom-icon.svg" class="img-fluid" alt="">
@@ -589,7 +666,7 @@
                   <h4>E-commerce</h4>
                 </div>
               </div>
-              
+
               <div class="trade-item">
                 <div>
                   <img src="/images/education-icon.svg" class="img-fluid" alt="">
@@ -608,17 +685,20 @@
     <section id="our-results">
       <div class="container">
         <h1>Nos réalisations en Développement d’applications JAVA</h1>
-        <p class="wrap-p">Chez zerofiltre, nous nous attelons à comprendre de multiples domaines et à fournir des solutions optimales
+        <p class="wrap-p">Chez zerofiltre, nous nous attelons à comprendre de multiples domaines et à fournir des
+          solutions optimales
           pour différents domaines. Nous le savons, le logiciel doit s’adapter au métier et non le contraire.
         </p>
 
         <div class="our-results__box">
           <div class="owl-carousel">
-            <div class="card result">
-              <img src="/images/signature-icon.svg" class="img-fluid" alt="">
-              <h4>Moteur de signature de document</h4>
-              <p>Développement de la base dorsale en Java</p>
-            </div>
+            <a href="/signature-engine.html">
+              <div class="card result">
+                <img src="/images/signature-icon.svg" class="img-fluid" alt="">
+                <h4>Moteur de signature de document</h4>
+                <p>Développement de la base dorsale en Java</p>
+              </div>
+            </a>
             <div class="card result">
               <img src="/images/share-photo-icon.svg" class="img-fluid" alt="">
               <h4>Partage nous les photos</h4>
@@ -629,6 +709,11 @@
               <h4>Moteur d'agrégation de moyens de paiement mobiles</h4>
               <p>Développement de la base dorsale en JAVA</p>
             </div>
+            <div class="card result">
+              <img src="/images/portail_demandes.svg" class="img-fluid" alt="">
+              <h4>Portail de suivi de demandes administratives</h4>
+              <p>Développement du moteur de processus en JAVA</p>
+            </div>
           </div>
         </div>
       </div>
@@ -636,8 +721,9 @@
 
     <section id="call-to-action">
       <div class="container">
-        <h1>Embauchez un developpeur Java</h1>
-        <p class="wrap-p">Que vous vouliez ce service ou un de beaucoup plus personnalisé, contactez-nous et laissez nous construire
+        <!-- <h1>Embauchez un developpeur Java</h1> -->
+        <p class="wrap-p">Que vous vouliez ce service ou un de beaucoup plus personnalisé, contactez-nous et laissez
+          nous construire
           des
           applications très évolutibles alignées aux derniers standards.</p>
         <a href="#">
@@ -656,19 +742,19 @@
         <div class="services-link">
           <p class="yellow-text">NOS SERVICES</p>
           <ul>
-            <li><a href="./app-java.html">Développement d’application JAVA</a></li>
-            <li><a href="#">Développement d’applications pour navigateurs Web</a></li>
-            <li><a href="#">Développement d’applications mobiles</a></li>
-            <li><a href="#">Maintenance d’applications et support</a></li>
-            <li><a href="#">Développement d’APIs Web</a></li>
-            <li><a href="#">Conception UI</a></li>
+            <li><a href="#">Développement d’application JAVA</a></li>
+            <li><a href="/app-nav.html">Développement d’applications pour navigateurs Web</a></li>
+            <li><a href="/app-mobile.html">Développement d’applications mobiles</a></li>
+            <li><a href="/support.html">Maintenance d’applications et support</a></li>
+            <li><a href="/web-api.html">Développement d’APIs Web</a></li>
+            <li><a href="/ui.html">Conception UI</a></li>
           </ul>
 
         </div>
         <div class="achievments">
           <p class="yellow-text">NOS REALISATIONS</p>
           <ul>
-            <li><a href="#">Moteur de signature de document</a></li>
+            <li><a href="/signature-engine.html">Moteur de signature de document</a></li>
             <li><a href="#">Portail de suivi de demandes administratives</a></li>
             <li><a href="#">Partage nous les photos</a></li>
             <li><a href="#">Maintenance d’applications et support</a></li>
@@ -729,7 +815,7 @@
   <script src="/node_modules/jquery/dist/jquery.js"></script>
   <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
   <script src="js/carousel.js"></script>
-  <script src="js/tech.js"></script>
+  <script src="js/tech.js" type="module"></script>
 </body>
 
 </html>

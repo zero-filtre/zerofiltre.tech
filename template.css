@@ -11,6 +11,17 @@
 } */
 
 
+/* .card {
+  margin: 1em auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  /* scrollbar-width: none; /* Firefox */
+/* }  */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .card::-webkit-scrollbar {
+  display: none;
+} */
+
 
 /* Services page media queries
 
