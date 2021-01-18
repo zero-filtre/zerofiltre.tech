@@ -653,6 +653,10 @@ nav ul li:nth-of-type(5) a img {
     display: none;
   }
 
+  .d-flex {
+    display: flex !important;
+  }
+
   nav {
     font-size: 0.8em;
   }
@@ -729,7 +733,7 @@ nav ul li:nth-of-type(5) a img {
   .dropdown-content {
     display: none;
     position: absolute;
-    left: -300px;
+    left: -310px;
     max-width: 800px;
     width: 55vw;
     padding: 20%;
@@ -760,7 +764,7 @@ nav ul li:nth-of-type(5) a img {
   }
 
   .dropdown:hover .dropbtn {
-    color: var(--accent-color);
+    color: var(--primary-color);
   }
 
   header {

@@ -194,12 +194,16 @@ section {
   opacity: 0;
 }
 
-.why-us:hover .card__text,
 .mission:hover .card__text {
-  top: 50%;
+  top: 5%;
   color: white;
-  width: fit-content;
-  padding: 0 0.4em;
+  padding: 0 .5em;
+}
+
+.why-us:hover .card__text {
+  top: 25%;
+  color: white;
+  padding: 0 .5em;
 }
 
 .why-us:hover .card__body,
@@ -207,11 +211,6 @@ section {
   opacity: 1;
   display: block;
   margin-top: 0.5em;
-}
-
-.why-us:hover .card__title,
-.mission:hover .card__title {
-  opacity: 1;
 }
 
 .why-us .card__img,
@@ -226,33 +225,23 @@ section {
 .why-us .card__text,
 .missions .card__text {
   position: absolute;
-  top: 70%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 50%;
   transition: all ease-out 300ms;
-}
-
-.why-us .card__text {
-  top: 60%;
 }
 
 .why-us .card__title,
 .missions .card__title {
-  margin-bottom: 0;
-  opacity: 1;
   font-size: var(--regular-size);
   line-height: 1.8em;
+  width: 95%;
+  margin: 1em auto 0 auto;
 }
 
 .why-us .card__body,
 .missions .card__body {
   opacity: 0;
-  font-size: 0.75em;
+  font-size: .75rem;
   display: none;
-  overflow: hidden;
-  width: 100%;
 }
 /**END**/
 

@@ -53,10 +53,6 @@ ul {
   padding: 0;
 }
 
-.d-flex {
-  display: flex !important;
-}
-
 .hide {
   display: none;
 }
@@ -354,6 +350,10 @@ nav ul li:nth-of-type(5) a img {
 
   .hide-desktop {
     display: none;
+  }
+
+  .d-flex {
+    display: flex !important;
   }
 
   /***HEADER***/

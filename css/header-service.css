@@ -32,10 +32,6 @@ body {
   color: var(--secondary-color);
 }
 
-.d-flex {
-  display: flex;
-}
-
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -513,6 +509,10 @@ footer .container {
 
   .hide-desktop {
     display: none;
+  }
+
+  .d-flex {
+    display: flex !important;
   }
 
   /***HEADER***/
