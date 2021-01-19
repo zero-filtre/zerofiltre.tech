@@ -85,6 +85,78 @@ nav ul li:nth-child(5) a {
   text-align: center;
 }
 
+.needs {
+}
+
+.needs li {
+  display: block;
+  background-color: #FFF9F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 0 4%;
+  line-height: 1.6;
+}
+
+#challenges {
+  text-align: center;
+}
+
+.challenges li {
+  display: flex;
+  text-align: left;
+  align-items: stretch;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.challenges li::before {
+  position: relative;
+  content: url(../images/triangle-blue-down.svg);
+  display: block;
+  margin-right: 5%;
+}
+
+.challenges-img {
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#solutions {
+  text-align: center;
+  margin: 0 3%;
+  padding-bottom: 1rem;
+  border-radius: 20px;
+  box-shadow: #ddd 0 0 8px;
+}
+
+.solutions-img {
+  margin: 2rem 0;
+}
+
+.solutions > li:not(.last) {
+  margin-bottom: 2rem;
+}
+
+.solutions-box {
+  text-align: left;
+}
+
+.solution-1 li {
+  font-weight: bold;
+}
+
+.solution-1 li::before  {
+  content: "-";
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2%;
+}
+
 @media only screen and (min-width: 1024px) {
   .dropdown-content {
     background-image: linear-gradient(155.64deg, #fff 39.12%, #fff 75.61%);
@@ -127,5 +199,55 @@ nav ul li:nth-child(5) a {
 
   .overviews__text p {
     line-height: 1.6rem;
+  }
+
+  #business-needs .container {
+    padding: 0 10% 5% 10%;
+  }
+
+  .needs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .needs li {
+    width: 30%;
+  }
+
+  #challenges .container {
+    padding-top: 0;
+  }
+
+  .challenges-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .challenges-img {
+    width: 60%;
+    margin-right: 15%;
+  }
+
+  .challenges li {
+    margin-bottom: 3rem;
+  }
+
+  #solutions {
+  }
+
+  .solutions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .solutions > li {
+    flex: 1;
+    margin-bottom: 0 !important;
+  }
+
+  .solutions li:not(.last) {
+    margin-right: 2%;
   }
 }

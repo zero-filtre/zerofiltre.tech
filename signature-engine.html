@@ -175,28 +175,31 @@
             <div class="container">
                 <h1>Besoins métiers</h1>
                 <p>applicataion JAVA evolutives alignées aux derniers standards</p>
+                
                 <div class="needs-box show-desktop hide-mobile">
                     <p>DESKTOP</p>
                     <ul class="needs">
-                        <li>Instancier des documents dématérialisés dans le système</li>
-                        <li>Transférer les documents entre entités</li>
-                        <li>Consulter les documents</li>
-                        <li>Annoter et parapher des documents</li>
-                        <li>Signer numériquement des documents</li>
-                        <li>Archiver et restaurer des documents</li>
+                        <li class="card">Instancier des documents dématérialisés dans le système</li>
+                        <li class="card">Transférer les documents entre entités</li>
+                        <li class="card">Consulter les documents</li>
+                        <li class="card">Annoter et parapher des documents</li>
+                        <li class="card">Signer numériquement des documents</li>
+                        <li class="card">Archiver et restaurer des documents</li>
                     </ul>
                 </div>
 
                 <div class="needs-box hide-desktop">
                     <p>MOBILE</p>
-                    <ul class="needs">
-                        <li>Instancier des documents dématérialisés dans le système</li>
-                        <li>Transférer les documents entre entités</li>
-                        <li>Consulter les documents</li>
-                        <li>Annoter et parapher des documents</li>
-                        <li>Signer numériquement des documents</li>
-                        <li>Archiver et restaurer des documents</li>
-                    </ul>
+                    <div class="needs">
+                        <div class="owl-carousel owl-theme">
+                            <li class="card">Instancier des documents dématérialisés dans le système</li>
+                            <li class="card">Transférer les documents entre entités</li>
+                            <li class="card">Consulter les documents</li>
+                            <li class="card">Annoter et parapher des documents</li>
+                            <li class="card">Signer numériquement des documents</li>
+                            <li class="card">Archiver et restaurer des documents</li>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -205,7 +208,9 @@
             <div class="container">
                 <h1>Defis</h1>
                 <p>Nous avons fait face à plusieurs challenges lors de la réalisation de ce projet tel que</p>
+
                 <div class="challenges-box">
+                    <img src="images/challenges-illustration.svg" class="img-fluid challenges-img" alt="our challenges">
                     <ul class="challenges">
                         <li>Indexer et stocker les entités (personnes physiques, morales ) et la hiérarchie de documents
                             afin de les retrouver facilement sans avoir à maintenir une modèle de données gigantesque et
@@ -222,28 +227,34 @@
             <div class="container">
                 <h1>Solutions</h1>
                 <p>Nous avons fait face à plusieurs challenges lors de la réalisation de ce projet tel que</p>
+
+                <img src="/images/signature-book.svg" class="img-fluid solutions-img" alt="architecture du moteur de signature">
+
                 <div class="solutions-box">
                     <ul class="solutions">
                         <li>Nous avons analysé différents solutions technique pour :
-                            <ul>
+                            <ul class="solution-1">
                                 <li>le stockage des entités</li>
                                 <li>la gestion de la hiérarchie documentaire</li>
                                 <li>La gestion de pipeline automatisé du business</li>
                                 <li>La gestion des droits d’accès aux documents par les entités</li>
                             </ul>
                         </li>
+
                         <li>Une fois les solution adéquates identifiées, nous avons dressé un schéma d’architecture
                             mettant en scène l’indexation distribuée de documents entre entités ainsi que la définition
                             de leurs droits d’accès respectifs</li>
+
                         <li>Nous avons développé des briques logicielles personnalisées afin d’orchestrer :
-                            <ul>
+                            <ul class="solution-1">
                                 <li>La consultation de documents par les entités</li>
                                 <li>La synchronisation des droits d’accès entre registre d’utilisateurs d’entreprise et
                                     entités</li>
                                 <li>L’interaction avec les processus business</li>
                             </ul>
                         </li>
-                        <li>Enfin nous avons délivré la solution et un accompagnement pour la prise en main et la
+
+                        <li class="last">Enfin nous avons délivré la solution et un accompagnement pour la prise en main et la
                             maintenance de l’outil</li>
                     </ul>
                 </div>
@@ -255,16 +266,7 @@
                 <h1>Nos technologies</h1>
                 <p>applicataion JAVA evolutives alignées aux derniers standards</p>
 
-                <div class="techs__titles-wrapper">
-                    <ul class="techs__titles">
-                        <li class="tablink codeLink active">Code</li>
-                        <li class="tablink dbLink">Base de données</li>
-                        <li class="tablink toolsLink">Outils</li>
-                        <li class="tablink lifeCycleLink">Gestion de cycle de vie du logiciel</li>
-                    </ul>
-                </div>
-
-                <div class="our-techs"></div>
+                
             </div>
         </section>
 
@@ -350,7 +352,7 @@
                 <h1>Réalisations semblables</h1>
                 <div class="results">
                     <div class="card">
-                        <img src="/images/same-results.svg" class="card__img" alt="same-results">
+                        <!-- <img src="/images/same-results.svg" class="card__img" alt="same-results"> -->
                         <div class="card__text">
                             <h5 class="card__title">Partage nous les photos</h5>
                             <p class="card__body">Développement de l’application android</p>
@@ -358,7 +360,7 @@
                     </div>
 
                     <div class="card">
-                        <img src="/images/engine.svg" class="card__img" alt="">
+                        <!-- <img src="/images/engine.svg" class="card__img" alt=""> -->
                         <div class="card__text">
                             <h5 class="card__title">Moteur d'agrégation de moyens de paiement mobiles</h5>
                             <p class="card__body">Développement de la base dorsale en JAVA</p>
@@ -447,10 +449,14 @@
             </div>
         </div>
     </footer>
+
     <div onclick="backToTop()" class="back-to-top" id="back-to-top">
         <img src="images/chevron-down.svg" alt="Back to top">
     </div>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/signature.js"></script>
 </body>
 
 </html>
