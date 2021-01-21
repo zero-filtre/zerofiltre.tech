@@ -221,38 +221,36 @@ nav ul li:nth-child(5) a {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 24%;
+  /* width: 24%; */
+  width: 90%;
   height: 15rem;
-  padding: 2% 1%;
+  /* padding: 2% 1%; */
+  padding: 3%;
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
   font-size: var(--regular-size);
   font-weight: bold;
   text-align: left;
   border-radius: 5px;
-  margin: auto;
+  margin: 1rem auto;
   box-shadow: 5px 5px 10px #8bc5ca7e;
 }
 
-.step-card:nth-child(even) {
-  bottom: -5rem;
-}
-
-.step-card:nth-child(odd)::after {
+/* .step-card::after {
   content: url(../images/roadmap-arrow-1.svg);
   position: absolute;
   display: block;
-  top: 1.9rem;
+  top: 40%;
   right: -10.5rem;
-}
+} */
 
-.step-card:nth-child(2)::after {
+/* .step-card:nth-child(2)::after {
   content: url(../images/roadmap-arrow-2.svg);
   position: absolute;
   display: block;
   bottom: 1.5rem;
   right: -10.5rem;
-}
+} */
 
 .step-card ul {
   color: initial;
@@ -294,6 +292,38 @@ nav ul li:nth-child(5) a {
   background-repeat: no-repeat;
   opacity: 0.4;
   z-index: -1;
+}
+
+#our-results {
+  text-align: center;
+}
+
+#our-results .container {
+  padding: 5% 2%;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 1em auto;
+  padding: 5%;
+}
+
+.result img {
+  width: 100px !important;
+}
+
+.result p {
+  color: var(--primary-color);
+}
+
+.result p,
+.result h4,
+.result img {
+  margin: 0;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -418,9 +448,35 @@ nav ul li:nth-child(5) a {
   }
 
   #implementation p,
-  #roadmap p {
+  #roadmap p,
+  #our-results p {
     width: 80%;
     margin: 2rem auto;
+  }
+
+  .step-card {
+    width: 24%;
+    padding: 2% 1%;
+  }
+
+  .step-card:nth-child(even) {
+    bottom: -5rem;
+  }
+
+  .step-card:nth-child(odd)::after {
+    content: url(../images/roadmap-arrow-1.svg);
+    position: absolute;
+    display: block;
+    top: 1.9rem;
+    right: -10.5rem;
+  }
+
+  .step-card:nth-child(2)::after {
+    content: url(../images/roadmap-arrow-2.svg);
+    position: absolute;
+    display: block;
+    bottom: 1.5rem;
+    right: -10.5rem;
   }
 
   #plus-value-metier {
@@ -453,5 +509,9 @@ nav ul li:nth-child(5) a {
     margin: 2em auto;
     font-size: 1.3rem;
     font-weight: 500;
+  }
+
+  #our-results .container {
+    padding: 5%;
   }
 }
