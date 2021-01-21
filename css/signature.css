@@ -110,6 +110,7 @@ nav ul li:nth-child(5) a {
   align-items: flex-start;
   font-weight: bold;
   line-height: 1.4;
+  font-size: var(--regular-size);
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
@@ -120,11 +121,12 @@ nav ul li:nth-child(5) a {
   content: url(../images/triangle-blue-down.svg);
   display: block;
   margin-right: 5%;
-  transform: scale(0.5);
+  transform: scale(0.4);
 }
 
 .challenges-img,
-.implementation-img {
+.implementation-img,
+.plus-value-metier-img {
   width: 80%;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -141,7 +143,7 @@ nav ul li:nth-child(5) a {
 
 .solutions-img {
   margin: 2rem 0;
-  transform: scale(1, 1.2)
+  transform: scale(1, 1.2);
 }
 
 .solutions > li:not(.last) {
@@ -259,6 +261,41 @@ nav ul li:nth-child(5) a {
   line-height: 1.5;
 }
 
+#plus-value-metier {
+  text-align: center;
+  background-color: #f2feff;
+}
+
+#call-to-action {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(
+    107deg,
+    #14a6af 0%,
+    #198b93cc 1%,
+    #17a6af 51%
+  );
+  background-size: cover;
+  z-index: 1;
+  padding: 3em 0;
+}
+
+#call-to-action::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-image: url(/images/app-mobile-cta-bg-img1.jpg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  z-index: -1;
+}
+
 @media only screen and (min-width: 1024px) {
   .dropdown-content {
     background-image: linear-gradient(155.64deg, #fff 39.12%, #fff 75.61%);
@@ -322,18 +359,20 @@ nav ul li:nth-child(5) a {
   }
 
   .challenges-box,
-  .implementation-box {
+  .implementation-box,
+  .plus-value-metier-box {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 
   .challenges-img,
-  .implementation-img {
+  .implementation-img,
+  .plus-value-metier-img {
     margin-right: 10%;
     width: 40%;
   }
@@ -382,5 +421,37 @@ nav ul li:nth-child(5) a {
   #roadmap p {
     width: 80%;
     margin: 2rem auto;
+  }
+
+  #plus-value-metier {
+    margin-top: 5rem;
+  }
+
+  .plus-value-text {
+    text-align: left;
+    align-self: flex-start;
+  }
+
+  #call-to-action::after {
+    background-position: center;
+  }
+
+  #call-to-action h1 {
+    font-size: 1.6em;
+  }
+
+  #call-to-action .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+  }
+
+  #call-to-action p {
+    width: 80%;
+    margin: 2em auto;
+    font-size: 1.3rem;
+    font-weight: 500;
   }
 }
