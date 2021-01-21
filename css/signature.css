@@ -90,7 +90,7 @@ nav ul li:nth-child(5) a {
 
 .needs li {
   display: block;
-  background-color: #FFF9F2;
+  background-color: #fff9f2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,24 +103,28 @@ nav ul li:nth-child(5) a {
   text-align: center;
 }
 
-.challenges li {
+.challenges li,
+.implementation li {
   display: flex;
   text-align: left;
-  align-items: stretch;
+  align-items: flex-start;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.4;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.challenges li::before {
+.challenges li::before,
+.implementation li::before {
   position: relative;
   content: url(../images/triangle-blue-down.svg);
   display: block;
   margin-right: 5%;
+  transform: scale(0.5);
 }
 
-.challenges-img {
+.challenges-img,
+.implementation-img {
   width: 80%;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -128,6 +132,7 @@ nav ul li:nth-child(5) a {
 
 #solutions {
   text-align: center;
+  line-height: 1.5;
   margin: 0 3%;
   padding-bottom: 1rem;
   border-radius: 20px;
@@ -152,11 +157,107 @@ nav ul li:nth-child(5) a {
   font-weight: bold;
 }
 
-.solution-1 li::before  {
+.solution-1 li::before,
+.step-card li::before {
   content: "-";
   display: inline-block;
   font-weight: bold;
-  margin-right: 2%;
+  margin-right: 3%;
+}
+
+#technologies {
+  text-align: center;
+}
+
+.technos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 1% 2% 1% 0;
+  flex-basis: calc(50% - 4vw);
+  max-width: 200px;
+  /* max-height: 100px; */
+}
+
+.tech-item div:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.tech-item h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#implementation {
+  text-align: center;
+  background-color: #f9fafb;
+}
+
+#roadmap {
+  text-align: center;
+  overflow: visible;
+}
+
+.steps {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.step-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 24%;
+  height: 15rem;
+  padding: 2% 1%;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: var(--regular-size);
+  font-weight: bold;
+  text-align: left;
+  border-radius: 5px;
+  margin: auto;
+  box-shadow: 5px 5px 10px #8bc5ca7e;
+}
+
+.step-card:nth-child(even) {
+  bottom: -5rem;
+}
+
+.step-card:nth-child(odd)::after {
+  content: url(../images/roadmap-arrow-1.svg);
+  position: absolute;
+  display: block;
+  top: 1.9rem;
+  right: -10.5rem;
+}
+
+.step-card:nth-child(2)::after {
+  content: url(../images/roadmap-arrow-2.svg);
+  position: absolute;
+  display: block;
+  bottom: 1.5rem;
+  right: -10.5rem;
+}
+
+.step-card ul {
+  color: initial;
+  font-weight: initial;
+  margin-top: 12%;
+  line-height: 1.5;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -183,11 +284,11 @@ nav ul li:nth-child(5) a {
   .overviews__img::before {
     display: none;
   }
-  
+
   .overviews__img img {
     width: 70%;
   }
-  
+
   .overviews__text {
     order: 1;
     flex: 1;
@@ -221,25 +322,38 @@ nav ul li:nth-child(5) a {
     padding-top: 0;
   }
 
-  .challenges-box {
+  .challenges-box,
+  .implementation-box {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .challenges-img {
-    width: 60%;
-    margin-right: 15%;
+  .challenges-img,
+  .implementation-img {
+    margin-right: 10%;
+    width: 40%;
   }
 
-  .challenges li {
-    margin-bottom: 3rem;
+  .challenges li,
+  .implementation li {
+    /* margin-bottom: 3rem; */
+  }
+
+  .challenges li::before,
+  .implementation li::before {
+    transform: none;
   }
 
   #solutions {
   }
 
   .solutions-img {
+    height: auto;
     transform: none;
   }
 
@@ -253,7 +367,21 @@ nav ul li:nth-child(5) a {
     margin-bottom: 0 !important;
   }
 
-  .solutions  > li:not(.last) {
+  .solutions > li:not(.last) {
     margin-right: 2%;
+  }
+
+  .tech-item {
+    flex-basis: auto;
+  }
+
+  .tech-item h4 {
+    margin-left: 0.8em;
+  }
+
+  #implementation p,
+  #roadmap p {
+    width: 80%;
+    margin: 2rem auto;
   }
 }
