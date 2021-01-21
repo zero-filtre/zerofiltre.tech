@@ -29,9 +29,6 @@ html {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-}
-
-section {
   overflow-x: hidden;
 }
 
