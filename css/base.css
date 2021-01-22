@@ -501,7 +501,7 @@ nav ul li:nth-of-type(5) a img {
   }
 
   .dropdown h1 {
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-weight: bold;
     color: var(--primary-color);
     padding: 12px;
