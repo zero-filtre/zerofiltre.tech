@@ -33,6 +33,7 @@ body {
 
 h1 {
   font-weight: bolder;
+  font-size: 1.17rem;
 }
 
 p,
@@ -84,7 +85,7 @@ ul {
   margin: 1rem auto;
   padding: 1em 2em;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .rounded-button span {
@@ -358,12 +359,12 @@ nav ul li:nth-of-type(5) a img {
 .sidebar .closebtn {
   font-size: 1.5em !important;
   font-weight: bold !important;
-  padding: 3em 1.2em .5em 1em !important;
+  padding: 3em 1.2em 0.5em 1em !important;
 }
 
 .sidebar .closebtn-x {
   position: absolute;
-  top: .5rem;
+  top: 0.5rem;
   right: 1.7rem;
   font-size: 36px;
 }
@@ -427,7 +428,7 @@ nav ul li:nth-of-type(5) a img {
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2rem !important;
     margin: 0;
   }
 

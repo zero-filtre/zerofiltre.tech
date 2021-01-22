@@ -338,7 +338,8 @@ nav ul li:nth-child(5) a {
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-    margin: 0;
+    width: 90%;
+    margin: auto;
     box-shadow: none;
   }
 
@@ -358,7 +359,7 @@ nav ul li:nth-child(5) a {
   .overviews__text {
     order: 1;
     flex: 1;
-    margin-right: 5%;
+    margin-right: 10%;
   }
 
   .overviews__text h1 {
