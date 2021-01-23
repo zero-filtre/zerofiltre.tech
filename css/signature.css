@@ -136,10 +136,14 @@ nav ul li:nth-child(5) a {
   text-align: center;
   line-height: 1.5;
   margin: 0 3%;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   border-radius: 20px;
   box-shadow: #ddd 0 0 8px;
 }
+
+/* #solutions .container {
+  padding: 0;
+} */
 
 .solutions-img {
   margin: 2rem 0;
@@ -149,6 +153,13 @@ nav ul li:nth-child(5) a {
 .solutions > li:not(.last) {
   margin-bottom: 2rem;
 }
+
+/* .solution-wrapper {
+  border-radius: 20px;
+  box-shadow: #ddd 0 0 8px;
+  padding: 5%;
+  margin-top: 2rem;
+} */
 
 .solutions-box {
   text-align: left;
@@ -179,12 +190,10 @@ nav ul li:nth-child(5) a {
 .tech-item {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   margin: 1% 2% 1% 0;
   flex-basis: calc(50% - 4vw);
   max-width: 200px;
-  /* max-height: 100px; */
 }
 
 .tech-item div:first-of-type {
@@ -221,10 +230,8 @@ nav ul li:nth-child(5) a {
   display: flex;
   position: relative;
   flex-direction: column;
-  /* width: 24%; */
   width: 90%;
   height: 15rem;
-  /* padding: 2% 1%; */
   padding: 3%;
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
@@ -365,10 +372,6 @@ nav ul li:nth-child(5) a {
   .overviews__text h1 {
     display: block;
     margin-bottom: 1.5rem;
-  }
-
-  .overviews__text p {
-    line-height: 1.6rem;
   }
 
   #business-needs .container {

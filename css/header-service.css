@@ -131,10 +131,9 @@ ul {
 }
 
 .tech-item h4 {
-  font-size: .9rem;
+  font-size: .95rem;
   font-weight: 600;
   text-align: center;
-  text-shadow: var(--accent-color) 1px 0 10px;
 }
 
 
