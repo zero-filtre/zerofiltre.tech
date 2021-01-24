@@ -102,9 +102,6 @@ nav ul li:nth-child(5) a {
   text-align: center;
 }
 
-.needs {
-}
-
 .needs li {
   display: block;
   background-color: #fff9f2;
@@ -383,6 +380,7 @@ nav ul li:nth-child(5) a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 2rem;
   }
 
   .needs li {
