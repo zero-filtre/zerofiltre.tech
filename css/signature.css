@@ -33,10 +33,27 @@ nav ul {
 }
 
 .green-container {
+  position: relative;
   color: inherit;
   background: #fff;
   background-image: linear-gradient(-1.64deg, #fff 39.12%, #f9fafb 75.61%);
   box-shadow: #ddd 0 0 8px;
+  z-index: 1;
+}
+
+.green-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-image: url(../images/app-mobile-cta-bg-img.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.04;
+  border-bottom-right-radius: 20px;
+  z-index: -1;
 }
 
 nav ul li:nth-child(5) a {
