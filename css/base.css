@@ -139,11 +139,6 @@ ul {
   align-items: center;
 }
 
-.owl-dot {
-  border: none;
-  background-color: transparent;
-}
-
 .owl-dot span {
   height: 1em;
   width: 1em;

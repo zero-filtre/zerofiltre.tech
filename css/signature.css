@@ -223,7 +223,7 @@ nav ul li:nth-child(5) a {
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .step-card {
@@ -317,6 +317,7 @@ nav ul li:nth-child(5) a {
   width: 80%;
   margin: 1em auto;
   padding: 5%;
+  cursor: pointer;
 }
 
 .result img {
@@ -330,7 +331,7 @@ nav ul li:nth-child(5) a {
 .result p,
 .result h4,
 .result img {
-  margin: 0;
+  margin: 0 !important;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -345,7 +346,6 @@ nav ul li:nth-child(5) a {
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-    width: 90%;
     margin: auto;
     box-shadow: none;
   }
@@ -425,7 +425,8 @@ nav ul li:nth-child(5) a {
   }
 
   .solutions-img {
-    height: auto;
+    width: 85%;
+    margin: 4rem auto;
     transform: none;
   }
 
@@ -517,5 +518,9 @@ nav ul li:nth-child(5) a {
 
   #our-results .container {
     padding: 5%;
+  }
+
+  #our-results h1 {
+    margin-bottom: 2rem;
   }
 }
