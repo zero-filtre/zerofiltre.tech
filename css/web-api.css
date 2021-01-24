@@ -194,15 +194,15 @@ section {
 }
 
 .mission:hover .card__text {
-  top: 5%;
+  top: 10%;
   color: white;
-  padding: 0 .5em;
+  padding: 0 0.5em;
 }
 
 .why-us:hover .card__text {
   top: 25%;
   color: white;
-  padding: 0 .5em;
+  padding: 0 0.5em;
 }
 
 .why-us:hover .card__body,
@@ -239,7 +239,7 @@ section {
 .why-us .card__body,
 .missions .card__body {
   opacity: 0;
-  font-size: .75rem;
+  font-size: 0.75rem;
   display: none;
 }
 /**END**/
@@ -495,6 +495,7 @@ section {
   width: 80%;
   margin: 1em auto;
   padding: 5%;
+  cursor: pointer;
 }
 
 .result img {
@@ -812,10 +813,6 @@ section {
     width: 30%;
   }
 
-  .mission:hover .card__body {
-    margin-top: 1.5em;
-  }
-
   /**END**/
 
   /**OUR TEAM**/
@@ -876,17 +873,15 @@ section {
     align-items: center;
     padding: 0 5%;
   }
-
-  #call-to-action .wrap-p {
-    width: 70%;
-    margin: 2em auto;
-    font-weight: 400;
-  }
   /**END**/
 }
 
 @media only screen and (min-width: 1350px) {
   .trades__img {
     bottom: 5rem;
+  }
+
+  .mission:hover .card__body {
+    margin-top: 1.5em;
   }
 }

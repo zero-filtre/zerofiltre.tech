@@ -109,13 +109,6 @@ ul {
   border-color: transparent;
 }
 
-#call-to-action p {
-  width: 80%;
-  margin: 2em auto;
-  font-size: 1.3rem;
-  font-weight: 500;
-}
-
 /***tech icons***/
 .tech-item {
   display: flex;
@@ -640,6 +633,14 @@ footer .container {
     background-color: inherit;
   }
   /***END***/
+
+  /**CTA**/
+  #call-to-action p {
+    width: 80%;
+    margin: 2em auto;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
 
   /***FOOTER***/
   .useful-links {

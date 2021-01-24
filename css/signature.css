@@ -96,7 +96,6 @@ nav ul li:nth-child(5) a {
   justify-content: center;
   font-weight: bold;
   padding: 0 4%;
-  line-height: 1.6;
 }
 
 #challenges {
@@ -109,7 +108,6 @@ nav ul li:nth-child(5) a {
   text-align: left;
   align-items: flex-start;
   font-weight: bold;
-  line-height: 1.4;
   font-size: var(--regular-size);
   margin-top: 1rem;
   margin-bottom: 1.5rem;
@@ -134,16 +132,10 @@ nav ul li:nth-child(5) a {
 
 #solutions {
   text-align: center;
-  line-height: 1.5;
   margin: 0 3%;
-  /* padding-bottom: 1rem; */
   border-radius: 20px;
   box-shadow: #ddd 0 0 8px;
 }
-
-/* #solutions .container {
-  padding: 0;
-} */
 
 .solutions-img {
   margin: 2rem 0;
@@ -153,13 +145,6 @@ nav ul li:nth-child(5) a {
 .solutions > li:not(.last) {
   margin-bottom: 2rem;
 }
-
-/* .solution-wrapper {
-  border-radius: 20px;
-  box-shadow: #ddd 0 0 8px;
-  padding: 5%;
-  margin-top: 2rem;
-} */
 
 .solutions-box {
   text-align: left;
@@ -263,7 +248,6 @@ nav ul li:nth-child(5) a {
   color: initial;
   font-weight: initial;
   margin-top: 12%;
-  line-height: 1.5;
 }
 
 #plus-value-metier {
@@ -409,11 +393,6 @@ nav ul li:nth-child(5) a {
   .plus-value-metier-img {
     margin-right: 10%;
     width: 40%;
-  }
-
-  .challenges li,
-  .implementation li {
-    /* margin-bottom: 3rem; */
   }
 
   .challenges li::before,
