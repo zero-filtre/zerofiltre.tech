@@ -29,7 +29,7 @@ nav ul {
   color: inherit;
   background-color: #f9fafb;
   background-image: none;
-  box-shadow: #ddd 0 0 8px;
+  box-shadow: #ddd 0 0 32px;
 }
 
 .green-container {
@@ -37,7 +37,7 @@ nav ul {
   color: inherit;
   background: #fff;
   background-image: linear-gradient(-1.64deg, #fff 39.12%, #f9fafb 75.61%);
-  box-shadow: #ddd 0 0 8px;
+  box-shadow: #ddd 0 0 32px;
   z-index: 1;
 }
 
@@ -51,9 +51,8 @@ nav ul {
   background-size: cover;
   background-image: url(../images/app-mobile-cta-bg-img.jpg);
   background-repeat: no-repeat;
-  opacity: 0.05;
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
+  opacity: 0.1;
+  filter: blur(2.5px);
   border-bottom-right-radius: 20px;
   z-index: -1;
 }
@@ -458,7 +457,7 @@ nav ul li:nth-child(5) a {
   }
 
   .tech-item h4 {
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1.6;
   }
 
