@@ -20,7 +20,7 @@ body {
 }
 
 .img-fluid {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -130,19 +130,23 @@ nav ul li:nth-child(5) a {
   display: flex;
   text-align: left;
   align-items: flex-start;
-  font-weight: bold;
-  font-size: var(--regular-size);
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.challenges li::before,
-.implementation li::before {
+.challenges li img,
+.implementation li img {
   position: relative;
-  content: url(../images/triangle-blue-down.svg);
-  display: block;
-  margin-right: 5%;
-  transform: scale(0.4);
+  top: 5px;
+  margin-right: 15px;
+  width: 15px;
+}
+
+.challenges li p,
+.implementation li p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 800;
 }
 
 .challenges-img,
@@ -476,9 +480,11 @@ nav ul li:nth-child(5) a {
     width: 40%;
   }
 
-  .challenges li::before,
-  .implementation li::before {
-    transform: none;
+  .challenges li img,
+  .implementation li img {
+    width: auto;
+    top: 2px;
+    margin-right: 20px;
   }
 
   .solutions-img {
@@ -512,9 +518,9 @@ nav ul li:nth-child(5) a {
     line-height: 1.6;
   }
 
-  #implementation p,
-  #roadmap p,
-  #our-results p {
+  #implementation > p,
+  #roadmap > p,
+  #our-results > p {
     width: 80%;
     margin: 2rem auto;
   }
