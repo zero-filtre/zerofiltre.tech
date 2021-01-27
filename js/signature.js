@@ -1,3 +1,18 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("flexibleHeader").style.padding = "1% 5%";
+    document.getElementById("hero-title").style.display= "none";
+    document.getElementById("hero-banner").style.borderBottomRightRadius = "0";
+  } else {
+    document.getElementById("flexibleHeader").style.padding = "2% 5% 4% 5%";
+    document.getElementById("hero-title").style.display= "block";
+    document.getElementById("hero-banner").style.borderBottomRightRadius = "20px";
+  }
+}
+
+
 $(".owl-carousel").owlCarousel({
   loop: true,
   autoplay: true,

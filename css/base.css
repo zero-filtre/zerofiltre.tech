@@ -41,7 +41,6 @@ p,
 blockquote {
   font-size: var(--regular-size);
   font-weight: lighter;
-  /* line-height: 1.6; */
 }
 
 a {
@@ -57,7 +56,6 @@ ul {
 
 li {
   font-size: var(--regular-size);
-  /* line-height: 1.6; */
 }
 
 .hide {
@@ -160,10 +158,6 @@ li {
 /***END***/
 
 /***HEADER***/
-.green-container {
-  height: 300px;
-  border-bottom-right-radius: 20px;
-}
 
 .green-container .container,
 footer .container {
