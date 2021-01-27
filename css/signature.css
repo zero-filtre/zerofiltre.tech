@@ -51,8 +51,8 @@ nav ul {
   background-size: cover;
   background-image: url(../images/app-mobile-cta-bg-img.jpg);
   background-repeat: no-repeat;
-  opacity: 0.1;
-  filter: blur(2.5px);
+  opacity: 0.15;
+  filter: blur(3px);
   border-bottom-right-radius: 20px;
   z-index: -1;
 }
@@ -193,6 +193,7 @@ nav ul li:nth-child(5) a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .tech-item {
@@ -205,17 +206,27 @@ nav ul li:nth-child(5) a {
 }
 
 .tech-item div:first-of-type {
+  height: 45px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+}
+
+.tech-item img {
+  max-width: 90%;
 }
 
 .tech-item h4 {
-  /* font-size: 0.9rem; */
   font-size: 0.8rem;
   line-height: 1.3;
   font-weight: 600;
   text-align: center;
+}
+
+.tech-item .java-icon {
+  position: relative;
+  top: -10px;
+  width: 80px;
 }
 
 #implementation {
@@ -345,6 +356,28 @@ nav ul li:nth-child(5) a {
 .result h4,
 .result img {
   margin: 0 !important;
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .img-fluid {
+    max-width: 50% !important;
+  }
+
+  .green-container {
+    height: auto;
+  }
+
+  #hero-title {
+    position: relative;
+  }
+
+  .overviews-box {
+    margin-bottom: 0;
+  }
+
+  .solutions-img {
+    max-width: 80% !important;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
