@@ -52,10 +52,11 @@ nav ul {
   left: 0;
   bottom: 0;
   background-size: cover;
-  background-image: url(../images/app-mobile-cta-bg-img.jpg);
+  background-image: url(../images/app-api-cta-bg-img.jpg);
   background-repeat: no-repeat;
-  opacity: 0.15;
-  filter: blur(3px);
+  background-position: center left;
+  opacity: 0.2;
+  filter: blur(2.5px);
   border-bottom-right-radius: 20px;
   z-index: -1;
 }
