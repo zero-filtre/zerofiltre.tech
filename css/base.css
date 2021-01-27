@@ -163,14 +163,6 @@ li {
 .green-container {
   height: 300px;
   border-bottom-right-radius: 20px;
-  /* background-color: #057c86;
-    background-image: linear-gradient(
-    155.64deg,
-    #057c86 39.12%,
-    var(--primary-color) 75.61%
-    ); 
-    color: white;
-  */
 }
 
 .green-container .container,
@@ -366,8 +358,7 @@ nav ul li:nth-of-type(5) a img {
 
 @media only screen and (min-width: 650px) {
   h1 {
-    font-size: 2.8em;
-    margin: 0;
+    font-size: 1.5em;
   }
 
   .rounded-button img {
