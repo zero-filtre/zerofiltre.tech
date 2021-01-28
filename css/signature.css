@@ -43,7 +43,7 @@ nav ul {
   border-bottom-right-radius: 20px;
   color: inherit;
   background: hsl(179, 100%, 100%);
-  /* background-image: linear-gradient(-1.64deg, #fff 39.12%, #f9fafb 75.61%); */
+  background-image: linear-gradient(-1.64deg, #fff 39.12%, #fff 75.61%);
   box-shadow: rgba(0, 0, 0, 0.25) 0 0 32px;
   z-index: 10;
 }
@@ -59,7 +59,7 @@ nav ul {
   background-image: url(../images/signature-hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center left;
-  opacity: 0.25;
+  opacity: .3;
   filter: blur(2.5px);
   border-bottom-right-radius: 20px;
   z-index: -1;
