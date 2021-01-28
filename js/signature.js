@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("flexibleHeader").style.padding = "1% 5%";
     document.getElementById("hero-title").style.display= "none";
     document.getElementById("hero-banner").style.borderBottomRightRadius = "0";

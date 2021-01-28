@@ -56,7 +56,7 @@ nav ul {
   background-repeat: no-repeat;
   background-position: center left;
   opacity: 0.3;
-  filter: blur(3px);
+  filter: blur(2.5px);
   border-bottom-right-radius: 20px;
   z-index: -1;
 }
@@ -78,8 +78,18 @@ nav ul li:nth-child(5) a {
   margin-top: 1.5em;
 }
 
+.subhead {
+  color: #fff;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 3px 15px;
+  font-weight: 600;
+  width: fit-content;
+  margin: 1rem auto;
+}
+
 main {
-  margin-top: 17em;
+  margin-top: 19em;
 }
 
 .overviews-box {
@@ -546,6 +556,7 @@ main {
   .step-card {
     width: 24%;
     padding: 2% 1%;
+    overflow: visible;
   }
 
   .step-card:nth-child(even) {
