@@ -24,6 +24,10 @@ body {
   height: auto;
 }
 
+.border-radius-none {
+  border-radius: 0;
+}
+
 .sidebar,
 nav ul {
   color: inherit;
@@ -38,8 +42,8 @@ nav ul {
   top: 0;
   border-bottom-right-radius: 20px;
   color: inherit;
-  background: #fff;
-  background-image: linear-gradient(-1.64deg, #fff 39.12%, #f9fafb 75.61%);
+  background: hsl(179, 100%, 100%);
+  /* background-image: linear-gradient(-1.64deg, #fff 39.12%, #f9fafb 75.61%); */
   box-shadow: rgba(0, 0, 0, 0.25) 0 0 32px;
   z-index: 10;
 }
@@ -546,9 +550,9 @@ main {
     line-height: 1.6;
   }
 
-  #implementation > p,
-  #roadmap > p,
-  #our-results > p {
+  #implementation .container > p,
+  #roadmap .container > p,
+  #our-results .container > p {
     width: 80%;
     margin: 2rem auto;
   }

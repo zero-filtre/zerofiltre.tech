@@ -9,6 +9,7 @@ function scrollFunction() {
     document.getElementById("flexibleHeader").style.padding = "2% 5% 4% 5%";
     document.getElementById("hero-title").style.display= "block";
     document.getElementById("hero-banner").style.borderBottomRightRadius = "20px";
+    document.getElementById("hero-banner").classList.add('border-radius-none');
   }
 }
 
