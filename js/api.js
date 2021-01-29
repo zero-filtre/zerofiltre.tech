@@ -140,7 +140,7 @@ toolsContent.innerHTML = `
             
             <div class="tech-item">
               <div>
-                <img src="./images/space-cloud-icon" class="img-fluid" alt="space-cloud">
+                <img src="./images/space-cloud-icon.svg" class="img-fluid space-cloud-icon" alt="space-cloud">
               </div>
               <div>
                 <h4>Space Cloud de SpaceUp Tech</h4>

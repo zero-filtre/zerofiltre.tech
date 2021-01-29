@@ -20,8 +20,12 @@ body {
 }
 
 .img-fluid {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+.border-radius-none {
+  border-radius: 0;
 }
 
 .sidebar,
@@ -29,22 +33,68 @@ nav ul {
   color: inherit;
   background-color: #f9fafb;
   background-image: none;
-  box-shadow: #ddd 0 0 8px;
+  box-shadow: #ddd 0 0 32px;
 }
 
 .green-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom-right-radius: 20px;
   color: inherit;
-  background: #fff;
-  background-image: linear-gradient(-1.64deg, #fff 39.12%, #f9fafb 75.61%);
-  box-shadow: #ddd 0 0 8px;
+  background: hsl(179, 100%, 100%);
+  /* background-image: linear-gradient(-1.64deg, #fff 39.12%, rgba(0, 0, 0, 0.219) 75.61%); */
+  background-image: linear-gradient(-1.64deg, #fff 39.12%, #fdbc5a3a 75.61%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0 32px;
+  z-index: 10;
+}
+
+.green-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-image: url(../images/signature-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .3;
+  filter: blur(2.5px);
+  border-bottom-right-radius: 20px;
+  z-index: -1;
 }
 
 nav ul li:nth-child(5) a {
   width: max-content;
 }
 
+#flexibleHeader {
+  transition: 0.4s;
+}
+
+#hero-title {
+  padding: 0 5%;
+  transition: 0.4s;
+}
+
 #hero-title h1 {
-  margin-top: 2.5em;
+  margin-top: 1.5em;
+}
+
+.subhead {
+  color: #fff;
+  background-color: #052b5dda;
+  border-radius: 5px;
+  padding: 3px 15px;
+  font-weight: 600;
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+main {
+  margin-top: 19em;
 }
 
 .overviews-box {
@@ -85,6 +135,306 @@ nav ul li:nth-child(5) a {
   text-align: center;
 }
 
+.needs li {
+  display: block;
+  background-color: #fff9f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 0 4%;
+}
+
+#challenges {
+  text-align: center;
+}
+
+.challenges li,
+.implementation li {
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.challenges li img,
+.implementation li img {
+  position: relative;
+  top: 5px;
+  margin-right: 15px;
+  width: 15px;
+}
+
+.challenges li p,
+.implementation li p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.challenges-img,
+.implementation-img,
+.plus-value-metier-img {
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#solutions {
+  text-align: center;
+  margin: 0 3%;
+  border-radius: 20px;
+  box-shadow: #ddd 0 0 8px;
+}
+
+.solutions-img {
+  margin: 2rem 0;
+  transform: scale(1, 1.2);
+}
+
+.solutions > li:not(.last) {
+  margin-bottom: 2rem;
+}
+
+.solutions-box {
+  text-align: justify;
+}
+
+.solution-1 li {
+  font-weight: bold;
+}
+
+.solution-1 li::before,
+.step-card li::before {
+  content: "-";
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 3%;
+}
+
+#technologies {
+  text-align: center;
+}
+
+.technos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 2%;
+  flex-basis: calc(50% - 4vw);
+  max-width: 200px;
+}
+
+.tech-item div:first-of-type {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-item img {
+  max-width: 90%;
+}
+
+.tech-item h4 {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tech-item .java-icon {
+  position: relative;
+  top: -15px;
+  width: 80px;
+}
+
+#implementation {
+  text-align: center;
+  background-color: #f9fafb;
+}
+
+#roadmap {
+  text-align: center;
+  overflow: visible;
+}
+
+.steps {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.step-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 90%;
+  height: 15rem;
+  padding: 3%;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: var(--regular-size);
+  font-weight: bold;
+  text-align: left;
+  border-radius: 5px;
+  margin: 1rem auto;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px #8bc5ca7e;
+}
+
+.step-card ul {
+  color: initial;
+  font-weight: initial;
+  margin-top: 12%;
+}
+
+.step-card .number {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  background-color: var(--primary-color);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+
+.step-card span {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+#plus-value-metier {
+  text-align: center;
+  background-color: #f2feff;
+}
+
+#call-to-action {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(
+    107deg,
+    #14a6af 0%,
+    #198b93cc 1%,
+    #17a6af 51%
+  );
+  background-size: cover;
+  z-index: 1;
+  padding: 3em 0;
+}
+
+#call-to-action::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-image: url(/images/app-mobile-cta-bg-img1.jpg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#call-to-action p {
+  font-weight: normal;
+}
+
+#our-results {
+  text-align: center;
+}
+
+#our-results .container {
+  padding: 5% 2%;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 1em auto;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.result img {
+  width: 100px !important;
+}
+
+.result p {
+  color: var(--primary-color);
+}
+
+.result p,
+.result h4,
+.result img {
+  margin: 0 !important;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .container {
+    padding: 5% !important;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .green-container .container {
+    padding: 3% !important;
+  }
+
+  .img-fluid {
+    max-width: 50% !important;
+  }
+
+  main {
+    margin-top: 16em;
+  }
+
+  .overviews-box {
+    margin-bottom: 0;
+  }
+
+  #challenges .container {
+    padding-top: 0;
+  }
+
+  .solutions-img {
+    max-width: 80% !important;
+    transform: none;
+  }
+
+  .tech-item {
+    margin: 1%;
+  }
+
+  .tech-item img {
+    max-width: 70% !important;
+  }
+
+  .tech-item .java-icon {
+    top: -5px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .dropdown-content {
     background-image: linear-gradient(155.64deg, #fff 39.12%, #fff 75.61%);
@@ -97,7 +447,7 @@ nav ul li:nth-child(5) a {
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-    margin: 0;
+    margin: auto;
     box-shadow: none;
   }
 
@@ -109,15 +459,15 @@ nav ul li:nth-child(5) a {
   .overviews__img::before {
     display: none;
   }
-  
+
   .overviews__img img {
     width: 70%;
   }
-  
+
   .overviews__text {
     order: 1;
     flex: 1;
-    margin-right: 5%;
+    margin-right: 10%;
   }
 
   .overviews__text h1 {
@@ -125,7 +475,157 @@ nav ul li:nth-child(5) a {
     margin-bottom: 1.5rem;
   }
 
-  .overviews__text p {
-    line-height: 1.6rem;
+  #business-needs .container {
+    padding: 0 10% 5% 10%;
+  }
+
+  .needs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .needs li {
+    width: 30%;
+  }
+
+  #challenges .container {
+    padding-top: 0;
+  }
+
+  .challenges-box,
+  .implementation-box,
+  .plus-value-metier-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .challenges-img,
+  .implementation-img,
+  .plus-value-metier-img {
+    margin-right: 10%;
+    width: 40%;
+  }
+
+  .challenges li img,
+  .implementation li img {
+    width: auto;
+    top: 2px;
+    margin-right: 20px;
+  }
+
+  #solutions {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .solutions-img {
+    width: 85%;
+    margin: 4rem auto;
+    transform: none;
+  }
+
+  .solutions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .solutions > li {
+    flex: 1;
+    margin-bottom: 0 !important;
+    text-align: left;
+  }
+
+  .solutions > li:not(.last) {
+    margin-right: 2%;
+  }
+
+  .tech-item {
+    flex-basis: auto;
+    margin: 1%;
+  }
+
+  .tech-item h4 {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  #implementation .container > p,
+  #roadmap .container > p,
+  #our-results .container > p {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .step-card {
+    width: 24%;
+    max-width: 350px;
+    padding: 2% 1%;
+    overflow: visible;
+  }
+
+  .step-card:nth-child(even) {
+    bottom: -5rem;
+  }
+
+  .step-card:nth-child(odd)::after {
+    content: url(../images/roadmap-arrow-1.svg);
+    position: absolute;
+    display: block;
+    top: 1.9rem;
+    right: -10.5rem;
+  }
+
+  .step-card:nth-child(2)::after {
+    content: url(../images/roadmap-arrow-2.svg);
+    position: absolute;
+    display: block;
+    bottom: 1.5rem;
+    right: -10.5rem;
+  }
+
+  #plus-value-metier {
+    margin-top: 5rem;
+  }
+
+  .plus-value-text {
+    text-align: left;
+    align-self: flex-start;
+  }
+
+  #call-to-action::after {
+    background-position: center;
+  }
+
+  #call-to-action h1 {
+    font-size: 1.6em;
+  }
+
+  #call-to-action .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+  }
+
+  #call-to-action p {
+    width: 80%;
+    margin: 2em auto;
+    font-size: 1.3rem;
+  }
+
+  #our-results .container {
+    padding: 5%;
+  }
+
+  #our-results h1 {
+    margin-bottom: 2rem;
   }
 }

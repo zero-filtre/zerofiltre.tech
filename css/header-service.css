@@ -89,10 +89,10 @@ ul {
   background-color: transparent;
   font-size: 0.85em;
   font-weight: bold;
-  margin: .5em auto;
+  margin: 0.5em auto;
   padding: 1em 2em;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .rounded-button span {
@@ -107,11 +107,6 @@ ul {
 .rounded-button:hover {
   background-color: var(--accent-color);
   border-color: transparent;
-}
-
-#call-to-action .wrap-p {
-  font-size: 1.2em;
-  line-height: 2em;
 }
 
 /***tech icons***/
@@ -131,12 +126,10 @@ ul {
 }
 
 .tech-item h4 {
-  font-size: .9rem;
+  font-size: 0.95rem;
   font-weight: 600;
   text-align: center;
-  text-shadow: var(--accent-color) 1px 0 10px;
 }
-
 
 /***END***/
 
@@ -315,7 +308,7 @@ footer .container {
 
 .sidebar img {
   width: 25px;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 /* The sidebar links */
@@ -324,9 +317,9 @@ footer .container {
   justify-content: stretch;
   align-items: center;
   font-weight: 600;
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 1.5em;
-  padding: .6em 1.7em;
+  padding: 0.6em 1.7em;
   transition: 0.3s;
 }
 
@@ -339,12 +332,12 @@ footer .container {
 .sidebar .closebtn {
   font-size: 1.5em !important;
   font-weight: bold !important;
-  padding: 3em 1.2em .5em 1em !important;
+  padding: 3em 1.2em 0.5em 1em !important;
 }
 
 .sidebar .closebtn-x {
   position: absolute;
-  top: .5em;
+  top: 0.5em;
   right: 1.7rem;
   font-size: 36px;
 }
@@ -481,7 +474,7 @@ footer .container {
   }
 
   .tech-item h4 {
-    margin-left: .8em;
+    margin-left: 0.8em;
   }
 }
 
@@ -620,7 +613,7 @@ footer .container {
   nav ul li {
     float: left;
   }
-  
+
   nav ul li:last-child a {
     padding: 1em 0;
   }
@@ -640,6 +633,14 @@ footer .container {
     background-color: inherit;
   }
   /***END***/
+
+  /**CTA**/
+  #call-to-action p {
+    width: 80%;
+    margin: 2em auto;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
 
   /***FOOTER***/
   .useful-links {
