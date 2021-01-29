@@ -14,7 +14,7 @@ if (folder) {
     });
 }
 
-backToTopBtn = document.getElementById("back-to-top");
+const backToTopBtn = document.getElementById("back-to-top");
 window.onscroll = () => {
     if (backToTopBtn) {
         scrollFunction();
@@ -35,7 +35,9 @@ function backToTop() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-nav = document.getElementById("nav");
+backToTopBtn.onclick = backToTop
+
+const nav = document.getElementById("nav");
 
 document.getElementById("menu").addEventListener('click', () => {
     nav.classList.toggle("hide-mobile");

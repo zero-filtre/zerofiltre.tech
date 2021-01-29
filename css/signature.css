@@ -520,6 +520,11 @@ main {
     margin-right: 20px;
   }
 
+  #solutions {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .solutions-img {
     width: 85%;
     margin: 4rem auto;
@@ -560,6 +565,7 @@ main {
 
   .step-card {
     width: 24%;
+    max-width: 350px;
     padding: 2% 1%;
     overflow: visible;
   }

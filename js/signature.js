@@ -4,12 +4,11 @@ function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("flexibleHeader").style.padding = "1% 5%";
     document.getElementById("hero-title").style.display= "none";
-    document.getElementById("hero-banner").style.borderBottomRightRadius = "0";
+    // document.getElementById("hero-banner").style.borderBottomRightRadius = "0";
   } else {
     document.getElementById("flexibleHeader").style.padding = "2% 5% 4% 5%";
     document.getElementById("hero-title").style.display= "block";
-    document.getElementById("hero-banner").style.borderBottomRightRadius = "20px";
-    document.getElementById("hero-banner").classList.add('border-radius-none');
+    // document.getElementById("hero-banner").style.borderBottomRightRadius = "20px";
   }
 }
 
