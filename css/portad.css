@@ -1,0 +1,3 @@
+.green-container::after {
+  background-image: url(../images/achievement-hero-bg-1.jpg);
+}

@@ -60,7 +60,7 @@ nav ul {
   background-image: url(../images/signature-hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  opacity: .3;
+  opacity: 0.3;
   filter: blur(2.5px);
   border-bottom-right-radius: 20px;
   z-index: -1;
@@ -436,12 +436,6 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
-  .dropdown-content {
-    background-image: linear-gradient(155.64deg, #fff 39.12%, #fff 75.61%);
-    background-color: #fff;
-    color: inherit;
-  }
-
   .overviews-box {
     flex-direction: row;
     align-items: flex-start;
@@ -525,9 +519,13 @@ main {
     margin: 0 auto;
   }
 
+  #solutions .container {
+    padding: 3%;
+  }
+
   .solutions-img {
     width: 85%;
-    margin: 4rem auto;
+    margin: 2.5rem auto;
     transform: none;
   }
 
