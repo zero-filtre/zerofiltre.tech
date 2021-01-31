@@ -40,17 +40,15 @@ nav ul {
   position: fixed;
   width: 100%;
   top: 0;
-  border-bottom-right-radius: 20px;
   color: inherit;
-  background: hsl(179, 100%, 100%);
-  /* background-image: linear-gradient(-1.64deg, #fff 39.12%, rgba(0, 0, 0, 0.219) 75.61%); */
-  background-image: linear-gradient(-1.64deg, #fff 39.12%, #fdbc5a3a 75.61%);
-  box-shadow: rgba(0, 0, 0, 0.25) 0 0 32px;
+  background: #fff;
+  background-image: linear-gradient(to right top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 32px;
+  border-bottom-right-radius: 20px;
   z-index: 10;
 }
 
-.green-container::after {
-  content: "";
+.blur {
   position: absolute;
   top: 0;
   right: 0;
@@ -136,13 +134,12 @@ main {
 }
 
 .needs li {
-  display: block;
   background-color: #fff9f2;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  padding: 0 4%;
+  padding: 0 5%;
 }
 
 #challenges {
@@ -396,7 +393,7 @@ main {
   }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
   .green-container .container {
     padding: 3% !important;
   }
@@ -412,6 +409,8 @@ main {
   .overviews-box {
     margin-bottom: 0;
   }
+
+
 
   #challenges .container {
     padding-top: 0;
@@ -433,6 +432,21 @@ main {
   .tech-item .java-icon {
     top: -5px;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .challenges-box, 
+  .implementation-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .challenges-img,
+  .implementation-img {
+    margin-right: 30px;
+  }
+  
 }
 
 @media only screen and (min-width: 1024px) {
@@ -478,6 +492,11 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 2rem;
+  }
+
+  .needs .card:hover {
+    transform: none;
+    box-shadow: 2px 5px 15px rgba(65, 45, 45, 0.15);
   }
 
   .needs li {
