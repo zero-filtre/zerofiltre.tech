@@ -139,7 +139,7 @@ main {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  padding: 0 5%;
+  padding: 0 4%;
 }
 
 #challenges {
@@ -417,7 +417,7 @@ main {
   }
 
   .solutions-img {
-    max-width: 80% !important;
+    max-width: 90% !important;
     transform: none;
   }
 
@@ -446,7 +446,6 @@ main {
   .implementation-img {
     margin-right: 30px;
   }
-  
 }
 
 @media only screen and (min-width: 1024px) {
