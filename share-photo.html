@@ -9,12 +9,11 @@
           Nous fournissons des services à valeur ajoutée avec une approche taillée pour chaque entreprise. 
           Zerofiltre s’appui sur un panel d’ingénieurs expérimentés et passionnés qui priorisent la résolution de problèmes et valeur ajoutée au métier
           Créée en 2015, Zerofiltre voit le jour à l’initiative de Philippe SIMO , un ingénieur entrepreneur, et architecte logiciel spécialisé en JAVA">
-    <title>Moteur de signature</title>
+    <title>Portail de suivi de demandes administratives</title>
     <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" rel="preload">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" rel="preload"> -->
     <link rel="stylesheet" href="css/base.css" media="all">
     <link rel="stylesheet" href="css/signature.css" media="all">
+    <link rel="stylesheet" href="css/portad.css" media="all">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -139,10 +138,10 @@
 
             <section id="hero-title">
                 <div>
-                    <h1>Moteur de signature de document</h1>
-                    <p class="subhead">
-                        Développement de la base dorsale JAVA du moteur de signature de document d’une plateforme de
-                        travail collaboratif
+                    <h1>Partage nous les photos</h1>
+                    <p class="subhead">Qui n’a pas connu le groupe whatsapp créé pour un évènement ou l’on balance
+                        toutes les photos y afférentes? Kiiple est
+                        une application de partage de photos dédiée à ce processus.
                     </p>
                 </div>
             </section>
@@ -154,21 +153,16 @@
             <div class="container overviews-box">
                 <div class="overviews__text">
                     <h1>Généralités</h1>
-                    <p>Le client est une StartUP qui mettait en place une plateforme de travail collaboratif à plusieurs
-                        modules dont les plus
-                        importants étaient ceux de la gestion de documents et de l’acheminement, paraphe et signature de
-                        documents. Il était
-                        question pour nos équipe d’implémenter un processus métier qui devait automatiser le processus
-                        de
-                        transfert de documents
-                        entre plusieurs entités, gérer les droits d’accès, permettre la paraphe de documents, la
-                        signature
-                        de ces derniers,
-                        ainsi que leur archivage.</p>
+                    <p>Au travers de <b>“Kiiple”</b>, le client se propose d’améliorer ce processus en fournissant une
+                        solution
+                        dédiée. Partage rapide
+                        de photos, sans en dégrader la qualité, reliées à un évènement en particulier et aux membres de
+                        l’évènement.
+                    </p>
                 </div>
 
                 <div class="overviews__img">
-                    <img src="/images/overview-illustration-1.svg" class="img-fluid" alt="overview-illustration" loading="lazy">
+                    <img src="/images/Mesa-4.svg" class="img-fluid" alt="overview-illustration" loading="lazy">
                 </div>
             </div>
         </section>
@@ -180,26 +174,40 @@
 
                 <div class="needs-box show-desktop hide-mobile">
                     <ul class="needs">
-                        <li class="card">Instancier des documents dématérialisés dans le système</li>
-                        <li class="card">Transférer les documents entre entités</li>
-                        <li class="card">Consulter les documents</li>
-                        <li class="card">Annoter et parapher des documents</li>
-                        <li class="card">Signer numériquement des documents</li>
-                        <li class="card">Archiver et restaurer des documents</li>
+                        <!--  Création et consultation <br><br> -->
+                        <li class="card">Mettre à disposition des participants à un événement l'ensemble des souvenirs
+                            de ce dernier afin que les participants
+                            puissent en prendre connaissance et les télécharger.
+                        </li>
+
+                        <!--Téléchargement  <br><br> -->
+                        <li class="card">Sauvegarde des photos de l'événement sur un appareil afin de pouvoir les
+                            consulter sans connexion internet .</li>
+
+                        <!-- Gérer un événement. <br><br> -->
+                        <li class="card">Créer un espace de stockage dédié à un événement. Avec la possibilité d'y
+                            ajouter des participants qui pourront alors y
+                            ajouter des photos.</li>
                     </ul>
                 </div>
 
                 <div class="needs-box hide-desktop">
-                    <div class="needs">
-                        <ul class="owl-carousel owl-theme">
-                            <li class="card">Instancier des documents dématérialisés dans le système</li>
-                            <li class="card">Transférer les documents entre entités</li>
-                            <li class="card">Consulter les documents</li>
-                            <li class="card">Annoter et parapher des documents</li>
-                            <li class="card">Signer numériquement des documents</li>
-                            <li class="card">Archiver et restaurer des documents</li>
-                        </ul>
-                    </div>
+                    <ul class="needs owl-carousel owl-theme">
+                        <!--  Création et consultation <br><br> -->
+                        <li class="card">Mettre à disposition des participants à un événement l'ensemble des souvenirs
+                            de ce dernier afin que les participants
+                            puissent en prendre connaissance et les télécharger.
+                        </li>
+
+                        <!--Téléchargement  <br><br> -->
+                        <li class="card">Sauvegarde des photos de l'événement sur un appareil afin de pouvoir les
+                            consulter sans connexion internet .</li>
+
+                        <!-- Gérer un événement. <br><br> -->
+                        <li class="card">Créer un espace de stockage dédié à un événement. Avec la possibilité d'y
+                            ajouter des participants qui pourront alors y
+                            ajouter des photos.</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -207,29 +215,32 @@
         <section id="challenges">
             <div class="container">
                 <h1>Defis</h1>
-                <p>Nous avons fait face à plusieurs challenges lors de la réalisation de ce projet tel que</p>
+                <p>Confidentialité, accès sécurisé et accessibilité.</p>
 
                 <div class="challenges-box">
-                    <img src="images/challenges-illustration.svg" class="img-fluid challenges-img" alt="our challenges" loading="lazy">
+                    <img src="images/Mesa-7.svg" class="img-fluid challenges-img" alt="our challenges">
                     <ul class="challenges">
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Indexer et stocker les entités (personnes physiques, morales ) et la hiérarchie de
-                                documents
-                                afin de les retrouver facilement sans avoir à maintenir une modèle de données
-                                gigantesque et
-                                complexe.</p>
-                        </li>
-                        <li>
-                            <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Automatiser le processus métier de transfert de documents entre entités sans avoir à le
-                                coder de zéro.</p>
-                        </li>
-                        <li>
-                            <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>
-                                Éditer des documents sans avoir à quitter la plateforme
+                            <p>Maintenir les photos d'un événement confidentiel et assurer un accès sécurisé à ces
+                                dernières afin de respecter la vie
+                                privée des utilisateurs.
                             </p>
+                        </li>
+
+                        <li>
+                            <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
+                            <p>Maintenir un rapport qualité/poids des images optimal afin de rendre l'application
+                                fluide. Réduire la consommation du
+                                volume données des utilisateurs afin de fournir une expérience utilisateur agréable.
+                            </p>
+                        </li>
+
+                        <li>
+                            <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
+                            <p>Informer en temps réel les participants à un événement de nouvelles photos disponibles
+                                sur leur espace de stockage
+                                partagé.</p>
                         </li>
                     </ul>
                 </div>
@@ -242,42 +253,41 @@
                 <!-- <p>Nous avons fait face à plusieurs challenges lors de la réalisation de ce projet tel que</p> -->
 
                 <div class="solution-wrapper">
-                    <img src="/images/signature-book.svg" class="img-fluid solutions-img"
-                        alt="architecture du moteur de signature" loading="lazy">
+                    <img src="/images/Kiple-illustration.svg" class="img-fluid solutions-img"
+                        alt="architecture du moteur de signature">
 
                     <div class="solutions-box">
                         <ul class="solutions">
                             <li>
-                                Notre équipe d’ingénieurs logiciels s’est penché sur la solution intégrée <b>Alfresco
-                                    Document
-                                    Management</b>
-                                pour gérer tout ce qui est injection, recherche, exploration et sécurisation de
-                                documents dans un processus métier.
+                                Notre équipe de développement a conçu un processus efficace de gestion de fichiers en
+                                utilisant une base de données
+                                NoSQL MongoDB distribuée.
                             </li>
 
                             <li>
-                                Nous avons profité du système de permission d’accès à plusieurs couches de cette
-                                solution
-                                afin de sécuriser les informations sensibles du métier.
+                                Nous avons utilisé les standards recommandés de structures de données et de gestion de
+                                fichiers dans une application
+                                distribuée moderne.
                             </li>
 
-                            <li>
-                                Grâce à son moteur de contenu d’entreprise : <b>Alfresco ECM</b>, la plateforme de
-                                travail
-                                collaboratif s’est vue dotée d’un
-                                système à haute disponibilité de gestion de documents. Ce dernier s’interface
-                                naturellement
-                                à toute autre composante du
-                                SI grâce à une API JAVA riche en fonctionnalités.
+                            <li>Nous avons ainsi pu limiter au stricte minimum le volume de données utilisées lors de la
+                                recherche de photos en
+                                s’appuyant sur le système d’indexation distribué de la BD.
+                            </li>
+
+                            <li>De plus, nos ingénieurs se sont appuyés sur les principes de la programmation réactive,
+                                favorisant l’utilisation non
+                                bloquante des ressources de calcul. Ceci dans le but d’améliorer l’expérience
+                                utilisateur via une application fluide,
+                                même en temps de forte charge.
                             </li>
 
                             <li class="last">
-                                Nous avons profité de la puissance du framework Spring-security afin de synchroniser
-                                l’authentification sur la
-                                plateforme pour les utilisateurs provenant d’autres sources de données tel que le
-                                registre
-                                d’utilisateur d’entreprise
-                                LDAP.
+                                Enfin, la sécurité est assurée par un système d'authentification forte en 3 étapes à
+                                chaque connexion et une gestion de
+                                rôles et permissions s’appuyant sur des outils reconnus tels que Spring Security et les
+                                dernières recommandations en la
+                                matière.
                             </li>
                         </ul>
                     </div>
@@ -303,55 +313,47 @@
 
                         <div class="tech-item">
                             <div>
-                                <img src="/images/alfresco-icon.svg" class="img-fluid" alt="alfresco icon">
+                                <img src="/images/springio-icon.svg" class="img-fluid" alt="spring icon">
                             </div>
                             <div>
-                                <h4>Document Management</h4>
-                            </div>
-                        </div>
-
-                        <div class="tech-item">
-                            <div>
-                                <img src="/images/alfresco-icon.svg" class="img-fluid" alt="alfresco icon">
-                            </div>
-                            <div>
-                                <h4>Content Management</h4>
+                                <h4>Spring</h4>
                             </div>
                         </div>
 
                         <div class="tech-item">
                             <div>
-                                <img src="/images/ldap-icon.svg" class="img-fluid" alt="ldap icon">
+                                <img src="/images/project-reactor-icon.svg" class="img-fluid"
+                                    alt="project-reactor icon">
                             </div>
                             <div>
-                                <h4>LDAP Java API</h4>
-                            </div>
-                        </div>
-
-                        <div class="tech-item">
-                            <div>
-                                <img src="/images/jboss-icon.svg" class="img-fluid" alt="jboss icon">
-                            </div>
-                            <div>
-                                <h4>JBoss Business(JBPM)</h4>
+                                <h4>Project reactor</h4>
                             </div>
                         </div>
 
                         <div class="tech-item">
                             <div>
-                                <img src="/images/postgresql-icon.svg" class="img-fluid" alt="postgresql icon">
+                                <img src="/images/AWS-icon.svg" class="img-fluid" alt="AWS s3 icon">
                             </div>
                             <div>
-                                <h4>PostgreSQL</h4>
+                                <h4>AWS s3</h4>
                             </div>
                         </div>
 
                         <div class="tech-item">
                             <div>
-                                <img src="/images/itextpdf-icon.svg" class="img-fluid" alt="itext icon">
+                                <img src="/images/mongodb-icon.svg" class="img-fluid" alt="mongodb icon">
                             </div>
                             <div>
-                                <h4>iTextPDF</h4>
+                                <h4>MongoDB</h4>
+                            </div>
+                        </div>
+
+                        <div class="tech-item">
+                            <div>
+                                <img src="/images/tomcat-icon.svg" class="img-fluid" alt="tomcat icon">
+                            </div>
+                            <div>
+                                <h4>Tomcat</h4>
                             </div>
                         </div>
                     </div>
@@ -362,18 +364,22 @@
         <section id="implementation">
             <div class="container">
                 <h1>Implémentation</h1>
-                <p>Nous avons réparti l’implémentation en plusieurs modules entre différentes équipes.
-                    Gestion du processus métier et injection de documents, consultation et édition, signature et
-                    archivage et enfin
-                    synchronisation avec LDAP.
-                    Nous avons ensuite suivi une approche itérative par étapes pour mettre en œuvre la solution, qui
-                    comprenait les phases
-                    suivantes :
+                <p>L’équipe d’implémentation du projet était composée de sous équipes réparties selon des responsabilité
+                    spécifiques à
+                    savoir:
                 </p>
 
+                <ul class="impl-list">
+                    <li>Design et implémentation de la structure de données.</li>
+                    <li>Design de l’architecture de la base de données distribuée et indexation de données</li>
+                    <li>Implémentation des règles métiers classiques spécifiques à la plateforme</li>
+                </ul>
+
+                <p>Chaque équipe travaillant de façon itérative suivant une logique d’intégration et de déploiement
+                    continu.</p>
+
                 <div class="implementation-box">
-                    <img src="images/implamentation-illustration.svg" class="img-fluid implementation-img"
-                        alt="our implamentation" loading="lazy">
+                    <img src="images/Mesa-6.svg" class="img-fluid implementation-img" alt="our implamentation">
 
                     <ul class="implementation">
                         <li>
@@ -386,16 +392,11 @@
                         </li>
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Mise en place d’un “Proof of Concept” (POC) dont le but est de tester si l
-                                a solution est en adéquation avec les besoins.</p>
+                            <p>Développement</p>
                         </li>
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Montée en échelle du POC, tests et déploiements itératifs</p>
-                        </li>
-                        <li>
-                            <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Implémentation de la base dorsale et tests de performances</p>
+                            <p>Déploiement</p>
                         </li>
                     </ul>
                 </div>
@@ -414,7 +415,7 @@
                         <li class="step-card">
                             Recueil et Analyse des besoin métier:
                             <ul>
-                                <li>Conduite d’entretiens avec des équipes travaillant en collaboration</li>
+                                <li>Conduite d’entretiens avec des volontaires anonymes</li>
                                 <li>Définition des parcours utilisateurs</li>
                                 <li>Définition des critères d’acceptabilité</li>
                             </ul>
@@ -428,19 +429,15 @@
                             </ul>
                         </li>
                         <li class="step-card">
-                            Mise en place d’un Proof of Concept pour l’architecture cible et tests
+                            Développement
                             <ul>
+                                <li>Mise en place des tests correspondant aux critères d’acceptabilité</li>
                                 <li>Développements</li>
-                                <li>Déploiements du POC</li>
-                                <li>Tests du POC</li>
                             </ul>
                         </li>
                         <li class="step-card">
-                            Montée en échelle du POC, tests et déploiements itératifs
+                            Déploiement
                             <ul>
-                                <li>Développements itératifs</li>
-                                <li>Test d’acceptance utilisateurs</li>
-                                <li>Tests de qualité</li>
                                 <li>Déploiement itératif en production</li>
                             </ul>
                         </li>
@@ -452,11 +449,10 @@
                         <li class="step-card">
                             Recueil et Analyse des besoin métier:
                             <ul>
-                                <li>Conduite d’entretiens avec des équipes travaillant en collaboration</li>
+                                <li>Conduite d’entretiens avec des volontaires anonymes</li>
                                 <li>Définition des parcours utilisateurs</li>
                                 <li>Définition des critères d’acceptabilité</li>
                             </ul>
-                            <div class="number"><span>01</span></div>
                         </li>
                         <li class="step-card">
                             Conception de l'architecture cible:
@@ -465,26 +461,19 @@
                                 <li>Définition des schéma d’architecture</li>
                                 <li>Définition des contrats d’interface</li>
                             </ul>
-                            <div class="number"><span>02</span></div>
                         </li>
                         <li class="step-card">
-                            Mise en place d’un Proof of Concept pour l’architecture cible et tests
+                            Développement
                             <ul>
+                                <li>Mise en place des tests correspondant aux critères d’acceptabilité</li>
                                 <li>Développements</li>
-                                <li>Déploiements du POC</li>
-                                <li>Tests du POC</li>
                             </ul>
-                            <div class="number"><span>03</span></div>
                         </li>
                         <li class="step-card">
-                            Montée en échelle du POC, tests et déploiements itératifs
+                            Déploiement
                             <ul>
-                                <li>Développements itératifs</li>
-                                <li>Test d’acceptance utilisateurs</li>
-                                <li>Tests de qualité</li>
                                 <li>Déploiement itératif en production</li>
                             </ul>
-                            <div class="number"><span>04</span></div>
                         </li>
                     </ul>
                 </div>
@@ -497,20 +486,11 @@
                 <h1>Plus value métier</h1>
 
                 <div class="plus-value-metier-box">
-                    <img src="images/plus-value-metier-illustratition.svg" class="img-fluid plus-value-metier-img"
-                        alt="plus value metier" loading="lazy">
+                    <img src="images/Mesa-2.svg" class="img-fluid plus-value-metier-img" alt="plus value metier">
                     <div class="plus-value-text">
-                        <p>Nous avons armé la plateforme de travail collaboratif éditée par le client d’un système
-                            personnalisé de gestion de
-                            documents. Fort de cet atout, il a pu accélérer les développements de la dite plateforme,
-                            dont les autres modules en
-                            dépendaient.</p>
-                        <p>Quant aux entreprises bénéficiant aujourd'hui de la plateforme, elles sont désormais capables
-                            de centraliser le
-                            traitement d’un processus métier dans une seule plateforme. <br> L’impact business se fait
-                            nettement ressentir via une
-                            meilleure vélocité, une meilleure collaboration et par conséquent la réduction des silos
-                            entre les départements.
+                        <p>Nous avons fourni la solution appropriée à notre client qui a pu lancer et tester son produit
+                            sur le marché. La phase
+                            bêta s’est avérée concluante et des améliorations sont prévues pour le lancement officiel.
                         </p>
                     </div>
                 </div>
@@ -519,8 +499,8 @@
 
         <section id="call-to-action">
             <div class="container">
-                <p>Que vous vouliez ce service ou un de beaucoup plus personnalisé, contactez-nous et
-                    laissez nous vous aider à faire
+                <p>Que vous vouliez ce service ou un de beaucoup plus personnalisé, contactez-nous et laissez nous vous
+                    aider à faire
                     monter à l’échelle votre business.
                 </p>
                 <a href="#">
@@ -538,19 +518,19 @@
 
                 <div class="our-results__box">
                     <div class="owl-carousel owl-theme">
-                        <a href="/portad.html">
+                        <a href="/signature-engine.html">
                             <div class="card result">
-                                <img src="/images/portail_demandes.svg" class="img-fluid" alt="">
-                                <h4>Portail de suivi de demandes administratives</h4>
-                                <p>Développement du moteur de processus en JAVA</p>
+                                <img src="/images/signature-icon.svg" class="img-fluid" alt="">
+                                <h4>Moteur de signature électronique de documents</h4>
+                                <p>Signature numérique de documents s'appuyant sur le modèle documentaire d'Alfresco</p>
                             </div>
                         </a>
 
                         <a href="/share-photo.html">
                             <div class="card result">
                                 <img src="/images/share-photo-icon.svg" class="img-fluid" alt="">
-                                <h4>Partage nous les photos</h4>
-                                <p>Développement de l’application android</p>
+                                <h4>Portail de suivi de demandes administratives</h4>
+                                <p>Développement du moteur de processus en JAVA</p>
                             </div>
                         </a>
 
@@ -586,8 +566,8 @@
                 <div class="achievments">
                     <p class="yellow-text">NOS REALISATIONS</p>
                     <ul>
-                        <li><a href="#">Moteur de signature de document</a></li>
-                        <li><a href="/portad.html">Portail de suivi de demandes administratives</a></li>
+                        <li><a href="/signature-engine.html">Moteur de signature de document</a></li>
+                        <li><a href="#">Portail de suivi de demandes administratives</a></li>
                         <li><a href="#">Partage nous les photos</a></li>
                         <li><a href="#">Maintenance d’applications et support</a></li>
                         <li><a href="#">Reprise intelligente de parcours utilisateurb</a></li>
