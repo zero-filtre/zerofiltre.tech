@@ -39,6 +39,7 @@ backToTopBtn.onclick = backToTop
 
 const nav = document.getElementById("nav");
 
+
 document.getElementById("menu").addEventListener('click', () => {
     nav.classList.toggle("hide-mobile");
 });

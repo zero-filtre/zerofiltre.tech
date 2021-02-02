@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/base.css" media="all">
     <link rel="stylesheet" href="css/signature.css" media="all">
+    <link rel="stylesheet" href="css/portad.css" media="all">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -21,6 +22,7 @@
 
 <body>
     <div class="green-container" id="hero-banner">
+        <div class="blur" id="blurHero"></div>
         <div class="container" id="flexibleHeader">
             <header>
                 <a class="logo-link" href="/">
@@ -155,8 +157,7 @@
                 </div>
 
                 <div class="overviews__img">
-                    <img src="/images/overview-illustration-2.svg" class="img-fluid" alt="overview-illustration"
-                        loading="lazy">
+                    <img src="/images/Mesa-4.svg" class="img-fluid" alt="overview-illustration" loading="lazy">
                 </div>
             </div>
         </section>
@@ -168,12 +169,20 @@
 
                 <div class="needs-box show-desktop hide-mobile">
                     <ul class="needs">
-                        <li class="card">Création de demande <br><br> Initialiser une demande afin qu’elle soit instruite
+                        <!-- Création de demande <br><br> -->
+                        <li class="card">Initialiser une demande afin qu’elle soit
+                            instruite
                             par les services adéquats.</li>
-                        <li class="card">Consulter et instruire la demande <br><br> Prendre connaissance des éléments de la
+
+                        <!-- Consulter et instruire la demande <br><br> -->
+                        <li class="card">Prendre connaissance des éléments de
+                            la
                             demande, avec possibilité de la modifier, changer son statut, la transférer au
                             service adéquat, valider et clôturer la demande.</li>
-                        <li class="card">Modifier le processus métier d’instruction de demande. <br><br>Changer les étapes,
+
+                        <!-- Modifier le processus métier d’instruction de demande. <br><br> -->
+                        <li class="card">Changer les
+                            étapes,
                             les règles et/ou les parties prenantes du processus métier d’instruction de demandes. Les
                             dossiers
                             en cours devraient alors s'adapter automatiquement à ces règles.</li>
@@ -181,13 +190,21 @@
                 </div>
 
                 <div class="needs-box hide-desktop">
-                    <ul class="needs">
-                        <li class="card">Création de demande <br><br> Initialiser une demande afin qu’elle soit instruite
+                    <ul class="needs owl-carousel owl-theme">
+                        <!-- Création de demande <br><br> -->
+                        <li class="card">Initialiser une demande afin qu’elle soit
+                            instruite
                             par les services adéquats.</li>
-                        <li class="card">Consulter et instruire la demande <br><br> Prendre connaissance des éléments de la
+
+                        <!-- Consulter et instruire la demande <br><br> -->
+                        <li class="card">Prendre connaissance des éléments de
+                            la
                             demande, avec possibilité de la modifier, changer son statut, la transférer au
                             service adéquat, valider et clôturer la demande.</li>
-                        <li class="card">Modifier le processus métier d’instruction de demande. <br><br>Changer les étapes,
+
+                        <!-- Modifier le processus métier d’instruction de demande. <br><br> -->
+                        <li class="card">Changer les
+                            étapes,
                             les règles et/ou les parties prenantes du processus métier d’instruction de demandes. Les
                             dossiers
                             en cours devraient alors s'adapter automatiquement à ces règles.</li>
@@ -203,7 +220,7 @@
                     demandes.</p>
 
                 <div class="challenges-box">
-                    <img src="images/challenges-illustration.svg" class="img-fluid challenges-img" alt="our challenges">
+                    <img src="images/Mesa-7.svg" class="img-fluid challenges-img" alt="our challenges">
                     <ul class="challenges">
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
@@ -223,7 +240,7 @@
         <section id="solutions">
             <div class="container">
                 <h1>Solution</h1>
-                <p>Nous avons fait face à plusieurs challenges lors de la réalisation de ce projet tel que</p>
+                <!-- <p>Nous avons fait face à plusieurs challenges lors de la réalisation de ce projet tel que</p> -->
 
                 <div class="solution-wrapper">
                     <img src="/images/portad-illustration.svg" class="img-fluid solutions-img"
@@ -260,7 +277,7 @@
         <section id="technologies">
             <div class="container">
                 <h1>Nos technologies</h1>
-                <p>applicataion JAVA evolutives alignées aux derniers standards</p>
+                <p>Applicataion JAVA evolutives alignées aux derniers standards</p>
 
                 <div class="our-techs">
                     <div class="technos tools">
@@ -307,18 +324,22 @@
         <section id="implementation">
             <div class="container">
                 <h1>Implémentation</h1>
-                <p>Nous avons réparti l’implémentation en plusieurs modules entre différentes équipes.
-                    Gestion du processus métier et injection de documents, consultation et édition, signature et
-                    archivage et enfin
-                    synchronisation avec LDAP.
-                    Nous avons ensuite suivi une approche itérative par étapes pour mettre en œuvre la solution, qui
-                    comprenait les phases
-                    suivantes :
+                <p>L’équipe d’implémentation du projet était composée de sous équipes réparties selon des responsabilité
+                    spécifiques à
+                    savoir:
                 </p>
 
+                <ul class="impl-list">
+                    <li>Design et implémentation des processus métiers</li>
+                    <li>Intégration et maintenance du moteur de processus à la plateforme</li>
+                    <li>Implémentation des règles métiers classiques spécifiques à la plateforme</li>
+                </ul>
+
+                <p>Chaque équipe travaillant de façon itérative suivant une logique d’intégration et de déploiement
+                    continu.</p>
+
                 <div class="implementation-box">
-                    <img src="images/implamentation-illustration.svg" class="img-fluid implementation-img"
-                        alt="our implamentation">
+                    <img src="images/Mesa-6.svg" class="img-fluid implementation-img" alt="our implamentation">
 
                     <ul class="implementation">
                         <li>
@@ -331,16 +352,11 @@
                         </li>
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Mise en place d’un “Proof of Concept” (POC) dont le but est de tester si l
-                                a solution est en adéquation avec les besoins.</p>
+                            <p>Développement</p>
                         </li>
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Montée en échelle du POC, tests et déploiements itératifs</p>
-                        </li>
-                        <li>
-                            <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Implémentation de la base dorsale et tests de performances</p>
+                            <p>Déploiement</p>
                         </li>
                     </ul>
                 </div>
@@ -359,7 +375,7 @@
                         <li class="step-card">
                             Recueil et Analyse des besoin métier:
                             <ul>
-                                <li>Conduite d’entretiens avec des équipes travaillant en collaboration</li>
+                                <li>Conduite d’entretiens avec les membres du processus d’instruction</li>
                                 <li>Définition des parcours utilisateurs</li>
                                 <li>Définition des critères d’acceptabilité</li>
                             </ul>
@@ -373,19 +389,15 @@
                             </ul>
                         </li>
                         <li class="step-card">
-                            Mise en place d’un Proof of Concept pour l’architecture cible et tests
+                            Développement
                             <ul>
+                                <li>Mise en place des tests correspondant aux critères d’acceptabilité</li>
                                 <li>Développements</li>
-                                <li>Déploiements du POC</li>
-                                <li>Tests du POC</li>
                             </ul>
                         </li>
                         <li class="step-card">
-                            Montée en échelle du POC, tests et déploiements itératifs
+                            Déploiement
                             <ul>
-                                <li>Développements itératifs</li>
-                                <li>Test d’acceptance utilisateurs</li>
-                                <li>Tests de qualité</li>
                                 <li>Déploiement itératif en production</li>
                             </ul>
                         </li>
@@ -397,7 +409,7 @@
                         <li class="step-card">
                             Recueil et Analyse des besoin métier:
                             <ul>
-                                <li>Conduite d’entretiens avec des équipes travaillant en collaboration</li>
+                                <li>Conduite d’entretiens avec les membres du processus d’instruction</li>
                                 <li>Définition des parcours utilisateurs</li>
                                 <li>Définition des critères d’acceptabilité</li>
                             </ul>
@@ -413,20 +425,16 @@
                             <div class="number"><span>02</span></div>
                         </li>
                         <li class="step-card">
-                            Mise en place d’un Proof of Concept pour l’architecture cible et tests
+                            Développement
                             <ul>
+                                <li>Mise en place des tests correspondant aux critères d’acceptabilité</li>
                                 <li>Développements</li>
-                                <li>Déploiements du POC</li>
-                                <li>Tests du POC</li>
                             </ul>
-                            <div class="number"><span>03</span></div>
+                            <div class="number"><span>03<span></div>
                         </li>
                         <li class="step-card">
-                            Montée en échelle du POC, tests et déploiements itératifs
+                            Déploiement
                             <ul>
-                                <li>Développements itératifs</li>
-                                <li>Test d’acceptance utilisateurs</li>
-                                <li>Tests de qualité</li>
                                 <li>Déploiement itératif en production</li>
                             </ul>
                             <div class="number"><span>04</span></div>
@@ -442,21 +450,14 @@
                 <h1>Plus value métier</h1>
 
                 <div class="plus-value-metier-box">
-                    <img src="images/plus-value-metier-illustratition.svg" class="img-fluid plus-value-metier-img"
-                        alt="plus value metier">
+                    <img src="images/Mesa-2.svg" class="img-fluid plus-value-metier-img" alt="plus value metier">
                     <div class="plus-value-text">
-                        <p>Nous avons armé la plateforme de travail collaboratif éditée par le client d’un système
-                            personnalisé de gestion de
-                            documents. Fort de cet atout, il a pu accélérer les développements de la dite plateforme,
-                            dont les autres modules en
-                            dépendaient.</p>
-                        <p>Quant aux entreprises bénéficiant aujourd'hui de la plateforme, elles sont désormais capables
-                            de centraliser le
-                            traitement d’un processus métier dans une seule plateforme. <br> L’impact business se fait
-                            nettement ressentir via une
-                            meilleure vélocité, une meilleure collaboration et par conséquent la réduction des silos
-                            entre les départements.
-                        </p>
+                        <p>L’instruction des demandes d’acte d’urbanisme prend désormais 50% moins de temps avec le
+                            déploiement du portail. Par
+                            conséquent, les services de la communauté urbaine de Yaoundé ont vu passer le nombre annuel
+                            de dossiers traités de 600 à
+                            environ 1000. Réduisant ainsi le nombre de constructions anarchiques et illégales dans la
+                            ville de Yaoundé.</p>
                     </div>
                 </div>
             </div>
@@ -464,8 +465,8 @@
 
         <section id="call-to-action">
             <div class="container">
-                <p>Que vous vouliez ce service ou un de beaucoup plus personnalisé, contactez-nous et
-                    laissez nous vous aider à faire
+                <p>Que vous vouliez ce service ou un de beaucoup plus personnalisé, contactez-nous et laissez nous vous
+                    aider à faire
                     monter à l’échelle votre business.
                 </p>
                 <a href="#">
@@ -484,9 +485,9 @@
                 <div class="our-results__box">
                     <div class="owl-carousel owl-theme">
                         <div class="card result">
-                            <img src="/images/portail_demandes.svg" class="img-fluid" alt="">
-                            <h4>Portail de suivi de demandes administratives</h4>
-                            <p>Développement du moteur de processus en JAVA</p>
+                            <img src="/images/signature-icon.svg" class="img-fluid" alt="">
+                            <h4>Moteur de signature électronique de documents</h4>
+                            <p>Signature numérique de documents s'appuyant sur le modèle documentaire d'Alfresco</p>
                         </div>
 
                         <div class="card result">
@@ -513,19 +514,19 @@
                 <div class="services-link">
                     <p class="yellow-text">NOS SERVICES</p>
                     <ul>
-                        <li><a href="#">Développement d’application JAVA</a></li>
-                        <li><a href="#">Développement d’applications pour navigateurs Web</a></li>
-                        <li><a href="#">Développement d’applications mobiles</a></li>
-                        <li><a href="#">Maintenance d’applications et support</a></li>
-                        <li><a href="#">Développement d’APIs Web</a></li>
-                        <li><a href="#">Conception UI</a></li>
+                        <li><a href="/app-java.html">Développement d’application JAVA</a></li>
+                        <li><a href="/app-nav.html">Développement d’applications pour navigateurs Web</a></li>
+                        <li><a href="/app-mobile.html">Développement d’applications mobiles</a></li>
+                        <li><a href="/support.html">Maintenance d’applications et support</a></li>
+                        <li><a href="/web-api.html">Développement d’APIs Web</a></li>
+                        <li><a href="/ui.html">Conception UI</a></li>
                     </ul>
 
                 </div>
                 <div class="achievments">
                     <p class="yellow-text">NOS REALISATIONS</p>
                     <ul>
-                        <li><a href="#">Moteur de signature de document</a></li>
+                        <li><a href="/signature-engine.html">Moteur de signature de document</a></li>
                         <li><a href="#">Portail de suivi de demandes administratives</a></li>
                         <li><a href="#">Partage nous les photos</a></li>
                         <li><a href="#">Maintenance d’applications et support</a></li>
@@ -586,8 +587,8 @@
 
     <script src="/node_modules/jquery/dist/jquery.js"></script>
     <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="js/carousel.js" type="module"></script>
-    <script src="js/signature.js" type="module"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/signature.js"></script>
 </body>
 
 </html>
