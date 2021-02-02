@@ -22,4 +22,13 @@
     width: 50%;
     margin: 0 auto;
   }
+
+  .plus-value-metier-img {
+    width: 50%
+  }
+
+  .plus-value-text {
+    width: 50%;
+    align-self: center;
+  }
 }
