@@ -449,13 +449,13 @@ main {
     margin-right: 30px;
   }
 
-  .tech-item {
+  /* .tech-item {
     max-width: 100px;
   }
 
   .tech-item .java-icon {
     top: -10px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1024px) {
