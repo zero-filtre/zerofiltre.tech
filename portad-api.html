@@ -9,7 +9,7 @@
           Nous fournissons des services à valeur ajoutée avec une approche taillée pour chaque entreprise. 
           Zerofiltre s’appui sur un panel d’ingénieurs expérimentés et passionnés qui priorisent la résolution de problèmes et valeur ajoutée au métier
           Créée en 2015, Zerofiltre voit le jour à l’initiative de Philippe SIMO , un ingénieur entrepreneur, et architecte logiciel spécialisé en JAVA">
-    <title>Moteur d’agrégation de moyens de paiement mobiles</title>
+    <title>Portail de suivi de demandes administratives</title>
     <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/base.css" media="all">
     <link rel="stylesheet" href="css/signature.css" media="all">
@@ -138,9 +138,9 @@
 
             <section id="hero-title">
                 <div>
-                    <h1>Moteur d’agrégation de moyens de paiement mobiles</h1>
-                    <p class="subhead">Développement d’une plateforme sécurisée d’agrégation de moyens de paiement
-                        mobiles
+                    <h1>Portail de suivi de demandes administratives</h1>
+                    <p class="subhead">Développement de l’API Restful de communication avec la base dorsale.
+                        <br>Développement d’une API REST sécurisée et flexible
                     </p>
                 </div>
             </section>
@@ -152,11 +152,11 @@
             <div class="container overviews-box">
                 <div class="overviews__text">
                     <h1>Généralités</h1>
-                    <p>Le client est un éditeur de logiciel reconnu qui souhaitait rajouter à son parc d’applications
-                        une solution qui
-                        permettrait aux utilisateurs de plusieurs moyens de paiement mobiles de mieux gérer leur argent,
-                        en ayant accès à toutes
-                        les opérations y afférentes en une seule et même application.
+                    <p>Le but premier de ce portail était de permettre aux demandeurs d’actes d’urbanisme de suivre
+                        l’instruction de leurs
+                        dossiers à distance. Il était nécessaire d’exposer une interface de communication entre le grand
+                        public et la <b><a href="/portad.html">base
+                                dorsale</a></b> de la plateforme.
                     </p>
                 </div>
 
@@ -173,31 +173,41 @@
 
                 <div class="needs-box show-desktop hide-mobile">
                     <ul class="needs">
-                        <!--  Création et consultation <br><br> -->
-                        <li class="card">Rassembler les opérations financières de différents fournisseurs dans un seul
-                            tableau de bord
+                        <li class="card">Après avoir déposé sa demande au sein des services de la communauté urbaine de
+                            la ville, le demandeur devrait, à partir
+                            de ses identifiants, pouvoir se connecter au portail et suivre l’état d’avancement de
+                            l’instruction de sa demande.
                         </li>
 
-                        <!--Téléchargement  <br><br> -->
-                        <li class="card">Implémenter un conseiller virtuel d’épargne</li>
+                        <li class="card">Pour satisfaire ce besoin, la plateforme devait être accessible 24h/7 et
+                            permettre uniquement aux ayant droit l’accès
+                            aux dossiers.
+                        </li>
 
-                        <!-- Gérer un événement. <br><br> -->
-                        <li class="card">Faire des virements entre différents fournisseurs</li>
+                        <li class="card">Le portail WEB, la seule interface entre l’utilisateur et le système, est
+                            totalement découplé de la base dorsale, d’où
+                            la nécessité d’APIs afin de faire office de pont.
+                        </li>
                     </ul>
                 </div>
 
                 <div class="needs-box hide-desktop">
                     <ul class="needs owl-carousel owl-theme">
-                        <!--  Création et consultation <br><br> -->
-                        <li class="card">Rassembler les opérations financières de différents fournisseurs dans un seul
-                            tableau de bord
+                        <li class="card">Après avoir déposé sa demande au sein des services de la communauté urbaine de
+                            la ville, le demandeur devrait, à partir
+                            de ses identifiants, pouvoir se connecter au portail et suivre l’état d’avancement de
+                            l’instruction de sa demande.
                         </li>
 
-                        <!--Téléchargement  <br><br> -->
-                        <li class="card">Implémenter un conseiller virtuel d’épargne</li>
+                        <li class="card">Pour satisfaire ce besoin, la plateforme devait être accessible 24h/7 et
+                            permettre uniquement aux ayant droit l’accès
+                            aux dossiers.
+                        </li>
 
-                        <!-- Gérer un événement. <br><br> -->
-                        <li class="card">Faire des virements entre différents fournisseurs</li>
+                        <li class="card">Le portail WEB, la seule interface entre l’utilisateur et le système, est
+                            totalement découplé de la base dorsale, d’où
+                            la nécessité d’APIs afin de faire office de pont.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -206,23 +216,29 @@
         <section id="challenges">
             <div class="container">
                 <h1>Defis</h1>
-                <p>Nous avons fait face à plusieurs challenges de plusieurs ordres, aussi bien techniques que
-                    fonctionnels.</p>
+                <p>Les challenges étaient surtout d’ordre techniques :</p>
 
                 <div class="challenges-box">
                     <img src="images/Mesa-13.svg" class="img-fluid challenges-img" alt="our challenges">
                     <ul class="challenges">
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Définir une infrastructure technique assez sécurisée et capable de monter en échelle</p>
+                            <p>Assurer la sécurité des APIs</p>
                         </li>
 
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Sécuriser les APIs de communication avec la base dorsale</p>
+                            <p>Assurer la haute disponibilité de l’AP</p>
                         </li>
                     </ul>
                 </div>
+
+                <p>Mais aussi d’ordres managériaux. En effet, dans un souci de gain de temps, l’équipe de développement
+                    du portail WEB
+                    dépendait du format final de l’API afin de démarrer les développements de raccordement sans attendre
+                    que l’API soit
+                    complètement développée.
+                </p>
             </div>
         </section>
 
@@ -238,27 +254,37 @@
                     <div class="solutions-box">
                         <ul class="solutions">
                             <li>
-                                Nos experts en architecture logicielle ont défini un schéma d’architecture, basé sur la
-                                notion de microservices, qui a
-                                pour principe de rendre les composants de l’application indépendants les uns des autres.
-                                Facilitant une évolution sans
-                                impact considérable sur les autres composants.
+                                Chez Zerofiltre, nous nous alignons constamment avec les derniers standards de sécurité.
+                                En termes d’APIs Web, la
+                                préconisation est de mettre en place un système d’authentification se reposant sur des
+                                jetons jetables avec date
+                                d’expiration. Chaque utilisateur authentifié possède un jeton informant de qui il est.
+                                Ce dernier est signé
+                                numériquement afin de s’assurer non seulement de l’authenticité de l’utilisateur, mais
+                                aussi de l’intégrité des
+                                informations passées.
+
                             </li>
 
                             <li>
-                                Puis, nous avons délimité 4 périmètres, qui consistent chacun à un ensemble de
-                                fonctionnalités corrélées. Ces contextes
-                                représenteront alors chacun un microservice de l’application.
+                                Une seconde mesure de sécurité consistait à exposer des services ou ressources en
+                                fonction des rôles et permissions des
+                                utilisateurs qui souhaitent y accéder.
                             </li>
 
-                            <li>Une fois les contrats d’interfaces signés avec les différents fournisseurs, le
-                                développement de la base dorsale pouvait
-                                commencer.
+                            <li>Enfin, afin d’assurer la haute disponibilité 24h/7j des APIs, nous nous sommes appuyés
+                                sur des technologies s’assurant
+                                tout d’abord du (re)démarrage de plusieurs instances de serveurs en cas de fortes
+                                charges, et aussi d’un équilibrage de
+                                charge constant entre les instances. Les cas d'indisponibilités deviennent alors
+                                inexistants.
                             </li>
 
-                            <li class="last">Nous avons livré les premières itérations de la plateforme et continuons de
-                                l’améliorer
-                                en continu
+                            <li class="last">Afin de fournir un contrat d’interface aux développeurs WEB, forme finale
+                                de l’API, nous avons généré la documentation
+                                de la dite API avec Swagger, et l’avons exposé tout en bouchonnant l’implémentation,
+                                permettant ainsi des tests de
+                                communication avec l’API.
                             </li>
                         </ul>
                     </div>
@@ -275,19 +301,29 @@
                     <div class="technos tools">
                         <div class="tech-item">
                             <div>
-                                <img src="/images/java-icon.svg" class="img-fluid java-icon" alt="java icon">
+                                <img src="/images/jwt-icon.svg" class="img-fluid" alt="jwt icon">
                             </div>
                             <div>
-                                <h4>Java</h4>
+                                <h4>JWT</h4>
                             </div>
                         </div>
 
                         <div class="tech-item">
                             <div>
-                                <img src="/images/springio-icon.svg" class="img-fluid" alt="spring boot icon">
+                                <img src="/images/springio-icon.svg" class="img-fluid" alt="spring Security icon">
                             </div>
                             <div>
-                                <h4>Spring-boot</h4>
+                                <h4>Spring Security</h4>
+                            </div>
+                        </div>
+
+
+                        <div class="tech-item">
+                            <div>
+                                <img src="/images/swagger-icon.svg" class="img-fluid" alt="Swagger icon">
+                            </div>
+                            <div>
+                                <h4>Swagger</h4>
                             </div>
                         </div>
 
@@ -299,24 +335,6 @@
                                 <h4>Kubernetes</h4>
                             </div>
                         </div>
-
-                        <div class="tech-item">
-                            <div>
-                                <img src="/images/mongodb-icon.svg" class="img-fluid" alt="mongodb icon">
-                            </div>
-                            <div>
-                                <h4>MongoDB</h4>
-                            </div>
-                        </div>
-
-                        <div class="tech-item">
-                            <div>
-                                <img src="/images/swagger-icon.svg" class="img-fluid" alt="Swagger icon">
-                            </div>
-                            <div>
-                                <h4>Swagger</h4>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -325,12 +343,7 @@
         <section id="implementation">
             <div class="container">
                 <h1>Implémentation</h1>
-                <p>Nous avons scindé la solution en plusieurs livrables, puis nous avons suivi une approche itérative
-                    par étapes, car nous
-                    avons été confrontés à des défis et à des changements d'exigences au cours du développement. Ces
-                    étapes comprenaient les
-                    phases suivantes :
-                </p>
+                <p>Les étapes d’implémentation comprenaient les phases suivantes :</p>
 
                 <div class="implementation-box">
                     <img src="images/Mesa-12.svg" class="img-fluid implementation-img" alt="our implamentation">
@@ -338,23 +351,23 @@
                     <ul class="implementation">
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Analyse des besoins métier</p>
+                            <p>Conception du contrat d’interface</p>
                         </li>
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Conception de l’architecture</p>
+                            <p>Exposition d’une version bouchonnée</p>
                         </li>
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Définition du modèle de domaine (modélisation du besoin métier)</p>
+                            <p>Implémentation</p>
                         </li>
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Développement des services</p>
+                            <p>Sécurisation</p>
                         </li>
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Déploiement des services</p>
+                            <p>Déploiement final</p>
                         </li>
                     </ul>
                 </div>
@@ -371,40 +384,40 @@
                 <div class=" show-desktop hide-mobile">
                     <ul class="steps">
                         <li class="step-card">
-                            Analyse des besoins métiers:
+                            Conception du contrat d’interface:
                             <ul>
                                 <li>Brainstorming</li>
-                                <li>Apports recherche et innovations</li>
-                                <li>Planification des ressources</li>
+                                <li>Analyse des besoins de la partie frontale</li>
                             </ul>
                         </li>
                         <li class="step-card">
-                            Mise en place de l’architecture cible:
+                            Déploiement d’une version bouchonnée:
                             <ul>
-                                <li>Conception de l’architecture</li>
-                                <li>Prototypage du système</li>
-                                <li>Documentation</li>
+                                <li>Mise en place des interfaces à exposer</li>
+                                <li>Mise en place des services d’implémentation bouchonnés</li>
+                                <li>Génération de la documentation des interfaces</li>
                             </ul>
                         </li>
                         <li class="step-card">
-                            Développement
+                            Implémentation:
                             <ul>
-                                <li>Développement des composants JAVA</li>
+                                <li>Suppression des bouchons et mise en place des services réels d’implémentation.</li>
+                                <li>Mise en place des test unitaires et d’intégration</li>
                             </ul>
                         </li>
                         <li class="step-card">
-                            Test de qualité et performance
+                            Sécurisation:
                             <ul>
-                                <li>Test d’acceptance utilisateurs</li>
-                                <li>Tests de performance</li>
+                                <li>Implémentation du système d’authentification à jetons</li>
+                                <li>Définition des rôles et permissions.</li>
                             </ul>
                         </li>
-                        <li class="step-card last">
-                            Déploiement
+                        <li class="step-card">
+                            Déploiement final:
                             <ul>
                                 <li>Déploiement</li>
                                 <li>Évaluation et feedback</li>
-                                <li>Améliorations.</li>
+                                <li>Améliorations</li>
                             </ul>
                         </li>
                     </ul>
@@ -413,44 +426,44 @@
                 <div class="hide-desktop">
                     <ul class="steps owl-carousel owl-theme">
                         <li class="step-card">
-                            Analyse des besoins métiers:
+                            Conception du contrat d’interface:
                             <ul>
                                 <li>Brainstorming</li>
-                                <li>Apports recherche et innovations</li>
-                                <li>Planification des ressources</li>
+                                <li>Analyse des besoins de la partie frontale</li>
                             </ul>
                             <div class="number"><span>01</span></div>
                         </li>
                         <li class="step-card">
-                            Mise en place de l’architecture cible:
+                            Déploiement d’une version bouchonnée:
                             <ul>
-                                <li>Conception de l’architecture</li>
-                                <li>Prototypage du système</li>
-                                <li>Documentation</li>
+                                <li>Mise en place des interfaces à exposer</li>
+                                <li>Mise en place des services d’implémentation bouchonnés</li>
+                                <li>Génération de la documentation des interfaces</li>
                             </ul>
                             <div class="number"><span>02</span></div>
                         </li>
                         <li class="step-card">
-                            Développement
+                            Implémentation:
                             <ul>
-                                <li>Développement des composants JAVA</li>
+                                <li>Suppression des bouchons et mise en place des services réels d’implémentation.</li>
+                                <li>Mise en place des test unitaires et d’intégration</li>
                             </ul>
                             <div class="number"><span>03</span></div>
                         </li>
                         <li class="step-card">
-                            Test de qualité et performance
+                            Sécurisation:
                             <ul>
-                                <li>Test d’acceptance utilisateurs</li>
-                                <li>Tests de performance</li>
+                                <li>Implémentation du système d’authentification à jetons</li>
+                                <li>Définition des rôles et permissions.</li>
                             </ul>
                             <div class="number"><span>04</span></div>
                         </li>
                         <li class="step-card">
-                            Déploiement
+                            Déploiement final:
                             <ul>
                                 <li>Déploiement</li>
                                 <li>Évaluation et feedback</li>
-                                <li>Améliorations.</li>
+                                <li>Améliorations</li>
                             </ul>
                             <div class="number"><span>05</span></div>
                         </li>
@@ -467,14 +480,14 @@
                 <div class="plus-value-metier-box">
                     <img src="images/Mesa-9.svg" class="img-fluid plus-value-metier-img" alt="plus value metier">
                     <div class="plus-value-text">
-                        <p>Notre solution a permis au client , non seulement, d'agrandir son parc d’applications mais
-                            aussi d’élargir son domaine
-                            de compétences. Le client fut satisfait de la qualité de la solution technique au point où
-                            il se sert de la même
-                            architecture que nous avions définies pour les autres applications du même type. La
-                            plateforme en elle même est toujours
-                            en cours de développement.
+                        <p>La mise en place de cette API a permis le découplage du portail Web et de la base dorsale,
+                            entraînant:
                         </p>
+                        <ul class="solution-1">
+                            <li>la décentralisation de la gestion des projets de développement de la plateforme</li>
+                            <li>la parallélisation des processus.</li>
+                            <li>l’économie de ressources.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -484,7 +497,7 @@
             <div class="container">
                 <p>Que vous vouliez ce service ou un de beaucoup plus personnalisé, contactez-nous et laissez nous vous
                     aider à faire
-                    monter à l’échelle votre business.
+                    monter en échelle votre business.
                 </p>
                 <a href="#">
                     <div class="rounded-button">
@@ -501,27 +514,19 @@
 
                 <div class="our-results__box">
                     <div class="owl-carousel owl-theme">
-                        <a href="/signature-engine.html">
+                        <a href="#">
                             <div class="card result">
                                 <img src="/images/signature-icon.svg" class="img-fluid" alt="">
                                 <h4>Moteur de signature électronique de documents</h4>
-                                <p>Signature numérique de documents s'appuyant sur le modèle documentaire d'Alfresco</p>
+                                <p>Développement de l’API Restful de communication avec la base dorsale</p>
                             </div>
                         </a>
 
-                        <a href="/share-photo.html">
+                        <a href="/mob-pay-api.html">
                             <div class="card result">
-                                <img src="/images/share-photo-icon.svg" class="img-fluid" alt="">
-                                <h4>Portail de suivi de demandes administratives</h4>
-                                <p>Développement du moteur de processus en JAVA</p>
-                            </div>
-                        </a>
-
-                        <a href="/portad.html">
-                            <div class="card result">
-                                <img src="/images/portail_demandes.svg" class="img-fluid" alt="">
-                                <h4>Partage nous les photos</h4>
-                                <p>Développement de l’application android</p>
+                                <img src="/images/mob-pay-icon.svg" class="img-fluid" alt="">
+                                <h4>Moteur d'agrégation de moyen de paiements mobiles</h4>
+                                <p>Développement de l’API GraphQL de communication avec la base dorsale</p>
                             </div>
                         </a>
                     </div>

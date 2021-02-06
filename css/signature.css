@@ -504,8 +504,7 @@ main {
   }
 
   .needs .card:hover {
-    transform: none;
-    box-shadow: 2px 5px 15px rgba(65, 45, 45, 0.15);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
   }
 
   .needs li {
@@ -582,6 +581,7 @@ main {
     line-height: 1.6;
   }
 
+  #challenges .container > p,
   #implementation .container > p,
   #roadmap .container > p,
   #our-results .container > p {
@@ -601,7 +601,7 @@ main {
     bottom: -5rem;
   }
 
-  .step-card:nth-child(odd):not(.last)::after {
+  .step-card:nth-child(odd):not(:last-child)::after {
     content: url(../images/roadmap-arrow-1.svg);
     position: absolute;
     display: block;
@@ -609,7 +609,7 @@ main {
     right: -10.5rem;
   }
 
-  .step-card:nth-child(even):not(.last)::after {
+  .step-card:nth-child(even):not(:last-child)::after {
     content: url(../images/roadmap-arrow-2.svg);
     position: absolute;
     display: block;
