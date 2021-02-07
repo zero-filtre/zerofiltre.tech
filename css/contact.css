@@ -72,16 +72,22 @@ form input[type="text"] {
   margin-bottom: 1.25rem;
   height: 4.625rem;
   padding: 1.25rem;
-  border: 1.5px solid #eee;
   border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
 }
 
 form textarea {
   width: 100%;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  border: 1.5px solid #eee;
   border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
 }
 
 form input[type="button"] {
@@ -90,7 +96,7 @@ form input[type="button"] {
   padding: 1.25rem;
   color: #fff;
   background-color: #17a6af;
-  border-color: transparent;
+  border: none;
   border-radius: 5px;
   margin-top: 1.25rem;
 }
@@ -101,7 +107,9 @@ form input[type="button"] {
 
 form input:focus,
 form textarea:focus {
-  outline-color: #17a6af;
+  outline: none;
+  border-color: #17a5af34;
+  box-shadow: 0 0 15px 2px #17a5af34;
 }
 
 @media only screen and (min-device-width: 768px) {
