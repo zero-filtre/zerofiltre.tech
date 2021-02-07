@@ -11,8 +11,28 @@ a[href^="tel"]::before {
 }
 
 .contacts {
+    text-align: center;
     font-weight: lighter;
     font-size: .9rem;
+    margin-top: 4.1875rem;
+}
+
+.contacts article {
+    margin-top: 4.1875rem;
+}
+
+.contacts article:last-child {
+    margin-bottom: 4.1875rem;
+}
+
+.contacts span:not(.town), .contacts a {
+    display: inline-block;
+    margin-top: 1.25rem;
+}
+
+.contacts .town {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .form-wrapper {
