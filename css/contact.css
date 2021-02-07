@@ -1,94 +1,118 @@
 a[href^="mailto"]::before {
-    content: "📧 ";
+  content: "📧 ";
 }
 
 a[href^="tel"]::before {
-    content: "📞 ";
+  content: "📞 ";
 }
 
 .container {
-    padding: 5%;
+  padding: 5%;
 }
 
 .contacts {
-    text-align: center;
-    font-weight: lighter;
-    font-size: .9rem;
-    margin-top: 4.1875rem;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  margin-top: 4.1875rem;
 }
 
 .contacts article {
-    margin-top: 4.1875rem;
+  margin-top: 4.1875rem;
 }
 
 .contacts article:last-child {
-    margin-bottom: 4.1875rem;
+  margin-bottom: 4.1875rem;
 }
 
-.contacts span:not(.town), .contacts a {
-    display: inline-block;
-    margin-top: 1.25rem;
+.contacts span:not(.town),
+.contacts a {
+  display: inline-block;
+  margin-top: 1.25rem;
 }
 
 .contacts .town {
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .form-wrapper {
-    background-color: #F8FBFC;
-    text-align: center;
-    border-radius: 10px;
-    padding: 1.25rem 5%;
+  background-color: #f8fbfc;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1.25rem 5%;
 }
 
 .form-wrapper h1 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 form {
-    margin-top: 4.85rem;
+  margin-top: 4.85rem;
 }
 
 form input[type="text"] {
-    width: 100%;
-    margin-bottom: 1.25rem;
-    height: 4.625rem;
-    padding: 1.25rem;
-    border: 1.5px solid #eee;
-    border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  height: 4.625rem;
+  padding: 1.25rem;
+  border: 1.5px solid #eee;
+  border-radius: 5px;
 }
 
 form textarea {
-    width: 100%;
-    margin-bottom: 1.25rem;
-    padding: 1.25rem;
-    border: 1.5px solid #eee;
-    border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  border: 1.5px solid #eee;
+  border-radius: 5px;
 }
 
 form input[type="button"] {
-    width: 100%;
-    height: 3.9375rem;
-    padding: 1.25rem;
-    color: #fff;
-    background-color: #17A6AF;
-    border-color: transparent;
-    border-radius: 5px;
-    margin-top: 1.25rem;
+  width: 100%;
+  height: 3.9375rem;
+  padding: 1.25rem;
+  color: #fff;
+  background-color: #17a6af;
+  border-color: transparent;
+  border-radius: 5px;
+  margin-top: 1.25rem;
 }
 
 .form-btn:hover {
-    background-color: #17a5afed;
+  background-color: #17a5afed;
 }
 
-form input:focus, form textarea:focus {
-    outline-color: #17A6AF;
+form input:focus,
+form textarea:focus {
+  outline-color: #17a6af;
 }
 
-
-/* main {
+@media only screen and (min-device-width: 768px) {
+  .fieldbox {
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+  }
+
+  .contacts {
+    order: 1;
+    flex: 1 0 40%;
+    text-align: left;
+    margin-right: 2rem;
+  }
+
+  .contacts .town {
+    font-size: 1.5rem;
+  }
+
+  .form-wrapper {
+    order: 2;
+    flex: 1 0 60%;
+    padding: 5%;
+  }
+
+  .form-wrapper h1 {
+    font-size: 1.5rem;
+  }
+}
