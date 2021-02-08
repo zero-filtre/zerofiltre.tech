@@ -33,7 +33,7 @@
   text-align: center;
   margin: 10% 3%;
   border-radius: 20px;
-  box-shadow: #ddd 0 0 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
 }
 
 .overviews__img {
@@ -114,7 +114,7 @@
   text-align: center;
   margin: 0 3%;
   border-radius: 20px;
-  box-shadow: #ddd 0 0 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
 }
 
 .solutions-img {
@@ -122,12 +122,13 @@
   transform: scale(1, 1.2);
 }
 
-.solutions > li:not(.last) {
+.solutions > li:not(:last-child) {
   margin-bottom: 2rem;
 }
 
 .solutions-box {
   text-align: justify;
+  font-size: var(--regular-size);
 }
 
 .solution-1 li {
@@ -211,7 +212,7 @@
   width: 90%;
   height: 15rem;
   padding: 3%;
-  border: 2px solid var(--primary-color);
+  border: 1px solid var(--primary-color); 
   color: var(--primary-color);
   font-size: var(--regular-size);
   font-weight: bold;
@@ -219,7 +220,7 @@
   border-radius: 5px;
   margin: 1rem auto;
   overflow: hidden;
-  box-shadow: 5px 5px 10px #8bc5ca7e;
+  box-shadow: 0 4px 6px 1px rgb(0 194 203 / 20%), 0 2px 4px -1px rgb(0 0 0 / 6%);
 }
 
 .step-card ul {
@@ -325,7 +326,7 @@
   }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
   .img-fluid {
     max-width: 50% !important;
   }
@@ -442,7 +443,7 @@
   .challenges-img,
   .implementation-img,
   .plus-value-metier-img {
-    margin-right: 10%;
+    margin-right: 5%;
     width: 40%;
   }
 

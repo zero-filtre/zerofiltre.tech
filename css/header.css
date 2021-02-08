@@ -118,7 +118,7 @@ header nav li {
 
 .hero p {
   margin: 0.8em 0 0 0;
-  font-size: var(--regular-size);
+  font-size: 0.7rem;
 }
 
 .green-container {
@@ -233,17 +233,18 @@ header nav li {
   header .container {
     padding: 1% 5%;
   }
-  
+
   .hero {
     margin: 3em 1.5% 0 1.5% !important;
   }
-  
+
   .hero .container {
     padding: 8% 5%;
   }
 
   .hero p {
     margin-top: 2em;
+    font-size: var(--regular-size);
   }
 }
 
@@ -263,7 +264,7 @@ header nav li {
   .hero .container {
     padding: 5%;
   }
-  
+
   .hero h1 {
     font-size: 2em;
   }
@@ -271,7 +272,6 @@ header nav li {
   .hero p {
     margin-top: 2em;
   }
-
 
   nav {
     font-size: 0.8em;
