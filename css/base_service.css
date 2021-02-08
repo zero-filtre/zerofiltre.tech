@@ -622,7 +622,7 @@ section {
   .approach-1 {
     position: relative;
     top: 0;
-    left: 5vw;
+    left: 4vw;
   }
 
   .approach-2 {
@@ -745,6 +745,16 @@ section {
     font-size: 1.6em;
     width: 70%;
     margin: 1em auto;
+  }
+
+  .approach {
+    font-size: 1rem;
+  }
+
+  .approach-1 {
+    position: relative;
+    top: -4px;
+    left: 6.5vw;
   }
 
   .trades__img {
