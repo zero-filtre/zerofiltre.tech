@@ -1,5 +1,9 @@
-.blur {
-  background-image: url(../images/app-support-cta-bg-img.jpg);
+.hero::after {
+  background-image: url(/images/java-landing-illustration.svg);
+}
+
+#call-to-action::after {
+  background-image: url(/images/app-mobile-cta-bg-img1.jpg);
 }
 
 .impl-list {

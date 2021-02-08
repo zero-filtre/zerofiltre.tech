@@ -11,6 +11,22 @@
   --small-size: 0.7em;
 }
 
+/**HEADER**/
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: 100% 42%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  opacity: 0.15;
+  z-index: -1;
+}
+
 .overviews-box {
   display: flex;
   flex-direction: column;
