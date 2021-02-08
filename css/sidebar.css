@@ -1,0 +1,61 @@
+:root {
+  /*Colors */
+  --primary-color: #00c2cb;
+  --primary-color-500: #15b2bc;
+  --secondary-color: #052b5d;
+  --accent-color: #fdbc5a;
+  --error-color: #f55f44;
+
+  /*Font sizes*/
+  --regular-size: 0.9em;
+  --small-size: 0.7em;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .sidebar {
+    height: 100%;
+    width: 0;
+    max-width: 400px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
+    background: #f9fafb;
+  }
+
+  .sidebar img {
+    width: 25px;
+    margin-right: 0.5em;
+  }
+
+  .sidebar a:not(.closebtn-x) {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.5em;
+    padding: 0.6em 1.7em;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    color: var(--primary-color);
+  }
+
+  .sidebar .closebtn {
+    font-size: 1.5em !important;
+    font-weight: bold !important;
+    padding: 3em 1.2em 0.5em 1em !important;
+  }
+
+  .sidebar .closebtn-x {
+    position: absolute;
+    top: 0.5em;
+    right: 1.7rem;
+    font-size: 36px;
+  }
+}
