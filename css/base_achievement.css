@@ -70,7 +70,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  font-size: var(--regular-size);
+  font-weight: 600;
   padding: 0 4%;
 }
 
