@@ -45,6 +45,46 @@ ul {
   padding: 0;
 }
 
+.badge-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soon-badge {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 500;
+  padding: 0 0.5rem;
+  line-height: 1.6;
+  margin-left: -1.3rem;
+  border-radius: 100px;
+}
+
+.comming-soon {
+  background-color: var(--accent-color);
+  padding: 0.625rem 1rem;
+  line-height: initial;
+  border-radius: 0.25rem;
+}
+
+.comming-soon span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: left !important;
+}
+
+.comming-soon span:first-of-type {
+  background-color: var(--primary-color-500);
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.5rem;
+}
+
+.soon-badge:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
 .container {
   text-align: center;
   padding: 5%;
@@ -465,7 +505,7 @@ nav ul li:nth-of-type(5) a img {
 
 .sidebar img {
   width: 25px;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 /* The sidebar links */
@@ -473,9 +513,9 @@ nav ul li:nth-of-type(5) a img {
   display: flex;
   align-items: center;
   text-align: left;
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 1.5em;
-  padding: .6em 1.7em;
+  padding: 0.6em 1.7em;
   transition: 0.3s;
 }
 
@@ -488,12 +528,12 @@ nav ul li:nth-of-type(5) a img {
 .sidebar .closebtn {
   font-size: 1.5em !important;
   font-weight: bold !important;
-  padding: 3em 1.2em .5em 1em !important;
+  padding: 3em 1.2em 0.5em 1em !important;
 }
 
 .sidebar .closebtn-x {
   position: absolute;
-  top: .5em;
+  top: 0.5em;
   right: 1.7rem;
   font-size: 36px;
 }

@@ -64,6 +64,27 @@ ul {
   padding: 0;
 }
 
+.badge-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soon-badge {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 500;
+  padding: 0 .5rem;
+  line-height: 1.6;
+  margin-left: -1.3rem;
+  border-radius: 100px;
+}
+
+.soon-badge:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
 .hide {
   display: none;
 }
