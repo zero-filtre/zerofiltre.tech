@@ -47,8 +47,12 @@ ul {
 
 .badge-link {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+}
+
+.badge-link a {
+  width: auto;
 }
 
 .soon-badge {
@@ -63,21 +67,23 @@ ul {
 
 .comming-soon {
   background-color: var(--accent-color);
-  padding: 0.625rem 1rem;
+  padding: 0.625rem 0.5rem;
   line-height: initial;
   border-radius: 0.25rem;
+  text-align: left !important;
+  max-width: 60ch;
+  margin: auto;
 }
 
 .comming-soon span {
-  font-size: 0.95rem;
+  font-size: 0.7rem;
   font-weight: 500;
-  text-align: left !important;
 }
 
 .comming-soon span:first-of-type {
   background-color: var(--primary-color-500);
   border-radius: 0.25rem;
-  padding: 0.125rem 0.5rem;
+  padding: 0.125rem 0.4rem;
 }
 
 .soon-badge:hover {
@@ -549,6 +555,14 @@ nav ul li:nth-of-type(5) a img {
     margin-bottom: 12%;
   }
 
+  .comming-soon {
+    padding: .625rem 1rem;
+  }
+
+  .comming-soon span {
+    font-size: 0.84rem;
+  }
+
   .services-cards-block {
     display: flex;
     justify-content: space-between;
@@ -725,6 +739,10 @@ nav ul li:nth-of-type(5) a img {
   nav ul li:nth-child(6) a:hover,
   nav ul li:nth-child(7) a:hover {
     background-color: inherit;
+  }
+
+  .comming-soon {
+    margin: initial;
   }
 
   /**Dropdown**/
