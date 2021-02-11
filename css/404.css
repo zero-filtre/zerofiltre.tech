@@ -25,12 +25,23 @@
 
 .content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .content img {
   margin: auto;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
 }
 
 #call-to-action {
@@ -73,7 +84,7 @@
 
 @media only screen and (min-width: 1024px) {
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #call-to-action::after {

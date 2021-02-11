@@ -66,7 +66,7 @@ ul {
 }
 
 .comming-soon {
-  background-color: var(--accent-color);
+  border: 2px solid #fff;
   padding: 0.625rem 0.5rem;
   line-height: initial;
   border-radius: 0.25rem;
@@ -77,11 +77,11 @@ ul {
 
 .comming-soon span {
   font-size: 0.7rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .comming-soon span:first-of-type {
-  background-color: var(--primary-color-500);
+  background-color: #1FBEC8;
   border-radius: 0.25rem;
   padding: 0.125rem 0.4rem;
 }
