@@ -15,6 +15,11 @@
   .dropdown {
     position: relative;
     display: inline-block;
+    margin-right: 2rem;
+  }
+
+  .dropBtn {
+    margin-right: 0 !important;
   }
 
   .dropdown .group {
@@ -27,15 +32,15 @@
   }
 
   .group a {
-    display: flex !important;
+    display: flex;
     align-items: center;
     justify-content: stretch;
   }
 
-  .group img {
-    width: 25x;
+  .dropdown .group img {
+    width: 25px;
     height: 25px;
-    margin-right: 10px;
+    margin-right: 10px !important;
   }
 
   .apps a:last-child img {
@@ -56,9 +61,11 @@
   .dropdown-content {
     display: none;
     position: absolute;
+    line-height: 1.5;
     left: -300px;
     max-width: 800px;
     width: 60vw;
+    margin-top: .48rem;
     padding: 20%;
     background-color: #fff;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -82,9 +89,5 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
-  }
-
-  .dropdown:hover .dropbtn {
-    color: var(--primary-color);
   }
 }

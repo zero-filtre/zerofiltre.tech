@@ -686,14 +686,6 @@ section {
 }
 
 @media only screen and (min-width: 1024px) {
-  .show-desktop {
-    display: block;
-  }
-
-  .hide-desktop {
-    display: none;
-  }
-
   .show-desktop-text {
     display: block;
   }

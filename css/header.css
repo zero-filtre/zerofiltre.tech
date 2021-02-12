@@ -11,97 +11,138 @@
   --small-size: 0.7em;
 }
 
-.logo {
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+header .container {
+  padding: 5%;
+}
+
+/**NAVBAR**/
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 0;
+}
+
+nav .logo {
+  position: relative;
   width: 130px;
+  z-index: 2;
+}
+
+nav .menu {
+  position: relative;
+  z-index: 10;
+}
+
+nav .menu span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: all 300ms ease-in-out;
+  transform-origin: 3px 1px;
+}
+
+.menu span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.menu.open span:first-child {
+  transform: rotate(45deg);
+}
+
+.menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu.open span:last-child {
+  transform: rotate(-45deg);
+}
+
+nav .links a {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+nav .links a *:first-child {
+  margin-right: 0.2rem;
+}
+
+nav .links a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+nav .links a:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: color 250ms ease-in-out;
+}
+
+header .soon-badge {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.6rem 0.5rem;
+  border-radius: 100px;
+}
+
+header .soon-badge:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+header .whatsapp-link {
+  position: relative;
+}
+
+header .whatsapp-link span {
+  position: relative;
+  top: 2px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  max-width: 300px;
+  overflow-x: hidden;
+  line-height: 0;
+  padding: 100px 0 40px 0;
+  background-color: #fff;
+  box-shadow: #ddd 0 0 5px;
+  transition: 0.5s;
+  z-index: 5;
+}
+
+.mobile-menu a {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  font-size: .9rem;
+}
+
+.mobile-menu a *:first-child {
+  margin-right: 0.2rem;
 }
 
 .sub-title {
   line-height: 1.2rem;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10000;
-  background-color: #fff;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5%;
-}
-
-nav ul {
-  position: fixed;
-  width: 60%;
-  max-width: 400px;
-  top: 0;
-  right: 0;
-  text-align: left;
-  color: white;
-  background: #f9fafb;
-  z-index: 7;
-  padding-top: 3em;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
-}
-
-nav ul li a {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: max-content;
-  padding: 1em 2em;
-}
-
-nav ul li a:hover {
-  background-color: var(--primary-color);
-}
-
-nav ul li:nth-child(5) a:hover,
-nav ul li:nth-child(6) a:hover,
-nav ul li:nth-child(7) a:hover {
-  background-color: #057c86;
-}
-
-nav ul li:nth-of-type(3) {
-  margin-top: -2px;
-}
-
-nav ul li:nth-of-type(3) a img {
-  margin-left: 0.5em;
-}
-
-nav ul li:nth-of-type(5) a img {
-  margin-right: 0.5em;
-}
-
-.exit-btn img {
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-}
-
-.exit-btn {
-  margin-bottom: 1em;
-  margin-top: -2.5em;
-  text-align: right;
-  padding: 1em 1em;
-}
-
-header nav li {
-  color: var(--secondary-color);
-  font-weight: 600;
-}
-
 .hero {
   position: relative;
-  margin: 17.5% 4% 2% 4%;
+  margin: 4em 4% 2% 4%;
   z-index: 1;
 }
 
@@ -185,11 +226,6 @@ header nav li {
     margin-top: 4em;
   }
 
-  nav ul {
-    width: 50%;
-    max-width: initial;
-  }
-
   .sub-title {
     line-height: 1.5rem;
   }
@@ -230,12 +266,8 @@ header nav li {
     box-shadow: #ddd 0 0 8px;
   }
 
-  header .container {
-    padding: 1% 5%;
-  }
-
   .hero {
-    margin: 3em 1.5% 0 1.5% !important;
+    margin: 4em 1.5% 0 1.5%;
   }
 
   .hero .container {
@@ -248,17 +280,23 @@ header nav li {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .hero {
+    margin-top: 5em;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
-  header {
-    align-items: center;
+  header .container {
+    padding: 1.5% 5%;
   }
 
-  .logo {
+  nav .logo {
     width: 200px;
   }
 
   .hero {
-    margin: 8% 1.5% 0 1.5% !important;
+    margin: 6.5% 1.5% 0 1.5%;
   }
 
   .hero .container {
@@ -272,45 +310,10 @@ header nav li {
   .hero p {
     margin-top: 2em;
   }
-
-  nav {
-    font-size: 0.8em;
-  }
-
-  nav ul {
-    position: relative;
-    width: auto;
-    background: none;
-    padding: 0;
-    max-width: initial;
-  }
-
-  nav ul li {
-    float: left;
-  }
-
-  nav ul li:last-child a {
-    padding: 1em 0;
-  }
-
-  nav ul li a {
-    width: initial;
-  }
-
-  nav ul li a:hover {
-    background-color: inherit;
-    color: var(--primary-color);
-  }
-
-  nav ul li:nth-child(5) a:hover,
-  nav ul li:nth-child(6) a:hover,
-  nav ul li:nth-child(7) a:hover {
-    background-color: inherit;
-  }
 }
 
 @media only screen and (min-width: 1350px) {
   .hero {
-    margin: 7% 1.5% 0 1.5% !important;
+    margin: 5.5% 1.5% 0 1.5%;
   }
 }

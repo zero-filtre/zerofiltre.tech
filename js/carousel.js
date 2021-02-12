@@ -35,24 +35,28 @@ function backToTop() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-//backToTopBtn.onclick = backToTop:
-
 const nav = document.getElementById("nav");
+const hamburgerMenu = document.getElementById("menu");
+const mobileMenu = document.getElementById("mobile-menu");
+const openSidebarBtn = document.getElementById("openSidebarBtn")
 
 
-document.getElementById("menu").addEventListener('click', () => {
-    nav.classList.toggle("hide-mobile");
+menu.addEventListener('click', () => {
+    if (hamburgerMenu.classList.contains('open')) {
+        hamburgerMenu.classList.remove('open')
+        mobileMenu.style.width = "0";
+    }else {
+        hamburgerMenu.classList.add('open')
+        mobileMenu.style.width = "60%";
+    }
 });
-
-document.getElementById("exit").addEventListener('click', () => {
-    nav.classList.toggle("hide-mobile");
-});
-
 
 function openNav() {
-    document.getElementById("mySidebar").style.width = "80%";
+    document.getElementById("sidebar").style.width = "80%";
 }
 
 function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("sidebar").style.width = "0";
 }
+
+openSidebarBtn.addEventListener('click', openNav)

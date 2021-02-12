@@ -64,31 +64,6 @@ ul {
   padding: 0;
 }
 
-.badge-link {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.soon-badge {
-  background-color: var(--primary-color);
-  color: #fff;
-  font-weight: 500;
-  padding: 0 .5rem;
-  line-height: 1.6;
-  margin-left: -1.3rem;
-  border-radius: 100px;
-}
-
-.soon-badge:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-.hide {
-  display: none;
-}
-
 .hide-mobile {
   display: none;
 }
@@ -208,7 +183,6 @@ ul {
 .footer {
   color: white;
   background: var(--secondary-color);
-  /* border-top-left-radius: 20px; */
 }
 
 .footer .useful-links li,
@@ -269,6 +243,10 @@ footer .container {
 
   .hide-desktop {
     display: none;
+  }
+
+  .hide-mobile {
+    display: inherit;
   }
 
   .d-flex {
