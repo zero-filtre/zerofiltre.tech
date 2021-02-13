@@ -69,6 +69,10 @@ nav .menu span {
   transform: rotate(-45deg);
 }
 
+nav .links {
+  line-height: 1;
+}
+
 nav .links a {
   display: flex;
   align-items: center;
@@ -92,9 +96,12 @@ nav .links a:hover {
 header .soon-badge {
   background-color: var(--primary-color);
   color: #fff;
-  /* padding: 0.6rem 0.5rem; */
-  padding: 0 0.5rem;
+  padding: .1rem .25rem;
   border-radius: 100px;
+}
+
+.mobile-menu .soon-badge {
+  padding: 0 0.5rem;
 }
 
 header .soon-badge:hover {
@@ -108,7 +115,7 @@ header .whatsapp-link {
 
 header .whatsapp-link span {
   position: relative;
-  top: 2px;
+  top: 1px;
 }
 
 .mobile-menu {
