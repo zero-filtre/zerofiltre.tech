@@ -36,7 +36,7 @@
   font-size: .8rem;
   padding: 1.2rem .8rem;
   border-bottom: 1px solid #ddd;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .sidebar a:not(.closebtn, .title):hover {
@@ -54,4 +54,5 @@
 
 .sidebar .title {
   font-size: 1.5rem;
+  font-weight: 500;
 }

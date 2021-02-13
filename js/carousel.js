@@ -51,12 +51,12 @@ menu.addEventListener('click', () => {
     }
 });
 
-function openNav() {
+function openSidebar() {
     document.getElementById("sidebar").style.width = "80%";
 }
 
-function closeNav() {
+function closeSidebar() {
     document.getElementById("sidebar").style.width = "0";
 }
 
-openSidebarBtn.addEventListener('click', openNav)
+openSidebarBtn.addEventListener('click', openSidebar)
