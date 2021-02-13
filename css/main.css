@@ -48,11 +48,10 @@ ul {
 .comming-soon {
   border: 2px solid #fff;
   padding: 0.625rem 0.5rem;
+  margin: 3rem auto 1rem auto;
   line-height: initial;
   border-radius: 0.25rem;
-  text-align: left !important;
   max-width: 60ch;
-  margin: auto;
 }
 
 .comming-soon span {
@@ -61,6 +60,9 @@ ul {
 }
 
 .comming-soon span:first-of-type {
+  display: block;
+  width: fit-content;
+  margin: auto;
   background-color: #1fbec8;
   border-radius: 0.25rem;
   padding: 0.125rem 0.4rem;
@@ -574,7 +576,7 @@ header .hamburger span {
 @media only screen and (min-width: 1024px) {
   .container {
     margin: 0 auto;
-    padding-top: 2.8%;
+    padding-top: 2%;
     padding-bottom: 6.5%;
   }
 
@@ -591,15 +593,23 @@ header .hamburger span {
   }
 
   .comming-soon {
+    text-align: left;
     margin: initial;
   }
 
+  .comming-soon span:first-of-type {
+    display: inline;
+  }
+
   /**Dropdown**/
+  .dropBtn {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   .dropdown-content {
     display: none;
     color: var(--secondary-color);
-    margin-top: .5rem;
-    box-shadow: #ddd 0 0 5px
+    box-shadow: #ddd 0 0 5px;
   }
 
   .logo {

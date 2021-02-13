@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 a[href^="mailto"]::before {
   content: "📧 ";
 }
@@ -112,7 +116,7 @@ form textarea:focus {
   box-shadow: 0 0 15px 2px #17a5af34;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .fieldbox {
     display: flex;
     align-items: center;
