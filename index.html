@@ -11,6 +11,9 @@
         Créée en 2015, Zerofiltre voit le jour à l’initiative de Philippe SIMO , un ingénieur entrepreneur, et architecte logiciel spécialisé en JAVA">
 
     <title>Zerofiltre.tech</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/dropdown.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,117 +25,143 @@
     <div class="green-container">
         <div class="container">
             <header>
-                <a class="logo-link" href="/">
-                    <img class="logo" src="images/logo.svg" alt="Zerofiltre.tech">
-                </a>
+                <div class="container">
 
-                <nav>
-                    <a class="hide-desktop" href="#">
-                        <img src="images/ham-menu.svg" alt="toggle menu" class="menu" id="menu">
-                    </a>
-                    <ul class="show-desktop hide-mobile" id="nav">
-                        <li class="exit-btn hide-desktop" id="exit">
-                            <img src="images/exit.svg" alt="exit">
-                        </li>
-                        <li><a href="#about">A propos</a></li>
+                    <nav>
+                        <a href="/">
+                            <img class="logo" src="images/logo.svg" alt="Zerofiltre.tech" />
+                        </a>
 
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn show-desktop hide-mobile d-flex">Services<img
-                                    src="images/chevron-down.svg" alt="chevron-down"></a>
+                        <a href="#" class="hamburger menu hide-desktop" id="menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
 
-                            <a href="#" class="openbtn hide-desktop" onclick="openSidebar()">Services<img
-                                    src="images/chevron-down.svg" alt="chevron-down"></a>
+                        <div class="links hide-mobile">
 
-                            <div class="dropdown-content hide-mobile show-destop">
-                                <div class="apps group">
-                                    <h1>Développement d’application</h1>
-                                    <a href="/app-java.html">
-                                        <img src="/images/app-java-blue.svg" alt="">
-                                        <span>Développement d’application Java</span>
-                                    </a>
-                                    <a href="/app-nav.html">
-                                        <img src="/images/app-web.svg" alt="">
-                                        <span>Développement d’applications pour navigateurs Web</span>
-                                    </a>
-                                    <a href="/app-mobile.html">
-                                        <img src="/images/app-mob.svg" alt="">
-                                        <span>Développement d’applications mobiles</span>
-                                    </a>
-                                    <a href="/support.html">
-                                        <img src="/images/app-maintenance.svg" alt="">
-                                        <span>Maintenance d’applications et support</span>
-                                    </a>
-                                </div>
+                            <a href="/#about">A propos</a>
 
-                                <div class="api group">
-                                    <h1>Développement d’APIs</h1>
-                                    <a href="/web-api.html">
-                                        <img src="/images/app-api.svg" alt="">
-                                        <span>Développement d’APIs WEB</span>
-                                    </a>
-                                </div>
 
-                                <div class="ui group">
-                                    <h1>Conception d’interfaces graphiques</h1>
-                                    <a href="/ui.html">
-                                        <img src="/images/ui-dev.svg" alt="">
-                                        <span>Conception de prototypes d’interfaces graphiques</span>
-                                    </a>
+                            <div class="dropdown">
+                                <a href="#" class="dropBtn">
+                                    <span>Services</span>
+                                    <img src="images/chevron-down.svg" alt="chevron-down">
+                                </a>
+
+                                <div class="dropdown-content hide-mobile">
+                                    <div class="apps group">
+                                        <h1>Développement d’application</h1>
+                                        <a href="/app-java.html">
+                                            <img src="/images/app-java-blue.svg" alt="">
+                                            <span>Développement d’application Java</span>
+                                        </a>
+                                        <a href="/app-nav.html">
+                                            <img src="/images/app-web.svg" alt="">
+                                            <span>Développement d’applications pour navigateurs Web</span>
+                                        </a>
+                                        <a href="/app-mobile.html">
+                                            <img src="/images/app-mob.svg" alt="">
+                                            <span>Développement d’applications mobiles</span>
+                                        </a>
+                                        <a href="/support.html">
+                                            <img src="/images/app-maintenance.svg" alt="">
+                                            <span>Maintenance d’applications et support</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="api group">
+                                        <h1>Développement d’APIs</h1>
+                                        <a href="/web-api.html">
+                                            <img src="/images/app-api.svg" alt="">
+                                            <span>Développement d’APIs WEB</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="ui group">
+                                        <h1>Conception d’interfaces graphiques</h1>
+                                        <a href="/ui.html">
+                                            <img src="/images/ui-dev.svg" alt="">
+                                            <span>Conception de prototypes d’interfaces graphiques</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </li>
 
-                        <li class="badge-link">
-                            <a href="#">Blog</a>
-                            <a href="#" class="soon-badge">Soon</a>
-                        </li>
-
-                        <li>
-                            <a href="https://web.whatsapp.com">
-                                <img src="images/whatsapp.svg" alt="N° whatsapp 0753428623">
-                                +33 7 53 42 86 23
+                            <a href="#" class="badge-link">
+                                <span>Blog</span>
+                                <span class="soon-badge">Soon</span>
                             </a>
-                        </li>
-                        <li>
+
+                            <a href="https://web.whatsapp.com" class="whatsapp-link">
+                                <img src="images/whatsapp.svg" alt="N° whatsapp 0753428623" />
+                                <span>+33 7 53 42 86 23</span>
+                            </a>
+
                             <a href="https://github.com/zero-filtre"><img src="images/github.svg"
-                                    alt="Nos repo github"></a>
-                        </li>
-                        <li>
+                                    alt="Nos repo github" /></a>
+
                             <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img
                                     src="images/linkedIn.svg" alt="Notre page LinkedIn"></a>
-                        </li>
-                    </ul>
-                </nav>
+                        </div>
 
-                <div id="mySidebar" class="sidebar hide-desktop">
-                    <a href="javascript:void(0)" class="closebtn-x" onclick="closeNav()">&larr;</a>
-                    <a href="/services.html" class="closebtn" onclick="">Services</a>
-                    <a href="/app-java.html">
-                        <img src="/images/app-java-blue.svg" alt="">
-                        <span>Développement d’application Java</span>
-                    </a>
-                    <a href="/app-nav.html">
-                        <img src="/images/app-web.svg" alt="">
-                        <span>Développement d’applications pour navigateurs Web</span>
-                    </a>
-                    <a href="/app-mobile.html">
-                        <img src="/images/app-mob.svg" alt="">
-                        <span>Développement d’applications mobiles</span>
-                    </a>
-                    <a href="/support.html">
-                        <img src="/images/app-maintenance.svg" alt="">
-                        <span>Maintenance d’applications et support</span>
-                    </a>
-                    <a href="/web-api.html">
-                        <img src="/images/app-api.svg" alt="">
-                        <span>Développement d’APIs WEB</span>
-                    </a>
-                    <a href="/ui.html">
-                        <img src="/images/ui-dev.svg" alt="">
-                        <span>Conception de prototypes d’interfaces graphiques</span>
-                    </a>
+                    </nav>
+
+                    <div class="mobile-menu hide-desktop" id="mobile-menu">
+                        <a href="/#about">A propos</a>
+
+                        <a href="#" id="openSidebarBtn">
+                            <span>Services</span>
+                            <img src="images/chevron-down.svg" alt="chevron-down">
+                        </a>
+
+                        <a href="/404.html" class="badge-link">
+                            <span>Blog</span>
+                            <span class="soon-badge">Soon</span>
+                        </a>
+
+                        <a href="https://web.whatsapp.com" class="whatsapp-link">
+                            <img src="images/whatsapp.svg" alt="N° whatsapp 0753428623" />
+                            <span>+33 7 53 42 86 23</span>
+                        </a>
+                        
+                        <a href="https://github.com/zero-filtre"><img src="images/github.svg" alt="Nos repo github" /></a>
+                        
+                        <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/linkedIn.svg"
+                                alt="Notre page LinkedIn"></a>
+                    </div>
+
+                    <div id="sidebar" class="sidebar hide-desktop">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
+
+                        <a href="#" class="title">Services</a>
+
+                        <a href="/app-java.html">
+                            <img src="/images/app-java-blue.svg" alt="" />
+                            <span>Développement d’application Java</span>
+                        </a>
+                        <a href="/app-nav.html">
+                            <img src="/images/app-web.svg" alt="" />
+                            <span>Développement d’applications pour navigateurs Web</span>
+                        </a>
+                        <a href="/app-mobile.html">
+                            <img src="/images/app-mob.svg" alt="" />
+                            <span>Développement d’applications mobiles</span>
+                        </a>
+                        <a href="/support.html">
+                            <img src="/images/app-maintenance.svg" alt="" />
+                            <span>Maintenance d’applications et support</span>
+                        </a>
+                        <a href="/web-api.html">
+                            <img src="/images/app-api.svg" alt="" />
+                            <span>Développement d’APIs WEB</span>
+                        </a>
+                        <a href="/ui.html">
+                            <img src="/images/ui-dev.svg" alt="" />
+                            <span>Conception de prototypes d’interfaces graphiques</span>
+                        </a>
+                    </div>
                 </div>
-
             </header>
 
             <section>

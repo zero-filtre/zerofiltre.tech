@@ -107,19 +107,19 @@ main .services {
   width: 32%;
 }
 
-.api .service {
+.apis .service {
   border-color: var(--secondary-color);
 }
 
 .app .container,
-.api .container,
-.ui .container {
+.apis .container,
+.uis .container {
   z-index: 10;
 }
 
 .app::after,
-.api::after,
-.ui::after {
+.apis::after,
+.uis::after {
   content: "";
   position: absolute;
   top: 0;
@@ -136,12 +136,12 @@ main .services {
   background-position: -120% 10%;
 }
 
-.api::after {
+.apis::after {
   background-image: url(/images/api-bg.svg);
   background-position: 100% 90%;
 }
 
-.ui::after {
+.uis::after {
   background-image: url(/images/ui-bg.svg);
   background-position: center center;
 }
@@ -152,13 +152,13 @@ main .services {
   background-color: rgba(5, 43, 93, 87);
 }
 
-.api {
+.apis {
   position: relative;
   background: rgba(255, 189, 89, 0.91);
   color: #052b5d;
 }
 
-.ui {
+.uis {
   position: relative;
   background: rgba(0, 194, 203, 0.95);
   color: #fff;
@@ -273,11 +273,11 @@ main .services {
     border-top-left-radius: 0;
   }
 
-  .api {
+  .apis {
     grid-area: col2;
   }
 
-  .ui {
+  .uis {
     grid-area: col3;
   }
 

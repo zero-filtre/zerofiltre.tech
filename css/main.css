@@ -45,26 +45,6 @@ ul {
   padding: 0;
 }
 
-.badge-link {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.badge-link a {
-  width: auto;
-}
-
-.soon-badge {
-  background-color: var(--primary-color);
-  color: #fff;
-  font-weight: 500;
-  padding: 0 0.5rem;
-  line-height: 1.6;
-  margin-left: -1.3rem;
-  border-radius: 100px;
-}
-
 .comming-soon {
   border: 2px solid #fff;
   padding: 0.625rem 0.5rem;
@@ -81,14 +61,9 @@ ul {
 }
 
 .comming-soon span:first-of-type {
-  background-color: #1FBEC8;
+  background-color: #1fbec8;
   border-radius: 0.25rem;
   padding: 0.125rem 0.4rem;
-}
-
-.soon-badge:hover {
-  background-color: var(--primary-color);
-  color: #fff;
 }
 
 .container {
@@ -114,8 +89,14 @@ section {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+header .container {
+  padding: 0;
+  text-align: left;
 }
 
 .green-container {
@@ -126,7 +107,7 @@ header {
     #057c86 39.12%,
     var(--primary-color) 75.61%
   );
-  border-bottom-right-radius: 20px;
+  border-radius: 0 0 20px 0;
 }
 
 .green-container p {
@@ -399,71 +380,14 @@ header {
   margin-left: 0.5em;
 }
 
-nav ul {
-  position: fixed;
-  width: 60%;
-  top: 0;
-  right: 0;
-  text-align: left;
+.mobile-menu {
   color: white;
   background: var(--primary-color);
-  z-index: 7;
-  padding-top: 3em;
   background-image: linear-gradient(
     to bottom,
     #057c86 39.12%,
     var(--primary-color) 75.61%
   );
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
-}
-
-nav ul li a {
-  display: block;
-  width: 100%;
-  padding: 1em 2em;
-}
-
-nav ul li a:hover {
-  background-color: var(--primary-color);
-}
-
-nav ul li:nth-child(5) a:hover,
-nav ul li:nth-child(6) a:hover,
-nav ul li:nth-child(7) a:hover {
-  background-color: #057c86;
-}
-
-nav ul li a {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-nav ul li:nth-of-type(3) {
-  margin-top: -2px;
-}
-
-nav ul li:nth-of-type(3) a img {
-  margin-left: 0.5em;
-}
-
-nav ul li:nth-of-type(5) a img {
-  margin-right: 0.5em;
-}
-
-.exit-btn img {
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-}
-
-.exit-btn {
-  margin-bottom: 1em;
-  margin-top: -2.5em;
-  text-align: right;
-  padding: 1em 1em;
 }
 
 .back-to-top img {
@@ -490,16 +414,6 @@ nav ul li:nth-of-type(5) a img {
 
 /* The sidebar menu */
 .sidebar {
-  height: 100%;
-  width: 0;
-  max-width: 400px;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  right: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.25);
   color: white;
   background: var(--primary-color);
   background-image: linear-gradient(
@@ -509,39 +423,8 @@ nav ul li:nth-of-type(5) a img {
   );
 }
 
-.sidebar img {
-  width: 25px;
-  margin-right: 0.5em;
-}
-
-/* The sidebar links */
-.sidebar a:not(.closebtn-x) {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  font-size: 0.8rem;
-  line-height: 1.5em;
-  padding: 0.6em 1.7em;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: var(--primary-color);
-}
-
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  font-size: 1.5em !important;
-  font-weight: bold !important;
-  padding: 3em 1.2em 0.5em 1em !important;
-}
-
-.sidebar .closebtn-x {
-  position: absolute;
-  top: 0.5em;
-  right: 1.7rem;
-  font-size: 36px;
+header .hamburger span {
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 650px) {
@@ -556,7 +439,7 @@ nav ul li:nth-of-type(5) a img {
   }
 
   .comming-soon {
-    padding: .625rem 1rem;
+    padding: 0.625rem 1rem;
   }
 
   .comming-soon span {
@@ -609,10 +492,6 @@ nav ul li:nth-of-type(5) a img {
   .sponsor ul {
     display: flex;
     justify-content: center;
-  }
-
-  nav ul {
-    width: 50%;
   }
 }
 
@@ -695,8 +574,12 @@ nav ul li:nth-of-type(5) a img {
 @media only screen and (min-width: 1024px) {
   .container {
     margin: 0 auto;
-    padding-top: 2%;
+    padding-top: 2.8%;
     padding-bottom: 6.5%;
+  }
+
+  .hide-mobile {
+    display: inherit;
   }
 
   .show-desktop {
@@ -707,126 +590,16 @@ nav ul li:nth-of-type(5) a img {
     display: none;
   }
 
-  .d-flex {
-    display: flex !important;
-  }
-
-  nav {
-    font-size: 0.8em;
-  }
-
-  nav ul {
-    position: relative;
-    width: auto;
-    background: none;
-    padding: 0;
-    box-shadow: none;
-  }
-
-  nav ul li {
-    float: left;
-  }
-
-  nav ul li:last-child a {
-    padding: 1em 0;
-  }
-
-  nav ul li a:hover {
-    background-color: inherit;
-  }
-
-  nav ul li:nth-child(5) a:hover,
-  nav ul li:nth-child(6) a:hover,
-  nav ul li:nth-child(7) a:hover {
-    background-color: inherit;
-  }
-
   .comming-soon {
     margin: initial;
   }
 
   /**Dropdown**/
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown .group {
-    padding: 15px 0;
-    flex-basis: 48%;
-  }
-
-  .dropdown .group:nth-child(odd) {
-    margin-right: 4%;
-  }
-
-  .group a {
-    display: flex !important;
-    align-items: center;
-    justify-content: stretch;
-  }
-
-  .group img {
-    width: 25x;
-    height: 25px;
-    margin-right: 10px;
-  }
-
-  .apps a:last-child img {
-    width: 22px;
-  }
-
-  .group span {
-    display: inline-block;
-    font-weight: 600;
-  }
-
-  .dropdown h1 {
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--primary-color);
-    padding: 12px;
-  }
-
   .dropdown-content {
     display: none;
-    position: absolute;
-    left: -310px;
-    max-width: 800px;
-    width: 55vw;
-    padding: 20%;
-    background-color: #fff;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    padding: 10px 5px;
-    text-decoration: none;
-    display: block;
-    line-height: 1.6em;
     color: var(--secondary-color);
-    transition: 0.3s;
-  }
-
-  .dropdown-content a:hover {
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    color: var(--primary-color);
-    border-radius: 10px;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 10px;
-  }
-
-  .dropdown:hover .dropbtn {
-    color: var(--primary-color);
-  }
-
-  header {
-    align-items: center;
+    margin-top: .5rem;
+    box-shadow: #ddd 0 0 5px
   }
 
   .logo {

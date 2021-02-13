@@ -249,10 +249,6 @@ footer .container {
     display: inherit;
   }
 
-  .d-flex {
-    display: flex !important;
-  }
-
   h1 {
     font-size: 2em;
     margin: 0;
