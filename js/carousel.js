@@ -55,7 +55,7 @@ function openSidebar() {
     document.getElementById("sidebar").style.width = "80%";
 }
 
-function closeNav() {
+function closeSidebar() {
     document.getElementById("sidebar").style.width = "0";
 }
 

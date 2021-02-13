@@ -39,7 +39,7 @@
   transition: 0.5s;
 }
 
-.sidebar a:not(.closebtn, .title):hover {
+.sidebar a:not(.closebtn, .title):focus {
   color: var(--primary-color);
   background-color: rgba(221, 221, 221, 0.5);
 }
