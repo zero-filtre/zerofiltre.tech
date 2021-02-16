@@ -604,6 +604,7 @@ header .hamburger span {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+  
   .dropdown-content {
     display: none;
     color: var(--secondary-color);
