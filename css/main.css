@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 :root {
   /*Colors */
@@ -19,7 +19,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -417,11 +417,7 @@ header .container {
 .sidebar {
   color: white;
   background: var(--primary-color);
-  background-image: linear-gradient(
-    to bottom,
-    #057c86 39.12%,
-     #057c86 75.61%
-  );
+  background-image: linear-gradient(to bottom, #057c86 39.12%, #057c86 75.61%);
 }
 .sidebar a:not(.closebtn, .title):hover {
   background-color: var(--primary-color-500);
@@ -760,12 +756,15 @@ header .hamburger span {
   .useful-links {
     display: flex;
     text-align: left;
-    justify-content: space-between;
     align-items: flex-start;
   }
 
   .useful-links div {
     width: 30%;
+  }
+
+  .useful-links div:not(:last-child) {
+    margin-right: 5%;
   }
 
   .footer .yellow-text {
