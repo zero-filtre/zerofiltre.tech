@@ -148,7 +148,6 @@ header .container {
 
 .card:hover {
   box-shadow: 3px 16px 40px rgba(0, 0, 0, 0.25);
-  transform: scale(1.003);
 }
 
 .global-services .card {
@@ -421,8 +420,11 @@ header .container {
   background-image: linear-gradient(
     to bottom,
     #057c86 39.12%,
-    var(--primary-color) 75.61%
+     #057c86 75.61%
   );
+}
+.sidebar a:not(.closebtn, .title):hover {
+  background-color: var(--primary-color-500);
 }
 
 header .hamburger span {

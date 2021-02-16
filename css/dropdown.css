@@ -86,9 +86,15 @@
     border-radius: 10px;
   }
 
-  .dropdown:hover .dropdown-content {
-    display: flex;
+  .dropdown-expanded {
+    display: flex !important;
     flex-wrap: wrap;
     border-radius: 10px;
   }
+
+  /* .dropdown:focus .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+  } */
 }
