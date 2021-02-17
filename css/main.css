@@ -777,6 +777,11 @@ header .hamburger span {
     text-align: left;
   }
 
+  .contact ul li {
+    font-size: initial !important;
+    margin-bottom: 0 !important;
+  }
+
   @media only screen and (min-width: 1400px) {
     h1 {
       font-size: 2.8em;

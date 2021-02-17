@@ -26,7 +26,7 @@ section {
 
 /**HEADER**/
 .hero::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -249,7 +249,7 @@ section {
 }
 
 #our-team::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -276,7 +276,7 @@ section {
 }
 
 #why-us::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -451,6 +451,7 @@ section {
 .result h4,
 .result img {
   margin: 0;
+  line-height: 1.5;
 }
 /**END**/
 
@@ -471,7 +472,7 @@ section {
 }
 
 #call-to-action::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;

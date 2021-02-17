@@ -29,7 +29,6 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   color: var(--secondary-color);
-  line-height: 1.5;
 }
 
 .container {
@@ -276,6 +275,11 @@ footer .container {
 
   .contact {
     text-align: left;
+  }
+
+  .contact ul li {
+    font-size: initial !important;
+    margin-bottom: 0 !important;
   }
 
   .footer .yellow-text {
