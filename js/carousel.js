@@ -65,12 +65,20 @@ function closeSidebar() {
 openSidebarBtn.addEventListener('click', openSidebar);
 
 dropdown.addEventListener('click', () => {
-  if (dropdownContent.classList.contains('dropdown-expanded')) {
-    dropdownContent.classList.remove('dropdown-expanded');
-  } else {
-    dropdownContent.classList.add('dropdown-expanded');
-  }
+  // if (dropdownContent.classList.contains('dropdown-expanded')) {
+  //   dropdownContent.classList.remove('dropdown-expanded');
+  // } else {
+  //   dropdownContent.classList.add('dropdown-expanded');
+  // }
+  dropdownContent.classList.toggle('dropdown-expanded');
 });
+
+// window.addEventListener('mouseup', (event) => {
+//   if (event.target != dropdown) {
+//     dropdownContent.classList.remove('dropdown-expanded');
+//     console.log('outside click');
+//   }
+// })
 
 let index = 0;
 let list = document.querySelectorAll('.reviews-carousel .card');
