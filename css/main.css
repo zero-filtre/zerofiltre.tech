@@ -578,6 +578,10 @@ header .hamburger span {
     padding-bottom: 6.5%;
   }
 
+  header {
+    padding-top: .5rem;
+  }
+
   .hide-mobile {
     display: inherit;
   }
@@ -600,13 +604,9 @@ header .hamburger span {
   }
 
   /**Dropdown**/
-  .dropBtn {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  
   .dropdown-content {
     display: none;
+    margin-top: 1rem;
     color: var(--secondary-color);
     box-shadow: #ddd 0 0 5px;
   }
