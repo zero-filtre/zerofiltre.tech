@@ -10,6 +10,7 @@
   text-align: left;
   font-weight: 800;
   padding: 0 30px;
+  line-height: 1.6;
 }
 
 .impl-list li::before {

@@ -722,7 +722,7 @@ section {
   }
 
   #our-team .container {
-    padding-top: 0;
+    padding-top: 1rem;
   }
 
   #our-team::after {
@@ -738,6 +738,10 @@ section {
     font-size: 1.6em;
     width: 70%;
     margin: 1em auto;
+  }
+
+  #our-approach {
+    background-size: 93%;
   }
 
   .approach {
@@ -797,5 +801,9 @@ section {
 
   .mission:hover .card__body {
     margin-top: 1.5em;
+  }
+
+  #our-approach {
+    background-size: 89%;
   }
 }

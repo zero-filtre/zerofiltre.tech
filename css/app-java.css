@@ -16,6 +16,14 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .our-team__img {
+    margin: 0;
+  }
+
+  .our-team__img img {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 1350px) {

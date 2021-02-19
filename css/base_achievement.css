@@ -13,7 +13,7 @@
 
 /**HEADER**/
 .hero::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -45,7 +45,7 @@
 }
 
 .overviews__img::before {
-  content: "Généralités";
+  content: 'Généralités';
   display: block;
   color: var(--secondary-color);
   font-size: 24px;
@@ -108,7 +108,7 @@
 .plus-value-metier-img {
   width: 80%;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #solutions {
@@ -138,7 +138,7 @@
 
 .solution-1 li::before,
 .step-card li::before {
-  content: "-";
+  content: '-';
   display: inline-block;
   font-weight: bold;
   margin-right: 3%;
@@ -213,7 +213,7 @@
   width: 90%;
   height: 15rem;
   padding: 3%;
-  border: 1px solid var(--primary-color); 
+  border: 1px solid var(--primary-color);
   color: var(--primary-color);
   font-size: var(--regular-size);
   font-weight: bold;
@@ -270,7 +270,7 @@
 }
 
 #call-to-action::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -359,6 +359,15 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .overviews__img img {
+    width: 60%;
+  }
+
+  .solutions-img {
+    transform: none;
+    width: 90%;
+  }
+
   .challenges-box,
   .implementation-box {
     display: flex;
@@ -367,8 +376,15 @@
   }
 
   .challenges-img,
-  .implementation-img {
+  .implementation-img,
+  .plus-value-metier-img {
+    width: 40%;
     margin-right: 30px;
+  }
+
+  .tech-item {
+    margin: 2%;
+    max-width: 100px;
   }
 }
 
@@ -446,6 +462,8 @@
   .plus-value-metier-img {
     margin-right: 5%;
     width: 40%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .challenges li img,
@@ -488,6 +506,7 @@
   .tech-item {
     flex-basis: auto;
     margin: 1%;
+    max-width: 200px;
   }
 
   .tech-item h4 {

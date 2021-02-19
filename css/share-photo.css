@@ -10,6 +10,7 @@
   text-align: left;
   font-weight: 800;
   padding: 0 30px;
+  line-height: 1.6;
 }
 
 .impl-list li::before {
@@ -34,10 +35,6 @@
     flex-direction: column;
     width: 50%;
     margin: 0 auto;
-  }
-
-  .plus-value-metier-img {
-    width: 50%;
   }
 
   .plus-value-text {
