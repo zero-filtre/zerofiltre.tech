@@ -55,9 +55,9 @@ dropdown.addEventListener('click', () => {
   dropdownContent.classList.toggle('dropdown-expanded');
 });
 
-// window.addEventListener('mouseup', (event) => {
-//   if (event.target != dropdown) {
-//     dropdownContent.classList.remove('dropdown-expanded');
-//     console.log('outside click');
-//   }
-// })
+window.addEventListener('mouseup', (event) => {
+  if (event.target != dropdown) {
+    dropdownContent.classList.remove('dropdown-expanded');
+    console.log('outside click');
+  }
+})
