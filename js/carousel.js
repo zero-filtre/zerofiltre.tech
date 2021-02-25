@@ -61,3 +61,4 @@ window.addEventListener('mouseup', (event) => {
     console.log('outside click');
   }
 })
+
