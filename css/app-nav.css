@@ -1,0 +1,25 @@
+.hero::after {
+  background-image: url(/images/app-nav-hero-bg-img.jpg);
+}
+
+#call-to-action::after {
+  background-image: url(/images/app-nav-cta-bg-img.jpg);
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 640px) {
+}
+
+@media only screen and (min-width: 720px) {
+  .our-approach__img img {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (min-width: 1350px) {
+}

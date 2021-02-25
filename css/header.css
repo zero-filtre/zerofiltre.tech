@@ -1,0 +1,329 @@
+:root {
+  /*Colors */
+  --primary-color: #00c2cb;
+  --primary-color-500: #15b2bc;
+  --secondary-color: #052b5d;
+  --accent-color: #fdbc5a;
+  --error-color: #f55f44;
+
+  /*Font sizes*/
+  --regular-size: 0.9em;
+  --small-size: 0.7em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+header .container {
+  padding: 5%;
+}
+
+/**NAVBAR**/
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 0;
+}
+
+nav .logo {
+  position: relative;
+  width: 130px;
+  z-index: 2;
+}
+
+nav .menu {
+  position: relative;
+  z-index: 10;
+}
+
+nav .menu span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: all 300ms ease-in-out;
+  transform-origin: 3px 1px;
+}
+
+.menu span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.menu.open span:first-child {
+  transform: rotate(45deg);
+}
+
+.menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu.open span:last-child {
+  transform: rotate(-45deg);
+}
+
+nav .links {
+  line-height: 1;
+}
+
+nav .links a {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+nav .links a *:first-child {
+  margin-right: 0.2rem;
+}
+
+nav .links a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+nav .links a:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: color 250ms ease-in-out;
+}
+
+header .soon-badge {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: .1rem .3rem;
+  border-radius: 100px;
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.mobile-menu .soon-badge {
+  padding: 0 0.5rem;
+}
+
+header .soon-badge:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+header .whatsapp-link {
+  position: relative;
+}
+
+header .whatsapp-link span {
+  position: relative;
+  top: 1px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  max-width: 300px;
+  overflow-x: hidden;
+  padding: 100px 0 40px 0;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: .5s;
+  z-index: 5;
+}
+
+.mobile-menu a {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  font-size: .95rem;
+  min-width: max-content;
+}
+
+.mobile-menu a *:first-child {
+  margin-right: 0.2rem;
+}
+
+.sub-title {
+  line-height: 1.2;
+}
+
+.hero {
+  position: relative;
+  margin: 4em 4% 2% 4%;
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  text-align: center;
+  padding: 10% 5%;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.hero p {
+  margin: 0.8em 0 0 0;
+  font-size: 0.7rem;
+}
+
+.green-container {
+  color: white;
+  border-radius: 15px;
+  background: rgb(5, 124, 134);
+  background: linear-gradient(107deg, #14a6af 0%, #198b93cc 1%, #116d74 51%);
+}
+
+.triangle {
+  position: absolute;
+}
+
+.triangle-1 {
+  top: 0.5em;
+  right: 1em;
+  width: 15px;
+  transform: rotate(60deg);
+}
+
+.triangle-2 {
+  top: 0.5em;
+  right: 45%;
+  width: 10px;
+  transform: rotate(65deg);
+}
+
+.triangle-3 {
+  bottom: 1.5em;
+  right: 5em;
+  width: 15px;
+  transform: rotate(65deg);
+}
+
+.triangle-4 {
+  bottom: 1em;
+  left: 30%;
+  width: 10px;
+  transform: rotate(5deg);
+}
+
+.triangle-5 {
+  top: 1em;
+  left: 1em;
+  width: 15px;
+}
+
+@media only screen and (min-width: 480px) {
+  .hero {
+    margin: 15% 2% 0 2%;
+  }
+
+  .hero p {
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  header .container {
+    padding: 3% 5%;
+  }
+
+  .hero {
+    margin-top: 4em;
+  }
+
+  .sub-title {
+    line-height: 1.5rem;
+  }
+
+  .triangle-1 {
+    top: 1em;
+    right: 3em;
+    width: 30px;
+  }
+
+  .triangle-2 {
+    top: 2em;
+    right: 45%;
+    width: 20px;
+  }
+
+  .triangle-3 {
+    bottom: 2em;
+    right: 5em;
+    width: 22px;
+  }
+
+  .triangle-4 {
+    bottom: 1.5em;
+    left: 35%;
+    width: 20px;
+  }
+
+  .triangle-5 {
+    top: 3em;
+    left: 5em;
+    width: 22px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  header {
+    box-shadow: #ddd 0 0 8px;
+  }
+
+  .hero {
+    margin: 4em 1.5% 0 1.5%;
+  }
+
+  .hero .container {
+    padding: 8% 5%;
+  }
+
+  .hero p {
+    margin-top: 2em;
+    font-size: var(--regular-size);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    margin-top: 5em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header .container {
+    padding: 1.5% 5%;
+  }
+
+  nav .logo {
+    width: 200px;
+  }
+
+  .hero {
+    margin: 6.5% 1.5% 0 1.5%;
+  }
+
+  .hero .container {
+    padding: 5%;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .hero {
+    margin: 5.5% 1.5% 0 1.5%;
+  }
+}

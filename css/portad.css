@@ -1,0 +1,39 @@
+.hero::after {
+  background-image: url(/images/java-landing-illustration.svg);
+}
+
+#call-to-action::after {
+  background-image: url(/images/app-mobile-cta-bg-img1.jpg);
+}
+
+.impl-list {
+  text-align: left;
+  font-weight: 800;
+  padding: 0 30px;
+  line-height: 1.6;
+}
+
+.impl-list li::before {
+  content: "-";
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .impl-list {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .plus-value-metier-img {
+    width: 50%
+  }
+
+  .plus-value-text {
+    width: 50%;
+    align-self: center;
+  }
+}

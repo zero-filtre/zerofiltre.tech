@@ -1,4 +1,1 @@
-<svg width="252" height="252" viewBox="0 0 252 252" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1" y="226.319" width="318.65" height="35" rx="17.5" transform="rotate(-45 1 226.319)" fill="white"/>
-<rect x="25.6807" y="0.808838" width="318.65" height="35" rx="17.5" transform="rotate(45 25.6807 0.808838)" fill="white"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="252" height="252" fill="#fff"  xmlns:v="https://vecta.io/nano"><rect x="1" y="226.319" width="318.65" height="35" rx="17.5" transform="rotate(315 1 226.319)"/><rect x="25.681" y=".809" width="318.65" height="35" rx="17.5" transform="rotate(45 25.681 .809)"/></svg>

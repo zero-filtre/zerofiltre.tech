@@ -4,52 +4,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.</title>
+    <meta name="title" content="Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.">
+    <meta name="description"
+        content="Développez des Apps à valeur ajoutée pour votre business et pas que pour l'IT. Avec Zerofiltre, profitez d'offres taillées pour chaque entreprise. Industrialisez vos Apps. Maintenance, extension, supervision.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dev.zerofiltre.tech/">
+    <meta property="og:title" content="Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.">
+    <meta property="og:description"
+        content="Développez des Apps à valeur ajoutée pour votre business et pas que pour l'IT. Avec Zerofiltre, profitez d'offres taillées pour chaque entreprise. Industrialisez vos Apps. Maintenance, extension, supervision.">
+    <meta property="og:image" content="image/landing_illustration.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dev.zerofiltre.tech/">
+    <meta property="twitter:title" content="Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.">
+    <meta property="twitter:description"
+        content="Développez des Apps à valeur ajoutée pour votre business et pas que pour l'IT. Avec Zerofiltre, profitez d'offres taillées pour chaque entreprise. Industrialisez vos Apps. Maintenance, extension, supervision.">
+    <meta property="twitter:image" content="image/landing_illustration.svg">
+
+
     <title>Zerofiltre.tech</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/dropdown.css" media="(min-width: 1024px)">
+    <link rel="stylesheet" href="css/sidebar.css" media="(max-width:1024px )">
     <link rel="stylesheet" href="css/main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FPLWQNHWMT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FPLWQNHWMT');
+    </script>
 </head>
 
 <body>
     <div class="green-container">
         <div class="container">
             <header>
-                <a class="logo-link" href="#">
-                    <img class="logo" src="images/logo.svg" alt="Zerofiltre.tech">
-                </a>
+                <div class="container">
 
-                <nav>
-                    <a class="hide-desktop" href="#">
-                        <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
-                    </a>
-                    <ul class="show-desktop hide-mobile" id="nav">
-                        <li class="exit-btn hide-desktop" id="exit">
-                            <img src="images/exit.svg" alt="exit">
-                        </li>
-                        <li><a href="#">A propos</a></li>
-                        <li><a href="#">Services <img src="images/chevron-down.svg" alt="chevron-down"></a></li>
-                        <li><a href="#">Blog</a></li>
+                    <nav>
+                        <a href="/">
+                            <img class="logo" src="images/logo.svg" alt="Zerofiltre.tech" />
+                        </a>
 
-                        <li>
-                            <a href="https://web.whatsapp.com">
-                                <img src="images/whatsapp.svg" alt="N° whatsapp 0753428623">
-                                +33 7 53 42 86 23
+                        <a href="#" class="hamburger menu hide-desktop" id="menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+
+                        <div class="links hide-mobile">
+
+                            <a href="/#about">A propos</a>
+
+
+                            <div class="dropdown">
+                                <a href="#" class="dropBtn">
+                                    <span>Services</span>
+                                    <img src="images/chevron-down.svg" alt="chevron-down">
+                                </a>
+
+                                <div class="dropdown-content hide-mobile">
+                                    <div class="apps group">
+                                        <h1>Développement d’application</h1>
+                                        <a href="/app-java.html">
+                                            <img src="/images/app-java-blue.svg" alt="">
+                                            <span>Développement d’applications Java</span>
+                                        </a>
+                                        <a href="/app-nav.html">
+                                            <img src="/images/app-web.svg" alt="">
+                                            <span>Développement d’applications pour navigateurs Web</span>
+                                        </a>
+                                        <a href="/app-mobile.html">
+                                            <img src="/images/app-mob.svg" alt="">
+                                            <span>Développement d’applications mobiles</span>
+                                        </a>
+                                        <a href="/support.html">
+                                            <img src="/images/app-maintenance.svg" alt="">
+                                            <span>Maintenance d’applications et support</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="api group">
+                                        <h1>Développement d’APIs</h1>
+                                        <a href="/web-api.html">
+                                            <img src="/images/app-api.svg" alt="">
+                                            <span>Développement d’APIs WEB</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="ui group">
+                                        <h1>Conception d’interfaces graphiques</h1>
+                                        <a href="/ui.html">
+                                            <img src="/images/ui-dev.svg" alt="">
+                                            <span>Conception de prototypes d’interfaces graphiques</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="badge-link">
+                                <span>Blog</span>
+                                <span class="soon-badge">Soon</span>
                             </a>
-                        </li>
-                        <li>
+
+                            <a href="https://web.whatsapp.com" class="whatsapp-link">
+                                <img src="images/whatsapp.svg" alt="N° whatsapp 0753428623" />
+                                <span>+33 7 53 42 86 23</span>
+                            </a>
+
                             <a href="https://github.com/zero-filtre"><img src="images/github.svg"
-                                    alt="Nos repo github"></a>
-                        </li>
-                        <li>
+                                    alt="Nos repo github" /></a>
+
                             <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img
                                     src="images/linkedIn.svg" alt="Notre page LinkedIn"></a>
-                        </li>
-                    </ul>
-                </nav>
+                        </div>
+
+                    </nav>
+
+                    <div class="mobile-menu hide-desktop" id="mobile-menu">
+                        <a href="/#about">A propos</a>
+
+                        <a href="#" id="openSidebarBtn">
+                            <span>Services</span>
+                            <img src="images/chevron-down.svg" alt="chevron-down">
+                        </a>
+
+                        <a href="/404.html" class="badge-link">
+                            <span>Blog</span>
+                            <span class="soon-badge">Soon</span>
+                        </a>
+
+                        <a href="https://web.whatsapp.com" class="whatsapp-link">
+                            <img src="images/whatsapp.svg" alt="N° whatsapp 0753428623" />
+                            <span>+33 7 53 42 86 23</span>
+                        </a>
+
+                        <a href="https://github.com/zero-filtre"><img src="images/github.svg"
+                                alt="Nos repo github" /></a>
+
+                        <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/linkedIn.svg"
+                                alt="Notre page LinkedIn"></a>
+                    </div>
+
+                    <div id="sidebar" class="sidebar hide-desktop">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&larr;</a>
+
+                        <a href="#" class="title">Services</a>
+
+                        <a href="/app-java.html">
+                            <img src="/images/app-java-blue.svg" alt="" />
+                            <span>Développement d’applications Java</span>
+                        </a>
+                        <a href="/app-nav.html">
+                            <img src="/images/app-web.svg" alt="" />
+                            <span>Développement d’applications pour navigateurs Web</span>
+                        </a>
+                        <a href="/app-mobile.html">
+                            <img src="/images/app-mob.svg" alt="" />
+                            <span>Développement d’applications mobiles</span>
+                        </a>
+                        <a href="/support.html">
+                            <img src="/images/app-maintenance.svg" alt="" />
+                            <span>Maintenance d’applications et support</span>
+                        </a>
+                        <a href="/web-api.html">
+                            <img src="/images/app-api.svg" alt="" />
+                            <span>Développement d’APIs WEB</span>
+                        </a>
+                        <a href="/ui.html">
+                            <img src="/images/ui-dev.svg" alt="" />
+                            <span>Conception de prototypes d’interfaces graphiques</span>
+                        </a>
+                    </div>
+                </div>
             </header>
+
             <section>
                 <div>
                     <h1>
@@ -65,12 +208,19 @@
                         web et mobiles vous délivrent le service adéquat
                         comme vous l’imaginez et quand vous le voulez.
                     </p>
+                    <a href="/404.html">
+                        <p class="comming-soon">
+                            <span>COMING SOON</span>
+                            <span><b>Blog</b> pour la communauté très bientot disponible!</span>
+                        </p>
+                    </a>
                 </div>
                 <img src="images/landing_illustration.svg" alt="landing illustration" class="landing_illustration">
             </section>
             <img src="images/scroll_indicator.svg" alt="scroll down" class="scroll-indicator show-desktop hide-mobile">
         </div>
     </div>
+
     <div class="white-yellow-container">
         <div class="container">
             <div class="global-services">
@@ -141,7 +291,7 @@
                         <span>Zerofiltre</span> s’appuie sur un panel d’ingénieurs
                         expérimentés et passionnés, qui priorisent la
                         résolution des problèmes et la valeur ajoutée au métier.
-                        Ayant travaillé sur des plusieurs dizaines de projets,
+                        Ayant travaillé sur plusieurs projets,
                         ces experts sont dotés des meilleures armes pour réaliser
                         l’application de vos rêves en partant de zéro. <br><br>
                         Depuis le début, notre leitmotiv est l’amélioration continue,
@@ -162,7 +312,7 @@
                     </div>
                     <div class="card numbers-element">
                         <img src="images/stat_engaged_engineers.svg" alt="Engaged engineers">
-                        <p>018</p>
+                        <p>008</p>
                         <p>INGENIEURS PASSIONNES</p>
                     </div>
                 </div>
@@ -176,8 +326,8 @@
                 </p>
                 <p>
                     Non seulement nous fournissons des services fiables et
-                    de haute qualité, mais nous nous engageons
-                    également à fournir le meilleur, à un prix abordable.
+                    de haute qualité, nous nous engageons
+                    également à les fournir à un prix abordable.
                 </p>
 
 
@@ -187,7 +337,7 @@
                             Développement d’applications JAVA
                         </p>
                         <p>
-                            Optez pour d’une application bénéficiant
+                            Optez pour une application bénéficiant
                             de la maturité du langage de programmation JAVA,
                             à laquelle vous pourrez confier toutes les tâches lourdes
                             et critiques de votre business. <br> <br>
@@ -200,11 +350,12 @@
                             Développement d’APIs WEB
                         </p>
                         <p>
-                            Optez pour d’une application bénéficiant
-                            de la maturité du langage de programmation JAVA,
-                            à laquelle vous pourrez confier toutes les tâches lourdes
-                            et critiques de votre business. <br> <br>
-                            Nous concevons des applications d’entreprises JAVA taillées pour votre métier.
+                            Que vous fassiez du B2C ou du B2B, appuyez-vous sur la puissance des APIs Web pour fournir
+                            vos services digitaux sur mesure à des milliers de clients à moindre coût.
+                            <br> <br>
+                            Développer des APIs oui, mais surtout les sécuriser: nous en sommes conscients et mettons
+                            ces avantages à votre portée.
+
 
                         </p>
                     </div>
@@ -228,7 +379,7 @@
                         </p>
                         <p>
                             Rapprochez-vous de votre cible en
-                            présentant vos services via le web.
+                            présentant vos services sur le web.
                             Ils seront accessibles à 24/7, partout et par tous. <br> <br>
                             Zerofiltre dispose de développeurs spécialisés
                             dans le web et des rédacteurs expérimentés
@@ -239,10 +390,12 @@
                     </div>
                 </div>
 
-                <div class="rounded-button">
-                    <span>En voir plus </span>
-                    <img src="images/arrow.svg" alt="know more">
-                </div>
+                <a href="./services.html">
+                    <div class="rounded-button">
+                        <span>En voir plus </span>
+                        <img src="images/arrow.svg" alt="know more">
+                    </div>
+                </a>
 
             </div>
             <div class="reviews">
@@ -296,7 +449,7 @@
 
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="about">
             <div class="container">
                 <p class="yellow-text"> Mieux connaître</p>
                 <h3>ZEROFILTRE</h3>
@@ -305,27 +458,26 @@
 
                     <div class="about-description" id="about-description">
                         <p class="fold" id="fold">
-                            Zerofiltre est une communauté qui dispose d'une
-                            équipe passionnée et qui fournit divers services
+                            Zerofiltre est une communauté d'ingénieurs passionnés, qui fournissent divers services
                             de développement de logiciels dans le monde entier. <br>
                             Créée en 2015, Zerofiltre voit le jour à l’initiative de Philippe SIMO,
                             un ingénieur entrepreneur, et architecte logiciel spécialisé en JAVA. <br><br>
                             Persuadé que prioriser à l’absolu la valeur ajoutée apportée au client
-                            est une politique gagnante. Il a su s’entourer d’une équipe de
-                            personnes passionnées, de compétences variées avec qui le groupe
+                            est une politique gagnante, il a su s’entourer de
+                            personnes de compétences variées avec qui le groupe
                             a vu son nombre de clients grimper assez rapidement du fait de
-                            la qualité du travail délivré.
+                            la qualité de travail délivré.
                             <span class="unfold">
                                 <br><br>
                                 Notre principal objectif est la satisfaction du client,
                                 c'est pourquoi nous concevons et fournissons des services personnalisés
                                 en fonction des exigences du client. Nous fournissons une gamme de services
                                 adaptée aux particuliers, petites, moyennes et grandes entreprises
-                                à un prix abordable <br>
+                                à un prix abordable : <br>
                                 (ce ne sont pas des mots en l’air … ) . <br>
-                                Comprendre les besoins business des clients et
+                                Comprendre vos besoins business et
                                 améliorer votre croissance devient notre responsabilité
-                                une fois que vous nous demandez de l'aide !
+                                une fois que vous nous avez demandé de l'aide !
                             </span>
                             <br>
                             <span class="doUnfold" id="doUnfold">
@@ -375,56 +527,77 @@
                 <div class="services-link">
                     <p class="yellow-text">NOS SERVICES</p>
                     <ul>
-                        <li><a href="#">Développement d’application JAVA</a></li>
-                        <li><a href="#">Développement d’applications pour navigateurs Web</a></li>
-                        <li><a href="#">Développement d’applications mobiles</a></li>
-                        <li><a href="#">Maintenance d’applications et support</a></li>
-                        <li><a href="#">Développement d’APIs Web</a></li>
-                        <li><a href="#">Conception UI</a></li>
+                        <li><a href="/app-java.html">Développement d’applications JAVA</a></li>
+                        <li><a href="/app-nav.html">Développement d’applications pour navigateurs Web</a></li>
+                        <li><a href="/app-mobile.html">Développement d’applications mobiles</a></li>
+                        <li><a href="/support.html">Maintenance d’applications et support</a></li>
+                        <li><a href="/web-api.html">Développement d’APIs Web</a></li>
+                        <li><a href="/ui.html">Conception UI</a></li>
                     </ul>
 
                 </div>
                 <div class="achievments">
                     <p class="yellow-text">NOS REALISATIONS</p>
                     <ul>
-                        <li><a href="#">Moteur de signature de document</a></li>
-                        <li><a href="#">Portail de suivi de demandes administratives</a></li>
-                        <li><a href="#">Partage nous les photos</a></li>
-                        <li><a href="#">Maintenance d’applications et support</a></li>
-                        <li><a href="#">Reprise intelligente de parcours utilisateurb</a></li>
-                        <li><a href="#">Moteur d'agrégation de moyens de paiement mobiles</a></li>
+                        <li><a href="/signature-engine.html">Moteur de signature de document</a></li>
+                        <li><a href="/portad.html">Portail de suivi de demandes administratives</a></li>
+                        <li><a href="/share-photo.html">Partage nous les photos</a></li>
+                        <li><a href="/support.html">Maintenance d’applications et support</a></li>
+                        <li><a href="/mob-pay.html">Moteur d'agrégation de moyens de paiement mobiles</a></li>
                     </ul>
 
                 </div>
                 <div class="articles">
                     <p class="yellow-text">DERNIERS ARTICLES</p>
                     <ul>
-                        <li><a href="#">GraphQL: de la théorie à la pratique avec Spring-boot</a></li>
-                        <li><a href="#">Maîtriser la gestion d’erreurs GraphQL dans une application Spring-boot</a></li>
+                        <li><a
+                                href="https://medium.com/swlh/grapql-from-theory-to-real-world-with-spring-boot-d6b46a28027b?source=friends_link&sk=265f0f4063dbea9780de4a55e8370b14">GraphQL:
+                                de la théorie à la pratique avec Spring-boot</a></li>
+                        <li><a
+                                href="https://medium.com/swlh/understanding-graphql-error-handling-mechanisms-in-spring-boot-604301c9bedb?source=friends_link&sk=1d97101ee639e362b86fad68c2cc2a14">Maîtriser
+                                la gestion d’erreurs GraphQL dans une application Spring-boot</a></li>
                         <li>
-                            <a href="#">Sécuriser ses APIs GraphQL avec Spring-AOP dans une application Spring-boot </a>
+                            <a
+                                href="https://medium.com/@philippechampion58/secure-your-graphql-api-within-a-spring-boot-app-72961fbe9232?sk=447765d64a6a7da1d4d9eec744c78e44">Sécuriser
+                                ses APIs GraphQL avec Spring-AOP dans une application Spring-boot </a>
                         </li>
                         <li>
-                            <a href="#">Tester ses APIs GraphQL dans une application Spring-boot </a>
+                            <a
+                                href="https://medium.com/@philippechampion58/testing-your-graphql-apis-in-a-spring-boot-app-9fe02ebccc35?sk=c91ff02c10402469f6e9c3824a7d89cd">Tester
+                                ses APIs GraphQL dans une application Spring-boot </a>
                         </li>
 
                     </ul>
                 </div>
             </div>
-            <div class="contact">
-                <p class="yellow-text">Nous contacter</p>
-                <ul>
-                    <li>
-                        Tél: <span class="yellow-text">+33 7 53 42 86 23</span>
-                    </li>
-                    <li>
-                        Email:
-                        <a href="mailto:info@zerofiltre.tech">
-                            <span class="yellow-text">info@zerofiltre.tech</span>
-                        </a>
-                    </li>
-                </ul>
+
+            <div class="useful-links">
+
+                <div class="legal">
+                    <p class="yellow-text">INFO. GÉNÉRALES</p>
+                    <ul>
+                        <li><a href="/legal_notice.html">Mentions légales</a></li>
+                        <li><a href="/terms_of_use.html">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact">
+                    <p class="yellow-text">Nous contacter</p>
+                    <ul>
+                        <li>
+                            Tél: <span class="yellow-text">+33 7 53 42 86 23</span>
+                        </li>
+                        <li>
+                            Email:
+                            <a href="mailto:info@zerofiltre.tech">
+                                <span class="yellow-text">info@zerofiltre.tech</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
+
             <div class="separator"></div>
             <div class="end">
                 <p>
@@ -445,6 +618,7 @@
         <img src="images/chevron-down.svg" alt="Back to top">
     </div>
     <script src="js/carousel.js"></script>
+    <script src="js/carousel-index.js"></script>
 </body>
 
 </html>
