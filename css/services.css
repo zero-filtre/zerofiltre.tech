@@ -226,7 +226,6 @@ main .services {
     align-self: flex-end;
     margin-right: 3vw;
     width: 52%;
-    animation: move 3s infinite alternate;
   }
 
   @keyframes move {
@@ -260,7 +259,6 @@ main .services {
 
   .service:hover {
     box-shadow: 3px 16px 40px rgba(0, 0, 0, 0.25);
-    transform: scale(1.003);
   }
 
   .service {
