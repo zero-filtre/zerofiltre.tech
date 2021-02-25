@@ -96,8 +96,10 @@ nav .links a:hover {
 header .soon-badge {
   background-color: var(--primary-color);
   color: #fff;
-  padding: .1rem .25rem;
+  padding: .1rem .3rem;
   border-radius: 100px;
+  font-size: .75rem;
+  font-weight: bold;
 }
 
 .mobile-menu .soon-badge {
