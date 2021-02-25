@@ -45,7 +45,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: "zerofiltre.tech"
+    - host: "www.zerofiltre.tech"
       http:
         paths:
           - path: /
