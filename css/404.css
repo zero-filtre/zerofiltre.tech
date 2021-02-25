@@ -1,0 +1,118 @@
+.hero h1 {
+  max-width: 26ch;
+  margin: auto;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url(/images/java-landing-illustration.svg);
+  background-size: cover;
+  background-position: 100% 42%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+#call-to-action::after {
+  background-image: url(/images/app-mobile-cta-bg-img1.jpg);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content img {
+  margin: auto;
+  animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+#call-to-action {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(
+    107deg,
+    #14a6af 0%,
+    #198b93cc 1%,
+    #17a6af 51%
+  );
+  background-size: cover;
+  z-index: 1;
+  padding: 3em 0;
+}
+
+#call-to-action::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 640px) {
+}
+
+@media only screen and (min-width: 720px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  #call-to-action::after {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+  }
+
+  #call-to-action h1 {
+    font-size: 1.6em;
+  }
+
+  #call-to-action .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+  }
+
+  #call-to-action p {
+    width: 80%;
+    margin: 2em auto;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+}

@@ -1,20 +1,3 @@
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    document.getElementById("flexibleHeader").style.padding = "1% 5%";
-    document.getElementById("hero-title").style.display= "none";
-    document.getElementById("blurHero").style.borderBottomRightRadius = "0px";
-    document.getElementById("hero-banner").style.borderBottomRightRadius = "0px";
-  } else {
-    document.getElementById("flexibleHeader").style.padding = "2% 5% 4% 5%";
-    document.getElementById("hero-title").style.display= "block";
-    document.getElementById("blurHero").style.borderBottomRightRadius = "20px";
-    document.getElementById("hero-banner").style.borderBottomRightRadius = "20px";
-  }
-}
-
-
 $(".owl-carousel").owlCarousel({
   loop: true,
   autoplay: true,

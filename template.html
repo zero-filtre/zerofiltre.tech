@@ -2,53 +2,84 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Description"
-    content="Zerofiltre est une initiative qui dispose d'une équipe passionnée qui fournit divers services de développement de logiciels dans le monde entier. 
-          Nous fournissons des services à valeur ajoutée avec une approche taillée pour chaque entreprise. 
-          Zerofiltre s’appui sur un panel d’ingénieurs expérimentés et passionnés qui priorisent la résolution de problèmes et valeur ajoutée au métier
-          Créée en 2015, Zerofiltre voit le jour à l’initiative de Philippe SIMO , un ingénieur entrepreneur, et architecte logiciel spécialisé en JAVA">
-  <title>page title</title>
-  <link rel="stylesheet" href="css/header-service.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Primary Meta Tags -->
+  <title>Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.</title>
+  <meta name="title" content="Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.">
+  <meta name="description"
+    content="Développez des Apps à valeur ajoutée pour votre business et pas que pour l'IT. Avec Zerofiltre, profitez d'offres taillées pour chaque entreprise. Industrialisez vos Apps. Maintenance, extension, supervision.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dev.zerofiltre.tech/">
+  <meta property="og:title" content="Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.">
+  <meta property="og:description"
+    content="Développez des Apps à valeur ajoutée pour votre business et pas que pour l'IT. Avec Zerofiltre, profitez d'offres taillées pour chaque entreprise. Industrialisez vos Apps. Maintenance, extension, supervision.">
+  <meta property="og:image" content="https://i.ibb.co/p3wfyWR/landing-illustration-1.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://dev.zerofiltre.tech/">
+  <meta property="twitter:title" content="Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.">
+  <meta property="twitter:description"
+    content="Développez des Apps à valeur ajoutée pour votre business et pas que pour l'IT. Avec Zerofiltre, profitez d'offres taillées pour chaque entreprise. Industrialisez vos Apps. Maintenance, extension, supervision.">
+  <meta property="twitter:image" content="https://i.ibb.co/p3wfyWR/landing-illustration-1.png">
+
+  <title>page title</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/dropdown.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FPLWQNHWMT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FPLWQNHWMT');
+  </script>
 </head>
 
 <body>
   <div class="header-wrapper">
     <header>
       <div class="container">
-        <a class="logo-link" href="/">
-          <img class="logo" src="images/logoblue.svg" alt="Zerofiltre.tech">
-        </a>
 
         <nav>
-          <a class="hide-desktop" href="#">
-            <img src="images/blue-ham-menu.svg" alt="toggle menu" class="menu" id="menu">
+          <a href="/">
+            <img class="logo" src="images/logoblue.svg" alt="Zerofiltre.tech" />
           </a>
-          <ul class="show-desktop hide-mobile" id="nav">
-            <li class="exit-btn hide-desktop" id="exit">
-              <img src="images/blue-exit-1.svg" alt="exit">
-            </li>
-            <li><a href="#">A propos</a></li>
 
-            <li class="dropdown">
-              <a href="services.html" class="dropbtn show-desktop hide-mobile d-flex">Services<img src="images/blue-chevron-down.svg"
-                alt="chevron-down"></a>
+          <a href="#" class="hamburger menu hide-desktop" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
 
-              <a href="#" class="openbtn hide-desktop" onclick="openNav()">Services<img
-                  src="images/blue-chevron-down.svg" alt="chevron-down"></a>
+          <div class="links hide-mobile">
 
-              <div class="dropdown-content hide-mobile show-destop">
+            <a href="/#about">A propos</a>
+
+
+            <div class="dropdown">
+              <a href="#" class="dropBtn">
+                <span>Services</span>
+                <img src="images/blue-chevron-down.svg" alt="chevron-down">
+              </a>
+
+              <div class="dropdown-content hide-mobile">
                 <div class="apps group">
                   <h1>Développement d’application</h1>
                   <a href="/app-java.html">
                     <img src="/images/app-java-blue.svg" alt="">
-                    <span>Développement d’application Java</span>
+                    <span>Développement d’applications Java</span>
                   </a>
                   <a href="/app-nav.html">
                     <img src="/images/app-web.svg" alt="">
@@ -80,89 +111,112 @@
                   </a>
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li><a href="#">Blog</a></li>
+            <a href="#" class="badge-link">
+              <span>Blog</span>
+              <span class="soon-badge">Soon</span>
+            </a>
 
-            <li>
-              <a href="https://web.whatsapp.com">
-                <img src="images/blue-whatsapp.svg" alt="N° whatsapp 0753428623">
-                +33 7 53 42 86 23
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/zero-filtre"><img src="images/blue-github.svg" alt="Nos repo github"></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/blue-linkdin.svg"
-                  alt="Notre page LinkedIn"></a>
-            </li>
-          </ul>
+            <a href="https://web.whatsapp.com" class="whatsapp-link">
+              <img src="images/blue-whatsapp.svg" alt="N° whatsapp 0753428623" />
+              <span>+33 7 53 42 86 23</span>
+            </a>
+
+            <a href="https://github.com/zero-filtre"><img src="images/blue-github.svg" alt="Nos repo github" /></a>
+
+            <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/blue-linkdin.svg"
+                alt="Notre page LinkedIn" /></a>
+          </div>
+
         </nav>
 
-        <div id="mySidebar" class="sidebar hide-desktop">
-          <a href="javascript:void(0)" class="closebtn-x" onclick="closeNav()">&larr;</a>
-          <a href="/services.html" class="closebtn" onclick="">Services</a>
+        <div class="mobile-menu hide-desktop" id="mobile-menu">
+          <a href="/#about">A propos</a>
+
+          <a href="#" id="openSidebarBtn">
+            <span>Services</span>
+            <img src="images/blue-chevron-down.svg" alt="chevron-down">
+          </a>
+
+          <a href="/404.html" class="badge-link">
+            <span>Blog</span>
+            <span class="soon-badge">Soon</span>
+          </a>
+
+          <a href="https://web.whatsapp.com" class="whatsapp-link">
+            <img src="images/blue-whatsapp.svg" alt="N° whatsapp 0753428623" />
+            <span>+33 7 53 42 86 23</span>
+          </a>
+
+          <a href="https://github.com/zero-filtre"><img src="images/blue-github.svg" alt="Nos repo github" /></a>
+
+          <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/blue-linkdin.svg"
+              alt="Notre page LinkedIn" /></a>
+        </div>
+
+        <div id="sidebar" class="sidebar hide-desktop">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&larr;</a>
+
+          <a href="#" class="title">Services</a>
+
           <a href="/app-java.html">
-            <img src="/images/app-java-blue.svg" alt="">
-            <span>Développement d’application Java</span>
+            <img src="/images/app-java-blue.svg" alt="" />
+            <span>Développement d’applications Java</span>
           </a>
           <a href="/app-nav.html">
-            <img src="/images/app-web.svg" alt="">
+            <img src="/images/app-web.svg" alt="" />
             <span>Développement d’applications pour navigateurs Web</span>
           </a>
           <a href="/app-mobile.html">
-            <img src="/images/app-mob.svg" alt="">
+            <img src="/images/app-mob.svg" alt="" />
             <span>Développement d’applications mobiles</span>
           </a>
           <a href="/support.html">
-            <img src="/images/app-maintenance.svg" alt="">
+            <img src="/images/app-maintenance.svg" alt="" />
             <span>Maintenance d’applications et support</span>
           </a>
           <a href="/web-api.html">
-            <img src="/images/app-api.svg" alt="">
+            <img src="/images/app-api.svg" alt="" />
             <span>Développement d’APIs WEB</span>
           </a>
           <a href="/ui.html">
-            <img src="/images/ui-dev.svg" alt="">
+            <img src="/images/ui-dev.svg" alt="" />
             <span>Conception de prototypes d’interfaces graphiques</span>
           </a>
-
         </div>
-
-
       </div>
     </header>
 
     <section class="green-container hero">
       <div class="container">
-        <h1>Conception de prototypes d’interfaces graphiques</h1>
-        <p class="sub-title">Captiver l’attention de vos utilisateurs avec des interfaces graphiques
-          confortables <br>
-          <span>Conception d’interfaces graphiques douces et captivantes</span>
+        <h1>TEMPLATE HTML</h1>
+        <p class="sub-title">
+          Description abcd <br />
+          <span>description efgh</span>
         </p>
       </div>
 
       <div class="triangle triangle-1">
-        <img src="/images/triangle-blue.svg" class="img-fluid" alt="">
+        <img src="/images/triangle-blue.svg" class="img-fluid" alt="" />
       </div>
       <div class="triangle triangle-2">
-        <img src="/images/triangle-yellow.svg" class="img-fluid" alt="">
+        <img src="/images/triangle-yellow.svg" class="img-fluid" alt="" />
       </div>
       <div class="triangle triangle-3">
-        <img src="/images/triangle-outline.svg" class="img-fluid" alt="">
+        <img src="/images/triangle-outline.svg" class="img-fluid" alt="" />
       </div>
       <div class="triangle triangle-4">
-        <img src="/images/triangle-yellow.svg" class="img-fluid" alt="">
+        <img src="/images/triangle-yellow.svg" class="img-fluid" alt="" />
       </div>
       <div class="triangle triangle-5">
-        <img src="/images/triangle-outline.svg" class="img-fluid" alt="">
+        <img src="/images/triangle-outline.svg" class="img-fluid" alt="" />
       </div>
     </section>
   </div>
 
-  <div>222</div>
-  <div>222</div>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/c2mSqV8/Landing-illustration.png"
+      alt="Landing_illustration"></a>
 
   <footer class="footer">
     <div class="container">
@@ -170,56 +224,83 @@
         <div class="services-link">
           <p class="yellow-text">NOS SERVICES</p>
           <ul>
-            <li><a href="#">Développement d’application JAVA</a></li>
-            <li><a href="#">Développement d’applications pour navigateurs Web</a></li>
+            <li><a href="#">Développement d’applications JAVA</a></li>
+            <li>
+              <a href="#">Développement d’applications pour navigateurs Web</a>
+            </li>
             <li><a href="#">Développement d’applications mobiles</a></li>
-            <li><a href="#">Maintenance d’applications et support</a></li>
+            <li><a href="/support.html">Maintenance d’applications et support</a></li>
             <li><a href="#">Développement d’APIs Web</a></li>
             <li><a href="#">Conception UI</a></li>
           </ul>
-
         </div>
         <div class="achievments">
           <p class="yellow-text">NOS REALISATIONS</p>
           <ul>
             <li><a href="#">Moteur de signature de document</a></li>
-            <li><a href="#">Portail de suivi de demandes administratives</a></li>
+            <li>
+              <a href="#">Portail de suivi de demandes administratives</a>
+            </li>
             <li><a href="#">Partage nous les photos</a></li>
-            <li><a href="#">Maintenance d’applications et support</a></li>
-            <li><a href="#">Reprise intelligente de parcours utilisateurb</a></li>
-            <li><a href="#">Moteur d'agrégation de moyens de paiement mobiles</a></li>
+            <li><a href="/support.html">Maintenance d’applications et support</a></li>
+            <li>
+              <a href="#">Reprise intelligente de parcours utilisateurb</a>
+            </li>
+            <li>
+              <a href="#">Moteur d'agrégation de moyens de paiement mobiles</a>
+            </li>
           </ul>
-
         </div>
         <div class="articles">
           <p class="yellow-text">DERNIERS ARTICLES</p>
           <ul>
-            <li><a href="#">GraphQL: de la théorie à la pratique avec Spring-boot</a></li>
-            <li><a href="#">Maîtriser la gestion d’erreurs GraphQL dans une application Spring-boot</a></li>
             <li>
-              <a href="#">Sécuriser ses APIs GraphQL avec Spring-AOP dans une application Spring-boot </a>
+              <a href="#">GraphQL: de la théorie à la pratique avec Spring-boot</a>
             </li>
             <li>
-              <a href="#">Tester ses APIs GraphQL dans une application Spring-boot </a>
+              <a href="#">Maîtriser la gestion d’erreurs GraphQL dans une application
+                Spring-boot</a>
             </li>
-
+            <li>
+              <a href="#">Sécuriser ses APIs GraphQL avec Spring-AOP dans une
+                application Spring-boot
+              </a>
+            </li>
+            <li>
+              <a href="#">Tester ses APIs GraphQL dans une application Spring-boot
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="contact">
-        <p class="yellow-text">Nous contacter</p>
-        <ul>
-          <li>
-            Tél: <span class="yellow-text">+33 7 53 42 86 23</span>
-          </li>
-          <li>
-            Email:
-            <a href="mailto:info@zerofiltre.tech">
-              <span class="yellow-text">info@zerofiltre.tech</span>
-            </a>
-          </li>
-        </ul>
+
+      <div class="useful-links">
+
+        <div class="legal">
+          <p class="yellow-text">INFO. GÉNÉRALES</p>
+          <ul>
+              <li><a href="/legal_notice.html">Mentions légales</a></li>
+              <li><a href="/terms_of_use.html">Politique de confidentialité</a></li>
+          </ul>
       </div>
+
+        <div class="contact">
+          <p class="yellow-text">Nous contacter</p>
+          <ul>
+            <li>
+              Tél: <span class="yellow-text">+33 7 53 42 86 23</span>
+            </li>
+            <li>
+              Email:
+              <a href="mailto:info@zerofiltre.tech">
+                <span class="yellow-text">info@zerofiltre.tech</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
       <div class="separator"></div>
       <div class="end">
         <p>
@@ -227,10 +308,10 @@
           <span class="green-text">Zerofiltre.</span> Tous droits reservés.
         </p>
         <div class="social-links">
-          <a href="https://github.com/zero-filtre"><img src="images/github.svg" alt="Nos repo github"></a>
+          <a href="https://github.com/zero-filtre"><img src="images/github.svg" alt="Nos repo github" /></a>
 
           <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/linkedIn.svg"
-              alt="Notre page LinkedIn">
+              alt="Notre page LinkedIn" />
           </a>
         </div>
       </div>

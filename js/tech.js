@@ -25,7 +25,7 @@ lifecycleContent.classList.add("lifeCycle");
 initialContent.innerHTML = `
             <div class="tech-item">
                <div>
-                <img src="./images/java-icon.svg" class="img-fluid" alt="">
+                <img src="./images/java-icon.svg" class="img-fluid java-icon" alt="">
               </div>
               <div>
                 <h4>Java</h4>

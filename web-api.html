@@ -4,52 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description"
-        content="Zerofiltre est une initiative qui dispose d'une équipe passionnée qui fournit divers services de développement de logiciels dans le monde entier. 
-          Nous fournissons des services à valeur ajoutée avec une approche taillée pour chaque entreprise. 
-          Zerofiltre s’appui sur un panel d’ingénieurs expérimentés et passionnés qui priorisent la résolution de problèmes et valeur ajoutée au métier
-          Créée en 2015, Zerofiltre voit le jour à l’initiative de Philippe SIMO , un ingénieur entrepreneur, et architecte logiciel spécialisé en JAVA">
+
+    <!-- Primary Meta Tags -->
+    <title>Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.</title>
+    <meta name="title" content="Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.">
+    <meta name="description"
+        content="Développez des Apps à valeur ajoutée pour votre business et pas que pour l'IT. Avec Zerofiltre, profitez d'offres taillées pour chaque entreprise. Industrialisez vos Apps. Maintenance, extension, supervision.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dev.zerofiltre.tech/">
+    <meta property="og:title" content="Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.">
+    <meta property="og:description"
+        content="Développez des Apps à valeur ajoutée pour votre business et pas que pour l'IT. Avec Zerofiltre, profitez d'offres taillées pour chaque entreprise. Industrialisez vos Apps. Maintenance, extension, supervision.">
+    <meta property="og:image" content="https://i.ibb.co/p3wfyWR/landing-illustration-1.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dev.zerofiltre.tech/">
+    <meta property="twitter:title" content="Zerofiltre — Libérez-vous. Confiez nous vos développement d'Apps.">
+    <meta property="twitter:description"
+        content="Développez des Apps à valeur ajoutée pour votre business et pas que pour l'IT. Avec Zerofiltre, profitez d'offres taillées pour chaque entreprise. Industrialisez vos Apps. Maintenance, extension, supervision.">
+    <meta property="twitter:image" content="https://i.ibb.co/p3wfyWR/landing-illustration-1.png">
+
     <title>Api Web</title>
     <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/header-service.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/dropdown.css" media="(min-width: 1024px)">
+    <link rel="stylesheet" href="css/sidebar.css" media="(max-width:1024px )">
+    <link rel="stylesheet" href="css/base_service.css">
     <link rel="stylesheet" href="css/web-api.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FPLWQNHWMT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FPLWQNHWMT');
+    </script>
 </head>
 
 <body>
     <div class="header-wrapper">
         <header>
             <div class="container">
-                <a class="logo-link" href="/">
-                    <img class="logo" src="images/logoblue.svg" alt="Zerofiltre.tech">
-                </a>
 
                 <nav>
-                    <a class="hide-desktop" href="#">
-                        <img src="images/blue-ham-menu.svg" alt="toggle menu" class="menu" id="menu">
+                    <a href="/">
+                        <img class="logo" src="images/logoblue.svg" alt="Zerofiltre.tech" />
                     </a>
-                    <ul class="show-desktop hide-mobile" id="nav">
-                        <li class="exit-btn hide-desktop" id="exit">
-                            <img src="images/blue-exit-1.svg" alt="exit">
-                        </li>
-                        <li><a href="#">A propos</a></li>
 
-                        <li class="dropdown">
-                            <a href="services.html" class="dropbtn show-desktop hide-mobile d-flex">Services<img src="images/blue-chevron-down.svg"
-                                alt="chevron-down"></a>
+                    <a href="#" class="hamburger menu hide-desktop" id="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
 
-                            <a href="#" class="openbtn hide-desktop" onclick="openNav()">Services<img
-                                    src="images/blue-chevron-down.svg" alt="chevron-down"></a>
+                    <div class="links hide-mobile">
 
-                            <div class="dropdown-content hide-mobile show-destop">
+                        <a href="/#about">A propos</a>
+
+
+                        <div class="dropdown">
+                            <a href="#" class="dropBtn">
+                                <span>Services</span>
+                                <img src="images/blue-chevron-down.svg" alt="chevron-down">
+                            </a>
+
+                            <div class="dropdown-content hide-mobile">
                                 <div class="apps group">
                                     <h1>Développement d’application</h1>
                                     <a href="/app-java.html">
                                         <img src="/images/app-java-blue.svg" alt="">
-                                        <span>Développement d’application Java</span>
+                                        <span>Développement d’applications Java</span>
                                     </a>
                                     <a href="/app-nav.html">
                                         <img src="/images/app-web.svg" alt="">
@@ -81,59 +114,87 @@
                                     </a>
                                 </div>
                             </div>
-                        </li>
+                        </div>
 
-                        <li><a href="#">Blog</a></li>
+                        <a href="#" class="badge-link">
+                            <span>Blog</span>
+                            <span class="soon-badge">Soon</span>
+                        </a>
 
-                        <li>
-                            <a href="https://web.whatsapp.com">
-                                <img src="images/blue-whatsapp.svg" alt="N° whatsapp 0753428623">
-                                +33 7 53 42 86 23
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/zero-filtre"><img src="images/blue-github.svg"
-                                    alt="Nos repo github"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img
-                                    src="images/blue-linkdin.svg" alt="Notre page LinkedIn"></a>
-                        </li>
-                    </ul>
+                        <a href="https://web.whatsapp.com" class="whatsapp-link">
+                            <img src="images/blue-whatsapp.svg" alt="N° whatsapp 0753428623" />
+                            <span>+33 7 53 42 86 23</span>
+                        </a>
+
+                        <a href="https://github.com/zero-filtre"><img src="images/blue-github.svg"
+                                alt="Nos repo github" /></a>
+
+                        <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img
+                                src="images/blue-linkdin.svg" alt="Notre page LinkedIn" /></a>
+                    </div>
+
                 </nav>
+                <div class="mobile-menu hide-desktop" id="mobile-menu">
+                    <a href="/#about">A propos</a>
 
-                <div id="mySidebar" class="sidebar hide-desktop">
-                    <a href="javascript:void(0)" class="closebtn-x" onclick="closeNav()">&larr;</a>
-                    <a href="/services.html" class="closebtn" onclick="">Services</a>
+                    <a href="#" id="openSidebarBtn">
+                        <span>Services</span>
+                        <img src="images/blue-chevron-down.svg" alt="chevron-down">
+                    </a>
+
+                    <a href="/404.html" class="badge-link">
+                        <span>Blog</span>
+                        <span class="soon-badge">Soon</span>
+                    </a>
+
+                    <a href="https://web.whatsapp.com" class="whatsapp-link">
+                        <img src="images/blue-whatsapp.svg" alt="N° whatsapp 0753428623" />
+                        <span>+33 7 53 42 86 23</span>
+                    </a>
+
+                    <a href="https://github.com/zero-filtre"><img src="images/blue-github.svg"
+                            alt="Nos repo github" /></a>
+
+                    <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR"><img src="images/blue-linkdin.svg"
+                            alt="Notre page LinkedIn" /></a>
+                </div>
+
+                <div id="sidebar" class="sidebar hide-desktop">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&larr;</a>
+
+                    <a href="#" class="title">Services</a>
+
                     <a href="/app-java.html">
-                        <img src="/images/app-java-blue.svg" alt="">
-                        <span>Développement d’application Java</span>
+                        <img src="/images/app-java-blue.svg" alt="" />
+                        <span>Développement d’applications Java</span>
                     </a>
                     <a href="/app-nav.html">
-                        <img src="/images/app-web.svg" alt="">
+                        <img src="/images/app-web.svg" alt="" />
                         <span>Développement d’applications pour navigateurs Web</span>
                     </a>
                     <a href="/app-mobile.html">
-                        <img src="/images/app-mob.svg" alt="">
+                        <img src="/images/app-mob.svg" alt="" />
                         <span>Développement d’applications mobiles</span>
                     </a>
                     <a href="/support.html">
-                        <img src="/images/app-maintenance.svg" alt="">
+                        <img src="/images/app-maintenance.svg" alt="" />
                         <span>Maintenance d’applications et support</span>
                     </a>
                     <a href="/web-api.html">
-                        <img src="/images/app-api.svg" alt="">
+                        <img src="/images/app-api.svg" alt="" />
                         <span>Développement d’APIs WEB</span>
                     </a>
                     <a href="/ui.html">
-                        <img src="/images/ui-dev.svg" alt="">
+                        <img src="/images/ui-dev.svg" alt="" />
                         <span>Conception de prototypes d’interfaces graphiques</span>
                     </a>
-
                 </div>
-
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
             </div>
         </header>
+
 
         <section class="green-container hero">
             <div class="container">
@@ -168,30 +229,34 @@
                         <h1 class="our-service__title">Décuplez à l’infini les capacités de votre logiciel avec des
                             APIs robustes et sécurisées.</h1>
                         <div class="text-box wrap-text">
-                            <p class="our-service__description">Les APIs sont devenues des technologies incontournables
-                                au fil de la dernière décennie dans le secteur de développement
-                                logiciel. Elles permettent non seulement de flexibiliser la dépendance entre différents
+                            <p class="our-service__description">Les APIs de type Web sont des interfaces qui, permettent
+                                l'exposition de la complexité
+                                technique d'une application à travers, des interfaces simples et utilisables par tout
+                                autre application sur le Web.
+                                Elles sont le tableau de commandes de l'application. <br> <br>
+
+                                Elles sont devenues des technologies incontournables
+                                au fil de la dernière décennie, dans le secteur du développement
+                                logiciel. Elles flexibilisent la dépendance entre différents
                                 composants de l’application,
-                                augmentant ainsi drastiquement la vitesse de développement, mais aussi et surtout de
-                                rendre un produit extensible à
-                                l’infini. Ce qui représente une source de revenu supplémentaire pour le business.</p>
+                                augmentant ainsi, de façon drastique, la vitesse de développement. <br> <br>
+
+                                Enfin, elles permettent surtout de rendre un produit extensible à
+                                l’infini. Ce qui représente une source de revenu supplémentaire pour votre business.</p>
                             <p class="our-service__description moreText hide-mobile-text show-desktop-text">Zerofiltre
-                                d’appui sur la puissance du
+                                s’appuie sur la puissance du
                                 langage de programmation JAVA et de son écosystème pour ajouter des APIs
-                                publiques à votre système déjà mis en place. <br>
-                                Toutefois, une API est une porte d’entrée pour votre système qui nécessite robustesse et
+                                publiques à votre existant. <br> <br>
+                                Toutefois, une API est une porte d’entrée à votre système qui nécessite robustesse et
                                 sécurité. Nous savons
                                 exactement quoi faire et quels outils utiliser pour satisfaire ces pré-requis sans
-                                négliger
-                                sur les fonctionnalités
-                                principales.
+                                déteindre sur les fonctionnalités principales.
                             </p>
                             <p class="our-service__description moreText hide-mobile-text show-desktop-text">Nous nous
                                 améliorons en continu afin de
-                                fournir aux clients mieux qu'ils ne le souhaitent, nous nous alignons aux
-                                standards établis par des géants de la tech tel que Facebook pour vous fournir la
-                                meilleure
-                                expérience possible.
+                                fournir aux clients mieux que ce qu'il espèrent. Nous nous alignons aux
+                                standards établis par des géants de la tech tel que Facebook, pour vous fournir la
+                                meilleure expérience possible.
                             </p>
                         </div>
                         <span class="view-more show-mobile hide-desktop">
@@ -234,9 +299,9 @@
                                 <h5 class="card__title">Développement d’API GraphQL</h5>
                                 <p class="card__body">Le standard GraphQL fut créé par les ingénieurs de Facebook et
                                     désormais utilisé par des milliers d’entreprise célèbres
-                                    dans le monde. Adopter GraphQL c’est bénéficier d’abord bénéficier de l’expérience
+                                    dans le monde. Adopter GraphQL c’est d’abord bénéficier de l’expérience
                                     accumulée de Facebook, mais aussi
-                                    éviter les inconvénient du protocole REST.</p>
+                                    éviter les inconvénients du protocole REST.</p>
                             </div>
                         </div>
 
@@ -244,10 +309,11 @@
                             <img src="/images/test-automatise.svg" class="card__img img-fluid" alt="">
                             <div class="card__text">
                                 <h5 class="card__title">Migration d’API Restful vers GraphQL</h5>
-                                <p class="card__body">Adopter GraphQL c’est bénéficier d’abord bénéficier de
+                                <p class="card__body">Adopter GraphQL c’est d’abord bénéficier de
                                     l’expérience accumulée de Facebook, mais aussi éviter les
-                                    inconvénient du protocole REST. L’équipe Zerofiltre vous aide à faire le pas
-                                    progressivement sans détruire votre
+                                    inconvénients du protocole REST. L’équipe Zerofiltre vous aide à faire
+                                    progressivement le pas,
+                                    sans détruire votre
                                     existant.</p>
                             </div>
                         </div>
@@ -256,7 +322,7 @@
                             <img src="/images/cq_support.svg" class="card__img img-fluid" alt="">
                             <div class="card__text">
                                 <h5 class="card__title">Support et maintenance d’API</h5>
-                                <p class="card__body">Nous répondrons à nos clients dans les plus brefs délais quelque
+                                <p class="card__body">Nous répondrons à nos clients dans les plus brefs délais, quelque
                                     soit le soucis technique!</p>
                             </div>
                         </div>
@@ -291,9 +357,9 @@
                             <h5 class="card__title">Développement d’API GraphQL</h5>
                             <p class="card__body">Le standard GraphQL fut créé par les ingénieurs de Facebook et
                                 désormais utilisé par des milliers d’entreprise célèbres
-                                dans le monde. Adopter GraphQL c’est bénéficier d’abord bénéficier de l’expérience
+                                dans le monde. Adopter GraphQL c’est d’abord bénéficier de l’expérience
                                 accumulée de Facebook, mais aussi
-                                éviter les inconvénient du protocole REST.</p>
+                                éviter les inconvénients du protocole REST.</p>
                         </div>
                     </div>
 
@@ -301,10 +367,11 @@
                         <img src="/images/cq_migration.svg" class="card__img img-fluid" alt="">
                         <div class="card__text">
                             <h5 class="card__title">Migration d’API Restful vers GraphQL</h5>
-                            <p class="card__body">Adopter GraphQL c’est bénéficier d’abord bénéficier de
+                            <p class="card__body">Adopter GraphQL c’est d’abord bénéficier de
                                 l’expérience accumulée de Facebook, mais aussi éviter les
-                                inconvénient du protocole REST. L’équipe Zerofiltre vous aide à faire le pas
-                                progressivement sans détruire votre
+                                inconvénients du protocole REST. L’équipe Zerofiltre vous aide à faire progressivement
+                                le pas,
+                                sans détruire votre
                                 existant.</p>
                         </div>
                     </div>
@@ -313,7 +380,7 @@
                         <img src="/images/cq_support.svg" class="card__img img-fluid" alt="">
                         <div class="card__text">
                             <h5 class="card__title">Support et maintenance d’API</h5>
-                            <p class="card__body">Nous répondrons à nos clients dans les plus brefs délais quelque
+                            <p class="card__body">Nous répondrons à nos clients dans les plus brefs délais, quelque
                                 soit le soucis technique!</p>
                         </div>
                     </div>
@@ -324,8 +391,7 @@
         <section id="technologies">
             <div class="container">
                 <h1>Nos technologies</h1>
-                <p>Décuplez à l’infini les capacités de votre logiciel avec des
-                    APIs robustes et sécurisées.</p>
+                <p>Les technologies indispensables à la robustesse, l'efficacité et la sécurité.</p>
 
                 <div class="techs__titles-box">
                     <ul class="techs__titles">
@@ -350,14 +416,14 @@
                         <img src="/images/our-team-illustration.svg" class="img-fluid" alt="notre-equipe">
                     </div>
                     <div class="our-team__text">
-                        <h1>Notre équipe de développement JAVA</h1>
+                        <h1>Notre équipe de développement d'APIs de type WEB</h1>
                         <p>Zerofiltre tient à se rassurer de la sécurité et de la robustesse
                             des APIs qui seront développées. De ce fait, en plus
-                            de positionner des profils ayant fait leur preuve dans la mise en place d’APIs consommées
+                            de positionner des profils, ayant fait leur preuve dans la mise en place d’APIs consommées
                             par des milliers
-                            d’utilisateurs, nous cultivons au quotidien, le sens de la responsabilité de la propriété
-                            intellectuelle au sein de nos
-                            équipes.
+                            d’utilisateurs, nous cultivons au quotidien, le sens de la responsabilité et de la propriété
+                            intellectuelle au sein de nos équipes.
+                            <br> <b> Nos APIs sont « <i> GDPR® Compliants </i> » .</b>
                         </p>
                     </div>
                 </div>
@@ -366,7 +432,7 @@
 
         <section id="why-us">
             <div class="container">
-                <h1>Pourquoi choisir zerofiltre comme partenaire pour vos prochains projets JAVA?</h1>
+                <h1>Pourquoi choisir Zerofiltre pour vos projets d'interfaçage API?</h1>
 
                 <div class="why-us__box">
                     <div class="owl-carousel owl-theme">
@@ -385,9 +451,9 @@
                             <img src="/images/approche-solution-icon.svg" class="card__img" alt="">
                             <div class="card__text">
                                 <h5 class="card__title">Approche orientée Solution</h5>
-                                <p class="card__body">Nous ne nous contentons pas de développer une application mais
-                                    d’en créer un qui
-                                    apporte des solutions.
+                                <p class="card__body">Nous créeons des interfaces qui, ouvrent la voie à une infinité de
+                                    nouvelles solutions,
+                                    grâce à la combinaison des APIs.
                                 </p>
                             </div>
                         </div>
@@ -407,11 +473,15 @@
                             <img src="/images/roi.svg" class="card__img" alt="">
                             <div class="card__text">
                                 <h5 class="card__title">Rentabilité</h5>
-                                <p class="card__body">Nous menons des études constantes pour utiliser les outils les
-                                    plus performants et
-                                    gratuits (à l’image du
-                                    langage JAVA )
-                                    du marché afin de réduire les coûts de développement et accroître votre rentabilité.
+                                <p class="card__body"> Afin de réduire les coûts de développement et accroître votre
+                                    rentabilité,
+                                    nous nous basons sur des technologies efficaces, gratuites et open-source,
+                                    à l'image du célèbre Framework Spring.
+                                    Ces dernières sont recommandées par des experts du domaine.
+
+                                    Vous pouvez compter sur nous pour fournir un rapport satisfaction/prix que vous ne
+                                    trouverez nul par ailleurs!
+
                                 </p>
                             </div>
                         </div>
@@ -420,11 +490,8 @@
                             <img src="/images/unique-solution.svg" class="card__img" alt="">
                             <div class="card__text">
                                 <h5 class="card__title">Solution unique</h5>
-                                <p class="card__body">Votre produit sera taillé pour votre entreprise et évoluable à
-                                    votre demande. Le
-                                    logiciel sert le métier
-                                    et pas le
-                                    contraire.</p>
+                                <p class="card__body">La solution s'adapte à votre demande.
+                                    Le logiciel sert le métier et pas le contraire.</p>
                             </div>
                         </div>
 
@@ -432,7 +499,7 @@
                             <img src="/images/support-haute-disponibilite.svg" class="card__img" alt="">
                             <div class="card__text">
                                 <h5 class="card__title">Support Haute disponibilité</h5>
-                                <p class="card__body">>Nous nous rendons disponible aussi rapidement que possible pour
+                                <p class="card__body"> Nous nous rendons disponible aussi rapidement que possible pour
                                     vous
                                     venir en aide en cas de pépin</p>
                             </div>
@@ -492,7 +559,7 @@
             <div class="container">
                 <div class="trades__intro hide-desktop show-mobile">
                     <h1>Notre expertise métier</h1>
-                    <p class="trades__desc wrap-p">Chez zerofiltre, nous nous attelons à comprendre de multiples
+                    <p class="trades__desc wrap-p">Chez Zerofiltre, nous nous attelons à comprendre de multiples
                         domaines et à
                         fournir
                         des solutions optimales
@@ -510,7 +577,7 @@
                     <div class="trades__texts">
                         <div class="trades__intro hide-mobile show-desktop hide-tablet">
                             <h1>Notre expertise métier</h1>
-                            <p class="trades__desc wrap-p">Chez zerofiltre, nous nous attelons à comprendre de multiples
+                            <p class="trades__desc wrap-p">Chez Zerofiltre, nous nous attelons à comprendre de multiples
                                 domaines et à
                                 fournir
                                 des solutions optimales
@@ -647,28 +714,32 @@
         <section id="our-results">
             <div class="container">
                 <h1>Nos réalisations en Développement d’API WEB JAVA</h1>
-                <p class="wrap-p">Chez zerofiltre, nous nous attelons à comprendre de multiples domaines et à fournir
-                    des solutions optimales
-                    pour différents domaines. Nous le savons, le logiciel doit s’adapter au métier et non le contraire.
-                </p>
+                <p class="wrap-p">Mettez votre combinaison et plongez dans l'univers des projets qui font de Zerofiltre
+                    ... « Zerofiltre ». </p>
 
                 <div class="our-results__box">
                     <div class="owl-carousel">
-                        <div class="card result">
-                            <img src="/images/signature-icon.svg" class="img-fluid" alt="">
-                            <h4>Moteur de signature de document</h4>
-                            <p>Développement de l’API Restful de communication avec la base dorsale</p>
-                        </div>
-                        <div class="card result">
-                            <img src="/images/portail_demandes.svg" class="img-fluid" alt="">
-                            <h4>Portail de suivi de demandes administratives</h4>
-                            <p>Développement de l’API Restful de communication avec la base dorsale</p>
-                        </div>
-                        <div class="card result">
-                            <img src="/images/mob-pay-icon.svg" class="img-fluid" alt="">
-                            <h4>Moteur d'agrégation de moyens de paiement mobiles</h4>
-                            <p>Développement de l’API GraphQL de communication avec la base dorsale</p>
-                        </div>
+                        <a href="/404.html">
+                            <div class="card result">
+                                <img src="/images/signature-icon.svg" class="img-fluid" alt="">
+                                <h4>Moteur de signature de document</h4>
+                                <p>Mise en place de l’API Restful d'échange avec avec le back-end</p>
+                            </div>
+                        </a>
+                        <a href="/portad-api.html">
+                            <div class="card result">
+                                <img src="/images/portail_demandes.svg" class="img-fluid" alt="">
+                                <h4>Portail de suivi de demandes administratives</h4>
+                                <p>Développement de l’API Restful de communication avec la base dorsale</p>
+                            </div>
+                        </a>
+                        <a href="/mob-pay-api.html">
+                            <div class="card result">
+                                <img src="/images/mob-pay-icon.svg" class="img-fluid" alt="">
+                                <h4>Moteur d'agrégation de moyens de paiement mobiles</h4>
+                                <p>Développement de l’API GraphQL de communication avec la base dorsale</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -680,7 +751,7 @@
                 <p class="wrap-p">Que vous vouliez ce service ou un de beaucoup plus personnalisé, contactez-nous et
                     laissez nous décupler à l’infini les capacités de votre logiciel avec des APIs robustes et
                     sécurisées.</p>
-                <a href="#">
+                <a href="/contact.html">
                     <div class="rounded-button">
                         <span>Contactez-nous</span>
                         <img src="images/white-arrow.svg" alt="know more">
@@ -696,7 +767,7 @@
                 <div class="services-link">
                     <p class="yellow-text">NOS SERVICES</p>
                     <ul>
-                        <li><a href="/app-java.html">Développement d’application JAVA</a></li>
+                        <li><a href="/app-java.html">Développement d’applications JAVA</a></li>
                         <li><a href="/app-nav.html">Développement d’applications pour navigateurs Web</a></li>
                         <li><a href="/app-mobile.html">Développement d’applications mobiles</a></li>
                         <li><a href="/support.html">Maintenance d’applications et support</a></li>
@@ -710,41 +781,63 @@
                     <ul>
                         <li><a href="/signature-engine.html">Moteur de signature de document</a></li>
                         <li><a href="/portad.html">Portail de suivi de demandes administratives</a></li>
-                        <li><a href="#">Partage nous les photos</a></li>
-                        <li><a href="#">Maintenance d’applications et support</a></li>
-                        <li><a href="#">Reprise intelligente de parcours utilisateurb</a></li>
-                        <li><a href="#">Moteur d'agrégation de moyens de paiement mobiles</a></li>
+                        <li><a href="/share-photo.html">Partage nous les photos</a></li>
+                        <li><a href="/support.html">Maintenance d’applications et support</a></li>
+
+                        <li><a href="/mob-pay.html">Moteur d'agrégation de moyens de paiement mobiles</a></li>
                     </ul>
 
                 </div>
                 <div class="articles">
                     <p class="yellow-text">DERNIERS ARTICLES</p>
                     <ul>
-                        <li><a href="#">GraphQL: de la théorie à la pratique avec Spring-boot</a></li>
-                        <li><a href="#">Maîtriser la gestion d’erreurs GraphQL dans une application Spring-boot</a></li>
+                        <li><a
+                                href="https://medium.com/swlh/grapql-from-theory-to-real-world-with-spring-boot-d6b46a28027b?source=friends_link&sk=265f0f4063dbea9780de4a55e8370b14">GraphQL:
+                                de la théorie à la pratique avec Spring-boot</a></li>
+                        <li><a
+                                href="https://medium.com/swlh/understanding-graphql-error-handling-mechanisms-in-spring-boot-604301c9bedb?source=friends_link&sk=1d97101ee639e362b86fad68c2cc2a14">Maîtriser
+                                la gestion d’erreurs GraphQL dans une application Spring-boot</a></li>
                         <li>
-                            <a href="#">Sécuriser ses APIs GraphQL avec Spring-AOP dans une application Spring-boot </a>
+                            <a
+                                href="https://medium.com/@philippechampion58/secure-your-graphql-api-within-a-spring-boot-app-72961fbe9232?sk=447765d64a6a7da1d4d9eec744c78e44">Sécuriser
+                                ses APIs GraphQL avec Spring-AOP dans une application Spring-boot </a>
                         </li>
                         <li>
-                            <a href="#">Tester ses APIs GraphQL dans une application Spring-boot </a>
+                            <a
+                                href="https://medium.com/@philippechampion58/testing-your-graphql-apis-in-a-spring-boot-app-9fe02ebccc35?sk=c91ff02c10402469f6e9c3824a7d89cd">Tester
+                                ses APIs GraphQL dans une application Spring-boot </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="contact">
-                <p class="yellow-text">Nous contacter</p>
-                <ul>
-                    <li>
-                        Tél: <span class="yellow-text">+33 7 53 42 86 23</span>
-                    </li>
-                    <li>
-                        Email:
-                        <a href="mailto:info@zerofiltre.tech">
-                            <span class="yellow-text">info@zerofiltre.tech</span>
-                        </a>
-                    </li>
-                </ul>
+
+            <div class="useful-links">
+
+                <div class="legal">
+                    <p class="yellow-text">INFO. GÉNÉRALES</p>
+                    <ul>
+                        <li><a href="/legal_notice.html">Mentions légales</a></li>
+                        <li><a href="/terms_of_use.html">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact">
+                    <p class="yellow-text">Nous contacter</p>
+                    <ul>
+                        <li>
+                            Tél: <span class="yellow-text">+33 7 53 42 86 23</span>
+                        </li>
+                        <li>
+                            Email:
+                            <a href="mailto:info@zerofiltre.tech">
+                                <span class="yellow-text">info@zerofiltre.tech</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
+
             <div class="separator"></div>
             <div class="end">
                 <p>

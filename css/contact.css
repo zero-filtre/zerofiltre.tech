@@ -1,0 +1,148 @@
+body {
+  overflow-x: hidden;
+}
+
+a[href^="mailto"]::before {
+  content: "📧 ";
+}
+
+a[href^="tel"]::before {
+  content: "📞 ";
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  background-image: url(/images/java-landing-illustration.svg);
+  background-position: 100% 42%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.container {
+  padding: 5%;
+}
+
+.contacts {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 4.1875rem;
+}
+
+.contacts article:last-child {
+  margin-bottom: 4.1875rem;
+}
+
+.contacts span:not(.town),
+.contacts a {
+  display: inline-block;
+  margin-top: 1.25rem;
+}
+
+.contacts .town {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-wrapper {
+  background-color: #f8fbfc;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1.25rem 5%;
+}
+
+.form-wrapper h1 {
+  font-size: 1rem;
+}
+
+form {
+  margin-top: 4.85rem;
+}
+
+form input[type="text"] {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  height: 4.625rem;
+  padding: 1.25rem;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
+
+form textarea {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
+
+form input[type="button"] {
+  width: 100%;
+  height: 3.9375rem;
+  padding: 1.25rem;
+  color: #fff;
+  background-color: #17a6af;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1.25rem;
+}
+
+.form-btn:hover {
+  background-color: #17a5afe1;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #17a5af34;
+  box-shadow: 0 0 15px 2px #17a5af34;
+}
+
+@media only screen and (min-width: 650px) {
+  .fieldbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 10%;
+  }
+
+  .contacts {
+    order: 1;
+    flex: 1 0 40%;
+    text-align: left;
+    margin-top: 0;
+    align-self: flex-start;
+  }
+
+  .contacts article:last-child {
+    margin-bottom: 0;
+  }
+
+  .contacts .town {
+    font-size: 1.5rem;
+  }
+
+  .form-wrapper {
+    order: 2;
+    flex: 1 0 60%;
+    padding: 5%;
+  }
+
+  .form-wrapper h1 {
+    font-size: 1.5rem;
+  }
+}

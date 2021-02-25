@@ -143,7 +143,7 @@ toolsContent.innerHTML = `
                 <img src="./images/space-cloud-icon.svg" class="img-fluid space-cloud-icon" alt="space-cloud">
               </div>
               <div>
-                <h4>Space Cloud de SpaceUp Tech</h4>
+                <h4>Space Cloud</h4>
               </div>
             </div>`;
 
@@ -196,3 +196,13 @@ $(".owl-carousel").owlCarousel({
         },
     },
 });
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
