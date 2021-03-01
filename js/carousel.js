@@ -41,6 +41,15 @@ menu.addEventListener('click', () => {
   }
 });
 
+window.addEventListener('mouseup', (event) => {
+  if (event.target != dropdown && event.target != hamburgerMenu) {
+    hamburgerMenu.classList.remove('open');
+    mobileMenu.style.width = '0';
+
+  }
+})
+
+
 function openSidebar() {
   document.getElementById('sidebar').style.width = '80%';
 }
@@ -61,4 +70,6 @@ window.addEventListener('mouseup', (event) => {
     console.log('outside click');
   }
 })
+
+
 
