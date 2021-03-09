@@ -27,14 +27,14 @@
         content="Développez des Apps à valeur ajoutée pour votre business et pas que pour l'IT. Avec Zerofiltre, profitez d'offres taillées pour chaque entreprise. Industrialisez vos Apps. Maintenance, extension, supervision.">
     <meta property="twitter:image" content="https://i.ibb.co/p3wfyWR/landing-illustration-1.png">
 
-    <title>Partage nous les photos</title>
+    <title>Occupation et Localisation des parkings de Strasbourg</title>
     <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/dropdown.css" media="(min-width: 1024px)">
     <link rel="stylesheet" href="css/sidebar.css" media="(max-width:1024px )">
     <link rel="stylesheet" href="css/base_achievement.css">
-    <link rel="stylesheet" href="css/share-photo.css" media="all">
+    <link rel="stylesheet" href="css/park-strasbourg.css" media="all">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -156,8 +156,8 @@
                     <a href="https://github.com/zero-filtre" target="_blank"><img src="images/blue-github.svg"
                             alt="Nos repo github" /></a>
 
-                    <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR" target="_blank"><img src="images/blue-linkdin.svg"
-                            alt="Notre page LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR" target="_blank"><img
+                            src="images/blue-linkdin.svg" alt="Notre page LinkedIn" /></a>
                 </div>
 
                 <div id="sidebar" class="sidebar hide-desktop">
@@ -199,9 +199,10 @@
         <section class="green-container hero">
             <div class="container">
                 <div>
-                    <h1>Partage nous les photos</h1>
-                    <p class="sub-title"> <b><span class="yellow-text">Kiiple</span></b> est
-                        une application de partage de photos dédiée à aux évènements.</p>
+                    <h1>Occupation et Localisation des parkings de Strasbourg</h1>
+                    <p class="sub-title">
+                        <br>Localisation des parkings ouverts et disponibles de la ville de Strasbourg.
+                    </p>
                 </div>
             </div>
 
@@ -228,17 +229,25 @@
             <div class="container overviews-box">
                 <div class="overviews__text">
                     <h1>Généralités</h1>
-                    <p>Qui n’a pas connu le groupe Whatsapp créé pour un évènement ou l’on balance
-                        tous les souvenirs de ce dernier?<br> <b><span class="yellow-text">Kiiple</span></b> est
-                        une application de partage de photos dédiée à ce processus. <br>
-                        Au travers de <b>Kiiple</b>, le client se propose d’améliorer ce processus en fournissant une
-                        solution apdatée au partage rapide de photos, sans en dégrader la qualité, reliées à un
-                        évènement spécifique et à ses membres.
+                    <p>
+                        Strasbourg, ville frontière entre l'Allemagne et la France, est une métropole dotée d'un flux
+                        touristique important. <br>
+                        Permettre à toute personne se rendant dans cette ville, de retrouver rapidement les parkings
+                        ouverts à proximité, en temps réel et avec leur taux d'occupation s'avère être d'une plus value
+                        indiscutable. <br>
+                        Ce fut l'idée de l'un des experts Zerofiltre résidant dans la ville mythique. <br><br>
+
+                       Dotée d'une interface affichant les occupations, la localisation ainsi que
+                        l’itinéraire vers les dits parkings, l'application intègrera un plan de navigation
+                        permettant de se rendre directement à l'adresse du
+                        parking sélectionné.
+
                     </p>
                 </div>
 
                 <div class="overviews__img">
-                    <img src="/images/Mesa-15.svg" class="img-fluid" alt="overview-illustration" loading="lazy">
+                    <img src="/images/car_app.svg" class="img-fluid" alt="overview-illustration"
+                        loading="lazy">
                 </div>
             </div>
         </section>
@@ -246,41 +255,44 @@
         <section id="business-needs">
             <div class="container">
                 <h1>Besoins métiers</h1>
+
                 <div class="needs-box show-desktop hide-mobile">
                     <ul class="needs">
-                        <!--  Création et consultation <br><br> -->
-                        <li class="card">Mettre à disposition des participants à un événement, l'ensemble des souvenirs
-                            de ce dernier. Afin que les participants
-                            puissent en prendre connaissance et les télécharger.
+                        <li class="card">Après avoir déposé sa demande au sein des services de la communauté urbaine de
+                            la ville, le demandeur devrait, à partir
+                            de ses identifiants, pouvoir se connecter au portail et suivre l’état d’avancement de
+                            l’instruction de sa demande.
                         </li>
 
-                        <!--Téléchargement  <br><br> -->
-                        <li class="card">Sauvegarde des photos de l'événement sur un appareil afin de pouvoir les
-                            consulter sans connexion internet .</li>
+                        <li class="card">Pour satisfaire ce besoin, la plateforme devait être accessible 24h/7 et
+                            permettre uniquement aux ayant droit l’accès
+                            aux dossiers.
+                        </li>
 
-                        <!-- Gérer un événement. <br><br> -->
-                        <li class="card">Créer un espace de stockage dédié à un événement. Avec la possibilité d'y
-                            ajouter des participants qui pourront alors y
-                            ajouter des photos.</li>
+                        <li class="card">Le portail WEB, la seule interface entre l’utilisateur et le système, est
+                            totalement découplé de la base dorsale, d’où
+                            la nécessité d’APIs afin de faire office de pont.
+                        </li>
                     </ul>
                 </div>
 
                 <div class="needs-box hide-desktop">
                     <ul class="needs owl-carousel owl-theme">
-                        <!--  Création et consultation <br><br> -->
-                        <li class="card">Mettre à disposition des participants à un événement l'ensemble des souvenirs
-                            de ce dernier afin que les participants
-                            puissent en prendre connaissance et les télécharger.
+                        <li class="card">Après avoir déposé sa demande au sein des services de la communauté urbaine de
+                            la ville, le demandeur devrait, à partir
+                            de ses identifiants, pouvoir se connecter au portail et suivre l’état d’avancement de
+                            l’instruction de sa demande.
                         </li>
 
-                        <!--Téléchargement  <br><br> -->
-                        <li class="card">Sauvegarde des photos de l'événement sur un appareil afin de pouvoir les
-                            consulter sans connexion internet .</li>
+                        <li class="card">Pour satisfaire ce besoin, la plateforme devait être accessible 24h/7 et
+                            permettre uniquement aux ayant droit l’accès
+                            aux dossiers.
+                        </li>
 
-                        <!-- Gérer un événement. <br><br> -->
-                        <li class="card">Créer un espace de stockage dédié à un événement. Avec la possibilité d'y
-                            ajouter des participants qui pourront alors y
-                            ajouter des photos.</li>
+                        <li class="card">Le portail WEB, la seule interface entre l’utilisateur et le système, est
+                            totalement découplé de la base dorsale, d’où
+                            la nécessité d’APIs afin de faire office de pont.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -288,35 +300,30 @@
 
         <section id="challenges">
             <div class="container">
-                <h1>Defis</h1>
-                <p>Confidentialité, accès sécurisé et accessibilité.</p>
+                <h1>Défis</h1>
+                <p>Les challenges étaient surtout d’ordre techniques :</p>
 
                 <div class="challenges-box">
-                    <img src="images/Mesa-16.svg" class="img-fluid challenges-img" alt="our challenges">
+                    <img src="images/Mesa-13.svg" class="img-fluid challenges-img" alt="our challenges">
                     <ul class="challenges">
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Maintenir les photos d'un événement confidentiel, et assurer un accès sécurisé à ces
-                                dernières afin de respecter la vie
-                                privée des utilisateurs.
-                            </p>
+                            <p>Assurer la sécurité des APIs</p>
                         </li>
 
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Maintenir un rapport qualité/poids des images optimal afin de rendre l'application
-                                fluide. <br> Réduire la consommation du
-                                volume données des utilisateurs afin de fournir une expérience utilisateur agréable.
-                            </p>
-                        </li>
-
-                        <li>
-                            <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Informer, en temps réel, les participants à un événement de nouvelles photos disponibles
-                                sur leur espace de stockage partagé.</p>
+                            <p>Assurer la haute disponibilité de l’API</p>
                         </li>
                     </ul>
                 </div>
+
+                <p>Mais aussi d’ordres managériaux. En effet, dans un souci de gain de temps, l’équipe de développement
+                    du portail WEB
+                    dépendait du format final de l’API afin de démarrer les développements de raccordement sans attendre
+                    que l’API soit
+                    complètement développée.
+                </p>
             </div>
         </section>
 
@@ -326,42 +333,43 @@
                 <!-- <p>Nous avons fait face à plusieurs challenges lors de la réalisation de ce projet tel que</p> -->
 
                 <div class="solution-wrapper">
-                    <img src="/images/Kiple-illustration.svg" class="img-fluid solutions-img"
+                    <img src="/images/portad-api-illustration.svg" class="img-fluid solutions-img"
                         alt="architecture du moteur de signature">
 
                     <div class="solutions-box">
                         <ul class="solutions">
                             <li>
-                                Notre équipe de développement a conçu, un processus efficace de gestion de fichiers en
-                                utilisant une base de données
-                                NoSQL MongoDB distribuée.
+                                Chez Zerofiltre, nous nous alignons constamment aux derniers standards de sécurité.
+                                En termes d’APIs Web, la
+                                préconisation est de mettre en place un système d’authentification se reposant sur des
+                                jetons jetables avec date
+                                d’expiration. Chaque utilisateur authentifié possède un jeton informant de qui il est.
+                                Ce dernier est signé
+                                numériquement afin de s’assurer non seulement de l’authenticité de l’utilisateur, mais
+                                aussi de l’intégrité des
+                                informations passées.
+
                             </li>
 
                             <li>
-                                Nous avons utilisé les standards recommandés, de structures de données et de gestion de
-                                fichiers dans une application
-                                distribuée moderne.
+                                Une seconde mesure de sécurité consistait à exposer des services ou ressources en
+                                fonction des rôles et permissions des
+                                utilisateurs qui souhaitent y accéder.
                             </li>
 
-                            <li>Nous avons ainsi pu limiter au stricte minimum le volume de données utilisées, lors de
-                                la
-                                recherche de photos en
-                                s’appuyant sur le système d’indexation distribué de la BD.
+                            <li>Enfin, afin d’assurer la haute disponibilité 24h/7j des APIs, nous nous sommes appuyés
+                                sur des technologies s’assurant
+                                tout d’abord du (re)démarrage de plusieurs instances de serveurs en cas de fortes
+                                charges, et aussi d’un équilibrage de
+                                charge constant entre les instances. Les cas d'indisponibilités deviennent alors
+                                inexistants.
                             </li>
 
-                            <li>De plus, nos ingénieurs se sont appuyés sur les principes de la programmation réactive,
-                                favorisant l’utilisation non
-                                bloquante des ressources de calcul. Ceci dans le but d’améliorer l’expérience
-                                utilisateur via une application fluide,
-                                même en temps de forte charge.
-                            </li>
-
-                            <li class="last">
-                                Enfin, la sécurité est assurée d'une part, par un système d'authentification forte en 3
-                                étapes à
-                                chaque connexion ; <br> et d'autre part, par une gestion de
-                                rôles et permissions, s’appuyant sur des outils reconnus (Spring Security) et les
-                                dernières recommandations en la matière.
+                            <li class="last">Afin de fournir un contrat d’interface aux développeurs WEB, forme finale
+                                de l’API, nous avons généré la documentation
+                                de la dite API avec Swagger, et l’avons exposé tout en bouchonnant l’implémentation,
+                                permettant ainsi des tests de
+                                communication avec l’API.
                             </li>
                         </ul>
                     </div>
@@ -372,62 +380,44 @@
         <section id="technologies">
             <div class="container">
                 <h1>Nos technologies</h1>
-                <p>Sans elles nous ne pourrions livrer aussi rapidement</p>
+                <p>Celles qui rendent tout ceci possible</p>
 
                 <div class="our-techs">
                     <div class="technos tools">
                         <div class="tech-item">
                             <div>
-                                <img src="/images/java-icon.svg" class="img-fluid java-icon" alt="java icon">
+                                <img src="/images/jwt-icon.svg" class="img-fluid" alt="jwt icon">
                             </div>
                             <div>
-                                <h4>Java</h4>
-                            </div>
-                        </div>
-
-                        <div class="tech-item">
-                            <div>
-                                <img src="/images/springio-icon.svg" class="img-fluid" alt="spring icon">
-                            </div>
-                            <div>
-                                <h4>Spring</h4>
+                                <h4>JWT</h4>
                             </div>
                         </div>
 
                         <div class="tech-item">
                             <div>
-                                <img src="/images/project-reactor-icon.svg" class="img-fluid"
-                                    alt="project-reactor icon">
+                                <img src="/images/springio-icon.svg" class="img-fluid" alt="spring Security icon">
                             </div>
                             <div>
-                                <h4>Project reactor</h4>
+                                <h4>Spring Security</h4>
+                            </div>
+                        </div>
+
+
+                        <div class="tech-item">
+                            <div>
+                                <img src="/images/swagger-icon.svg" class="img-fluid" alt="Swagger icon">
+                            </div>
+                            <div>
+                                <h4>Swagger</h4>
                             </div>
                         </div>
 
                         <div class="tech-item">
                             <div>
-                                <img src="/images/aws-icon.svg" class="img-fluid" alt="AWS s3 icon">
+                                <img src="/images/kubernetes-icon.svg" class="img-fluid" alt="Kubernetes icon">
                             </div>
                             <div>
-                                <h4>AWS s3</h4>
-                            </div>
-                        </div>
-
-                        <div class="tech-item">
-                            <div>
-                                <img src="/images/mongodb-icon.svg" class="img-fluid" alt="mongodb icon">
-                            </div>
-                            <div>
-                                <h4>MongoDB</h4>
-                            </div>
-                        </div>
-
-                        <div class="tech-item">
-                            <div>
-                                <img src="/images/tomcat-icon.svg" class="img-fluid" alt="tomcat icon">
-                            </div>
-                            <div>
-                                <h4>Tomcat</h4>
+                                <h4>Kubernetes</h4>
                             </div>
                         </div>
                     </div>
@@ -438,41 +428,31 @@
         <section id="implementation">
             <div class="container">
                 <h1>Implémentation</h1>
-                <p>L’équipe d’implémentation du projet était composée de sous équipes réparties selon des
-                    responsabilités
-                    spécifiques à
-                    savoir:
-                </p>
-
-                <ul class="impl-list">
-                    <li>Design et implémentation de la structure de données.</li>
-                    <li>Design de l’architecture de la base de données distribuée et indexation de données</li>
-                    <li>Implémentation des règles métiers spécifiques à la plateforme</li>
-                </ul>
-
-                <p>L'agilité le voulant, les équipes livraient de façon itérative suivant une logique d’intégration et
-                    de déploiement
-                    continu.</p>
+                <p>Les étapes d’implémentation comprenaient les phases suivantes :</p>
 
                 <div class="implementation-box">
-                    <img src="images/Mesa-14.svg" class="img-fluid implementation-img" alt="our implamentation">
+                    <img src="images/Mesa-12.svg" class="img-fluid implementation-img" alt="our implamentation">
 
                     <ul class="implementation">
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Recueil et analyse des besoins métiers</p>
+                            <p>Conception du contrat d’interface</p>
                         </li>
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Conception de l’architecture cible</p>
+                            <p>Exposition d’une version bouchonnée</p>
                         </li>
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Développement</p>
+                            <p>Implémentation</p>
                         </li>
                         <li>
                             <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
-                            <p>Déploiement</p>
+                            <p>Sécurisation</p>
+                        </li>
+                        <li>
+                            <img src="/images/triangle-blue-down.svg" class="img-fluid" alt="chevron-down">
+                            <p>Déploiement final</p>
                         </li>
                     </ul>
                 </div>
@@ -482,36 +462,43 @@
         <section id="roadmap">
             <div class="container">
                 <h1>Roadmap</h1>
-
                 <div class=" show-desktop hide-mobile">
                     <ul class="steps">
                         <li class="step-card">
-                            Recueil et Analyse des besoin métier:
+                            Conception du contrat d’interface:
                             <ul>
-                                <li>Conduite d’entretiens avec des volontaires anonymes</li>
-                                <li>Définition des parcours utilisateurs</li>
-                                <li>Définition des critères d’acceptabilité</li>
+                                <li>Brainstorming</li>
+                                <li>Analyse des besoins de la partie frontale</li>
                             </ul>
                         </li>
                         <li class="step-card">
-                            Conception de l'architecture cible:
+                            Déploiement d’une version bouchonnée:
                             <ul>
-                                <li>Ateliers de brainstorming avec les architectes techniques et fonctionnels</li>
-                                <li>Définition des schéma d’architecture</li>
-                                <li>Définition des contrats d’interface</li>
+                                <li>Mise en place des interfaces à exposer</li>
+                                <li>Mise en place des services d’implémentation bouchonnés</li>
+                                <li>Génération de la documentation des interfaces</li>
                             </ul>
                         </li>
                         <li class="step-card">
-                            Développement
+                            Implémentation:
                             <ul>
-                                <li>Mise en place des tests correspondant aux critères d’acceptabilité</li>
-                                <li>Développements</li>
+                                <li>Suppression des bouchons et mise en place des services réels d’implémentation.</li>
+                                <li>Mise en place des test unitaires et d’intégration</li>
                             </ul>
                         </li>
-                        <li class="step-card last">
-                            Déploiement
+                        <li class="step-card">
+                            Sécurisation:
                             <ul>
-                                <li>Déploiement itératif en production</li>
+                                <li>Implémentation du système d’authentification à jetons</li>
+                                <li>Définition des rôles et permissions.</li>
+                            </ul>
+                        </li>
+                        <li class="step-card">
+                            Déploiement final:
+                            <ul>
+                                <li>Déploiement</li>
+                                <li>Évaluation et feedback</li>
+                                <li>Améliorations</li>
                             </ul>
                         </li>
                     </ul>
@@ -520,37 +507,46 @@
                 <div class="hide-desktop">
                     <ul class="steps owl-carousel owl-theme">
                         <li class="step-card">
-                            Recueil et Analyse des besoin métier:
+                            Conception du contrat d’interface:
                             <ul>
-                                <li>Conduite d’entretiens avec des volontaires anonymes</li>
-                                <li>Définition des parcours utilisateurs</li>
-                                <li>Définition des critères d’acceptabilité</li>
+                                <li>Brainstorming</li>
+                                <li>Analyse des besoins de la partie frontale</li>
                             </ul>
                             <div class="number"><span>01</span></div>
                         </li>
                         <li class="step-card">
-                            Conception de l'architecture cible:
+                            Déploiement d’une version bouchonnée:
                             <ul>
-                                <li>Ateliers de brainstorming avec les architectes techniques et fonctionnels</li>
-                                <li>Définition des schéma d’architecture</li>
-                                <li>Définition des contrats d’interface</li>
+                                <li>Mise en place des interfaces à exposer</li>
+                                <li>Mise en place des services d’implémentation bouchonnés</li>
+                                <li>Génération de la documentation des interfaces</li>
                             </ul>
                             <div class="number"><span>02</span></div>
                         </li>
                         <li class="step-card">
-                            Développement
+                            Implémentation:
                             <ul>
-                                <li>Mise en place des tests correspondant aux critères d’acceptabilité</li>
-                                <li>Développements</li>
+                                <li>Suppression des bouchons et mise en place des services réels d’implémentation.</li>
+                                <li>Mise en place des test unitaires et d’intégration</li>
                             </ul>
                             <div class="number"><span>03</span></div>
                         </li>
                         <li class="step-card">
-                            Déploiement
+                            Sécurisation:
                             <ul>
-                                <li>Déploiement itératif en production</li>
+                                <li>Implémentation du système d’authentification à jetons</li>
+                                <li>Définition des rôles et permissions.</li>
                             </ul>
                             <div class="number"><span>04</span></div>
+                        </li>
+                        <li class="step-card">
+                            Déploiement final:
+                            <ul>
+                                <li>Déploiement</li>
+                                <li>Évaluation et feedback</li>
+                                <li>Améliorations</li>
+                            </ul>
+                            <div class="number"><span>05</span></div>
                         </li>
                     </ul>
                 </div>
@@ -563,12 +559,16 @@
                 <h1>Plus value métier</h1>
 
                 <div class="plus-value-metier-box">
-                    <img src="images/Mesa-10.svg" class="img-fluid plus-value-metier-img" alt="plus value metier">
+                    <img src="images/Mesa-9.svg" class="img-fluid plus-value-metier-img" alt="plus value metier">
                     <div class="plus-value-text">
-                        <p>Nous avons fourni la solution appropriée à notre client qui a pu lancer et tester son produit
-                            sur le marché. La phase
-                            bêta s’est avérée concluante et des améliorations sont prévues pour le lancement officiel.
+                        <p>La mise en place de cette API a permis le découplage du portail Web et de la base dorsale,
+                            entraînant:
                         </p>
+                        <ul class="solution-1">
+                            <li>la décentralisation de la gestion des projets de développement de la plateforme</li>
+                            <li>la parallélisation des processus.</li>
+                            <li>l’économie de ressources.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -578,7 +578,7 @@
             <div class="container">
                 <p>Que vous vouliez ce service ou un de beaucoup plus personnalisé, contactez-nous et laissez nous vous
                     aider à faire
-                    monter à l’échelle votre business.
+                    monter en échelle votre business.
                 </p>
                 <a href="/contact.html">
                     <div class="rounded-button">
@@ -595,27 +595,19 @@
 
                 <div class="our-results__box">
                     <div class="owl-carousel owl-theme">
-                        <a href="/signature-engine.html">
+                        <a href="#">
                             <div class="card result">
                                 <img src="/images/signature-icon.svg" class="img-fluid" alt="">
                                 <h4>Moteur de signature électronique de documents</h4>
-                                <p>Signature numérique de documents s'appuyant sur le modèle documentaire d'Alfresco</p>
+                                <p>Développement de l’API Restful de communication avec la base dorsale</p>
                             </div>
                         </a>
 
-                        <a href="/share-photo.html">
-                            <div class="card result">
-                                <img src="/images/share-photo-icon.svg" class="img-fluid" alt="">
-                                <h4>Portail de suivi de demandes administratives</h4>
-                                <p>Développement du moteur de processus en JAVA</p>
-                            </div>
-                        </a>
-
-                        <a href="/mob-pay.html">
+                        <a href="/mob-pay-api.html">
                             <div class="card result">
                                 <img src="/images/mob-pay-icon.svg" class="img-fluid" alt="">
-                                <h4>Moteur d'agrégation de moyens de paiement mobiles</h4>
-                                <!-- <p>Développement de l’API GraphQL de communication avec la base dorsale</p> -->
+                                <h4>Moteur d'agrégation de moyen de paiements mobiles</h4>
+                                <p>Développement de l’API GraphQL de communication avec la base dorsale</p>
                             </div>
                         </a>
                     </div>
@@ -648,27 +640,27 @@
                         <li><a href="/share-photo.html">Partage nous les photos</a></li>
                         <li><a href="/support.html">Maintenance d’applications et support</a></li>
 
-                        <li><a href="/mob-pay.html">Moteur d'agrégation de moyens de paiement mobiles</a></li>
+                        <li><a href="#">Moteur d'agrégation de moyens de paiement mobiles</a></li>
                     </ul>
 
                 </div>
                 <div class="articles">
                     <p class="yellow-text">DERNIERS ARTICLES</p>
                     <ul>
-                        <li><a
-                                href="https://medium.com/swlh/grapql-from-theory-to-real-world-with-spring-boot-d6b46a28027b?source=friends_link&sk=265f0f4063dbea9780de4a55e8370b14" target="_blank">GraphQL:
+                        <li><a href="https://medium.com/swlh/grapql-from-theory-to-real-world-with-spring-boot-d6b46a28027b?source=friends_link&sk=265f0f4063dbea9780de4a55e8370b14"
+                                target="_blank">GraphQL:
                                 de la théorie à la pratique avec Spring-boot</a></li>
-                        <li><a
-                                href="https://medium.com/swlh/understanding-graphql-error-handling-mechanisms-in-spring-boot-604301c9bedb?source=friends_link&sk=1d97101ee639e362b86fad68c2cc2a14" target="_blank">Maîtriser
+                        <li><a href="https://medium.com/swlh/understanding-graphql-error-handling-mechanisms-in-spring-boot-604301c9bedb?source=friends_link&sk=1d97101ee639e362b86fad68c2cc2a14"
+                                target="_blank">Maîtriser
                                 la gestion d’erreurs GraphQL dans une application Spring-boot</a></li>
                         <li>
-                            <a
-                                href="https://medium.com/@philippechampion58/secure-your-graphql-api-within-a-spring-boot-app-72961fbe9232?sk=447765d64a6a7da1d4d9eec744c78e44" target="_blank">Sécuriser
+                            <a href="https://medium.com/@philippechampion58/secure-your-graphql-api-within-a-spring-boot-app-72961fbe9232?sk=447765d64a6a7da1d4d9eec744c78e44"
+                                target="_blank">Sécuriser
                                 ses APIs GraphQL avec Spring-AOP dans une application Spring-boot </a>
                         </li>
                         <li>
-                            <a
-                                href="https://medium.com/@philippechampion58/testing-your-graphql-apis-in-a-spring-boot-app-9fe02ebccc35?sk=c91ff02c10402469f6e9c3824a7d89cd" target="_blank">Tester
+                            <a href="https://medium.com/@philippechampion58/testing-your-graphql-apis-in-a-spring-boot-app-9fe02ebccc35?sk=c91ff02c10402469f6e9c3824a7d89cd"
+                                target="_blank">Tester
                                 ses APIs GraphQL dans une application Spring-boot </a>
                         </li>
 
@@ -693,7 +685,8 @@
                             Tél: <a class="yellow-text" href="tel:+33 7 53 42 86 23">+33 7 53 42 86 23</a>
                         </li>
                         <li>
-                            Email: <a class="yellow-text" href="mailto:info@zerofiltre.tech">info@zerofiltre.tech</a><br>
+                            Email: <a class="yellow-text"
+                                href="mailto:info@zerofiltre.tech">info@zerofiltre.tech</a><br>
                         </li>
                     </ul>
                 </div>
@@ -707,10 +700,11 @@
                     <span class="green-text">Zerofiltre.</span> Tous droits reservés.
                 </p>
                 <div class="social-links">
-                    <a href="https://github.com/zero-filtre" target="_blank"><img src="images/github.svg" alt="Nos repo github"></a>
+                    <a href="https://github.com/zero-filtre" target="_blank"><img src="images/github.svg"
+                            alt="Nos repo github"></a>
 
-                    <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR" target="_blank"><img src="images/linkedIn.svg"
-                            alt="Notre page LinkedIn">
+                    <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR" target="_blank"><img
+                            src="images/linkedIn.svg" alt="Notre page LinkedIn">
                     </a>
                 </div>
             </div>

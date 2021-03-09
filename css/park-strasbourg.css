@@ -1,0 +1,20 @@
+.hero::after {
+    background-image: url(/images/park-strasbourg-bg.jpg);
+  }
+  
+  #call-to-action::after {
+    background-image: url(/images/app-mobile-cta-bg-img1.jpg);
+  }
+  
+  @media only screen and (max-device-width: 480px) {
+  }
+  
+  @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  }
+  
+  @media only screen and (min-width: 768px) {
+  }
+  
+  @media only screen and (min-width: 1024px) {
+  }
+  
