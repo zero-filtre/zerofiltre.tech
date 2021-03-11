@@ -328,43 +328,29 @@
                 <!-- <p>Nous avons fait face à plusieurs challenges lors de la réalisation de ce projet tel que</p> -->
 
                 <div class="solution-wrapper">
-                    <img src="/images/portad-api-illustration.svg" class="img-fluid solutions-img"
+                    <img src="/images/strasbourg-park-solution.svg" class="img-fluid solutions-img"
                         alt="architecture du moteur de signature">
 
                     <div class="solutions-box">
                         <ul class="solutions">
                             <li>
-                                Chez Zerofiltre, nous nous alignons constamment aux derniers standards de sécurité.
-                                En termes d’APIs Web, la
-                                préconisation est de mettre en place un système d’authentification se reposant sur des
-                                jetons jetables avec date
-                                d’expiration. Chaque utilisateur authentifié possède un jeton informant de qui il est.
-                                Ce dernier est signé
-                                numériquement afin de s’assurer non seulement de l’authenticité de l’utilisateur, mais
-                                aussi de l’intégrité des
-                                informations passées.
-
+                                Pour y arriver,
+                                nous avons mis en place un service qui lance des apples
+                                toutes les minutes permettant de récupérer les données de l'API à disposition.
                             </li>
 
                             <li>
-                                Une seconde mesure de sécurité consistait à exposer des services ou ressources en
-                                fonction des rôles et permissions des
-                                utilisateurs qui souhaitent y accéder.
+                                Une seconde étape intermédiaire s'avérait nécessaire:
+                                La transformation de données (<i>Mapping </i>) qui analyse et traduit les données
+                                récupérées brutes (JSON),
+                                en éléments compréhensibles par l'application.
                             </li>
 
-                            <li>Enfin, afin d’assurer la haute disponibilité 24h/7j des APIs, nous nous sommes appuyés
-                                sur des technologies s’assurant
-                                tout d’abord du (re)démarrage de plusieurs instances de serveurs en cas de fortes
-                                charges, et aussi d’un équilibrage de
-                                charge constant entre les instances. Les cas d'indisponibilités deviennent alors
-                                inexistants.
-                            </li>
-
-                            <li class="last">Afin de fournir un contrat d’interface aux développeurs WEB, forme finale
-                                de l’API, nous avons généré la documentation
-                                de la dite API avec Swagger, et l’avons exposé tout en bouchonnant l’implémentation,
-                                permettant ainsi des tests de
-                                communication avec l’API.
+                            <li>
+                                Enfin, à travers une procédure asynchrone et non bloquante pour l'utilisateur final,
+                                les données sont remplies dynamiquement dans des <i>templates</i> qui seront par la
+                                suite converits en écran
+                                et affichés à l'utilisateur.
                             </li>
                         </ul>
                     </div>
