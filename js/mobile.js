@@ -17,7 +17,27 @@ initialContent.innerHTML = `
               <div>
                 <h4>Flutter</h4>
               </div>
-            </div>`;
+            </div>
+
+            <div class="tech-item">
+              <div>
+                <img src="./images/ionicframework-icon.svg" class="img-fluid" alt="Ionic">
+              </div>
+              <div>
+                <h4>Ionic</h4>
+              </div>
+            </div>
+
+            <div class="tech-item">
+              <div>
+                <img src="./images/angular-icon.svg" class="img-fluid" alt="Angular">
+              </div>
+              <div>
+                <h4>Angular</h4>
+              </div>
+            </div>
+            
+            `;
 
 dbContent.innerHTML = `
             <div class="tech-item">
