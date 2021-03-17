@@ -1,50 +1,42 @@
-function validateForm() {
-    let isOk = true;
+function validateForm(form) {
+
+    notificationErrorEl = document.getElementById("notification-error");
+    notificationSuccessEl = document.getElementById("notification-success");
+    notificationSendErrorEl = document.getElementById("notification-send-error");
 
     let userNameEl = document.getElementById('user_name');
     let userEmailEl = document.getElementById('user_email');
     let subjectEl = document.getElementById('subject');
     let messageEl = document.getElementById('message');
-    let buttonEl = document.getElementById('message');
-    let notificationErrorEl = document.getElementById('notification-error');
-    let notificationSuccessEl = document.getElementById('notification-success');
-    let notificationSendErrorEl = document.getElementById('notification-send-error');
 
     var userName = document.forms["contact-form"]["user_name"].value;
     var userEmail = document.forms["contact-form"]["user_email"].value;
     var subject = document.forms["contact-form"]["subject"].value;
     var message = document.forms["contact-form"]["message"].value;
 
-    if (isEmpty(userName)) {
-        userNameEl.classList.toggle('input_error');
-        isOk = false;
-    }
+    nameValid = validateValue(userNameEl, userName, false);
+    emailValid = validateValue(userEmailEl, userEmail, true);
+    subjectValid = validateValue(subjectEl, subject, false);
+    messageValid = validateValue(messageEl, message, false);
 
-    if (isEmpty(userEmail) || isNotEmail(userEmail)) {
-        userEmailEl.classList.toggle('input_error');
-        isOk = false;
-    }
+    isOk = nameValid && emailValid && subjectValid && messageValid;
 
-    if (isEmpty(subject)) {
-        subjectEl.classList.toggle('input_error');
-        isOk = false;
-    }
-
-    if (isEmpty(message)) {
-        messageEl.classList.toggle('input_error');
-        isOk = false;
-    }
-
-    if (!isOk) {
-        notificationErrorEl.classList.toggle('error');
-    } else {
-        emailjs.sendForm('gmail_service_5i44y6w', 'zerofiltre_contact_templ', this)
+    if (isOk) {
+        emailjs.sendForm('gmail_service_5i44y6w', 'zerofiltre_contact_templ', form)
             .then(function () {
-                notificationSuccessEl.classList.toggle('send_error');
+                notificationSuccessEl.classList.add('success');
             }, function (error) {
-                notificationSendErrorEl.toggleAttribute('success');
+                notificationSendErrorEl.classList.add('send_error');
             });
+    } else {
+        notificationErrorEl.classList.add('error');
     }
+
+    setTimeout(() => {
+        notificationSendErrorEl.classList.remove('send_error');
+        notificationErrorEl.classList.remove('error');
+        notificationSuccessEl.classList.remove('success');
+    }, 5000);
 }
 
 function isEmpty(value) {
@@ -54,7 +46,18 @@ function isEmpty(value) {
 
 function isNotEmail(email) {
     let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    return !RegExp.test(String(email).toLowerCase());
+    return !mailformat.test(String(email).toLowerCase());
+}
+
+const validateValue = (el, value, isEmail) => {
+    validValue = isEmail ? (!isEmpty(value) && !isNotEmail(value)) : !isEmpty(value);
+    console.log(validValue);
+    if (validValue) {
+        el.classList.remove('input_error');
+    } else {
+        el.classList.add('input_error');
+    }
+    return validValue;
 }
 
 (function () {
@@ -66,6 +69,17 @@ window.onload = function () {
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
         // these IDs from the previous steps
-        validateForm();
+        validateForm(this);
     });
+
+    inputs = document.querySelectorAll("form input[type=\"text\"],textarea");
+    if (inputs) {
+        inputs.forEach((el) => {
+            el.addEventListener('change', (event) => {
+                validateValue(el, event.target.value, el.id == "user_email");
+            });
+
+        });
+    }
+
 }

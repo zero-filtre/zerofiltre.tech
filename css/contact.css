@@ -103,7 +103,7 @@ form input[type="submit"] {
 
 .input_error {
   outline: var(--error-color);
-  box-shadow: 0 0 15px 2px hsla(345, 73%, 60%, 0.815);
+  box-shadow: 0 0 15px 2px hsla(345, 73%, 60%, 0.5);
 }
 
 .hide {
@@ -112,13 +112,15 @@ form input[type="submit"] {
 
 .error,
 .send_error {
-  display: inline;
+  display: block;
   color: var(--error-color);
+  margin-top: 10px;
 }
 
 .success {
-  display: inline;
+  display: block;
   color: var(--primary-color);
+  margin-top: 10px;
 }
 
 .form-btn:hover {
