@@ -90,7 +90,7 @@ form textarea {
   transition: all 0.15s ease-in-out;
 }
 
-form input[type="button"] {
+form input[type="submit"] {
   width: 100%;
   height: 3.9375rem;
   padding: 1.25rem;
@@ -99,6 +99,26 @@ form input[type="button"] {
   border: none;
   border-radius: 5px;
   margin-top: 1.25rem;
+}
+
+.input_error {
+  outline: var(--error-color);
+  box-shadow: 0 0 15px 2px hsla(345, 73%, 60%, 0.815);
+}
+
+.hide {
+  display: none;
+}
+
+.error,
+.send_error {
+  display: inline;
+  color: var(--error-color);
+}
+
+.success {
+  display: inline;
+  color: var(--primary-color);
 }
 
 .form-btn:hover {
