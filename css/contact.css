@@ -67,7 +67,8 @@ form {
   margin-top: 4.85rem;
 }
 
-form input[type="text"] {
+form input[type="text"],
+form input[type="email"] {
   width: 100%;
   margin-bottom: 1.25rem;
   height: 4.625rem;
@@ -101,9 +102,29 @@ form input[type="submit"] {
   margin-top: 1.25rem;
 }
 
-.input_error {
-  outline: var(--error-color);
-  box-shadow: 0 0 15px 2px hsla(345, 73%, 60%, 0.5);
+.loader-container {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  border: 3px solid #f3f3f3; /* Light grey */
+  border-top: 3px solid var(--primary-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .hide {
