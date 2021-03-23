@@ -67,7 +67,8 @@ form {
   margin-top: 4.85rem;
 }
 
-form input[type="text"] {
+form input[type="text"],
+form input[type="email"] {
   width: 100%;
   margin-bottom: 1.25rem;
   height: 4.625rem;
@@ -90,7 +91,7 @@ form textarea {
   transition: all 0.15s ease-in-out;
 }
 
-form input[type="button"] {
+form input[type="submit"] {
   width: 100%;
   height: 3.9375rem;
   padding: 1.25rem;
@@ -99,6 +100,48 @@ form input[type="button"] {
   border: none;
   border-radius: 5px;
   margin-top: 1.25rem;
+}
+
+.loader-container {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  border: 3px solid #f3f3f3; /* Light grey */
+  border-top: 3px solid var(--primary-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.error,
+.send_error {
+  display: block;
+  color: var(--error-color);
+  margin-top: 10px;
+}
+
+.success {
+  display: block;
+  color: var(--primary-color);
+  margin-top: 10px;
 }
 
 .form-btn:hover {
