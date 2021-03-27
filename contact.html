@@ -41,7 +41,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FPLWQNHWMT"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="js/contact.js" defer></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -224,14 +224,29 @@
                 <p>Nous vous répondrons en moins de 24h, promis 😉</p>
 
                 <form id="contact-form" action="">
-                    <input type="text" id="user_name" placeholder="Votre nom" name="user_name" required>
-                    <input type="email" id="user_email" placeholder="Votre email" name="user_email"
-                        pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" required>
-                    <input type="text" id="subject" placeholder="Sujet" name="subject" required>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"
-                        required></textarea>
+                    <div class="form-group">
+                        <input type="text" id="user_name" placeholder="Votre nom" name="user_name">
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="user_email" placeholder="Votre email" name="user_email">
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Sujet" name="subject">
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Votre message"></textarea>
+                        <small>Error message</small>
+                    </div>
 
                     <input type="submit" value="Nous envoyer un message" class="form-btn" id="submit-btn">
+
                     <div id="loader" class="hide loader-container">
                         <div class="loader"></div>
                     </div>

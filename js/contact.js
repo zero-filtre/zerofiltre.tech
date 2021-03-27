@@ -1,3 +1,8 @@
+const name = document.getElementById('user_name');
+const email = document.getElementById('user_email');
+const comment = document.getElementById('message');
+const subject = document.getElementById('subject');
+
 function validateForm(form) {
 	notificationErrorEl = document.getElementById('notification-error');
 	notificationSuccessEl = document.getElementById('notification-success');
@@ -5,57 +10,125 @@ function validateForm(form) {
 		'notification-send-error',
 	);
 	loaderEl = document.getElementById('loader');
+
 	loaderEl.classList.remove('hide');
 
-	emailjs
-		.sendForm('gmail_service_5i44y6w', 'zerofiltre_contact_templ', form)
-		.then(
-			function () {
-				loaderEl.classList.add('hide');
-				notificationSuccessEl.classList.add('success');
-			},
-			function (error) {
-				loaderEl.classList.add('hide');
-				notificationSendErrorEl.classList.add('send_error');
-			},
-		);
+	if (checkInputs(name, email, comment)) {
+		emailjs
+			.sendForm('gmail_service_5i44y6w', 'zerofiltre_contact_templ', form)
+			.then(
+				function () {
+					loaderEl.classList.add('hide');
+					notificationSuccessEl.classList.add('success');
+					resetForm();
+				},
+				function (error) {
+					loaderEl.classList.add('hide');
+					notificationSendErrorEl.classList.add('send_error');
+				},
+			);
+	} else {
+		setTimeout(() => {
+			notificationErrorEl.classList.add('error');
+			loaderEl.classList.add('hide');
+		}, 2500);
+	}
 
 	setTimeout(() => {
 		notificationSendErrorEl.classList.remove('send_error');
 		notificationErrorEl.classList.remove('error');
 		notificationSuccessEl.classList.remove('success');
-	}, 5000);
+	}, 15000);
 }
 
-function isEmpty(value) {
-	if (value == null || typeof value == 'undefined') return true;
-	return value.length <= 0;
+//helper functions
+function setErrorFor(input, message) {
+	const formControl = input.parentElement;
+	const small = formControl.querySelector('small');
+	formControl.className = 'form-group error';
+	small.innerText = message;
 }
 
-function isNotEmail(email) {
-	let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-	return !mailformat.test(String(email).toLowerCase());
+function setSuccessFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form-group success';
 }
 
-const validateValue = (el, elError, value, isEmail) => {
-	validValue = isEmail
-		? !isEmpty(value) && !isNotEmail(value)
-		: !isEmpty(value);
-	console.log(validValue);
-	if (validValue) {
-		el.classList.remove('input_error');
-		elError.classList.remove('error');
-	} else {
-		el.classList.add('input_error');
-		elError.classList.add('error');
+function isEmail(email) {
+	return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+		email,
+	);
+}
+
+function checkInputs(name, email, comment) {
+	const nameValue = name.value.trim();
+	const emailValue = email.value.trim();
+	const commentValue = comment.value.trim();
+
+	setTimeout(() => {
+		if (nameValue === '') {
+			setErrorFor(name, 'Ce champs est obligatoire');
+		} else {
+			setSuccessFor(name);
+		}
+
+		if (emailValue === '') {
+			setErrorFor(email, 'Ce champs est obligatoire');
+		} else if (!isEmail(emailValue)) {
+			setErrorFor(email, 'Cette adresse email est invalide');
+		} else {
+			setSuccessFor(email);
+		}
+
+		if (commentValue === '') {
+			setErrorFor(comment, 'Ce champs est obligatoire');
+		} else {
+			setSuccessFor(comment);
+		}
+	}, 2500);
+
+	if (nameValue !== '' && commentValue !== '' && isEmail(emailValue)) {
+		return true;
 	}
-	return validValue;
+
+	return false;
+}
+
+function resetForm() {
+	name.value = '';
+	email.value = '';
+	comment.value = '';
+	subject.value = '';
+}
+
+//key down listener functions
+name.onkeyup = () => {
+	const nameVal = name.value.trim();
+	if (nameVal !== '') {
+		setSuccessFor(name);
+	}
 };
 
+email.onkeyup = () => {
+	const emailVal = email.value.trim();
+	if (isEmail(emailVal) || emailVal !== '') {
+		setSuccessFor(email);
+	}
+};
+
+comment.onkeyup = () => {
+	const commentVal = comment.value.trim();
+	if (commentVal !== '') {
+		setSuccessFor(comment);
+	}
+};
+
+//email Js setup
 (function () {
 	emailjs.init('user_tFkOmcuOARzIdLDcr19vF');
 })();
 
+//Form submit function
 window.onload = function () {
 	document
 		.getElementById('contact-form')
