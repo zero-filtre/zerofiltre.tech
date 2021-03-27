@@ -3,12 +3,13 @@ const email = document.getElementById('user_email');
 const comment = document.getElementById('message');
 const subject = document.getElementById('subject');
 
+const notificationErrorEl = document.getElementById('notification-error');
+const notificationSuccessEl = document.getElementById('notification-success');
+const notificationSendErrorEl = document.getElementById(
+	'notification-send-error',
+);
+
 function validateForm(form) {
-	notificationErrorEl = document.getElementById('notification-error');
-	notificationSuccessEl = document.getElementById('notification-success');
-	notificationSendErrorEl = document.getElementById(
-		'notification-send-error',
-	);
 	loaderEl = document.getElementById('loader');
 
 	loaderEl.classList.remove('hide');
@@ -64,6 +65,9 @@ function checkInputs(name, email, comment) {
 	const nameValue = name.value.trim();
 	const emailValue = email.value.trim();
 	const commentValue = comment.value.trim();
+
+	const errorMessages = document.querySelectorAll('small');
+	errorMessages.forEach(small => (small.innerText = ''));
 
 	setTimeout(() => {
 		if (nameValue === '') {
