@@ -43,6 +43,8 @@ metadata:
   namespace: zerofiltretech-uat
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    # add an annotation indicating the issuer to use.
+    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   rules:
     - host: "uat.zerofiltre.tech"
@@ -52,3 +54,7 @@ spec:
             backend:
               serviceName: zerofiltretech-uat
               servicePort: 80
+  tls: # < placing a host in the TLS config will indicate a certificate should be created
+    - hosts:
+        - "uat.zerofiltre.tech"
+      secretName: zerofiltre-ingress-cert # < cert-manager will store the created certificate in this secret.
