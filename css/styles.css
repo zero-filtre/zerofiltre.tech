@@ -232,6 +232,61 @@ footer .container {
   border-bottom-right-radius: 5px;
 }
 
+/* Cookie confirmation message container */
+#privacypolicies-com---nb {
+  width: 100vw !important;
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: #f9fafb !important;
+}
+
+.cc-nb-main-container {
+  padding: 1rem 5% !important;
+  max-width: 110rem !important;
+  margin: 0 auto !important;
+  overflow: hidden;
+}
+
+.privacypolicies-com---nb-simple {
+  left: 0 !important;
+  max-width: 100vw !important;
+}
+
+.privacypolicies-com---nb .cc-nb-title {
+  display: none !important;
+}
+
+.privacypolicies-com---nb .cc-nb-text {
+  font-size: 13px !important;
+}
+
+.cc-nb-changep {
+  display: none !important;
+}
+
+.cc-nb-okagree {
+  background-color: #052b5d !important;
+  border-radius: 5px !important;
+}
+
+@media only screen and (min-width: 650px) {
+  .cc-nb-text-container {
+    float: left;
+    width: 80%;
+  }
+
+  .cc-nb-buttons-container {
+    float: right;
+    width: 20%;
+    padding-left: 2rem;
+  }
+
+  .privacypolicies-com---nb .cc-nb-text {
+    font-size: 13px !important;
+    margin: 0 !important;
+  }
+}
+/* End cookie confirmation message container */
+
 @media only screen and (min-width: 480px) {
 }
 
