@@ -79,6 +79,12 @@ ul {
 .cc-nb-okagree {
   background-color: #052b5d !important;
   border-radius: 5px !important;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
+}
+
+.cc-nb-okagree:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
 }
 
 @media only screen and (min-width: 650px) {
