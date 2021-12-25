@@ -45,6 +45,30 @@ ul {
   padding: 0;
 }
 
+/* cookie confirmation message container */
+#privacypolicies-com---nb {
+  width: 100vw !important;
+  font-family: 'Montserrat', sans-serif;
+  /* font-size: 10px !important; */
+}
+
+.cc-nb-main-container {
+  padding: 1rem 5% !important;
+  max-width: 110rem !important;
+  margin: 0 auto;
+}
+
+.privacypolicies-com---nb-simple {
+  left: 0;
+  max-width: 100vw;
+}
+
+.privacypolicies-com---nb .cc-nb-text {
+  font-size: 13px;
+  margin: 0 0 1.25rem 0;
+}
+/* End cookie confirmation message container */
+
 .comming-soon {
   border: 2px solid #fff;
   padding: 0.625rem 0.5rem;
@@ -579,7 +603,7 @@ header .hamburger span {
   }
 
   header {
-    padding-top: .5rem;
+    padding-top: 0.5rem;
   }
 
   .hide-mobile {
