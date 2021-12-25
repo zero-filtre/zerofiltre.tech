@@ -58,7 +58,7 @@ ul {
   padding: 1rem 5% !important;
   max-width: 110rem !important;
   margin: 0 auto !important;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .privacypolicies-com---nb-simple {
@@ -91,14 +91,14 @@ ul {
 
 @media only screen and (min-width: 650px) {
   .cc-nb-text-container {
-    float: left;
-    width: 80%;
+    float: left !important;
+    width: 80% !important;
   }
 
   .cc-nb-buttons-container {
-    float: right;
-    width: 20%;
-    padding-left: 2rem;
+    float: right !important;
+    width: 20% !important;
+    padding-left: 2rem !important;
   }
 
   .privacypolicies-com---nb .cc-nb-text {
