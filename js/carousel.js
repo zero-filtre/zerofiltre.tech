@@ -71,28 +71,6 @@ window.addEventListener('mouseup', (event) => {
   }
 })
 
-/**
- * Cookie text
- * 
- * on aimerait bien vous accompagner pendant votre visite... 
- * C'est OK pour vous ?
-  1: Ok pour moi
-  2: Je choisis
- */
-
-// document.addEventListener("DOMContentLoaded", async () => {
-//   // const cookieText = document.getElementById('cc-nb-text');
-//   // console.log('COOKIE TEXT: ', cookieText);
-//   // cookieText.innerText = "Nous utilisons des cookies et d'autres technologies de suivi pour améliorer votre expérience de navigation sur notre site.";
-//   // cookieText.style.border = '1px solid red';
-// });
-
-const loadCookie = () => {
-  const cookieText = document.getElementById('cc-nb-text');
-  console.log('COOKIE TEXT: ', cookieText);
-  cookieText.textContent = "Nous utilisons des cookies et d'autres technologies de suivi pour améliorer votre expérience de navigation sur notre site, on aimerait bien vous accompagner pendant votre visite... C'est OK pour vous ?";
-  // cookieText.style.border = '1px solid red';
-};
 
 
 

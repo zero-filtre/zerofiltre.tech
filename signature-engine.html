@@ -156,8 +156,8 @@
                     <a href="https://github.com/zero-filtre" target="_blank"><img src="images/blue-github.svg"
                             alt="Nos repo github" /></a>
 
-                    <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR" target="_blank"><img src="images/blue-linkdin.svg"
-                            alt="Notre page LinkedIn" /></a>
+                    <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR" target="_blank"><img
+                            src="images/blue-linkdin.svg" alt="Notre page LinkedIn" /></a>
                 </div>
 
                 <div id="sidebar" class="sidebar hide-desktop">
@@ -683,20 +683,20 @@
                 <div class="articles">
                     <p class="yellow-text">DERNIERS ARTICLES</p>
                     <ul>
-                        <li><a
-                                href="https://medium.com/swlh/grapql-from-theory-to-real-world-with-spring-boot-d6b46a28027b?source=friends_link&sk=265f0f4063dbea9780de4a55e8370b14" target="_blank">GraphQL:
+                        <li><a href="https://medium.com/swlh/grapql-from-theory-to-real-world-with-spring-boot-d6b46a28027b?source=friends_link&sk=265f0f4063dbea9780de4a55e8370b14"
+                                target="_blank">GraphQL:
                                 de la théorie à la pratique avec Spring-boot</a></li>
-                        <li><a
-                                href="https://medium.com/swlh/understanding-graphql-error-handling-mechanisms-in-spring-boot-604301c9bedb?source=friends_link&sk=1d97101ee639e362b86fad68c2cc2a14" target="_blank">Maîtriser
+                        <li><a href="https://medium.com/swlh/understanding-graphql-error-handling-mechanisms-in-spring-boot-604301c9bedb?source=friends_link&sk=1d97101ee639e362b86fad68c2cc2a14"
+                                target="_blank">Maîtriser
                                 la gestion d’erreurs GraphQL dans une application Spring-boot</a></li>
                         <li>
-                            <a
-                                href="https://medium.com/@philippechampion58/secure-your-graphql-api-within-a-spring-boot-app-72961fbe9232?sk=447765d64a6a7da1d4d9eec744c78e44" target="_blank">Sécuriser
+                            <a href="https://medium.com/@philippechampion58/secure-your-graphql-api-within-a-spring-boot-app-72961fbe9232?sk=447765d64a6a7da1d4d9eec744c78e44"
+                                target="_blank">Sécuriser
                                 ses APIs GraphQL avec Spring-AOP dans une application Spring-boot </a>
                         </li>
                         <li>
-                            <a
-                                href="https://medium.com/@philippechampion58/testing-your-graphql-apis-in-a-spring-boot-app-9fe02ebccc35?sk=c91ff02c10402469f6e9c3824a7d89cd" target="_blank">Tester
+                            <a href="https://medium.com/@philippechampion58/testing-your-graphql-apis-in-a-spring-boot-app-9fe02ebccc35?sk=c91ff02c10402469f6e9c3824a7d89cd"
+                                target="_blank">Tester
                                 ses APIs GraphQL dans une application Spring-boot </a>
                         </li>
 
@@ -721,7 +721,8 @@
                             Tél: <a class="yellow-text" href="tel:+33 7 53 42 86 23">+33 7 53 42 86 23</a>
                         </li>
                         <li>
-                            Email: <a class="yellow-text" href="mailto:info@zerofiltre.tech">info@zerofiltre.tech</a><br>
+                            Email: <a class="yellow-text"
+                                href="mailto:info@zerofiltre.tech">info@zerofiltre.tech</a><br>
                         </li>
                     </ul>
                 </div>
@@ -735,10 +736,11 @@
                     <span class="green-text">Zerofiltre.</span> Tous droits reservés.
                 </p>
                 <div class="social-links">
-                    <a href="https://github.com/zero-filtre" target="_blank"><img src="images/github.svg" alt="Nos repo github"></a>
+                    <a href="https://github.com/zero-filtre" target="_blank"><img src="images/github.svg"
+                            alt="Nos repo github"></a>
 
-                    <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR" target="_blank"><img src="images/linkedIn.svg"
-                            alt="Notre page LinkedIn">
+                    <a href="https://www.linkedin.com/company/zerofiltre?_l=fr_FR" target="_blank"><img
+                            src="images/linkedIn.svg" alt="Notre page LinkedIn">
                     </a>
                 </div>
             </div>
@@ -760,10 +762,17 @@
         charset="UTF-8"></script>
     <script type="text/javascript" charset="UTF-8">
         document.addEventListener('DOMContentLoaded', function () {
-            cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "implied", "palette": "light", "language": "fr", "page_load_consent_levels": ["strictly-necessary", "functionality", "tracking", "targeting"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "website_name": "Zerofiltre.tech", "website_privacy_policy_url": "https://zerofiltre.tech/terms_of_use.html", "open_preferences_center_selector": "#open_preferences_center" });
+            cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "light", "language": "fr", "page_load_consent_levels": ["strictly-necessary", "functionality", "tracking", "targeting"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "website_name": "Zerofiltre.tech", "website_privacy_policy_url": "https://zerofiltre.tech/terms_of_use.html", "open_preferences_center_selector": "#open_preferences_center" });
+
+            const cookieText = document.getElementById('cc-nb-text');
+            cookieText.textContent = "Salut c'est nous..🍪 les Cookies! Nous sommes là pour améliorer votre expérience de navigation sur notre site, on aimerait bien vous accompagner pendant votre visite... C'est OK pour vous ?";
+            const agreeBtn = document.querySelector('.cc-nb-okagree');
+            agreeBtn.textContent = 'Ok pour moi';
+            const changePrefBtn = document.querySelector('.cc-nb-changep');
+            changePrefBtn.textContent = 'Je choisis';
         });
     </script>
-    
+
     <!-- Google Analytics -->
     <script type="text/plain" cookie-consent="tracking" async
         src="https://www.googletagmanager.com/gtag/js?id=G-FPLWQNHWMT"></script>
@@ -775,7 +784,7 @@
                 gtag('config', 'G-FPLWQNHWMT');
             </script>
     <!-- end of Google Analytics-->
-    
+
     <noscript>Cookie Consent by <a href="https://www.privacypolicies.com/privacy-policy-generator/"
             rel="nofollow noopener">Privacy Policies Generator website</a></noscript>
     <!-- End Cookie Consent -->
