@@ -71,17 +71,14 @@ ul {
 }
 
 .privacypolicies-com---nb .cc-nb-text {
-  font-size: 13px !important;
+  font-size: 12px !important;
 }
 
 .cc-nb-changep {
-  /* display: none !important; */
-  font-size: 10px !important;
   background-color: transparent !important;
   border: 1px solid lightgrey !important;
   border-radius: 5px !important;
-  padding-top: 0.7rem !important;
-  padding-bottom: 0.6rem !important;
+  font-weight: normal !important;
 }
 
 .cc-nb-okagree {
@@ -89,38 +86,35 @@ ul {
   border-radius: 5px !important;
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
+  font-weight: normal !important;
 }
 
 .cc-nb-reject {
   display: none !important;
-
-  /* background-color: #052b5d !important;
-  border-radius: 5px !important;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1) !important; */
 }
 
 .cc-nb-okagree:hover,
 .cc-nb-reject:hover {
-  text-decoration: underline !important;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  opacity: 0.95;
 }
 
 @media only screen and (min-width: 650px) {
   .cc-nb-text-container {
     float: left !important;
-    width: 78% !important;
+    width: 75% !important;
   }
 
   .cc-nb-buttons-container {
     float: right !important;
-    width: 22% !important;
-    padding-left: 2rem !important;
+    width: 25% !important;
+    padding-left: 1.5rem !important;
   }
 
   .privacypolicies-com---nb .cc-nb-text {
-    font-size: 13px !important;
+    font-size: 14px !important;
     margin: 0 !important;
+    font-weight: normal !important;
   }
 }
 /* End cookie confirmation message container */
