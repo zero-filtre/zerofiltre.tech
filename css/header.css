@@ -12,12 +12,11 @@
 }
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  right: 0;
-  left: 0;
   z-index: 99;
   background-color: #fff;
+  box-shadow: #ddd 0 0 8px;
 }
 
 header .container {
@@ -96,9 +95,9 @@ nav .links a:hover {
 header .soon-badge {
   background-color: var(--primary-color);
   color: #fff;
-  padding: .1rem .3rem;
+  padding: 0.1rem 0.3rem;
   border-radius: 100px;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: bold;
 }
 
@@ -130,7 +129,7 @@ header .whatsapp-link span {
   padding: 100px 0 40px 0;
   background-color: #fff;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  transition: .5s;
+  transition: 0.5s;
   z-index: 5;
 }
 
@@ -138,7 +137,7 @@ header .whatsapp-link span {
   display: flex;
   align-items: center;
   padding: 16px 20px;
-  font-size: .95rem;
+  font-size: 0.95rem;
   min-width: max-content;
 }
 
@@ -152,7 +151,7 @@ header .whatsapp-link span {
 
 .hero {
   position: relative;
-  margin: 4em 4% 2% 4%;
+  margin: 2rem 4%;
   z-index: 1;
 }
 
@@ -218,10 +217,6 @@ header .whatsapp-link span {
 }
 
 @media only screen and (min-width: 480px) {
-  .hero {
-    margin: 15% 2% 0 2%;
-  }
-
   .hero p {
     margin-top: 1em;
   }
@@ -230,10 +225,6 @@ header .whatsapp-link span {
 @media only screen and (min-width: 640px) {
   header .container {
     padding: 3% 5%;
-  }
-
-  .hero {
-    margin-top: 4em;
   }
 
   .sub-title {
@@ -272,14 +263,6 @@ header .whatsapp-link span {
 }
 
 @media only screen and (min-width: 720px) {
-  header {
-    box-shadow: #ddd 0 0 8px;
-  }
-
-  .hero {
-    margin: 4em 1.5% 0 1.5%;
-  }
-
   .hero .container {
     padding: 8% 5%;
   }
@@ -291,14 +274,15 @@ header .whatsapp-link span {
 }
 
 @media only screen and (min-width: 768px) {
-  .hero {
-    margin-top: 5em;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
+  header {
+    border-bottom: 1px solid var(--primary-color);
+  }
+
   header .container {
-    padding: 1.5% 5%;
+    padding: 1.6% 5%;
   }
 
   nav .logo {
@@ -306,7 +290,7 @@ header .whatsapp-link span {
   }
 
   .hero {
-    margin: 6.5% 1.5% 0 1.5%;
+    margin: 2rem 2%;
   }
 
   .hero .container {
@@ -323,7 +307,4 @@ header .whatsapp-link span {
 }
 
 @media only screen and (min-width: 1350px) {
-  .hero {
-    margin: 5.5% 1.5% 0 1.5%;
-  }
 }
