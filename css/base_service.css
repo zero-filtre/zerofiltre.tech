@@ -127,6 +127,7 @@ section {
   opacity: 1;
   display: block;
   margin-top: 0.5em;
+  line-height: 25px;
 }
 
 .why-us .card__img,
