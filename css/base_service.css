@@ -7,7 +7,7 @@
   --error-color: #f55f44;
 
   /*Font sizes*/
-  --regular-size: 0.9em;
+  --regular-size: 1rem;
   --small-size: 0.7em;
 }
 
@@ -26,7 +26,7 @@ section {
 
 /**HEADER**/
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -249,7 +249,7 @@ section {
 }
 
 #our-team::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -276,7 +276,7 @@ section {
 }
 
 #why-us::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -472,7 +472,7 @@ section {
 }
 
 #call-to-action::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
