@@ -5,12 +5,16 @@
 #call-to-action::after {
   background-image: url(/images/app-mobile-cta-bg-img1.jpg);
 }
+.impl-list-box {
+  display: flex;
+  justify-content: center;
+}
 
 .impl-list {
   text-align: left;
-  font-weight: 800;
+  font-weight: 700;
   padding: 0 30px;
-  line-height: 1.6;
+  line-height: 32px;
 }
 
 .impl-list li::before {
@@ -30,13 +34,6 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .impl-list {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
-  }
-
   .plus-value-text {
     width: 50%;
     align-self: center;
