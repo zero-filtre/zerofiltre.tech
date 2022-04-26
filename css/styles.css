@@ -48,8 +48,8 @@ h1 {
 p,
 blockquote {
   font-size: var(--regular-size);
-  line-height: 1.6em;
-  font-weight: lighter;
+  line-height: 2rem;
+  font-weight: normal;
 }
 
 a {

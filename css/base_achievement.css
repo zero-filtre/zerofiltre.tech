@@ -13,7 +13,7 @@
 
 /**HEADER**/
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -45,7 +45,7 @@
 }
 
 .overviews__img::before {
-  content: 'Généralités';
+  content: "Généralités";
   display: block;
   color: var(--secondary-color);
   font-size: 24px;
@@ -71,6 +71,7 @@
   align-items: center;
   justify-content: center;
   font-size: var(--regular-size);
+  line-height: 25px;
   font-weight: 600;
   padding: 0 4%;
 }
@@ -130,6 +131,7 @@
 .solutions-box {
   text-align: justify;
   font-size: var(--regular-size);
+  line-height: 25px;
 }
 
 .solution-1 li {
@@ -138,7 +140,7 @@
 
 .solution-1 li::before,
 .step-card li::before {
-  content: '-';
+  content: "-";
   display: inline-block;
   font-weight: bold;
   margin-right: 3%;
@@ -228,6 +230,7 @@
   color: initial;
   font-weight: initial;
   margin-top: 5%;
+  line-height: 25px;
 }
 
 .step-card .number {
@@ -270,7 +273,7 @@
 }
 
 #call-to-action::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;

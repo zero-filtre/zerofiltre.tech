@@ -58,8 +58,9 @@ section {
 }
 
 .our-service__title {
-  font-size: var(--regular-size);
-  margin: 1.5em 0;
+  font-size: 1.15rem;
+  line-height: 2rem;
+  margin: 1.5rem 0;
   color: var(--primary-color);
 }
 
@@ -696,7 +697,8 @@ section {
   }
 
   .our-service__title {
-    font-size: 1em;
+    font-size: 1.5rem;
+    line-height: 34px;
   }
 
   #our-mission {
