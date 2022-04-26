@@ -168,6 +168,7 @@ header {
   position: relative;
   background-color: transparent;
   box-shadow: none;
+  border-bottom: none;
 }
 
 header .container {
