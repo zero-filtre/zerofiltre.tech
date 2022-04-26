@@ -316,6 +316,11 @@
 
 .result p {
   color: var(--primary-color);
+  line-height: 25px;
+}
+
+.result h4 {
+  line-height: 22px;
 }
 
 .result p,
