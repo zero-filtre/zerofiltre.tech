@@ -9,7 +9,7 @@
   --error-color: #f55f44;
 
   /*Font sizes*/
-  --regular-size: 0.9em;
+  --regular-size: 1rem;
   --small-size: 0.7em;
 }
 
@@ -437,7 +437,7 @@ header .container {
 .footer .useful-links li,
 .footer .useful-links ul {
   margin-bottom: 1em;
-  font-size: 0.85em;
+  font-size: 0.75em;
 }
 
 .separator {
@@ -833,6 +833,11 @@ header .hamburger span {
     display: flex;
     text-align: left;
     align-items: flex-start;
+  }
+
+  .footer .useful-links li,
+  .footer .useful-links ul {
+    font-size: 0.875rem;
   }
 
   .useful-links div {

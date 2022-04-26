@@ -9,7 +9,7 @@
   --error-color: #f55f44;
 
   /*Font sizes*/
-  --regular-size: 0.9em;
+  --regular-size: 1rem;
   --small-size: 0.7em;
 }
 
@@ -48,8 +48,8 @@ h1 {
 p,
 blockquote {
   font-size: var(--regular-size);
-  line-height: 1.6em;
-  font-weight: lighter;
+  line-height: 2rem;
+  font-weight: normal;
 }
 
 a {
@@ -187,7 +187,7 @@ ul {
 .footer .useful-links li,
 .footer .useful-links ul {
   margin-bottom: 1em;
-  font-size: 0.85em;
+  font-size: 0.75rem;
 }
 
 .separator {
@@ -361,6 +361,11 @@ footer .container {
 
   .useful-links div:not(:last-child) {
     margin-right: 5%;
+  }
+
+  .footer .useful-links li,
+  .footer .useful-links ul {
+    font-size: 0.875rem;
   }
 
   .contact {

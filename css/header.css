@@ -7,7 +7,7 @@
   --error-color: #f55f44;
 
   /*Font sizes*/
-  --regular-size: 0.9em;
+  --regular-size: 1rem;
   --small-size: 0.7em;
 }
 
@@ -151,7 +151,8 @@ header .whatsapp-link span {
 
 .hero {
   position: relative;
-  margin: 2rem 4%;
+  margin-top: 1.5rem;
+  margin-inline: 4%;
   z-index: 1;
 }
 
@@ -163,7 +164,8 @@ header .whatsapp-link span {
 
 .hero h1 {
   margin: 0;
-  font-size: 1em;
+  font-size: 1.15rem;
+  line-height: 30px;
 }
 
 .hero p {

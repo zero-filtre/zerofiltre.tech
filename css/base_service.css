@@ -7,7 +7,7 @@
   --error-color: #f55f44;
 
   /*Font sizes*/
-  --regular-size: 0.9em;
+  --regular-size: 1rem;
   --small-size: 0.7em;
 }
 
@@ -26,7 +26,7 @@ section {
 
 /**HEADER**/
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -58,8 +58,9 @@ section {
 }
 
 .our-service__title {
-  font-size: var(--regular-size);
-  margin: 1.5em 0;
+  font-size: 1.15rem;
+  line-height: 2rem;
+  margin: 1.5rem 0;
   color: var(--primary-color);
 }
 
@@ -126,6 +127,7 @@ section {
   opacity: 1;
   display: block;
   margin-top: 0.5em;
+  line-height: 25px;
 }
 
 .why-us .card__img,
@@ -249,7 +251,7 @@ section {
 }
 
 #our-team::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -276,7 +278,7 @@ section {
 }
 
 #why-us::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -472,7 +474,7 @@ section {
 }
 
 #call-to-action::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -696,7 +698,8 @@ section {
   }
 
   .our-service__title {
-    font-size: 1em;
+    font-size: 1.5rem;
+    line-height: 34px;
   }
 
   #our-mission {
