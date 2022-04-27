@@ -7,13 +7,13 @@
   --error-color: #f55f44;
 
   /*Font sizes*/
-  --regular-size: 0.9em;
+  --regular-size: 1rem;
   --small-size: 0.7em;
 }
 
 /**HEADER**/
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -45,7 +45,7 @@
 }
 
 .overviews__img::before {
-  content: 'Généralités';
+  content: "Généralités";
   display: block;
   color: var(--secondary-color);
   font-size: 24px;
@@ -71,6 +71,7 @@
   align-items: center;
   justify-content: center;
   font-size: var(--regular-size);
+  line-height: 25px;
   font-weight: 600;
   padding: 0 4%;
 }
@@ -130,6 +131,7 @@
 .solutions-box {
   text-align: justify;
   font-size: var(--regular-size);
+  line-height: 25px;
 }
 
 .solution-1 li {
@@ -138,7 +140,7 @@
 
 .solution-1 li::before,
 .step-card li::before {
-  content: '-';
+  content: "-";
   display: inline-block;
   font-weight: bold;
   margin-right: 3%;
@@ -202,7 +204,7 @@
   display: flex;
   position: relative;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   margin-top: 2rem;
 }
 
@@ -211,11 +213,12 @@
   position: relative;
   flex-direction: column;
   width: 90%;
-  height: 15rem;
+  min-height: 15rem;
   padding: 3%;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   font-size: var(--regular-size);
+  line-height: 25px;
   font-weight: bold;
   text-align: left;
   border-radius: 5px;
@@ -228,6 +231,7 @@
   color: initial;
   font-weight: initial;
   margin-top: 5%;
+  line-height: 30px;
 }
 
 .step-card .number {
@@ -270,7 +274,7 @@
 }
 
 #call-to-action::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -313,6 +317,11 @@
 
 .result p {
   color: var(--primary-color);
+  line-height: 25px;
+}
+
+.result h4 {
+  line-height: 22px;
 }
 
 .result p,
@@ -528,6 +537,7 @@
     max-width: 350px;
     padding: 2% 1%;
     overflow: visible;
+    min-height: 1rem;
   }
 
   .step-card:nth-child(even) {
