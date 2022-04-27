@@ -146,7 +146,7 @@ header .whatsapp-link span {
 }
 
 .sub-title {
-  line-height: 1.2;
+  line-height: 18px;
 }
 
 .hero {
@@ -170,7 +170,7 @@ header .whatsapp-link span {
 
 .hero p {
   margin: 0.8em 0 0 0;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 
 .green-container {
@@ -301,6 +301,7 @@ header .whatsapp-link span {
 
   .hero h1 {
     font-size: 2em;
+    line-height: normal;
   }
 
   .hero p {
