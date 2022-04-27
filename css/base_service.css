@@ -178,13 +178,13 @@ section {
   display: flex;
   flex-wrap: wrap;
   font-weight: 600;
+  gap: 1rem;
 }
 
 .techs__titles .tablink {
   background-color: #fff;
   border-radius: 15px;
   padding: 0.6em 1em;
-  margin: 0.5em;
   color: var(--primary-color);
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
   cursor: pointer;
@@ -192,7 +192,7 @@ section {
   align-items: center;
   justify-content: center;
   height: 60px;
-  flex-basis: calc(50% - 1em);
+  flex-basis: calc(50% - 0.5rem);
   font-size: 3vw;
 }
 
