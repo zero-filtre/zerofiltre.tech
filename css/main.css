@@ -685,7 +685,9 @@ header .hamburger span {
   /**Dropdown**/
   .dropdown-content {
     display: none;
-    margin-top: 1rem;
+    position: absolute;
+    top: 2.5rem;
+    left: -30vw;
     color: var(--secondary-color);
     box-shadow: #ddd 0 0 5px;
   }
