@@ -75,7 +75,8 @@ nav .links {
 nav .links a {
   display: flex;
   align-items: center;
-  font-size: 0.875rem;
+  font-size: 1rem;
+  line-height: 24px;
 }
 
 nav .links a *:first-child {
@@ -137,7 +138,7 @@ header .whatsapp-link span {
   display: flex;
   align-items: center;
   padding: 16px 20px;
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   min-width: max-content;
 }
 
