@@ -11,23 +11,26 @@ const notificationSendErrorEl = document.getElementById(
 
 function validateForm(form) {
 	loaderEl = document.getElementById('loader');
-
 	loaderEl.classList.remove('hide');
 
 	if (checkInputs(name, email, comment)) {
-		emailjs
-			.sendForm('gmail_service_5i44y6w', 'zerofiltre_contact_templ', form)
-			.then(
-				function () {
+		const data = { subject: subject.value, replyTo: email.value, message: comment.value }
+
+		sendMessage(data)
+			.then(data => {
+				if (data.ok) {
+					console.log('DATA: ', data);
 					loaderEl.classList.add('hide');
 					notificationSuccessEl.classList.add('success');
 					resetForm();
-				},
-				function (error) {
-					loaderEl.classList.add('hide');
-					notificationSendErrorEl.classList.add('send_error');
-				},
-			);
+				}else {
+					throw new Error("Une s'est produite !")
+				}
+			}).catch(err => {
+				console.error(err);
+				loaderEl.classList.add('hide');
+				notificationSendErrorEl.classList.add('send_error');
+			})
 	} else {
 		setTimeout(() => {
 			notificationErrorEl.classList.add('error');
@@ -103,6 +106,11 @@ function resetForm() {
 	email.value = '';
 	comment.value = '';
 	subject.value = '';
+}
+
+function sendMessage({ subject, replyTo, message }) {
+	const apiUrl = 'https://blog-api-dev.zerofiltre.tech/notification/help'
+	return fetch(`${apiUrl}?subject=${subject}&replyTo=${replyTo}&message=${message}`)
 }
 
 //key down listener functions
