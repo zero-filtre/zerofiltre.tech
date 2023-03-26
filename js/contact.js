@@ -110,7 +110,7 @@ function resetForm() {
 
 function sendMessage({ subject, replyTo, message }) {
 	const apiUrl = 'https://blog-api-dev.zerofiltre.tech/notification/help'
-	return fetch(`${apiUrl}?subject=${subject}&replyTo=${replyTo}&message=${message}`)
+	return fetch(`${apiUrl}?subject=${subject}&replyTo=${replyTo}&message=${message}`, { method: "POST" })
 }
 
 //key down listener functions
