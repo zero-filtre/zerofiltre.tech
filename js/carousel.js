@@ -67,7 +67,6 @@ dropdown.addEventListener('click', () => {
 window.addEventListener('mouseup', (event) => {
   if (event.target != dropdown) {
     dropdownContent.classList.remove('dropdown-expanded');
-    console.log('outside click');
   }
 })
 

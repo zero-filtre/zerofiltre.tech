@@ -19,7 +19,6 @@ function validateForm(form) {
 		sendMessage(data)
 			.then(data => {
 				if (data.ok) {
-					console.log('DATA: ', data);
 					loaderEl.classList.add('hide');
 					notificationSuccessEl.classList.add('success');
 					resetForm();
