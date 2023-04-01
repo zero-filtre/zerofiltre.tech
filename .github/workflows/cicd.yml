@@ -1,6 +1,6 @@
 
 
-name: Angular CI/CD Pipeline with k8s
+name: Site CI/CD Pipeline with k8s
 
 on:
   push:
